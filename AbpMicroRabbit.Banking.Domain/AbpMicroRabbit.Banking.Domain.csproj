@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Entities\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Handlers\" />
+    <Folder Include="Events\" />
+    <Folder Include="Commands\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Ddd.Domain" Version="2.3.0" />
+    <PackageReference Include="Volo.Abp.EventBus" Version="2.3.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AbpMicroRabbit.Infra.Bus\AbpMicroRabbit.Shared.Domain\AbpMicroRabbit.Shared.Domain.csproj">
+      <ReferenceSourceTarget>ProjectReference</ReferenceSourceTarget>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
