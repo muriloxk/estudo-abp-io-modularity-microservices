@@ -6,6 +6,6 @@ namespace AbpMicroRabbit.Banking.Domain
     [DependsOn(typeof(AbpMicroRabbitSharedDomainModule))]
     public class BankingDomainModule : AbpModule
     {
-
+        
     }
 }

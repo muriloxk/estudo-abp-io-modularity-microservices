@@ -9,7 +9,6 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Volo.Abp.EntityFrameworkCore" Version="2.3.0" />
-    <PackageReference Include="Volo.Abp.EntityFrameworkCore.MySQL" Version="2.3.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AbpMicroRabbit.Banking.Domain\AbpMicroRabbit.Banking.Domain.csproj" />
