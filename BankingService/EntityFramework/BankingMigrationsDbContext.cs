@@ -12,7 +12,7 @@ namespace BankingService.EntityFramework
         {
             base.OnModelCreating(builder);
             builder.ConfigureBankingDb();
-            builder.SeedBankingDb();
+            //builder.SeedBankingDb();
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using AbpMicroRabbit.Banking.Domain.Entities;
 using AbpMicroRabbit.Banking.Domain.Repositories;
+using AbpMicroRabbit.Banking.EntityFrameworkCore.Context;
 using Volo.Abp.DependencyInjection;
 
 namespace AbpMicroRabbit.Banking.EntityFrameworkCore.Repositories
@@ -8,17 +9,17 @@ namespace AbpMicroRabbit.Banking.EntityFrameworkCore.Repositories
 
     public class AccountRepository : IAccountRepository, ITransientDependency
     {
-        //private readonly IBankingContext _context;
+        private readonly IBankingDbContext _context;
 
-        //public AccountRepository(IBankingContext context)
-        //{
-        //    _context = context;
-        //}
-        
+        public AccountRepository(IBankingDbContext context)
+        {
+            _context = context;
+        }
+
 
         public IEnumerable<Account> GetAccounts()
         {
-            return new List<Account>();
+            return _context.Accounts;
         }
     }
 }

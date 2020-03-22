@@ -38,9 +38,6 @@
     <ProjectReference Include="..\AbpMicroRabbit.Banking.Application.Contracts\AbpMicroRabbit.Banking.Application.Contracts.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
-    <ProjectReference Include="..\AbpMicroRabbit.Banking.HttpApi\AbpMicroRabbit.Banking.HttpApi.csproj">
-      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
-    </ProjectReference>
     <ProjectReference Include="..\AbpMicroRabbit.Infra.Bus\AbpMicroRabbit.Shared.Infra.Bus.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>

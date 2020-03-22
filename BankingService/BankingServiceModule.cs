@@ -8,19 +8,20 @@ using Microsoft.AspNetCore.Builder;
 using Volo.Abp.Autofac;
 using AbpMicroRabbit.Banking.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore;
-using AbpMicroRabbit.Banking.HttpApi;
 using Volo.Abp.AspNetCore.Mvc;
 using AbpMicroRabbit.Shared.Domain;
 using AbpMicroRabbit.Shared.Infra.Bus;
 using MediatR;
 using System.Reflection;
 using AbpMicroRabbit.Banking.Domain;
+using AbpMicroRabbit.Banking.Application.Contracts;
 
 namespace BankingService
 {
-    [DependsOn( typeof(BankingApplicationModule),
+    [DependsOn( typeof(BankingApplicationContractsModule),
+                typeof(AbpAspNetCoreMvcModule),
+                typeof(BankingApplicationModule),
                 typeof(BankingEntityFrameworkModule),
-                typeof(BankingHttpApiModule),
                 typeof(AbpAutofacModule),
                 typeof(AbpEntityFrameworkCoreMySQLModule),
                 typeof(AbpEventBusRabbitMqModule),

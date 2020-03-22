@@ -44,7 +44,7 @@ namespace AbpMicroRabbit.Shared.Infra.Bus
         // ou as vezes até melhorar a classe RabbitMqDistributedEventBus e contribuir.
 
         // 2. Ainda não há uma implementação com MediaTR o que ajudaria muito nos handlers de comandos
-        // chamados por serviços em CQRS. Há uma issue com prioridade alta aberta no github:
+        // chamados por serviços em CQRS, como no meus estudos: . Há uma issue com prioridade alta aberta no github:
         // CQRS infrastructure #57: https://github.com/abpframework/abp/issues/57
     }
 }

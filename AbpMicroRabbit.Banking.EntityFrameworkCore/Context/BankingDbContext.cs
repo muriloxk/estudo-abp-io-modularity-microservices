@@ -1,12 +1,13 @@
 ﻿using AbpMicroRabbit.Banking.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Volo.Abp.Data;
+using Volo.Abp.DependencyInjection;
 using Volo.Abp.EntityFrameworkCore;
 
 namespace AbpMicroRabbit.Banking.EntityFrameworkCore.Context
 {
     [ConnectionStringName("BankingDb")]
-    public class BankingDbContext : AbpDbContext<BankingDbContext>, IBankingContext
+    public class BankingDbContext : AbpDbContext<BankingDbContext>, IBankingDbContext, ITransientDependency
     {
         public virtual DbSet<Account> Accounts { get; set; }
 
@@ -16,7 +17,7 @@ namespace AbpMicroRabbit.Banking.EntityFrameworkCore.Context
         {
             base.OnModelCreating(builder);
             builder.ConfigureBankingDb();
-            builder.SeedBankingDb();
+            //builder.SeedBankingDb();
         }
     }
 }

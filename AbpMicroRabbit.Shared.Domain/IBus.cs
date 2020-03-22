@@ -1,5 +1,6 @@
 ﻿using System.Threading.Tasks;
 using MediatR;
+using Volo.Abp.EventBus.Distributed;
 
 namespace AbpMicroRabbit.Shared.Domain
 {
