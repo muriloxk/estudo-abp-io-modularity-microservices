@@ -19,8 +19,8 @@ namespace AbpMicroRabbit.Banking.EntityFrameworkCore
         {
             builder.Entity<Account>(b =>
             {
-                b.HasData(new Account("Poupança", 100),
-                          new Account("Credito", 200));
+                b.HasData(new Account(accountType: "Poupança", accountBalance: 100),
+                          new Account(accountType: "Credito", accountBalance: 200));
             });
         }
     }

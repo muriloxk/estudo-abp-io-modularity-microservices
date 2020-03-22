@@ -8,7 +8,10 @@ namespace AbpMicroRabbit.Shared.Domain
     {
         Task<bool> SendCommand<T>(T command) where T : IRequest<bool>;
         void Publish<T>(T @event) where T : Event;
+        void Subscribe<T, TH>() where T : Event
+                          where TH : IEventHandler<T>;
     }
+
 
     public interface IBusMediatR : IDistributedEventBus
     {

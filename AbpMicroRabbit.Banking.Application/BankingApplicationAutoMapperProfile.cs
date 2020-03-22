@@ -5,9 +5,9 @@ using AutoMapper;
 
 namespace AbpMicroRabbit.Banking.Application
 {
-    public class BookStoreApplicationAutoMapperProfile : Profile
+    public class BankingApplicationAutoMapperProfile : Profile
     {
-        public BookStoreApplicationAutoMapperProfile()
+        public BankingApplicationAutoMapperProfile()
         {
             CreateMap<AccountTransferDto, CreateTransferCommand>()
                   .ConstructUsing(x => new CreateTransferCommand(x.FromAccount, x.ToAccount, x.TransferAccount));

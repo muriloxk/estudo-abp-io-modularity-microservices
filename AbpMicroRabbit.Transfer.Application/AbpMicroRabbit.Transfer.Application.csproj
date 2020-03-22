@@ -8,4 +8,11 @@
     <PackageReference Include="Volo.Abp.Ddd.Application" Version="2.3.0" />
     <PackageReference Include="Volo.Abp.AutoMapper" Version="2.3.0" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AbpMicroRabbit.Transfer.Domain\AbpMicroRabbit.Transfer.Domain.csproj" />
+    <ProjectReference Include="..\AbpMicroRabbit.Transfer.Application.Contracts\AbpMicroRabbit.Transfer.Application.Contracts.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+  </ItemGroup>
 </Project>

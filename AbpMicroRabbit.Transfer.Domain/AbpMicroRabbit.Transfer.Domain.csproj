@@ -6,5 +6,16 @@
 
   <ItemGroup>
     <PackageReference Include="Volo.Abp.Ddd.Domain" Version="2.3.0" />
+    <PackageReference Include="MediatR" Version="8.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="EventHandlers\" />
+    <Folder Include="Events\" />
+    <Folder Include="Entities\" />
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AbpMicroRabbit.Shared.Domain\AbpMicroRabbit.Shared.Domain.csproj" />
+    <ProjectReference Include="..\AbpMicroRabbit.Infra.Bus\AbpMicroRabbit.Shared.Infra.Bus.csproj" />
   </ItemGroup>
 </Project>

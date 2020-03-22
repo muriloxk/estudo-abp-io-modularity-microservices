@@ -40,5 +40,11 @@ namespace AbpMicroRabbit.Shared.Infra.Bus
 
         // TODO: Subscribe entre outras implementações de registo de eventos
         // por injeção de dependencia.
+        public void Subscribe<T, TH>()
+            where T : Event
+            where TH : IEventHandler<T>
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

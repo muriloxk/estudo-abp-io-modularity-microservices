@@ -16,7 +16,7 @@ namespace AbpMicroRabbit.Banking.Application
         {
             Configure<AbpAutoMapperOptions>(options =>
             {
-                options.AddProfile<BookStoreApplicationAutoMapperProfile>();
+                options.AddProfile<BankingApplicationAutoMapperProfile>();
             });
 
             context.Services.AddAutoMapperObjectMapper<BankingApplicationModule>();
