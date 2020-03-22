@@ -10,11 +10,10 @@ namespace AbpMicroRabbit.Banking.Application
         public BookStoreApplicationAutoMapperProfile()
         {
             CreateMap<AccountTransferDto, CreateTransferCommand>()
-                            .ForMember(d => d.Amount, opt => opt.MapFrom(src => src.TransferAccount))
-                            .ForMember(d => d.To, opt => opt.MapFrom(src => src.ToAccount))
-                            .ForMember(d => d.From, opt => opt.MapFrom(src => src.FromAccount));
+                  .ConstructUsing(x => new CreateTransferCommand(x.FromAccount, x.ToAccount, x.TransferAccount));
 
-            CreateMap<CreateTransferCommand, TransferCreatedEvent>();
+            CreateMap<CreateTransferCommand, TransferCreatedEvent>()
+                 .ConstructUsing(x => new TransferCreatedEvent(x.From, x.To, x.Amount));
         }
     }
 }

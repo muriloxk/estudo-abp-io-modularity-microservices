@@ -14,5 +14,14 @@ namespace AbpMicroRabbit.Banking.EntityFrameworkCore
                 b.ConfigureExtraProperties();
             });
         }
+
+        public static void SeedBankingDb(this ModelBuilder builder)
+        {
+            builder.Entity<Account>(b =>
+            {
+                b.HasData(new Account("Poupança", 100),
+                          new Account("Credito", 200));
+            });
+        }
     }
 }

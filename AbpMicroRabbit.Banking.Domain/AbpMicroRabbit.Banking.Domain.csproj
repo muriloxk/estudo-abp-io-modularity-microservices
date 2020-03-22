@@ -13,10 +13,10 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Volo.Abp.Ddd.Domain" Version="2.3.0" />
-    <PackageReference Include="Volo.Abp.EventBus" Version="2.3.0" />
     <PackageReference Include="MediatR" Version="8.0.1" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AbpMicroRabbit.Shared.Domain\AbpMicroRabbit.Shared.Domain.csproj" />
+    <ProjectReference Include="..\AbpMicroRabbit.Infra.Bus\AbpMicroRabbit.Shared.Infra.Bus.csproj" />
   </ItemGroup>
 </Project>

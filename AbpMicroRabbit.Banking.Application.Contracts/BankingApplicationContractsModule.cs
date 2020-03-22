@@ -1,9 +1,10 @@
-﻿using Volo.Abp.Modularity;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Volo.Abp.Modularity;
 
 namespace AbpMicroRabbit.Banking.Application.Contracts
 {
     public class BankingApplicationContractsModule : AbpModule
     {
-  
+       
     }
 }

@@ -3,14 +3,16 @@ using System;
 using BankingService.EntityFramework;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BankingService.Migrations
 {
     [DbContext(typeof(BankingMigrationsDbContext))]
-    partial class BankingMigrationsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200320185747_Seed")]
+    partial class Seed
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

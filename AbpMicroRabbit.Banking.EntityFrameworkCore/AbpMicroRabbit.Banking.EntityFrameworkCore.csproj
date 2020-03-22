@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Folder Include="Context\" />
+    <Folder Include="Repositories\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Volo.Abp.EntityFrameworkCore" Version="2.3.0" />

@@ -1,11 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+using Serilog;
+using Serilog.Events;
 
 namespace BankingService
 {
@@ -13,6 +9,20 @@ namespace BankingService
     {
         public static void Main(string[] args)
         {
+
+            Log.Logger = new LoggerConfiguration()
+#if DEBUG
+                .MinimumLevel.Debug()
+#else
+                .MinimumLevel.Information()
+#endif
+                .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
+                .Enrich.FromLogContext()
+                .WriteTo.Debug()
+                .WriteTo.Console()
+                .WriteTo.File("Logs/logs.txt")
+                .CreateLogger();
+
             CreateHostBuilder(args).Build().Run();
         }
 
@@ -21,6 +31,8 @@ namespace BankingService
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                });
+                })
+                .UseAutofac()
+                .UseSerilog();
     }
 }

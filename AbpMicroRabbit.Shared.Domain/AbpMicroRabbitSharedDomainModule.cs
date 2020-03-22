@@ -4,5 +4,6 @@ namespace AbpMicroRabbit.Shared.Domain
 {
     public class AbpMicroRabbitSharedDomainModule : AbpModule
     {
+        
     }
 }

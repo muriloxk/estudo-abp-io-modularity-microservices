@@ -16,6 +16,7 @@ namespace AbpMicroRabbit.Banking.EntityFrameworkCore.Context
         {
             base.OnModelCreating(builder);
             builder.ConfigureBankingDb();
+            builder.SeedBankingDb();
         }
     }
 }

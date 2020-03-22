@@ -1,38 +1,37 @@
-﻿using System.Collections.Generic;
+﻿using MicroRabbit.Banking.Application.Interfaces;
+using Volo.Abp.Application.Services;
+using AbpMicroRabbit.Banking.Domain.Repositories;
+using Volo.Abp.EventBus.Distributed;
 using System.Threading.Tasks;
 using AbpMicroRabbit.Banking.Application.Contracts.Dto;
 using AbpMicroRabbit.Banking.Domain.Commands;
-using AbpMicroRabbit.Banking.Domain.Entities;
-using AbpMicroRabbit.Banking.Domain.Repositories;
-using MicroRabbit.Banking.Application.Interfaces;
-using Volo.Abp.EventBus.Distributed;
 using AbpMicroRabbit.Shared.Infra.Bus;
-using Volo.Abp.Application.Services;
+using System.Collections.Generic;
+using AbpMicroRabbit.Banking.Domain.Entities;
+using AbpMicroRabbit.Shared.Domain;
 
 namespace AbpMicroRabbit.Banking.Application.Services
 {
-    public class AccountService : ApplicationService, IAccountService
+    public class AccountAppService : ApplicationService, IAccountService
     {
         private readonly IAccountRepository _accountRepository;
-        private readonly IDistributedEventBus _bus;
+        private readonly IBus _bus;
 
-        public AccountService(IAccountRepository accountRepository, IDistributedEventBus bus)
+        public AccountAppService(IAccountRepository accountRepository, IBus bus)
         {
             _accountRepository = accountRepository;
             _bus = bus;
         }
 
-        public async Task<IEnumerable<Account>> GetListAsync()
+        public IEnumerable<Account> GetList()
         {
-            //TODO: Criar sistema de cache
-            return await _accountRepository.GetListAsync();
+            return _accountRepository.GetAccounts();
         }
 
-        //TODO implementar Transfer AccountService
         public async Task Transfer(AccountTransferDto accountTransfer)
         {
-          var createTransferCommand =  ObjectMapper.Map<AccountTransferDto, CreateTransferCommand>(accountTransfer);
-          await _bus.SendCommand(createTransferCommand);
+            var createTransferCommand = ObjectMapper.Map<AccountTransferDto, CreateTransferCommand>(accountTransfer);
+            await _bus.SendCommand(createTransferCommand);
         }
     }
 }
