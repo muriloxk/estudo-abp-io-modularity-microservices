@@ -45,6 +45,8 @@ Para as injeções de dependência do framework funcionar no asp net core.
 
 1. Embora como na imagem acima diga que a camada de api não deve depender da camada de aplicação e sim apenas a de contratos, porem funciona apenas com a camada de aplicação. Como foi discutido nessa issue aqui: https://github.com/abpframework/abp/issues/1731 
 
+1. Não achei necessário a camada HttpApi no modulo como na imagem da documentação ou criado pelo template do cli, quando possuo um microserviço e host. Logo, não criei ele. 
+
 
 # Rabbit MQ 
 
