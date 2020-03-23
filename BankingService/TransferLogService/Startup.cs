@@ -1,9 +1,9 @@
-using AutoMapper.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace BankingService
+namespace TransferLogService
 {
     public class Startup
     {
@@ -17,7 +17,7 @@ namespace BankingService
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddApplication<BankingServiceModule>();
+            services.AddApplication<TransferLogServiceModule>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

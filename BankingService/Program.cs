@@ -9,7 +9,6 @@ namespace BankingService
     {
         public static void Main(string[] args)
         {
-
             Log.Logger = new LoggerConfiguration()
 #if DEBUG
                 .MinimumLevel.Debug()

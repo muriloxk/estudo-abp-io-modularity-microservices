@@ -46,11 +46,11 @@ namespace BankingService
             context.Services.AddSingleton<IBus, RabbitMQBus>();
             context.Services.AddMediatR(typeof(BankingDomainModule).GetTypeInfo().Assembly);
 
-            Configure<AbpRabbitMqEventBusOptions>(options =>
-            {
-                options.ClientName = "TestApp1";
-                options.ExchangeName = "TestMessages";
-            });
+            //Configure<AbpRabbitMqEventBusOptions>(options =>
+            //{
+            //    options.ClientName = "TestApp1";
+            //    options.ExchangeName = "TestMessages";
+            //});
         }
 
         private void ConfigurarSwagger(ServiceConfigurationContext context)
