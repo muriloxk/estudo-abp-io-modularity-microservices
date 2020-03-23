@@ -36,3 +36,13 @@ Você deve escolher um banco de dados e implementar nesse projeto.
 Para documentação e teste da api. 
 >  - **Volo.Abp.AutoFac** 
 Para as injeções de dependência do framework funcionar no asp net core.
+
+
+#Rabbit MQ 
+
+Observações:
+
+   - A classe implementada no RabbitMqDistributedEventBus é fraca e acoplada a um fluxo de exchange, que aparentemente começaram apenas há 2 meses e o correto seria criar um utilizando a biblioteca do proprio framework,  
+   https://github.com/abpframework/abp/tree/dev/framework/src/Volo.Abp.RabbitMQ/Volo/Abp/RabbitMQ ou as vezes até melhorar a classe RabbitMqDistributedEventBus e contribuir.
+
+- Ainda não há uma implementação com MediaTR o que ajudaria muito nos handlers de comando chamados por serviços em CQRS, como nos meus estudos (https://github.com/muriloxk/estudo-microservices-rabbitmq): Há uma issue com prioridade alta aberta no github: CQRS infrastructure #57: https://github.com/abpframework/abp/issues/57
