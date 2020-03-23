@@ -5,12 +5,14 @@
 - ~~Analizar como implementaria um CQRS~~ 
 
 # Próximas issues:
-- <a href="https://github.com/muriloxk/estudo-abp-io-modularity-microservices/issues/1" > #1 Criar um gateway bff mobile e web</a>
-- <a href="https://github.com/muriloxk/estudo-abp-io-modularity-microservices/issues/2" >#2 Criar autenticação via o gateway mobile (Hybrid grantype)</a>
-- <a href="https://github.com/muriloxk/estudo-abp-io-modularity-microservices/issues/3" >#3 Implementar multitenancy compartilhando os bancos.</a>
-- <a href="https://github.com/muriloxk/estudo-abp-io-modularity-microservices/issues/4" >#4 Autorização de papeis entre as funcionalidades.</a>
-- <a href="https://github.com/muriloxk/estudo-abp-io-modularity-microservices/issues/5" >#5 Serilog com elasticsearch</a>
-- <a href="https://github.com/muriloxk/estudo-abp-io-modularity-microservices/issues/6" >#6 Implementar cache com redis de acordo com os inquilinos. </a>
+1. <a href="https://github.com/muriloxk/estudo-abp-io-modularity-microservices/issues/1" > #1 Criar um gateway bff mobile e web</a>
+1. <a href="https://github.com/muriloxk/estudo-abp-io-modularity-microservices/issues/2" >#2 Criar autenticação via o gateway mobile (Hybrid grantype)</a>
+1. <a href="https://github.com/muriloxk/estudo-abp-io-modularity-microservices/issues/7">
+Criar autenticação Implicit grant type para web </a>
+1. <a href="https://github.com/muriloxk/estudo-abp-io-modularity-microservices/issues/3" >#3 Implementar multitenancy compartilhando os bancos.</a>
+1. <a href="https://github.com/muriloxk/estudo-abp-io-modularity-microservices/issues/4" >#4 Autorização de papeis entre as funcionalidades.</a>
+1. <a href="https://github.com/muriloxk/estudo-abp-io-modularity-microservices/issues/5" >#5 Serilog com elasticsearch</a>
+1. <a href="https://github.com/muriloxk/estudo-abp-io-modularity-microservices/issues/6" >#6 Implementar cache com redis de acordo com os inquilinos. </a>
 
 
 # Anotações e observações sobre o estudo sobre o framework abp
