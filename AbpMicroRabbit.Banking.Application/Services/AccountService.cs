@@ -15,9 +15,9 @@ namespace AbpMicroRabbit.Banking.Application.Services
     public class AccountAppService : ApplicationService, IAccountService
     {
         private readonly IAccountRepository _accountRepository;
-        private readonly IBus _bus;
+        private readonly ITransferLogApplicationService _bus;
 
-        public AccountAppService(IAccountRepository accountRepository, IBus bus)
+        public AccountAppService(IAccountRepository accountRepository, ITransferLogApplicationService bus)
         {
             _accountRepository = accountRepository;
             _bus = bus;

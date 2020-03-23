@@ -18,23 +18,20 @@ using AbpMicroRabbit.Banking.Application.Contracts;
 
 namespace BankingService
 {
-    [DependsOn( typeof(BankingApplicationContractsModule),
-                typeof(AbpAspNetCoreMvcModule),
-                typeof(BankingApplicationModule),
-                typeof(BankingEntityFrameworkModule),
-                typeof(AbpAutofacModule),
-                typeof(AbpEntityFrameworkCoreMySQLModule),
-                typeof(AbpEventBusRabbitMqModule),
-                typeof(AbpMicroRabbitSharedInfraBusModule)
+    [DependsOn(typeof(AbpAspNetCoreMvcModule),
+               typeof(BankingApplicationContractsModule),
+               typeof(BankingApplicationModule),
+               typeof(BankingEntityFrameworkModule),
+               typeof(AbpAutofacModule),
+               typeof(AbpEntityFrameworkCoreMySQLModule),
+               typeof(AbpEventBusRabbitMqModule),
+               typeof(AbpMicroRabbitSharedInfraBusModule)
                )]
     public class BankingServiceModule : AbpModule
     {
 
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
-            //Configurações
-            var configuration = context.Services.GetConfiguration();
-
             ConfigurarControllersGeradosAutomaticamente();
             ConfigurarProviderDoEfCore();
             ConfigurarSwagger(context);
@@ -43,14 +40,14 @@ namespace BankingService
 
         private void ConfigurarRabbitMQEventBus(ServiceConfigurationContext context)
         {
-            context.Services.AddSingleton<IBus, RabbitMQBus>();
+            context.Services.AddSingleton<ITransferLogApplicationService, RabbitMQBus>();
             context.Services.AddMediatR(typeof(BankingDomainModule).GetTypeInfo().Assembly);
 
-            //Configure<AbpRabbitMqEventBusOptions>(options =>
-            //{
-            //    options.ClientName = "TestApp1";
-            //    options.ExchangeName = "TestMessages";
-            //});
+            Configure<AbpRabbitMqEventBusOptions>(options =>
+            {
+                options.ClientName = "TestApp1";
+                options.ExchangeName = "TestMessages";
+            });
         }
 
         private void ConfigurarSwagger(ServiceConfigurationContext context)

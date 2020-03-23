@@ -18,6 +18,7 @@ namespace AbpMicroRabbit.Transfer.EntityFrameworkCore.Repositories
         public void Add(TransferLog transferLog)
         {
             _transferDbContext.TransferLogs.Add(transferLog);
+            _transferDbContext.SaveChanges();
         }
 
         public IEnumerable<TransferLog> GetTransfersLog()

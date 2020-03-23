@@ -45,4 +45,7 @@
   <ItemGroup>
     <Content Remove="TransferLogService\Properties\launchSettings.json" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="**/*" />
+  </ItemGroup>
 </Project>

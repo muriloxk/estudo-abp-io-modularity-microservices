@@ -1,5 +1,4 @@
-﻿using System;
-using AbpMicroRabbit.Banking.Domain.Entities;
+﻿using AbpMicroRabbit.Banking.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Volo.Abp.Data;
 using Volo.Abp.DependencyInjection;

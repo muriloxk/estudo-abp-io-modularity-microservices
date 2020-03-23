@@ -11,10 +11,10 @@ namespace AbpMicroRabbit.Banking.Domain.Handlers
 {
     public class TransferCommandHandler : IRequestHandler<CreateTransferCommand, bool>
     {
-        private readonly IBus _bus;
+        private readonly ITransferLogApplicationService _bus;
         private readonly IObjectMapper _objectMapper;
 
-        public TransferCommandHandler(IBus bus, IObjectMapper objectMapper)
+        public TransferCommandHandler(ITransferLogApplicationService bus, IObjectMapper objectMapper)
         {
             _bus = bus;
             _objectMapper = objectMapper;

@@ -4,7 +4,7 @@ using AbpMicroRabbit.Banking.Domain.Entities;
 
 namespace AbpMicroRabbit.Transfer.Domain.Repositories
 {
-    public interface ITransferRepository
+    public interface ITransferRepository 
     {
         void Add(TransferLog transferLog);
         IEnumerable<TransferLog> GetTransfersLog();

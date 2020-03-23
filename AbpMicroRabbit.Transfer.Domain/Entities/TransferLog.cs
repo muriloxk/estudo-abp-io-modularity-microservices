@@ -5,7 +5,7 @@ namespace AbpMicroRabbit.Banking.Domain.Entities
 {
     public class TransferLog : AggregateRoot<Guid>
     {
-        public TransferLog(string fromAccount, string toAccount, decimal transferAmount)
+        public TransferLog(string fromAccount, string toAccount, decimal transferAmount) : base(Guid.NewGuid())
         {
             FromAccount = fromAccount;
             ToAccount = toAccount;

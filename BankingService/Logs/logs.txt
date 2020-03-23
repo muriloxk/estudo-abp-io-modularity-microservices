@@ -66,3 +66,629 @@ FROM `Accounts` AS `a`
 2020-03-22 16:02:14.698 -03:00 [INF] Executed action AbpMicroRabbit.Banking.Application.Services.AccountAppService.GetList (AbpMicroRabbit.Banking.Application) in 2477.2145ms
 2020-03-22 16:02:14.702 -03:00 [INF] Executed endpoint 'AbpMicroRabbit.Banking.Application.Services.AccountAppService.GetList (AbpMicroRabbit.Banking.Application)'
 2020-03-22 16:02:14.708 -03:00 [INF] Request finished in 2597.4035ms 200 application/json; charset=utf-8
+2020-03-23 15:53:10.770 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-03-23 15:53:11.119 -03:00 [INF] Loaded ABP modules:
+2020-03-23 15:53:11.122 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-03-23 15:53:11.124 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-03-23 15:53:11.127 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-03-23 15:53:11.130 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-03-23 15:53:11.133 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-03-23 15:53:11.136 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-03-23 15:53:11.139 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-03-23 15:53:11.142 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-03-23 15:53:11.145 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-03-23 15:53:11.147 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-03-23 15:53:11.150 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-03-23 15:53:11.152 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-03-23 15:53:11.155 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-03-23 15:53:11.159 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-03-23 15:53:11.162 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-03-23 15:53:11.165 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-03-23 15:53:11.167 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-03-23 15:53:11.170 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-03-23 15:53:11.173 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-03-23 15:53:11.177 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-03-23 15:53:11.180 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-03-23 15:53:11.183 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-03-23 15:53:11.185 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-03-23 15:53:11.188 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-03-23 15:53:11.190 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-03-23 15:53:11.193 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-03-23 15:53:11.196 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-03-23 15:53:11.199 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-03-23 15:53:11.202 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-03-23 15:53:11.204 -03:00 [INF] - AbpMicroRabbit.Banking.Application.Contracts.BankingApplicationContractsModule
+2020-03-23 15:53:11.207 -03:00 [INF] - AbpMicroRabbit.Shared.Domain.AbpMicroRabbitSharedDomainModule
+2020-03-23 15:53:11.210 -03:00 [INF] - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2020-03-23 15:53:11.214 -03:00 [INF] - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2020-03-23 15:53:11.217 -03:00 [INF] - AbpMicroRabbit.Shared.Infra.Bus.AbpMicroRabbitSharedInfraBusModule
+2020-03-23 15:53:11.220 -03:00 [INF] - AbpMicroRabbit.Banking.Domain.BankingDomainModule
+2020-03-23 15:53:11.222 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-03-23 15:53:11.225 -03:00 [INF] - AbpMicroRabbit.Banking.Application.BankingApplicationModule
+2020-03-23 15:53:11.229 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-03-23 15:53:11.232 -03:00 [INF] - AbpMicroRabbit.Banking.EntityFrameworkCore.BankingEntityFrameworkModule
+2020-03-23 15:53:11.235 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-03-23 15:53:11.238 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-03-23 15:53:11.240 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-03-23 15:53:11.242 -03:00 [INF] - BankingService.BankingServiceModule
+2020-03-23 15:53:13.041 -03:00 [INF] Initialized all ABP modules.
+2020-03-23 15:53:13.133 -03:00 [INF] Now listening on: http://localhost:5000
+2020-03-23 15:53:13.139 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-03-23 15:53:13.142 -03:00 [INF] Hosting environment: Development
+2020-03-23 15:53:13.145 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/BankingService
+2020-03-23 15:53:13.222 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2020-03-23 15:53:13.231 -03:00 [WRN] Failed to determine the https port for redirect.
+2020-03-23 15:53:13.310 -03:00 [INF] Request finished in 90.769ms 404 
+2020-03-23 15:53:14.417 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2020-03-23 15:53:14.423 -03:00 [INF] Request finished in 6.4193ms 404 
+2020-03-23 16:07:15.807 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-03-23 16:07:16.109 -03:00 [INF] Loaded ABP modules:
+2020-03-23 16:07:16.113 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-03-23 16:07:16.116 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-03-23 16:07:16.120 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-03-23 16:07:16.123 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-03-23 16:07:16.128 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-03-23 16:07:16.130 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-03-23 16:07:16.133 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-03-23 16:07:16.136 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-03-23 16:07:16.139 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-03-23 16:07:16.142 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-03-23 16:07:16.145 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-03-23 16:07:16.147 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-03-23 16:07:16.150 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-03-23 16:07:16.153 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-03-23 16:07:16.156 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-03-23 16:07:16.159 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-03-23 16:07:16.163 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-03-23 16:07:16.167 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-03-23 16:07:16.170 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-03-23 16:07:16.173 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-03-23 16:07:16.177 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-03-23 16:07:16.181 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-03-23 16:07:16.184 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-03-23 16:07:16.187 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-03-23 16:07:16.190 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-03-23 16:07:16.194 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-03-23 16:07:16.197 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-03-23 16:07:16.200 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-03-23 16:07:16.203 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-03-23 16:07:16.206 -03:00 [INF] - AbpMicroRabbit.Banking.Application.Contracts.BankingApplicationContractsModule
+2020-03-23 16:07:16.209 -03:00 [INF] - AbpMicroRabbit.Shared.Domain.AbpMicroRabbitSharedDomainModule
+2020-03-23 16:07:16.212 -03:00 [INF] - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2020-03-23 16:07:16.214 -03:00 [INF] - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2020-03-23 16:07:16.217 -03:00 [INF] - AbpMicroRabbit.Shared.Infra.Bus.AbpMicroRabbitSharedInfraBusModule
+2020-03-23 16:07:16.221 -03:00 [INF] - AbpMicroRabbit.Banking.Domain.BankingDomainModule
+2020-03-23 16:07:16.224 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-03-23 16:07:16.227 -03:00 [INF] - AbpMicroRabbit.Banking.Application.BankingApplicationModule
+2020-03-23 16:07:16.230 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-03-23 16:07:16.233 -03:00 [INF] - AbpMicroRabbit.Banking.EntityFrameworkCore.BankingEntityFrameworkModule
+2020-03-23 16:07:16.237 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-03-23 16:07:16.240 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-03-23 16:07:16.244 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-03-23 16:07:16.247 -03:00 [INF] - BankingService.BankingServiceModule
+2020-03-23 16:07:17.756 -03:00 [INF] Initialized all ABP modules.
+2020-03-23 16:07:17.851 -03:00 [INF] Now listening on: http://localhost:5000
+2020-03-23 16:07:17.854 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-03-23 16:07:17.857 -03:00 [INF] Hosting environment: Development
+2020-03-23 16:07:17.862 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/BankingService
+2020-03-23 16:07:17.916 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2020-03-23 16:07:17.926 -03:00 [WRN] Failed to determine the https port for redirect.
+2020-03-23 16:07:18.016 -03:00 [INF] Request finished in 102.9498ms 404 
+2020-03-23 16:07:19.634 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2020-03-23 16:07:19.638 -03:00 [INF] Request finished in 4.2824ms 404 
+2020-03-23 16:07:57.905 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-03-23 16:07:58.141 -03:00 [INF] Loaded ABP modules:
+2020-03-23 16:07:58.144 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-03-23 16:07:58.147 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-03-23 16:07:58.149 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-03-23 16:07:58.153 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-03-23 16:07:58.156 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-03-23 16:07:58.159 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-03-23 16:07:58.161 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-03-23 16:07:58.164 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-03-23 16:07:58.167 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-03-23 16:07:58.170 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-03-23 16:07:58.173 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-03-23 16:07:58.175 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-03-23 16:07:58.178 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-03-23 16:07:58.181 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-03-23 16:07:58.184 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-03-23 16:07:58.187 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-03-23 16:07:58.189 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-03-23 16:07:58.193 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-03-23 16:07:58.195 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-03-23 16:07:58.198 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-03-23 16:07:58.202 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-03-23 16:07:58.205 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-03-23 16:07:58.208 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-03-23 16:07:58.211 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-03-23 16:07:58.213 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-03-23 16:07:58.216 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-03-23 16:07:58.219 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-03-23 16:07:58.221 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-03-23 16:07:58.224 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-03-23 16:07:58.226 -03:00 [INF] - AbpMicroRabbit.Banking.Application.Contracts.BankingApplicationContractsModule
+2020-03-23 16:07:58.229 -03:00 [INF] - AbpMicroRabbit.Shared.Domain.AbpMicroRabbitSharedDomainModule
+2020-03-23 16:07:58.233 -03:00 [INF] - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2020-03-23 16:07:58.235 -03:00 [INF] - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2020-03-23 16:07:58.238 -03:00 [INF] - AbpMicroRabbit.Shared.Infra.Bus.AbpMicroRabbitSharedInfraBusModule
+2020-03-23 16:07:58.241 -03:00 [INF] - AbpMicroRabbit.Banking.Domain.BankingDomainModule
+2020-03-23 16:07:58.244 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-03-23 16:07:58.246 -03:00 [INF] - AbpMicroRabbit.Banking.Application.BankingApplicationModule
+2020-03-23 16:07:58.249 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-03-23 16:07:58.252 -03:00 [INF] - AbpMicroRabbit.Banking.EntityFrameworkCore.BankingEntityFrameworkModule
+2020-03-23 16:07:58.255 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-03-23 16:07:58.258 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-03-23 16:07:58.261 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-03-23 16:07:58.265 -03:00 [INF] - BankingService.BankingServiceModule
+2020-03-23 16:07:59.464 -03:00 [INF] Initialized all ABP modules.
+2020-03-23 16:07:59.540 -03:00 [INF] Now listening on: http://localhost:5000
+2020-03-23 16:07:59.543 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-03-23 16:07:59.546 -03:00 [INF] Hosting environment: Development
+2020-03-23 16:07:59.549 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/BankingService
+2020-03-23 16:07:59.608 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-03-23 16:07:59.617 -03:00 [WRN] Failed to determine the https port for redirect.
+2020-03-23 16:07:59.866 -03:00 [INF] Request finished in 259.9933ms 200 text/html;charset=utf-8
+2020-03-23 16:08:01.040 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-03-23 16:08:01.050 -03:00 [INF] Request finished in 6.4502ms 200 text/html;charset=utf-8
+2020-03-23 16:08:01.538 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-03-23 16:08:01.538 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-03-23 16:08:01.593 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-03-23 16:08:01.955 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-03-23 16:08:01.964 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-03-23 16:08:01.974 -03:00 [INF] Request finished in 380.8139ms 200 text/css
+2020-03-23 16:08:02.003 -03:00 [INF] Request finished in 465.0935ms 200 application/javascript
+2020-03-23 16:08:02.016 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-03-23 16:08:02.018 -03:00 [INF] Request finished in 480.9684ms 200 application/javascript
+2020-03-23 16:08:02.300 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-03-23 16:08:02.493 -03:00 [INF] Request finished in 193.0666ms 200 application/json;charset=utf-8
+2020-03-23 16:09:30.884 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-03-23 16:09:31.253 -03:00 [INF] Loaded ABP modules:
+2020-03-23 16:09:31.257 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-03-23 16:09:31.260 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-03-23 16:09:31.265 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-03-23 16:09:31.269 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-03-23 16:09:31.273 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-03-23 16:09:31.277 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-03-23 16:09:31.280 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-03-23 16:09:31.286 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-03-23 16:09:31.289 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-03-23 16:09:31.295 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-03-23 16:09:31.302 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-03-23 16:09:31.307 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-03-23 16:09:31.310 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-03-23 16:09:31.314 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-03-23 16:09:31.319 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-03-23 16:09:31.322 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-03-23 16:09:31.327 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-03-23 16:09:31.331 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-03-23 16:09:31.334 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-03-23 16:09:31.338 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-03-23 16:09:31.343 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-03-23 16:09:31.347 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-03-23 16:09:31.353 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-03-23 16:09:31.358 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-03-23 16:09:31.362 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-03-23 16:09:31.366 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-03-23 16:09:31.370 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-03-23 16:09:31.374 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-03-23 16:09:31.378 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-03-23 16:09:31.383 -03:00 [INF] - AbpMicroRabbit.Banking.Application.Contracts.BankingApplicationContractsModule
+2020-03-23 16:09:31.388 -03:00 [INF] - AbpMicroRabbit.Shared.Domain.AbpMicroRabbitSharedDomainModule
+2020-03-23 16:09:31.395 -03:00 [INF] - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2020-03-23 16:09:31.399 -03:00 [INF] - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2020-03-23 16:09:31.405 -03:00 [INF] - AbpMicroRabbit.Shared.Infra.Bus.AbpMicroRabbitSharedInfraBusModule
+2020-03-23 16:09:31.413 -03:00 [INF] - AbpMicroRabbit.Banking.Domain.BankingDomainModule
+2020-03-23 16:09:31.419 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-03-23 16:09:31.423 -03:00 [INF] - AbpMicroRabbit.Banking.Application.BankingApplicationModule
+2020-03-23 16:09:31.429 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-03-23 16:09:31.436 -03:00 [INF] - AbpMicroRabbit.Banking.EntityFrameworkCore.BankingEntityFrameworkModule
+2020-03-23 16:09:31.440 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-03-23 16:09:31.446 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-03-23 16:09:31.473 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-03-23 16:09:31.479 -03:00 [INF] - BankingService.BankingServiceModule
+2020-03-23 16:09:33.982 -03:00 [INF] Initialized all ABP modules.
+2020-03-23 16:09:34.085 -03:00 [INF] Now listening on: http://localhost:5000
+2020-03-23 16:09:34.088 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-03-23 16:09:34.091 -03:00 [INF] Hosting environment: Development
+2020-03-23 16:09:34.096 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/BankingService
+2020-03-23 16:09:34.152 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-03-23 16:09:34.161 -03:00 [WRN] Failed to determine the https port for redirect.
+2020-03-23 16:09:34.280 -03:00 [INF] Request finished in 130.5436ms 200 text/html;charset=utf-8
+2020-03-23 16:09:35.381 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-03-23 16:09:35.392 -03:00 [INF] Request finished in 11.3678ms 200 text/html;charset=utf-8
+2020-03-23 16:09:36.276 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-03-23 16:09:36.384 -03:00 [INF] Request finished in 108.9314ms 200 application/json;charset=utf-8
+2020-03-23 16:11:56.672 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/app/account/transfer application/json-patch+json 69
+2020-03-23 16:11:56.679 -03:00 [INF] Executing endpoint 'AbpMicroRabbit.Banking.Application.Services.AccountAppService.Transfer (AbpMicroRabbit.Banking.Application)'
+2020-03-23 16:11:56.800 -03:00 [INF] Route matched with {action = "Transfer", controller = "Account", area = ""}. Executing controller action with signature System.Threading.Tasks.Task Transfer(AbpMicroRabbit.Banking.Application.Contracts.Dto.AccountTransferDto) on controller AbpMicroRabbit.Banking.Application.Services.AccountAppService (AbpMicroRabbit.Banking.Application).
+2020-03-23 16:12:17.188 -03:00 [INF] Executed action AbpMicroRabbit.Banking.Application.Services.AccountAppService.Transfer (AbpMicroRabbit.Banking.Application) in 20379.5141ms
+2020-03-23 16:12:17.193 -03:00 [INF] Executed endpoint 'AbpMicroRabbit.Banking.Application.Services.AccountAppService.Transfer (AbpMicroRabbit.Banking.Application)'
+2020-03-23 16:12:17.197 -03:00 [INF] Request finished in 20524.6214ms 204 
+2020-03-23 16:13:29.167 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/app/account/transfer application/json-patch+json 69
+2020-03-23 16:13:29.170 -03:00 [INF] Executing endpoint 'AbpMicroRabbit.Banking.Application.Services.AccountAppService.Transfer (AbpMicroRabbit.Banking.Application)'
+2020-03-23 16:13:29.176 -03:00 [INF] Route matched with {action = "Transfer", controller = "Account", area = ""}. Executing controller action with signature System.Threading.Tasks.Task Transfer(AbpMicroRabbit.Banking.Application.Contracts.Dto.AccountTransferDto) on controller AbpMicroRabbit.Banking.Application.Services.AccountAppService (AbpMicroRabbit.Banking.Application).
+2020-03-23 16:13:37.250 -03:00 [INF] Executed action AbpMicroRabbit.Banking.Application.Services.AccountAppService.Transfer (AbpMicroRabbit.Banking.Application) in 8071.5191ms
+2020-03-23 16:13:37.254 -03:00 [INF] Executed endpoint 'AbpMicroRabbit.Banking.Application.Services.AccountAppService.Transfer (AbpMicroRabbit.Banking.Application)'
+2020-03-23 16:13:37.257 -03:00 [INF] Request finished in 8090.5005ms 204 
+2020-03-23 16:22:59.911 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-03-23 16:23:00.598 -03:00 [INF] Loaded ABP modules:
+2020-03-23 16:23:00.601 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-03-23 16:23:00.604 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-03-23 16:23:00.608 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-03-23 16:23:00.612 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-03-23 16:23:00.614 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-03-23 16:23:00.618 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-03-23 16:23:00.625 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-03-23 16:23:00.631 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-03-23 16:23:00.636 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-03-23 16:23:00.639 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-03-23 16:23:00.652 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-03-23 16:23:00.656 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-03-23 16:23:00.660 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-03-23 16:23:00.665 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-03-23 16:23:00.669 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-03-23 16:23:00.672 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-03-23 16:23:00.676 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-03-23 16:23:00.679 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-03-23 16:23:00.682 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-03-23 16:23:00.685 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-03-23 16:23:00.688 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-03-23 16:23:00.691 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-03-23 16:23:00.695 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-03-23 16:23:00.698 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-03-23 16:23:00.702 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-03-23 16:23:00.706 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-03-23 16:23:00.710 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-03-23 16:23:00.713 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-03-23 16:23:00.716 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-03-23 16:23:00.724 -03:00 [INF] - AbpMicroRabbit.Banking.Application.Contracts.BankingApplicationContractsModule
+2020-03-23 16:23:00.728 -03:00 [INF] - AbpMicroRabbit.Shared.Domain.AbpMicroRabbitSharedDomainModule
+2020-03-23 16:23:00.733 -03:00 [INF] - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2020-03-23 16:23:00.737 -03:00 [INF] - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2020-03-23 16:23:00.741 -03:00 [INF] - AbpMicroRabbit.Shared.Infra.Bus.AbpMicroRabbitSharedInfraBusModule
+2020-03-23 16:23:00.745 -03:00 [INF] - AbpMicroRabbit.Banking.Domain.BankingDomainModule
+2020-03-23 16:23:00.750 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-03-23 16:23:00.755 -03:00 [INF] - AbpMicroRabbit.Banking.Application.BankingApplicationModule
+2020-03-23 16:23:00.760 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-03-23 16:23:00.766 -03:00 [INF] - AbpMicroRabbit.Banking.EntityFrameworkCore.BankingEntityFrameworkModule
+2020-03-23 16:23:00.777 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-03-23 16:23:00.781 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-03-23 16:23:00.785 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-03-23 16:23:00.790 -03:00 [INF] - BankingService.BankingServiceModule
+2020-03-23 16:23:05.399 -03:00 [INF] Initialized all ABP modules.
+2020-03-23 16:23:05.912 -03:00 [INF] Now listening on: http://localhost:5000
+2020-03-23 16:23:05.915 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-03-23 16:23:05.920 -03:00 [INF] Hosting environment: Development
+2020-03-23 16:23:05.923 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/BankingService
+2020-03-23 16:23:05.980 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-03-23 16:23:05.989 -03:00 [WRN] Failed to determine the https port for redirect.
+2020-03-23 16:23:06.191 -03:00 [INF] Request finished in 211.9154ms 200 text/html;charset=utf-8
+2020-03-23 16:23:07.351 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-03-23 16:23:07.364 -03:00 [INF] Request finished in 13.5256ms 200 text/html;charset=utf-8
+2020-03-23 16:23:09.965 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-03-23 16:23:10.066 -03:00 [INF] Request finished in 100.9437ms 200 application/json;charset=utf-8
+2020-03-23 16:30:15.517 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-03-23 16:30:15.855 -03:00 [INF] Loaded ABP modules:
+2020-03-23 16:30:15.860 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-03-23 16:30:15.863 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-03-23 16:30:15.866 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-03-23 16:30:15.869 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-03-23 16:30:15.873 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-03-23 16:30:15.876 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-03-23 16:30:15.879 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-03-23 16:30:15.882 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-03-23 16:30:15.886 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-03-23 16:30:15.889 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-03-23 16:30:15.892 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-03-23 16:30:15.895 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-03-23 16:30:15.899 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-03-23 16:30:15.902 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-03-23 16:30:15.905 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-03-23 16:30:15.909 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-03-23 16:30:15.912 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-03-23 16:30:15.916 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-03-23 16:30:15.919 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-03-23 16:30:15.922 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-03-23 16:30:15.925 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-03-23 16:30:15.928 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-03-23 16:30:15.931 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-03-23 16:30:15.935 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-03-23 16:30:15.938 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-03-23 16:30:15.941 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-03-23 16:30:15.944 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-03-23 16:30:15.947 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-03-23 16:30:15.950 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-03-23 16:30:15.953 -03:00 [INF] - AbpMicroRabbit.Banking.Application.Contracts.BankingApplicationContractsModule
+2020-03-23 16:30:15.956 -03:00 [INF] - AbpMicroRabbit.Shared.Domain.AbpMicroRabbitSharedDomainModule
+2020-03-23 16:30:15.959 -03:00 [INF] - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2020-03-23 16:30:15.963 -03:00 [INF] - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2020-03-23 16:30:15.968 -03:00 [INF] - AbpMicroRabbit.Shared.Infra.Bus.AbpMicroRabbitSharedInfraBusModule
+2020-03-23 16:30:15.972 -03:00 [INF] - AbpMicroRabbit.Banking.Domain.BankingDomainModule
+2020-03-23 16:30:15.976 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-03-23 16:30:15.980 -03:00 [INF] - AbpMicroRabbit.Banking.Application.BankingApplicationModule
+2020-03-23 16:30:15.983 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-03-23 16:30:15.987 -03:00 [INF] - AbpMicroRabbit.Banking.EntityFrameworkCore.BankingEntityFrameworkModule
+2020-03-23 16:30:15.990 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-03-23 16:30:15.993 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-03-23 16:30:15.997 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-03-23 16:30:16.000 -03:00 [INF] - BankingService.BankingServiceModule
+2020-03-23 16:30:17.920 -03:00 [INF] Initialized all ABP modules.
+2020-03-23 16:30:18.008 -03:00 [INF] Now listening on: http://localhost:5000
+2020-03-23 16:30:18.011 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-03-23 16:30:18.014 -03:00 [INF] Hosting environment: Development
+2020-03-23 16:30:18.016 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/BankingService
+2020-03-23 16:30:18.078 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-03-23 16:30:18.086 -03:00 [WRN] Failed to determine the https port for redirect.
+2020-03-23 16:30:18.202 -03:00 [INF] Request finished in 127.4722ms 200 text/html;charset=utf-8
+2020-03-23 16:30:19.817 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-03-23 16:30:19.830 -03:00 [INF] Request finished in 14.0727ms 200 text/html;charset=utf-8
+2020-03-23 16:30:20.280 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-03-23 16:30:20.380 -03:00 [INF] Request finished in 100.2469ms 200 application/json;charset=utf-8
+2020-03-23 16:32:03.258 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/app/account/transfer application/json-patch+json 65
+2020-03-23 16:32:03.264 -03:00 [INF] Executing endpoint 'AbpMicroRabbit.Banking.Application.Services.AccountAppService.Transfer (AbpMicroRabbit.Banking.Application)'
+2020-03-23 16:32:03.382 -03:00 [INF] Route matched with {action = "Transfer", controller = "Account", area = ""}. Executing controller action with signature System.Threading.Tasks.Task Transfer(AbpMicroRabbit.Banking.Application.Contracts.Dto.AccountTransferDto) on controller AbpMicroRabbit.Banking.Application.Services.AccountAppService (AbpMicroRabbit.Banking.Application).
+2020-03-23 16:32:50.784 -03:00 [INF] Executed action AbpMicroRabbit.Banking.Application.Services.AccountAppService.Transfer (AbpMicroRabbit.Banking.Application) in 47393.9657ms
+2020-03-23 16:32:50.789 -03:00 [INF] Executed endpoint 'AbpMicroRabbit.Banking.Application.Services.AccountAppService.Transfer (AbpMicroRabbit.Banking.Application)'
+2020-03-23 16:32:50.793 -03:00 [INF] Request finished in 47535.1022ms 204 
+2020-03-23 16:36:18.615 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-03-23 16:36:18.961 -03:00 [INF] Loaded ABP modules:
+2020-03-23 16:36:18.964 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-03-23 16:36:18.967 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-03-23 16:36:18.970 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-03-23 16:36:18.973 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-03-23 16:36:18.977 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-03-23 16:36:18.980 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-03-23 16:36:18.983 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-03-23 16:36:18.986 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-03-23 16:36:18.989 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-03-23 16:36:18.992 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-03-23 16:36:18.995 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-03-23 16:36:18.999 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-03-23 16:36:19.002 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-03-23 16:36:19.006 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-03-23 16:36:19.010 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-03-23 16:36:19.014 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-03-23 16:36:19.017 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-03-23 16:36:19.020 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-03-23 16:36:19.023 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-03-23 16:36:19.027 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-03-23 16:36:19.031 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-03-23 16:36:19.034 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-03-23 16:36:19.038 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-03-23 16:36:19.041 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-03-23 16:36:19.044 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-03-23 16:36:19.048 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-03-23 16:36:19.050 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-03-23 16:36:19.053 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-03-23 16:36:19.056 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-03-23 16:36:19.067 -03:00 [INF] - AbpMicroRabbit.Banking.Application.Contracts.BankingApplicationContractsModule
+2020-03-23 16:36:19.071 -03:00 [INF] - AbpMicroRabbit.Shared.Domain.AbpMicroRabbitSharedDomainModule
+2020-03-23 16:36:19.075 -03:00 [INF] - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2020-03-23 16:36:19.078 -03:00 [INF] - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2020-03-23 16:36:19.081 -03:00 [INF] - AbpMicroRabbit.Shared.Infra.Bus.AbpMicroRabbitSharedInfraBusModule
+2020-03-23 16:36:19.085 -03:00 [INF] - AbpMicroRabbit.Banking.Domain.BankingDomainModule
+2020-03-23 16:36:19.088 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-03-23 16:36:19.091 -03:00 [INF] - AbpMicroRabbit.Banking.Application.BankingApplicationModule
+2020-03-23 16:36:19.094 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-03-23 16:36:19.098 -03:00 [INF] - AbpMicroRabbit.Banking.EntityFrameworkCore.BankingEntityFrameworkModule
+2020-03-23 16:36:19.101 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-03-23 16:36:19.105 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-03-23 16:36:19.108 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-03-23 16:36:19.111 -03:00 [INF] - BankingService.BankingServiceModule
+2020-03-23 16:36:20.851 -03:00 [INF] Initialized all ABP modules.
+2020-03-23 16:36:20.942 -03:00 [INF] Now listening on: http://localhost:5000
+2020-03-23 16:36:20.945 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-03-23 16:36:20.947 -03:00 [INF] Hosting environment: Development
+2020-03-23 16:36:20.950 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/BankingService
+2020-03-23 16:36:21.025 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-03-23 16:36:21.034 -03:00 [WRN] Failed to determine the https port for redirect.
+2020-03-23 16:36:21.206 -03:00 [INF] Request finished in 181.8851ms 200 text/html;charset=utf-8
+2020-03-23 16:36:22.341 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-03-23 16:36:22.359 -03:00 [INF] Request finished in 18.471ms 200 text/html;charset=utf-8
+2020-03-23 16:36:23.281 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-03-23 16:36:23.390 -03:00 [INF] Request finished in 109.1746ms 200 application/json;charset=utf-8
+2020-03-23 16:42:14.912 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/app/account/transfer application/json-patch+json 65
+2020-03-23 16:42:14.932 -03:00 [INF] Executing endpoint 'AbpMicroRabbit.Banking.Application.Services.AccountAppService.Transfer (AbpMicroRabbit.Banking.Application)'
+2020-03-23 16:42:15.315 -03:00 [INF] Route matched with {action = "Transfer", controller = "Account", area = ""}. Executing controller action with signature System.Threading.Tasks.Task Transfer(AbpMicroRabbit.Banking.Application.Contracts.Dto.AccountTransferDto) on controller AbpMicroRabbit.Banking.Application.Services.AccountAppService (AbpMicroRabbit.Banking.Application).
+2020-03-23 16:44:11.938 -03:00 [INF] Executed action AbpMicroRabbit.Banking.Application.Services.AccountAppService.Transfer (AbpMicroRabbit.Banking.Application) in 116614.2974ms
+2020-03-23 16:44:11.980 -03:00 [INF] Executed endpoint 'AbpMicroRabbit.Banking.Application.Services.AccountAppService.Transfer (AbpMicroRabbit.Banking.Application)'
+2020-03-23 16:44:11.983 -03:00 [INF] Request finished in 117072.0303ms 204 
+2020-03-23 16:48:28.577 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-03-23 16:48:29.627 -03:00 [INF] Loaded ABP modules:
+2020-03-23 16:48:29.633 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-03-23 16:48:29.645 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-03-23 16:48:29.650 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-03-23 16:48:29.659 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-03-23 16:48:29.665 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-03-23 16:48:29.672 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-03-23 16:48:29.676 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-03-23 16:48:29.680 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-03-23 16:48:29.684 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-03-23 16:48:29.689 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-03-23 16:48:29.693 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-03-23 16:48:29.697 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-03-23 16:48:29.701 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-03-23 16:48:29.709 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-03-23 16:48:29.712 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-03-23 16:48:29.718 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-03-23 16:48:29.723 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-03-23 16:48:29.733 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-03-23 16:48:29.739 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-03-23 16:48:29.743 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-03-23 16:48:29.748 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-03-23 16:48:29.752 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-03-23 16:48:29.761 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-03-23 16:48:29.765 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-03-23 16:48:29.768 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-03-23 16:48:29.774 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-03-23 16:48:29.779 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-03-23 16:48:29.791 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-03-23 16:48:29.799 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-03-23 16:48:29.810 -03:00 [INF] - AbpMicroRabbit.Banking.Application.Contracts.BankingApplicationContractsModule
+2020-03-23 16:48:29.818 -03:00 [INF] - AbpMicroRabbit.Shared.Domain.AbpMicroRabbitSharedDomainModule
+2020-03-23 16:48:29.831 -03:00 [INF] - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2020-03-23 16:48:29.846 -03:00 [INF] - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2020-03-23 16:48:29.852 -03:00 [INF] - AbpMicroRabbit.Shared.Infra.Bus.AbpMicroRabbitSharedInfraBusModule
+2020-03-23 16:48:29.863 -03:00 [INF] - AbpMicroRabbit.Banking.Domain.BankingDomainModule
+2020-03-23 16:48:29.879 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-03-23 16:48:29.890 -03:00 [INF] - AbpMicroRabbit.Banking.Application.BankingApplicationModule
+2020-03-23 16:48:29.905 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-03-23 16:48:29.912 -03:00 [INF] - AbpMicroRabbit.Banking.EntityFrameworkCore.BankingEntityFrameworkModule
+2020-03-23 16:48:29.924 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-03-23 16:48:29.928 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-03-23 16:48:29.932 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-03-23 16:48:29.940 -03:00 [INF] - BankingService.BankingServiceModule
+2020-03-23 16:48:32.610 -03:00 [INF] Initialized all ABP modules.
+2020-03-23 16:48:32.759 -03:00 [INF] Now listening on: http://localhost:5000
+2020-03-23 16:48:32.764 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-03-23 16:48:32.769 -03:00 [INF] Hosting environment: Development
+2020-03-23 16:48:32.773 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/BankingService
+2020-03-23 16:48:32.827 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-03-23 16:48:32.838 -03:00 [WRN] Failed to determine the https port for redirect.
+2020-03-23 16:48:32.972 -03:00 [INF] Request finished in 148.3968ms 200 text/html;charset=utf-8
+2020-03-23 16:48:34.097 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-03-23 16:48:34.105 -03:00 [INF] Request finished in 8.1778ms 200 text/html;charset=utf-8
+2020-03-23 16:48:34.182 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+2020-03-23 16:48:34.204 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+2020-03-23 16:48:34.237 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+2020-03-23 16:48:34.328 -03:00 [INF] The file /swagger-ui.css was not modified
+2020-03-23 16:48:34.328 -03:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-03-23 16:48:34.335 -03:00 [INF] Request finished in 98.2046ms 304 application/javascript
+2020-03-23 16:48:34.335 -03:00 [INF] Request finished in 131.4538ms 304 text/css
+2020-03-23 16:48:34.358 -03:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-03-23 16:48:34.363 -03:00 [INF] Request finished in 180.7758ms 304 application/javascript
+2020-03-23 16:48:34.820 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-03-23 16:48:34.963 -03:00 [INF] Request finished in 142.8737ms 200 application/json;charset=utf-8
+2020-03-23 16:50:44.510 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/app/account/transfer application/json-patch+json 65
+2020-03-23 16:50:44.523 -03:00 [INF] Executing endpoint 'AbpMicroRabbit.Banking.Application.Services.AccountAppService.Transfer (AbpMicroRabbit.Banking.Application)'
+2020-03-23 16:50:44.629 -03:00 [INF] Route matched with {action = "Transfer", controller = "Account", area = ""}. Executing controller action with signature System.Threading.Tasks.Task Transfer(AbpMicroRabbit.Banking.Application.Contracts.Dto.AccountTransferDto) on controller AbpMicroRabbit.Banking.Application.Services.AccountAppService (AbpMicroRabbit.Banking.Application).
+2020-03-23 16:51:01.766 -03:00 [INF] Executed action AbpMicroRabbit.Banking.Application.Services.AccountAppService.Transfer (AbpMicroRabbit.Banking.Application) in 17125.2259ms
+2020-03-23 16:51:01.780 -03:00 [INF] Executed endpoint 'AbpMicroRabbit.Banking.Application.Services.AccountAppService.Transfer (AbpMicroRabbit.Banking.Application)'
+2020-03-23 16:51:01.801 -03:00 [INF] Request finished in 17291.4868ms 204 
+2020-03-23 16:53:20.882 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-03-23 16:53:21.265 -03:00 [INF] Loaded ABP modules:
+2020-03-23 16:53:21.269 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-03-23 16:53:21.273 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-03-23 16:53:21.276 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-03-23 16:53:21.279 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-03-23 16:53:21.284 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-03-23 16:53:21.287 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-03-23 16:53:21.291 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-03-23 16:53:21.294 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-03-23 16:53:21.298 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-03-23 16:53:21.301 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-03-23 16:53:21.304 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-03-23 16:53:21.307 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-03-23 16:53:21.311 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-03-23 16:53:21.314 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-03-23 16:53:21.317 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-03-23 16:53:21.321 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-03-23 16:53:21.325 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-03-23 16:53:21.328 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-03-23 16:53:21.331 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-03-23 16:53:21.334 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-03-23 16:53:21.337 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-03-23 16:53:21.340 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-03-23 16:53:21.344 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-03-23 16:53:21.347 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-03-23 16:53:21.350 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-03-23 16:53:21.353 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-03-23 16:53:21.356 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-03-23 16:53:21.359 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-03-23 16:53:21.363 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-03-23 16:53:21.366 -03:00 [INF] - AbpMicroRabbit.Banking.Application.Contracts.BankingApplicationContractsModule
+2020-03-23 16:53:21.369 -03:00 [INF] - AbpMicroRabbit.Shared.Domain.AbpMicroRabbitSharedDomainModule
+2020-03-23 16:53:21.372 -03:00 [INF] - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2020-03-23 16:53:21.376 -03:00 [INF] - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2020-03-23 16:53:21.379 -03:00 [INF] - AbpMicroRabbit.Shared.Infra.Bus.AbpMicroRabbitSharedInfraBusModule
+2020-03-23 16:53:21.383 -03:00 [INF] - AbpMicroRabbit.Banking.Domain.BankingDomainModule
+2020-03-23 16:53:21.386 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-03-23 16:53:21.389 -03:00 [INF] - AbpMicroRabbit.Banking.Application.BankingApplicationModule
+2020-03-23 16:53:21.393 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-03-23 16:53:21.396 -03:00 [INF] - AbpMicroRabbit.Banking.EntityFrameworkCore.BankingEntityFrameworkModule
+2020-03-23 16:53:21.400 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-03-23 16:53:21.403 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-03-23 16:53:21.406 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-03-23 16:53:21.409 -03:00 [INF] - BankingService.BankingServiceModule
+2020-03-23 16:53:24.823 -03:00 [INF] Initialized all ABP modules.
+2020-03-23 16:53:24.983 -03:00 [INF] Now listening on: http://localhost:5000
+2020-03-23 16:53:24.986 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-03-23 16:53:24.989 -03:00 [INF] Hosting environment: Development
+2020-03-23 16:53:24.992 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/BankingService
+2020-03-23 16:53:25.041 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-03-23 16:53:25.050 -03:00 [WRN] Failed to determine the https port for redirect.
+2020-03-23 16:53:25.166 -03:00 [INF] Request finished in 127.1611ms 200 text/html;charset=utf-8
+2020-03-23 16:53:26.314 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-03-23 16:53:26.321 -03:00 [INF] Request finished in 7.1804ms 200 text/html;charset=utf-8
+2020-03-23 16:53:26.820 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-03-23 16:53:26.936 -03:00 [INF] Request finished in 116.169ms 200 application/json;charset=utf-8
+2020-03-23 16:53:45.501 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/app/account/transfer application/json-patch+json 65
+2020-03-23 16:53:45.507 -03:00 [INF] Executing endpoint 'AbpMicroRabbit.Banking.Application.Services.AccountAppService.Transfer (AbpMicroRabbit.Banking.Application)'
+2020-03-23 16:53:45.628 -03:00 [INF] Route matched with {action = "Transfer", controller = "Account", area = ""}. Executing controller action with signature System.Threading.Tasks.Task Transfer(AbpMicroRabbit.Banking.Application.Contracts.Dto.AccountTransferDto) on controller AbpMicroRabbit.Banking.Application.Services.AccountAppService (AbpMicroRabbit.Banking.Application).
+2020-03-23 16:53:52.290 -03:00 [INF] Executed action AbpMicroRabbit.Banking.Application.Services.AccountAppService.Transfer (AbpMicroRabbit.Banking.Application) in 6651.1613ms
+2020-03-23 16:53:52.295 -03:00 [INF] Executed endpoint 'AbpMicroRabbit.Banking.Application.Services.AccountAppService.Transfer (AbpMicroRabbit.Banking.Application)'
+2020-03-23 16:53:52.301 -03:00 [INF] Request finished in 6800.5907ms 204 
+2020-03-23 16:59:04.310 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-03-23 16:59:04.654 -03:00 [INF] Loaded ABP modules:
+2020-03-23 16:59:04.658 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-03-23 16:59:04.661 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-03-23 16:59:04.664 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-03-23 16:59:04.668 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-03-23 16:59:04.671 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-03-23 16:59:04.674 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-03-23 16:59:04.677 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-03-23 16:59:04.680 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-03-23 16:59:04.683 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-03-23 16:59:04.686 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-03-23 16:59:04.689 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-03-23 16:59:04.692 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-03-23 16:59:04.695 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-03-23 16:59:04.698 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-03-23 16:59:04.701 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-03-23 16:59:04.705 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-03-23 16:59:04.708 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-03-23 16:59:04.711 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-03-23 16:59:04.714 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-03-23 16:59:04.717 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-03-23 16:59:04.720 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-03-23 16:59:04.725 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-03-23 16:59:04.728 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-03-23 16:59:04.732 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-03-23 16:59:04.735 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-03-23 16:59:04.738 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-03-23 16:59:04.741 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-03-23 16:59:04.744 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-03-23 16:59:04.747 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-03-23 16:59:04.750 -03:00 [INF] - AbpMicroRabbit.Banking.Application.Contracts.BankingApplicationContractsModule
+2020-03-23 16:59:04.753 -03:00 [INF] - AbpMicroRabbit.Shared.Domain.AbpMicroRabbitSharedDomainModule
+2020-03-23 16:59:04.757 -03:00 [INF] - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2020-03-23 16:59:04.760 -03:00 [INF] - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2020-03-23 16:59:04.763 -03:00 [INF] - AbpMicroRabbit.Shared.Infra.Bus.AbpMicroRabbitSharedInfraBusModule
+2020-03-23 16:59:04.766 -03:00 [INF] - AbpMicroRabbit.Banking.Domain.BankingDomainModule
+2020-03-23 16:59:04.769 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-03-23 16:59:04.772 -03:00 [INF] - AbpMicroRabbit.Banking.Application.BankingApplicationModule
+2020-03-23 16:59:04.775 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-03-23 16:59:04.779 -03:00 [INF] - AbpMicroRabbit.Banking.EntityFrameworkCore.BankingEntityFrameworkModule
+2020-03-23 16:59:04.782 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-03-23 16:59:04.785 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-03-23 16:59:04.788 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-03-23 16:59:04.791 -03:00 [INF] - BankingService.BankingServiceModule
+2020-03-23 16:59:06.981 -03:00 [INF] Initialized all ABP modules.
+2020-03-23 16:59:07.081 -03:00 [INF] Now listening on: http://localhost:5000
+2020-03-23 16:59:07.084 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-03-23 16:59:07.086 -03:00 [INF] Hosting environment: Development
+2020-03-23 16:59:07.089 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/BankingService
+2020-03-23 16:59:07.151 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-03-23 16:59:07.160 -03:00 [WRN] Failed to determine the https port for redirect.
+2020-03-23 16:59:07.284 -03:00 [INF] Request finished in 134.8522ms 200 text/html;charset=utf-8
+2020-03-23 16:59:08.401 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-03-23 16:59:08.407 -03:00 [INF] Request finished in 5.8804ms 200 text/html;charset=utf-8
+2020-03-23 16:59:09.473 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-03-23 16:59:09.594 -03:00 [INF] Request finished in 121.1209ms 200 application/json;charset=utf-8
+2020-03-23 16:59:25.074 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/app/account/transfer application/json-patch+json 65
+2020-03-23 16:59:25.080 -03:00 [INF] Executing endpoint 'AbpMicroRabbit.Banking.Application.Services.AccountAppService.Transfer (AbpMicroRabbit.Banking.Application)'
+2020-03-23 16:59:25.198 -03:00 [INF] Route matched with {action = "Transfer", controller = "Account", area = ""}. Executing controller action with signature System.Threading.Tasks.Task Transfer(AbpMicroRabbit.Banking.Application.Contracts.Dto.AccountTransferDto) on controller AbpMicroRabbit.Banking.Application.Services.AccountAppService (AbpMicroRabbit.Banking.Application).
+2020-03-23 16:59:32.818 -03:00 [INF] Executed action AbpMicroRabbit.Banking.Application.Services.AccountAppService.Transfer (AbpMicroRabbit.Banking.Application) in 7611.6261ms
+2020-03-23 16:59:32.824 -03:00 [INF] Executed endpoint 'AbpMicroRabbit.Banking.Application.Services.AccountAppService.Transfer (AbpMicroRabbit.Banking.Application)'
+2020-03-23 16:59:32.827 -03:00 [INF] Request finished in 7756.8292ms 204 

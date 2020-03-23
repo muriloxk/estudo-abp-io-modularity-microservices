@@ -5,7 +5,7 @@ namespace AbpMicroRabbit.Banking.Domain.Entities
 {
     public class Account : AggregateRoot<Guid>
     {
-        public Account(string accountType, decimal accountBalance)
+        public Account(string accountType, decimal accountBalance) : base(Guid.NewGuid())
         {
             AccountType = accountType;
             AccountBalance = accountBalance;

@@ -1,12 +1,14 @@
-using AutoMapper.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace BankingService
 {
     public class Startup
     {
+
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;

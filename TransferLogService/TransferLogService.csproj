@@ -37,4 +37,7 @@
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="EmptyCSharpFile.cs" />
+  </ItemGroup>
 </Project>

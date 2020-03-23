@@ -3,6 +3,8 @@ using AbpMicroRabbit.Shared.Domain;
 using AbpMicroRabbit.Shared.Infra.Bus;
 using AbpMicroRabbit.Transfer.Application;
 using AbpMicroRabbit.Transfer.Domain;
+using AbpMicroRabbit.Transfer.Domain.EventHandlers;
+using AbpMicroRabbit.Transfer.Domain.Events;
 using AbpMicroRabbit.Transfer.EntityFrameworkCore;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
@@ -40,6 +42,8 @@ namespace TransferLogService
             });
 
 
+          
+
             context.Services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "TransferLog Microservice", Version = "v1" });
@@ -47,7 +51,7 @@ namespace TransferLogService
                 c.CustomSchemaIds(type => type.FullName);
             });
 
-            context.Services.AddSingleton<IBus, RabbitMQBus>();
+            context.Services.AddSingleton<ITransferLogApplicationService, RabbitMQBus>();
             context.Services.AddMediatR(typeof(TransferDomainModule).GetTypeInfo().Assembly);
         }
 
@@ -74,6 +78,14 @@ namespace TransferLogService
             });
 
             app.UseMvcWithDefaultRouteAndArea();
+
+            ConfigureEventBus(app);
+        }
+
+        private static void ConfigureEventBus(IApplicationBuilder app)
+        {
+            var eventBus = app.ApplicationServices.GetRequiredService<ITransferLogApplicationService>();
+            eventBus.Subscribe<TransferCreatedEvent, TransferEventHandler>();
         }
     }
 }
