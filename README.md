@@ -1,6 +1,6 @@
 # estudo-abp-io-modularity-microservices
 
-#Nuget packages:
+# Nuget packages:
 
 - **Domain**: 
 > - **Volo.Abp.Ddd.Domain**
@@ -38,7 +38,7 @@ Para documentação e teste da api.
 Para as injeções de dependência do framework funcionar no asp net core.
 
 
-#Rabbit MQ 
+# Rabbit MQ 
 
 Observações:
 
