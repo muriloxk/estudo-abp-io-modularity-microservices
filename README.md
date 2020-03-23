@@ -26,7 +26,7 @@ Pacote amplo que contem o core do framework, como extensões, modularidade e etc
 > - ** Volo.Abp.EntityFrameworkCore **
 Pacote que cria a abstração para o entity framework core, criando o contexto, mapeamento e repositorios. Ele não depende de selecionar um banco, isso será na camada final de host. 
 
-- ** Host/Microserviço **
+- **Host/Microserviço**
  Esse é o projeto no qual acaba tendo mais dependências, mas vou destacar as principais, quando se trata de uma api. 
 >  - **Volo.Abp.EntityFrameworkCore.BANCODEDADOS** 
 Você deve escolher um banco de dados e implementar nesse projeto. 
