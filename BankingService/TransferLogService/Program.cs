@@ -30,6 +30,8 @@ namespace TransferLogService
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                });
+                })
+            .UseAutofac()
+            .UseSerilog();
     }
 }

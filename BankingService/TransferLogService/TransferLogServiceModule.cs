@@ -3,17 +3,26 @@ using AbpMicroRabbit.Shared.Domain;
 using AbpMicroRabbit.Shared.Infra.Bus;
 using AbpMicroRabbit.Transfer.Application;
 using AbpMicroRabbit.Transfer.Domain;
+using AbpMicroRabbit.Transfer.EntityFrameworkCore;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Volo.Abp;
 using Volo.Abp.AspNetCore.Mvc;
+using Volo.Abp.Autofac;
 using Volo.Abp.EntityFrameworkCore;
+using Volo.Abp.EntityFrameworkCore.MySQL;
 using Volo.Abp.Modularity;
 
 namespace TransferLogService
 {
-    //[DependsOn(typeof())]
+    [DependsOn(typeof(TransferApplicationModule),
+               typeof(AbpAspNetCoreMvcModule),
+               typeof(TransferApplicationModule),
+               typeof(TransferEntityFrameworkModule),
+               typeof(AbpAutofacModule),
+               typeof(AbpEntityFrameworkCoreMySQLModule),
+               typeof(AbpMicroRabbitSharedInfraBusModule))]
     public class TransferLogServiceModule : AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)

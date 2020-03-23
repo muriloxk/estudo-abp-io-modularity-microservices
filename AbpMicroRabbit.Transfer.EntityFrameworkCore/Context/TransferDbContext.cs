@@ -7,7 +7,7 @@ using Volo.Abp.EntityFrameworkCore;
 
 namespace AbpMicroRabbit.Transfer.EntityFrameworkCore.Context
 {
-    [ConnectionStringName("BankingDb")]
+    [ConnectionStringName("TransferDb")]
     public class TransferDbContext : AbpDbContext<TransferDbContext>, ITransferDbContext, ITransientDependency
     {
         public virtual DbSet<TransferLog> TransferLogs { get; set; }

@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="EntityFramework\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\AbpMicroRabbit.Transfer.Application\AbpMicroRabbit.Transfer.Application.csproj">
