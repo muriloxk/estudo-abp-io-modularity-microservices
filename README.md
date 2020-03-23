@@ -38,6 +38,11 @@ Para documentação e teste da api.
 Para as injeções de dependência do framework funcionar no asp net core.
 
 
+# Dependencias de projeto 
+
+![Arquitetura do modulo] (https://raw.githubusercontent.com/abpframework/abp/dev/docs/en/images/module-layers-and-packages.jpg). 
+
+
 # Rabbit MQ 
 
 Observações:
