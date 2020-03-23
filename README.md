@@ -1,4 +1,4 @@
-# estudo-abp-io-modularity-microservices
+# Anotações e observações estudo sobre o framework abp
 
 # Nuget packages:
 Pacotes que devem ser utilizados por camada em um modulo.
