@@ -41,7 +41,9 @@ Para as injeções de dependência do framework funcionar no asp net core.
 
 ![Arquitetura do modulo](https://raw.githubusercontent.com/abpframework/abp/dev/docs/en/images/module-layers-and-packages.jpg)
 
-Embora como na imagem acima diga que a camada de api não deve depender da camada de aplicação e sim apenas a de contratos, porem funciona apenas com a camada de aplicação. Como foi discutido nessa issue aqui: https://github.com/abpframework/abp/issues/1731 
+*Observações*:
+
+1. Embora como na imagem acima diga que a camada de api não deve depender da camada de aplicação e sim apenas a de contratos, porem funciona apenas com a camada de aplicação. Como foi discutido nessa issue aqui: https://github.com/abpframework/abp/issues/1731 
 
 
 # Rabbit MQ 
