@@ -13,7 +13,7 @@
 - <a href="https://github.com/muriloxk/estudo-abp-io-modularity-microservices/issues/6" >#6 Implementar cache com redis de acordo com os inquilinos. </a>
 
 
-# Anotações e observações estudo sobre o framework abp
+# Anotações e observações sobre o estudo sobre o framework abp
 
 # Nuget packages:
 Pacotes que devem ser utilizados por camada em um modulo.
