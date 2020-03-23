@@ -56,3 +56,18 @@ Observações:
    https://github.com/abpframework/abp/tree/dev/framework/src/Volo.Abp.RabbitMQ/Volo/Abp/RabbitMQ ou as vezes até melhorar a classe RabbitMqDistributedEventBus e contribuir.
 
 - Ainda não há uma implementação com MediaTR o que ajudaria muito nos handlers de comando chamados por serviços em CQRS, como nos meus estudos (https://github.com/muriloxk/estudo-microservices-rabbitmq): Há uma issue com prioridade alta aberta no github: CQRS infrastructure #57: https://github.com/abpframework/abp/issues/57 *(Talvez a classe na qual comentei no item acima, seja o começo de um fruto dessa discussão)*
+
+Metas: 
+
+- ~~Implementar modulos sem utilizar templates ou o cli, realizar na unha.~~ 
+- ~~Utilizar o provider do MySql e migrations.~~ 
+- ~~Analizar o event bus distributed com rabbitmq do framework~~
+- ~~Analizar como implementaria um CQRS~~ 
+
+Próximas issues:
+- <a href="https://github.com/muriloxk/estudo-abp-io-modularity-microservices/issues/1" > #1 Criar um gateway bff mobile e web</a>
+- <a href="https://github.com/muriloxk/estudo-abp-io-modularity-microservices/issues/2" >#2 Criar autenticação via o gateway mobile (Hybrid grantype)</a>
+- <a href="https://github.com/muriloxk/estudo-abp-io-modularity-microservices/issues/3" >#3 Implementar multitenancy compartilhando os bancos.</a>
+- <a href="https://github.com/muriloxk/estudo-abp-io-modularity-microservices/issues/4" >#4 Autorização de papeis entre as funcionalidades.</a>
+- <a href="https://github.com/muriloxk/estudo-abp-io-modularity-microservices/issues/5" >#5 Serilog com elasticsearch</a>
+- <a href="https://github.com/muriloxk/estudo-abp-io-modularity-microservices/issues/6" >#6 Implementar cache com redis de acordo com os inquilinos. </a>
