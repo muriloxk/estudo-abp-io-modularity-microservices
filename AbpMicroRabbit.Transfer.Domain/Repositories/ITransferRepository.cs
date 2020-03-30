@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using AbpMicroRabbit.Banking.Domain.Entities;
 
 namespace AbpMicroRabbit.Transfer.Domain.Repositories

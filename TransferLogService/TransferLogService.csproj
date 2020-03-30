@@ -25,6 +25,7 @@
     <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="2.3.0" />
     <PackageReference Include="Volo.Abp.AspNetCore.Mvc.Contracts" Version="2.3.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.2.1" />
+    <PackageReference Include="Volo.Abp.AspNetCore.MultiTenancy" Version="2.3.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AbpMicroRabbit.Transfer.Domain\AbpMicroRabbit.Transfer.Domain.csproj">

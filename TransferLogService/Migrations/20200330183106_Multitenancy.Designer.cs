@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TransferLogService.EntityFramework;
 
 namespace TransferLogService.Migrations
 {
     [DbContext(typeof(TransferMigrationsDbContext))]
-    partial class TransferMigrationsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200330183106_Multitenancy")]
+    partial class Multitenancy
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

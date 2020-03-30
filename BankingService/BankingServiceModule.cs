@@ -15,27 +15,50 @@ using MediatR;
 using System.Reflection;
 using AbpMicroRabbit.Banking.Domain;
 using AbpMicroRabbit.Banking.Application.Contracts;
+using Volo.Abp.AspNetCore.MultiTenancy;
+using Volo.Abp.MultiTenancy;
 
 namespace BankingService
 {
-    [DependsOn(typeof(AbpAspNetCoreMvcModule),
-               typeof(BankingApplicationContractsModule),
-               typeof(BankingApplicationModule),
-               typeof(BankingEntityFrameworkModule),
-               typeof(AbpAutofacModule),
-               typeof(AbpEntityFrameworkCoreMySQLModule),
-               typeof(AbpEventBusRabbitMqModule),
-               typeof(AbpMicroRabbitSharedInfraBusModule)
-               )]
+     [DependsOn(typeof(AbpAspNetCoreMvcModule),
+                typeof(BankingApplicationContractsModule),
+                typeof(BankingApplicationModule),
+                typeof(BankingEntityFrameworkModule),
+                typeof(AbpAutofacModule),
+                typeof(AbpEntityFrameworkCoreMySQLModule),
+                typeof(AbpEventBusRabbitMqModule),
+                typeof(AbpMicroRabbitSharedInfraBusModule),
+                typeof(AbpAspNetCoreMultiTenancyModule))]
     public class BankingServiceModule : AbpModule
     {
 
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
+            ConfigurarMultiTenancy();
+
+
+            //TODO: Criar AuthServer;
+            //context.Services.AddAuthentication("Bearer")
+            //   .AddIdentityServerAuthentication(options =>
+            //   {
+            //       options.Authority = configuration["AuthServer:Authority"];
+            //       options.ApiName = configuration["AuthServer:ApiName"];
+            //       options.RequireHttpsMetadata = false;
+            //   });
+
+
             ConfigurarControllersGeradosAutomaticamente();
             ConfigurarProviderDoEfCore();
             ConfigurarSwagger(context);
             ConfigurarRabbitMQEventBus(context);
+        }
+
+        private void ConfigurarMultiTenancy()
+        {
+            Configure<AbpMultiTenancyOptions>(options =>
+            {
+                options.IsEnabled = true;
+            });
         }
 
         private void ConfigurarRabbitMQEventBus(ServiceConfigurationContext context)
@@ -83,6 +106,11 @@ namespace BankingService
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            // TODO:
+            //app.UseAuthentication();
+
+            app.UseMultiTenancy();
 
             app.UseAuthorization();
 

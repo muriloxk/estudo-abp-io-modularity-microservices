@@ -10,11 +10,13 @@ using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Volo.Abp;
+using Volo.Abp.AspNetCore.MultiTenancy;
 using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.Autofac;
 using Volo.Abp.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore.MySQL;
 using Volo.Abp.Modularity;
+using Volo.Abp.MultiTenancy;
 
 namespace TransferLogService
 {
@@ -24,35 +26,59 @@ namespace TransferLogService
                typeof(TransferEntityFrameworkModule),
                typeof(AbpAutofacModule),
                typeof(AbpEntityFrameworkCoreMySQLModule),
-               typeof(AbpMicroRabbitSharedInfraBusModule))]
+               typeof(AbpMicroRabbitSharedInfraBusModule),
+               typeof(AbpAspNetCoreMultiTenancyModule))]
     public class TransferLogServiceModule : AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
             //base.ConfigureServices(context);
 
-            Configure<AbpAspNetCoreMvcOptions>(options =>
+            ConfigurarMultiTenancy();
+            ConfigurarControllersGeradosAutomaticamente();
+            ConfigurarProviderDoEfCore();
+            ConfigurarSwagger(context);
+            ConfigurarRabbitMQEventBus(context);
+        }
+
+        private void ConfigurarMultiTenancy()
+        {
+            Configure<AbpMultiTenancyOptions>(options =>
             {
-                options.ConventionalControllers.Create(typeof(TransferApplicationModule).Assembly);
+                options.IsEnabled = true;
             });
+        }
 
-            Configure<AbpDbContextOptions>(options =>
-            {
-                options.UseMySQL();
-            });
+        private static void ConfigurarRabbitMQEventBus(ServiceConfigurationContext context)
+        {
+            context.Services.AddSingleton<ITransferLogApplicationService, RabbitMQBus>();
+            context.Services.AddMediatR(typeof(TransferDomainModule).GetTypeInfo().Assembly);
+        }
 
-
-          
-
+        private static void ConfigurarSwagger(ServiceConfigurationContext context)
+        {
             context.Services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "TransferLog Microservice", Version = "v1" });
                 c.DocInclusionPredicate((docName, description) => true);
                 c.CustomSchemaIds(type => type.FullName);
             });
+        }
 
-            context.Services.AddSingleton<ITransferLogApplicationService, RabbitMQBus>();
-            context.Services.AddMediatR(typeof(TransferDomainModule).GetTypeInfo().Assembly);
+        private void ConfigurarProviderDoEfCore()
+        {
+            Configure<AbpDbContextOptions>(options =>
+            {
+                options.UseMySQL();
+            });
+        }
+
+        private void ConfigurarControllersGeradosAutomaticamente()
+        {
+            Configure<AbpAspNetCoreMvcOptions>(options =>
+            {
+                options.ConventionalControllers.Create(typeof(TransferApplicationModule).Assembly);
+            });
         }
 
         public override void OnApplicationInitialization(ApplicationInitializationContext context)
