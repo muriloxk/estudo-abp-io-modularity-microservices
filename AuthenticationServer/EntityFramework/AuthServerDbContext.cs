@@ -1,6 +1,6 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore;
+using Volo.Abp.Identity.EntityFrameworkCore;
 using Volo.Abp.IdentityServer.EntityFrameworkCore;
 
 namespace AuthenticationServer.EntityFramework
@@ -17,8 +17,11 @@ namespace AuthenticationServer.EntityFramework
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.ConfigureIdentityServer();
-            
+            modelBuilder.ConfigureIdentity();
+            modelBuilder.ConfigureIdentityServer(options =>
+            {
+                options.DatabaseProvider = EfCoreDatabaseProvider.MySql;
+            });
         }
     }
 }
