@@ -4157,3 +4157,308 @@ System.ArgumentNullException: String reference not set to an instance of a Strin
    at RabbitMQ.Client.Framing.Impl.Model._Private_ExchangeDeclare(String exchange, String type, Boolean passive, Boolean durable, Boolean autoDelete, Boolean internal, Boolean nowait, IDictionary`2 arguments)
    at RabbitMQ.Client.Impl.AutorecoveringModel.ExchangeDeclare(String exchange, String type, Boolean durable, Boolean autoDelete, IDictionary`2 arguments)
    at Volo.Abp.RabbitMQ.RabbitMqMessageConsumer.TryCreateChannel()
+2020-03-30 22:52:49.915 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-03-30 22:52:50.635 -03:00 [INF] Loaded ABP modules:
+2020-03-30 22:52:50.638 -03:00 [INF] - AbpMicroRabbit.Transfer.Application.Contracts.TransferApplicationContractsModule
+2020-03-30 22:52:50.641 -03:00 [INF] - AbpMicroRabbit.Shared.Domain.AbpMicroRabbitSharedDomainModule
+2020-03-30 22:52:50.644 -03:00 [INF] - AbpMicroRabbit.Transfer.Domain.TransferDomainModule
+2020-03-30 22:52:50.646 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-03-30 22:52:50.649 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-03-30 22:52:50.653 -03:00 [INF] - AbpMicroRabbit.Transfer.Application.TransferApplicationModule
+2020-03-30 22:52:50.656 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-03-30 22:52:50.660 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-03-30 22:52:50.663 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-03-30 22:52:50.667 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-03-30 22:52:50.669 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-03-30 22:52:50.673 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-03-30 22:52:50.677 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-03-30 22:52:50.680 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-03-30 22:52:50.682 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-03-30 22:52:50.685 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-03-30 22:52:50.688 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-03-30 22:52:50.692 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-03-30 22:52:50.695 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-03-30 22:52:50.698 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-03-30 22:52:50.701 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-03-30 22:52:50.704 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-03-30 22:52:50.707 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-03-30 22:52:50.710 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-03-30 22:52:50.713 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-03-30 22:52:50.716 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-03-30 22:52:50.720 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-03-30 22:52:50.723 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-03-30 22:52:50.725 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-03-30 22:52:50.728 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-03-30 22:52:50.731 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-03-30 22:52:50.740 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-03-30 22:52:50.745 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-03-30 22:52:50.748 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-03-30 22:52:50.751 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-03-30 22:52:50.754 -03:00 [INF] - AbpMicroRabbit.Transfer.EntityFrameworkCore.TransferEntityFrameworkModule
+2020-03-30 22:52:50.757 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-03-30 22:52:50.760 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-03-30 22:52:50.763 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-03-30 22:52:50.766 -03:00 [INF] - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2020-03-30 22:52:50.769 -03:00 [INF] - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2020-03-30 22:52:50.773 -03:00 [INF] - AbpMicroRabbit.Shared.Infra.Bus.AbpMicroRabbitSharedInfraBusModule
+2020-03-30 22:52:50.777 -03:00 [INF] - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2020-03-30 22:52:50.781 -03:00 [INF] - TransferLogService.TransferLogServiceModule
+2020-03-30 22:52:51.265 -03:00 [WRN] None of the specified endpoints were reachable
+RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.AggregateException: One or more errors occurred. (Connection failed)
+ ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (61): Connection refused 127.0.0.1:5672
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.<>c.<ConnectAsync>b__275_0(IAsyncResult iar)
+--- End of stack trace from previous location where exception was thrown ---
+   at RabbitMQ.Client.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, Int32 millisecondsTimeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, Int32 timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, Int32 timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingIPv4(AmqpTcpEndpoint endpoint, Func`2 socketFactory, Int32 timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, Int32 connectionTimeout, Int32 readTimeout, Int32 writeTimeout)
+   at RabbitMQ.Client.Framing.Impl.IProtocolExtensions.CreateFrameHandler(IProtocol protocol, AmqpTcpEndpoint endpoint, Func`2 socketFactory, Int32 connectionTimeout, Int32 readTimeout, Int32 writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.Framing.Impl.AutorecoveringConnection.Init(IEndpointResolver endpoints)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection()
+   at Volo.Abp.RabbitMQ.ConnectionPool.<>c__DisplayClass8_0.<Get>b__0()
+   at System.Collections.Generic.AbpDictionaryExtensions.<>c__DisplayClass6_0`2.<GetOrAdd>b__0(TKey k)
+   at System.Collections.Generic.AbpDictionaryExtensions.GetOrAdd[TKey,TValue](IDictionary`2 dictionary, TKey key, Func`2 factory)
+   at System.Collections.Generic.AbpDictionaryExtensions.GetOrAdd[TKey,TValue](IDictionary`2 dictionary, TKey key, Func`1 factory)
+   at Volo.Abp.RabbitMQ.ConnectionPool.Get(String connectionName)
+   at Volo.Abp.RabbitMQ.RabbitMqMessageConsumer.TryCreateChannel()
+2020-03-31 11:10:31.728 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-03-31 11:10:32.008 -03:00 [INF] Loaded ABP modules:
+2020-03-31 11:10:32.013 -03:00 [INF] - AbpMicroRabbit.Transfer.Application.Contracts.TransferApplicationContractsModule
+2020-03-31 11:10:32.016 -03:00 [INF] - AbpMicroRabbit.Shared.Domain.AbpMicroRabbitSharedDomainModule
+2020-03-31 11:10:32.018 -03:00 [INF] - AbpMicroRabbit.Transfer.Domain.TransferDomainModule
+2020-03-31 11:10:32.024 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-03-31 11:10:32.027 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-03-31 11:10:32.030 -03:00 [INF] - AbpMicroRabbit.Transfer.Application.TransferApplicationModule
+2020-03-31 11:10:32.033 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-03-31 11:10:32.035 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-03-31 11:10:32.038 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-03-31 11:10:32.040 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-03-31 11:10:32.043 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-03-31 11:10:32.045 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-03-31 11:10:32.047 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-03-31 11:10:32.050 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-03-31 11:10:32.053 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-03-31 11:10:32.055 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-03-31 11:10:32.058 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-03-31 11:10:32.061 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-03-31 11:10:32.064 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-03-31 11:10:32.066 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-03-31 11:10:32.069 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-03-31 11:10:32.071 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-03-31 11:10:32.074 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-03-31 11:10:32.076 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-03-31 11:10:32.079 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-03-31 11:10:32.081 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-03-31 11:10:32.084 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-03-31 11:10:32.087 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-03-31 11:10:32.089 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-03-31 11:10:32.091 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-03-31 11:10:32.094 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-03-31 11:10:32.096 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-03-31 11:10:32.099 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-03-31 11:10:32.101 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-03-31 11:10:32.104 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-03-31 11:10:32.107 -03:00 [INF] - AbpMicroRabbit.Transfer.EntityFrameworkCore.TransferEntityFrameworkModule
+2020-03-31 11:10:32.109 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-03-31 11:10:32.112 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-03-31 11:10:32.114 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-03-31 11:10:32.117 -03:00 [INF] - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2020-03-31 11:10:32.120 -03:00 [INF] - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2020-03-31 11:10:32.123 -03:00 [INF] - AbpMicroRabbit.Shared.Infra.Bus.AbpMicroRabbitSharedInfraBusModule
+2020-03-31 11:10:32.126 -03:00 [INF] - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2020-03-31 11:10:32.129 -03:00 [INF] - TransferLogService.TransferLogServiceModule
+2020-03-31 11:10:32.646 -03:00 [WRN] None of the specified endpoints were reachable
+RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.AggregateException: One or more errors occurred. (Connection failed)
+ ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (61): Connection refused 127.0.0.1:5672
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.<>c.<ConnectAsync>b__275_0(IAsyncResult iar)
+--- End of stack trace from previous location where exception was thrown ---
+   at RabbitMQ.Client.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, Int32 millisecondsTimeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, Int32 timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, Int32 timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingIPv4(AmqpTcpEndpoint endpoint, Func`2 socketFactory, Int32 timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, Int32 connectionTimeout, Int32 readTimeout, Int32 writeTimeout)
+   at RabbitMQ.Client.Framing.Impl.IProtocolExtensions.CreateFrameHandler(IProtocol protocol, AmqpTcpEndpoint endpoint, Func`2 socketFactory, Int32 connectionTimeout, Int32 readTimeout, Int32 writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.Framing.Impl.AutorecoveringConnection.Init(IEndpointResolver endpoints)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection()
+   at Volo.Abp.RabbitMQ.ConnectionPool.<>c__DisplayClass8_0.<Get>b__0()
+   at System.Collections.Generic.AbpDictionaryExtensions.<>c__DisplayClass6_0`2.<GetOrAdd>b__0(TKey k)
+   at System.Collections.Generic.AbpDictionaryExtensions.GetOrAdd[TKey,TValue](IDictionary`2 dictionary, TKey key, Func`2 factory)
+   at System.Collections.Generic.AbpDictionaryExtensions.GetOrAdd[TKey,TValue](IDictionary`2 dictionary, TKey key, Func`1 factory)
+   at Volo.Abp.RabbitMQ.ConnectionPool.Get(String connectionName)
+   at Volo.Abp.RabbitMQ.RabbitMqMessageConsumer.TryCreateChannel()
+2020-03-31 14:03:49.891 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-03-31 14:03:50.654 -03:00 [INF] Loaded ABP modules:
+2020-03-31 14:03:50.658 -03:00 [INF] - AbpMicroRabbit.Transfer.Application.Contracts.TransferApplicationContractsModule
+2020-03-31 14:03:50.660 -03:00 [INF] - AbpMicroRabbit.Shared.Domain.AbpMicroRabbitSharedDomainModule
+2020-03-31 14:03:50.663 -03:00 [INF] - AbpMicroRabbit.Transfer.Domain.TransferDomainModule
+2020-03-31 14:03:50.666 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-03-31 14:03:50.668 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-03-31 14:03:50.672 -03:00 [INF] - AbpMicroRabbit.Transfer.Application.TransferApplicationModule
+2020-03-31 14:03:50.674 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-03-31 14:03:50.677 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-03-31 14:03:50.680 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-03-31 14:03:50.683 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-03-31 14:03:50.689 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-03-31 14:03:50.692 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-03-31 14:03:50.695 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-03-31 14:03:50.698 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-03-31 14:03:50.702 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-03-31 14:03:50.705 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-03-31 14:03:50.709 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-03-31 14:03:50.712 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-03-31 14:03:50.714 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-03-31 14:03:50.717 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-03-31 14:03:50.720 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-03-31 14:03:50.724 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-03-31 14:03:50.727 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-03-31 14:03:50.730 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-03-31 14:03:50.733 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-03-31 14:03:50.736 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-03-31 14:03:50.740 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-03-31 14:03:50.744 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-03-31 14:03:50.748 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-03-31 14:03:50.752 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-03-31 14:03:50.755 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-03-31 14:03:50.759 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-03-31 14:03:50.762 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-03-31 14:03:50.764 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-03-31 14:03:50.767 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-03-31 14:03:50.770 -03:00 [INF] - AbpMicroRabbit.Transfer.EntityFrameworkCore.TransferEntityFrameworkModule
+2020-03-31 14:03:50.773 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-03-31 14:03:50.777 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-03-31 14:03:50.780 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-03-31 14:03:50.783 -03:00 [INF] - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2020-03-31 14:03:50.786 -03:00 [INF] - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2020-03-31 14:03:50.789 -03:00 [INF] - AbpMicroRabbit.Shared.Infra.Bus.AbpMicroRabbitSharedInfraBusModule
+2020-03-31 14:03:50.794 -03:00 [INF] - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2020-03-31 14:03:50.797 -03:00 [INF] - TransferLogService.TransferLogServiceModule
+2020-03-31 14:03:51.598 -03:00 [WRN] String reference not set to an instance of a String. (Parameter 's')
+System.ArgumentNullException: String reference not set to an instance of a String. (Parameter 's')
+   at System.Text.Encoding.GetBytes(String s)
+   at RabbitMQ.Client.Impl.WireFormatting.WriteShortstr(NetworkBinaryWriter writer, String val)
+   at RabbitMQ.Client.Impl.MethodArgumentWriter.WriteShortstr(String val)
+   at RabbitMQ.Client.Framing.Impl.ExchangeDeclare.WriteArgumentsTo(MethodArgumentWriter writer)
+   at RabbitMQ.Client.Impl.MethodOutboundFrame..ctor(Int32 channel, MethodBase method)
+   at RabbitMQ.Client.Impl.Command.TransmitAsSingleFrame(Int32 channelNumber, Connection connection)
+   at RabbitMQ.Client.Impl.Command.Transmit(Int32 channelNumber, Connection connection)
+   at RabbitMQ.Client.Impl.SessionBase.Transmit(Command cmd)
+   at RabbitMQ.Client.Impl.ModelBase.TransmitAndEnqueue(Command cmd, IRpcContinuation k)
+   at RabbitMQ.Client.Impl.ModelBase.ModelRpc(MethodBase method, ContentHeaderBase header, Byte[] body)
+   at RabbitMQ.Client.Framing.Impl.Model._Private_ExchangeDeclare(String exchange, String type, Boolean passive, Boolean durable, Boolean autoDelete, Boolean internal, Boolean nowait, IDictionary`2 arguments)
+   at RabbitMQ.Client.Impl.ModelBase.ExchangeDeclare(String exchange, String type, Boolean durable, Boolean autoDelete, IDictionary`2 arguments)
+   at RabbitMQ.Client.Impl.AutorecoveringModel.ExchangeDeclare(String exchange, String type, Boolean durable, Boolean autoDelete, IDictionary`2 arguments)
+   at Volo.Abp.RabbitMQ.RabbitMqMessageConsumer.TryCreateChannel()
+2020-03-31 14:03:52.592 -03:00 [INF] Initialized all ABP modules.
+2020-03-31 14:03:52.868 -03:00 [INF] Now listening on: https://localhost:5003
+2020-03-31 14:03:52.874 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-03-31 14:03:52.899 -03:00 [INF] Hosting environment: Development
+2020-03-31 14:03:52.903 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/TransferLogService
+2020-03-31 14:03:53.269 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5003/swagger/index.html  
+2020-03-31 14:03:53.448 -03:00 [INF] Request finished in 181.3157ms 200 text/html;charset=utf-8
+2020-03-31 14:03:55.035 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5003/swagger/index.html  
+2020-03-31 14:03:55.040 -03:00 [INF] Request finished in 5.7361ms 200 text/html;charset=utf-8
+2020-03-31 14:03:55.067 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5003/swagger/swagger-ui-bundle.js  
+2020-03-31 14:03:55.088 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5003/swagger/swagger-ui-standalone-preset.js  
+2020-03-31 14:03:55.768 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5003/swagger/swagger-ui.css  
+2020-03-31 14:03:56.210 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-03-31 14:03:56.214 -03:00 [INF] Request finished in 445.8616ms 200 text/css
+2020-03-31 14:03:56.228 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-03-31 14:03:56.231 -03:00 [INF] Request finished in 1143.0283ms 200 application/javascript
+2020-03-31 14:03:56.315 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-03-31 14:03:56.319 -03:00 [INF] Request finished in 1252.3911ms 200 application/javascript
+2020-03-31 14:03:56.695 -03:00 [WRN] String reference not set to an instance of a String. (Parameter 's')
+System.ArgumentNullException: String reference not set to an instance of a String. (Parameter 's')
+   at System.Text.Encoding.GetBytes(String s)
+   at RabbitMQ.Client.Impl.WireFormatting.WriteShortstr(NetworkBinaryWriter writer, String val)
+   at RabbitMQ.Client.Impl.MethodArgumentWriter.WriteShortstr(String val)
+   at RabbitMQ.Client.Framing.Impl.ExchangeDeclare.WriteArgumentsTo(MethodArgumentWriter writer)
+   at RabbitMQ.Client.Impl.MethodOutboundFrame..ctor(Int32 channel, MethodBase method)
+   at RabbitMQ.Client.Impl.Command.TransmitAsSingleFrame(Int32 channelNumber, Connection connection)
+   at RabbitMQ.Client.Impl.Command.Transmit(Int32 channelNumber, Connection connection)
+   at RabbitMQ.Client.Impl.SessionBase.Transmit(Command cmd)
+   at RabbitMQ.Client.Impl.ModelBase.TransmitAndEnqueue(Command cmd, IRpcContinuation k)
+   at RabbitMQ.Client.Impl.ModelBase.ModelRpc(MethodBase method, ContentHeaderBase header, Byte[] body)
+   at RabbitMQ.Client.Framing.Impl.Model._Private_ExchangeDeclare(String exchange, String type, Boolean passive, Boolean durable, Boolean autoDelete, Boolean internal, Boolean nowait, IDictionary`2 arguments)
+   at RabbitMQ.Client.Impl.ModelBase.ExchangeDeclare(String exchange, String type, Boolean durable, Boolean autoDelete, IDictionary`2 arguments)
+   at RabbitMQ.Client.Impl.AutorecoveringModel.ExchangeDeclare(String exchange, String type, Boolean durable, Boolean autoDelete, IDictionary`2 arguments)
+   at Volo.Abp.RabbitMQ.RabbitMqMessageConsumer.TryCreateChannel()
+2020-03-31 14:03:58.320 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5003/swagger/v1/swagger.json  
+2020-03-31 14:03:58.416 -03:00 [INF] Request finished in 96.4382ms 200 application/json;charset=utf-8
+2020-03-31 14:03:58.552 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5003/swagger/favicon-32x32.png  
+2020-03-31 14:03:58.557 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2020-03-31 14:03:58.561 -03:00 [INF] Request finished in 8.5561ms 200 image/png
+2020-03-31 14:04:01.705 -03:00 [WRN] String reference not set to an instance of a String. (Parameter 's')
+System.ArgumentNullException: String reference not set to an instance of a String. (Parameter 's')
+   at System.Text.Encoding.GetBytes(String s)
+   at RabbitMQ.Client.Impl.WireFormatting.WriteShortstr(NetworkBinaryWriter writer, String val)
+   at RabbitMQ.Client.Impl.MethodArgumentWriter.WriteShortstr(String val)
+   at RabbitMQ.Client.Framing.Impl.ExchangeDeclare.WriteArgumentsTo(MethodArgumentWriter writer)
+   at RabbitMQ.Client.Impl.MethodOutboundFrame..ctor(Int32 channel, MethodBase method)
+   at RabbitMQ.Client.Impl.Command.TransmitAsSingleFrame(Int32 channelNumber, Connection connection)
+   at RabbitMQ.Client.Impl.Command.Transmit(Int32 channelNumber, Connection connection)
+   at RabbitMQ.Client.Impl.SessionBase.Transmit(Command cmd)
+   at RabbitMQ.Client.Impl.ModelBase.TransmitAndEnqueue(Command cmd, IRpcContinuation k)
+   at RabbitMQ.Client.Impl.ModelBase.ModelRpc(MethodBase method, ContentHeaderBase header, Byte[] body)
+   at RabbitMQ.Client.Framing.Impl.Model._Private_ExchangeDeclare(String exchange, String type, Boolean passive, Boolean durable, Boolean autoDelete, Boolean internal, Boolean nowait, IDictionary`2 arguments)
+   at RabbitMQ.Client.Impl.ModelBase.ExchangeDeclare(String exchange, String type, Boolean durable, Boolean autoDelete, IDictionary`2 arguments)
+   at RabbitMQ.Client.Impl.AutorecoveringModel.ExchangeDeclare(String exchange, String type, Boolean durable, Boolean autoDelete, IDictionary`2 arguments)
+   at Volo.Abp.RabbitMQ.RabbitMqMessageConsumer.TryCreateChannel()
+2020-03-31 14:04:06.714 -03:00 [WRN] String reference not set to an instance of a String. (Parameter 's')
+System.ArgumentNullException: String reference not set to an instance of a String. (Parameter 's')
+   at System.Text.Encoding.GetBytes(String s)
+   at RabbitMQ.Client.Impl.WireFormatting.WriteShortstr(NetworkBinaryWriter writer, String val)
+   at RabbitMQ.Client.Impl.MethodArgumentWriter.WriteShortstr(String val)
+   at RabbitMQ.Client.Framing.Impl.ExchangeDeclare.WriteArgumentsTo(MethodArgumentWriter writer)
+   at RabbitMQ.Client.Impl.MethodOutboundFrame..ctor(Int32 channel, MethodBase method)
+   at RabbitMQ.Client.Impl.Command.TransmitAsSingleFrame(Int32 channelNumber, Connection connection)
+   at RabbitMQ.Client.Impl.Command.Transmit(Int32 channelNumber, Connection connection)
+   at RabbitMQ.Client.Impl.SessionBase.Transmit(Command cmd)
+   at RabbitMQ.Client.Impl.ModelBase.TransmitAndEnqueue(Command cmd, IRpcContinuation k)
+   at RabbitMQ.Client.Impl.ModelBase.ModelRpc(MethodBase method, ContentHeaderBase header, Byte[] body)
+   at RabbitMQ.Client.Framing.Impl.Model._Private_ExchangeDeclare(String exchange, String type, Boolean passive, Boolean durable, Boolean autoDelete, Boolean internal, Boolean nowait, IDictionary`2 arguments)
+   at RabbitMQ.Client.Impl.ModelBase.ExchangeDeclare(String exchange, String type, Boolean durable, Boolean autoDelete, IDictionary`2 arguments)
+   at RabbitMQ.Client.Impl.AutorecoveringModel.ExchangeDeclare(String exchange, String type, Boolean durable, Boolean autoDelete, IDictionary`2 arguments)
+   at Volo.Abp.RabbitMQ.RabbitMqMessageConsumer.TryCreateChannel()
+2020-03-31 14:04:11.723 -03:00 [WRN] String reference not set to an instance of a String. (Parameter 's')
+System.ArgumentNullException: String reference not set to an instance of a String. (Parameter 's')
+   at System.Text.Encoding.GetBytes(String s)
+   at RabbitMQ.Client.Impl.WireFormatting.WriteShortstr(NetworkBinaryWriter writer, String val)
+   at RabbitMQ.Client.Impl.MethodArgumentWriter.WriteShortstr(String val)
+   at RabbitMQ.Client.Framing.Impl.ExchangeDeclare.WriteArgumentsTo(MethodArgumentWriter writer)
+   at RabbitMQ.Client.Impl.MethodOutboundFrame..ctor(Int32 channel, MethodBase method)
+   at RabbitMQ.Client.Impl.Command.TransmitAsSingleFrame(Int32 channelNumber, Connection connection)
+   at RabbitMQ.Client.Impl.Command.Transmit(Int32 channelNumber, Connection connection)
+   at RabbitMQ.Client.Impl.SessionBase.Transmit(Command cmd)
+   at RabbitMQ.Client.Impl.ModelBase.TransmitAndEnqueue(Command cmd, IRpcContinuation k)
+   at RabbitMQ.Client.Impl.ModelBase.ModelRpc(MethodBase method, ContentHeaderBase header, Byte[] body)
+   at RabbitMQ.Client.Framing.Impl.Model._Private_ExchangeDeclare(String exchange, String type, Boolean passive, Boolean durable, Boolean autoDelete, Boolean internal, Boolean nowait, IDictionary`2 arguments)
+   at RabbitMQ.Client.Impl.ModelBase.ExchangeDeclare(String exchange, String type, Boolean durable, Boolean autoDelete, IDictionary`2 arguments)
+   at RabbitMQ.Client.Impl.AutorecoveringModel.ExchangeDeclare(String exchange, String type, Boolean durable, Boolean autoDelete, IDictionary`2 arguments)
+   at Volo.Abp.RabbitMQ.RabbitMqMessageConsumer.TryCreateChannel()

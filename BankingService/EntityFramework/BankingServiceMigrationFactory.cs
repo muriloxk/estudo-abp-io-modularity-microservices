@@ -16,7 +16,7 @@ namespace BankingService.EntityFramework
             var optionsBuilder = new DbContextOptionsBuilder<BankingMigrationsDbContext>();
             optionsBuilder.UseMySql(configuration.GetConnectionString("BankingDb"));
 
-            return new BankingMigrationsDbContext(optionsBuilder.Options); ;
+            return new BankingMigrationsDbContext(optionsBuilder.Options);
         }
     }
 }

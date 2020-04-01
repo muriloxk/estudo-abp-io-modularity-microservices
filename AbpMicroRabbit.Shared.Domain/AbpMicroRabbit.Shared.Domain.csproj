@@ -8,5 +8,7 @@
     <PackageReference Include="MediatR" Version="8.0.1" />
     <PackageReference Include="Volo.Abp.Core" Version="2.3.0" />
     <PackageReference Include="Volo.Abp.EventBus" Version="2.3.0" />
+    <PackageReference Include="Volo.Abp.Identity.Domain" Version="2.3.0" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Domain.Identity" Version="2.3.0" />
   </ItemGroup>
 </Project>

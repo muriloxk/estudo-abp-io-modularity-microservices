@@ -33,12 +33,10 @@ namespace AuthenticationServer
                typeof(AbpEntityFrameworkCoreMySQLModule),
                typeof(AbpPermissionManagementDomainIdentityServerModule),
                typeof(AbpMultiTenancyModule),
-               typeof(AbpAspNetCoreModule),
                typeof(AbpAspNetCoreMultiTenancyModule)
    )]
     public class AuthenticationServerModule : AbpModule
     {
-        // Vamos fazer a configuração do nosso querido e amado IDENTITY SERVER.
 
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
@@ -71,18 +69,15 @@ namespace AuthenticationServer
         {
             var app = context.GetApplicationBuilder();
 
-     
 
             app.UseRouting();
-
-             
             app.UseStaticFiles();
 
             //app.UseAuthentication();
             app.UseIdentityServer();
 
             //app.UseMvc();
-            //app.UseMvcWithDefaultRouteAndArea();
+            app.UseMvcWithDefaultRouteAndArea();
 
             //app.UseMultiTenancy();
 
