@@ -2,6 +2,8 @@
 using Volo.Abp.EntityFrameworkCore;
 using Volo.Abp.Identity.EntityFrameworkCore;
 using Volo.Abp.IdentityServer.EntityFrameworkCore;
+using Volo.Abp.PermissionManagement.EntityFrameworkCore;
+using Volo.Abp.SettingManagement.EntityFrameworkCore;
 
 namespace AuthenticationServer.EntityFramework
 {
@@ -17,6 +19,8 @@ namespace AuthenticationServer.EntityFramework
         {
             base.OnModelCreating(modelBuilder);
 
+            modelBuilder.ConfigurePermissionManagement();
+            modelBuilder.ConfigureSettingManagement();
             modelBuilder.ConfigureIdentity();
             modelBuilder.ConfigureIdentityServer(options =>
             {

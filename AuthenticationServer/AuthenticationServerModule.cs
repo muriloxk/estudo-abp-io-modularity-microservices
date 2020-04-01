@@ -11,54 +11,38 @@ using Volo.Abp.Autofac;
 using Volo.Abp.Identity.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using AuthenticationServer.EntityFramework;
-using Volo.Abp.IdentityServer;
 using Volo.Abp.PermissionManagement.EntityFrameworkCore;
 using Volo.Abp.Threading;
 using Volo.Abp.Data;
 using Volo.Abp.AspNetCore.Mvc;
+using Volo.Abp.PermissionManagement.IdentityServer;
+using IdentityServer4;
+using Volo.Abp.Identity.AspNetCore;
+using Volo.Abp.SettingManagement.EntityFrameworkCore;
 
 namespace AuthenticationServer
 {
-    //[DependsOn(typeof(AbpAutofacModule))]
-    //[DependsOn(typeof(AbpIdentityServerEntityFrameworkCoreModule))]
-    //[DependsOn(typeof(AbpMultiTenancyModule))]
-    //[DependsOn(typeof(AbpEntityFrameworkCoreMySQLModule))]
-    //[DependsOn(typeof(AbpAspNetCoreModule))]
-    //[DependsOn(typeof(AbpAspNetCoreMultiTenancyModule))]
-    //[DependsOn(typeof(AbpAutofacModule))]
-    //[DependsOn(typeof(AbpIdentityEntityFrameworkCoreModule))]
-    //[DependsOn(typeof(AbpPermissionManagementEntityFrameworkCoreModule))]
-
 
     [DependsOn(typeof(AbpAutofacModule),
                typeof(AbpAspNetCoreMvcModule),
+               typeof(AbpIdentityAspNetCoreModule),
+               typeof(AbpPermissionManagementEntityFrameworkCoreModule),
+               typeof(AbpSettingManagementEntityFrameworkCoreModule),
                typeof(AbpIdentityServerEntityFrameworkCoreModule),
-               typeof(AbpMultiTenancyModule),
-               typeof(AbpEntityFrameworkCoreMySQLModule),
-               typeof(AbpAspNetCoreModule),
-               typeof(AbpAspNetCoreMultiTenancyModule),
                typeof(AbpIdentityEntityFrameworkCoreModule),
-               typeof(AbpIdentityServerDomainModule),
-               typeof(AbpIdentityServerDomainSharedModule),
-    typeof(AbpPermissionManagementEntityFrameworkCoreModule))]
+               typeof(AbpEntityFrameworkCoreMySQLModule),
+               typeof(AbpPermissionManagementDomainIdentityServerModule),
+               typeof(AbpMultiTenancyModule),
+               typeof(AbpAspNetCoreModule),
+               typeof(AbpAspNetCoreMultiTenancyModule)
+   )]
     public class AuthenticationServerModule : AbpModule
     {
         // Vamos fazer a configuração do nosso querido e amado IDENTITY SERVER.
 
-        //public override void PreConfigureServices(ServiceConfigurationContext context)
-        //{
-        //    context.Services.PreConfigure<IIdentityServerBuilder>(
-        //        builder =>
-        //        {
-        //            builder.AddAbpStores();
-        //        });
-        //}
-
-
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
-            context.Services.AddAssembly(typeof(AuthenticationServerModule).Assembly);
-
+            context.Services.AddControllersWithViews();
             context.Services.AddAbpDbContext<AuthServerDbContext>(options =>
             {
                 options.AddDefaultRepositories();
@@ -73,16 +57,42 @@ namespace AuthenticationServer
             {
                 options.UseMySQL();
             });
+
+
+            context.Services.AddAuthentication(o =>
+            {
+                o.DefaultAuthenticateScheme = IdentityServerConstants.DefaultCookieAuthenticationScheme;
+                o.DefaultSignOutScheme = IdentityServerConstants.SignoutScheme;
+            });
+
         }
 
         public override void OnApplicationInitialization(ApplicationInitializationContext context)
         {
             var app = context.GetApplicationBuilder();
+
+     
+
             app.UseRouting();
-            app.UseMultiTenancy();
+
+             
+            app.UseStaticFiles();
+
+            //app.UseAuthentication();
             app.UseIdentityServer();
 
-            
+            //app.UseMvc();
+            //app.UseMvcWithDefaultRouteAndArea();
+
+            //app.UseMultiTenancy();
+
+            //app.UseAuthorization();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapDefaultControllerRoute();
+            });
+
             AsyncHelper.RunSync(async () =>
             {
                 using (var scope = context.ServiceProvider.CreateScope())

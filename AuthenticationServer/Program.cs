@@ -1,14 +1,40 @@
+using System;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using Serilog;
+using Serilog.Events;
 
 namespace AuthenticationServer
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static int Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            Log.Logger = new LoggerConfiguration()
+                         .MinimumLevel.Debug()
+                         .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
+                         .MinimumLevel.Override("Microsoft.EntityFrameworkCore", LogEventLevel.Warning)
+                         .Enrich.WithProperty("Application", "AuthServer")
+                         .Enrich.FromLogContext()
+                         .WriteTo.File("Logs/logs.txt")
+                         .WriteTo.Console()
+                         .CreateLogger();
+
+            try
+            {
+                Log.Information("Starting AuthenticationServer");
+                CreateHostBuilder(args).Build().Run();
+                return 0;
+            }
+            catch (Exception ex)
+            {
+                Log.Fatal(ex, "AuthServer.Host terminated unexpectedly!");
+                return 1;
+            }
+            finally
+            {
+                Log.CloseAndFlush();
+            }
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
