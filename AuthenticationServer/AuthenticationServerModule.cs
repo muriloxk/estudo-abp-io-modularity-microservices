@@ -15,34 +15,51 @@ using Volo.Abp.IdentityServer;
 using Volo.Abp.PermissionManagement.EntityFrameworkCore;
 using Volo.Abp.Threading;
 using Volo.Abp.Data;
+using Volo.Abp.AspNetCore.Mvc;
 
 namespace AuthenticationServer
 {
-    [DependsOn(typeof(AbpIdentityServerEntityFrameworkCoreModule))]
-    [DependsOn(typeof(AbpMultiTenancyModule))]
-    [DependsOn(typeof(AbpEntityFrameworkCoreMySQLModule))]
-    [DependsOn(typeof(AbpAspNetCoreModule))]
-    [DependsOn(typeof(AbpAspNetCoreMultiTenancyModule))]
-    [DependsOn(typeof(AbpAutofacModule))]
-    [DependsOn(typeof(AbpIdentityEntityFrameworkCoreModule))]
-    [DependsOn(typeof(AbpPermissionManagementEntityFrameworkCoreModule))]
+    //[DependsOn(typeof(AbpAutofacModule))]
+    //[DependsOn(typeof(AbpIdentityServerEntityFrameworkCoreModule))]
+    //[DependsOn(typeof(AbpMultiTenancyModule))]
+    //[DependsOn(typeof(AbpEntityFrameworkCoreMySQLModule))]
+    //[DependsOn(typeof(AbpAspNetCoreModule))]
+    //[DependsOn(typeof(AbpAspNetCoreMultiTenancyModule))]
+    //[DependsOn(typeof(AbpAutofacModule))]
+    //[DependsOn(typeof(AbpIdentityEntityFrameworkCoreModule))]
+    //[DependsOn(typeof(AbpPermissionManagementEntityFrameworkCoreModule))]
+
+
+    [DependsOn(typeof(AbpAutofacModule),
+               typeof(AbpAspNetCoreMvcModule),
+               typeof(AbpIdentityServerEntityFrameworkCoreModule),
+               typeof(AbpMultiTenancyModule),
+               typeof(AbpEntityFrameworkCoreMySQLModule),
+               typeof(AbpAspNetCoreModule),
+               typeof(AbpAspNetCoreMultiTenancyModule),
+               typeof(AbpIdentityEntityFrameworkCoreModule),
+               typeof(AbpIdentityServerDomainModule),
+               typeof(AbpIdentityServerDomainSharedModule),
+    typeof(AbpPermissionManagementEntityFrameworkCoreModule))]
     public class AuthenticationServerModule : AbpModule
     {
         // Vamos fazer a configuração do nosso querido e amado IDENTITY SERVER.
 
-        public override void PreConfigureServices(ServiceConfigurationContext context)
-        {
-            context.Services.PreConfigure<IIdentityServerBuilder>(
-                builder =>
-                {
-                    builder.AddAbpStores();
-                });
-        }
+        //public override void PreConfigureServices(ServiceConfigurationContext context)
+        //{
+        //    context.Services.PreConfigure<IIdentityServerBuilder>(
+        //        builder =>
+        //        {
+        //            builder.AddAbpStores();
+        //        });
+        //}
 
 
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
-             context.Services.AddAbpDbContext<AuthServerDbContext>(options =>
+            context.Services.AddAssembly(typeof(AuthenticationServerModule).Assembly);
+
+            context.Services.AddAbpDbContext<AuthServerDbContext>(options =>
             {
                 options.AddDefaultRepositories();
             });
