@@ -28,7 +28,7 @@ namespace AuthenticationServer
             }
             catch (Exception ex)
             {
-                Log.Fatal(ex, "AuthServer.Host terminated unexpectedly!");
+                Log.Fatal(ex, "AuthenticationServer terminated unexpectedly!");
                 return 1;
             }
             finally

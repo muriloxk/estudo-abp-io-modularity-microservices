@@ -2,6 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Volo.Abp;
 using Volo.Abp.AspNetCore.MultiTenancy;
+using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.Autofac;
 using Volo.Abp.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore.MySQL;
@@ -14,8 +15,28 @@ using Volo.Abp.TenantManagement.EntityFrameworkCore;
 
 namespace IdentityService
 {
+
+    //[DependsOn(
+    //typeof(AbpAutofacModule),
+    //typeof(AbpEventBusRabbitMqModule),
+    //typeof(AbpEntityFrameworkCoreSqlServerModule),
+    //typeof(AbpAuditLoggingEntityFrameworkCoreModule),
+    //typeof(AbpPermissionManagementEntityFrameworkCoreModule),
+    //typeof(AbpSettingManagementEntityFrameworkCoreModule),
+    //typeof(AbpIdentityHttpApiModule),
+    //typeof(AbpIdentityEntityFrameworkCoreModule),
+    //typeof(AbpIdentityApplicationModule),
+    //typeof(AbpAspNetCoreMultiTenancyModule),
+    //typeof(AbpTenantManagementEntityFrameworkCoreModule)
+    //)]
+
+
+
+
+
     [DependsOn(
         typeof(AbpAutofacModule),
+        typeof(AbpAspNetCoreMvcModule),
         typeof(AbpEntityFrameworkCoreMySQLModule),
         typeof(AbpPermissionManagementEntityFrameworkCoreModule),
         typeof(AbpSettingManagementEntityFrameworkCoreModule),
@@ -28,18 +49,25 @@ namespace IdentityService
         {
             var configuration = context.Services.GetConfiguration();
 
+            Configure<AbpAspNetCoreMvcOptions>(options =>
+            {
+                options.ConventionalControllers.Create(typeof(AbpIdentityApplicationModule).Assembly);
+            });
+
             Configure<AbpMultiTenancyOptions>(options =>
             {
                 options.IsEnabled = true;
             });
 
             context.Services.AddAuthentication("Bearer")
-                .AddIdentityServerAuthentication(options =>
-                {
-                    options.Authority = configuration["AuthServer:Authority"];
-                    options.ApiName = configuration["AuthServer:ApiName"];
-                    options.RequireHttpsMetadata = false;
-                });
+                   .AddIdentityServerAuthentication(options =>
+                   {
+                        options.Authority = configuration["AuthServer:Authority"];
+                        options.ApiName = configuration["AuthServer:ApiName"];
+                        options.RequireHttpsMetadata = false;
+                   });
+
+        
 
             context.Services.AddSwaggerGen(options =>
             {
@@ -47,7 +75,6 @@ namespace IdentityService
                 options.DocInclusionPredicate((docName, description) => true);
                 options.CustomSchemaIds(type => type.FullName);
             });
-
 
             Configure<AbpDbContextOptions>(options =>
             {
@@ -59,11 +86,18 @@ namespace IdentityService
         {
             var app = context.GetApplicationBuilder();
 
-            app.UseCorrelationId();
+            app.UseHttpsRedirection();
+            
             app.UseRouting();
+
             app.UseAuthentication();
 
             app.UseMultiTenancy();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
 
             app.UseSwagger();
             app.UseSwaggerUI(options =>

@@ -1,19 +1,41 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+using Serilog;
+using Serilog.Events;
 
 namespace IdentityService
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static int Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            Log.Logger = new LoggerConfiguration()
+                         .MinimumLevel.Debug()
+                         .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
+                         .MinimumLevel.Override("Microsoft.EntityFrameworkCore", LogEventLevel.Warning)
+                         .Enrich.WithProperty("Application", "AuthServer")
+                         .Enrich.FromLogContext()
+                         .WriteTo.File("Logs/logs.txt")
+                         .WriteTo.Console()
+                         .CreateLogger();
+
+            try
+            {
+                Log.Information("Starting Identity Service");
+                CreateHostBuilder(args).Build().Run();
+                return 0;
+            }
+            catch (Exception ex)
+
+            {
+                Log.Fatal(ex, "Identity Service terminated unexpectedly!");
+                return 1;
+            }
+            finally
+            {
+                Log.CloseAndFlush();
+            }
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
@@ -21,6 +43,8 @@ namespace IdentityService
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                });
+                })
+                .UseAutofac()
+                .UseSerilog();
     }
 }

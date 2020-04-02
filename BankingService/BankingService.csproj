@@ -8,6 +8,7 @@
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="EntityFramework\" />
+    <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Volo.Abp.Core" Version="2.3.0" />
