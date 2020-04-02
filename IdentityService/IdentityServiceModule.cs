@@ -15,25 +15,6 @@ using Volo.Abp.TenantManagement.EntityFrameworkCore;
 
 namespace IdentityService
 {
-
-    //[DependsOn(
-    //typeof(AbpAutofacModule),
-    //typeof(AbpEventBusRabbitMqModule),
-    //typeof(AbpEntityFrameworkCoreSqlServerModule),
-    //typeof(AbpAuditLoggingEntityFrameworkCoreModule),
-    //typeof(AbpPermissionManagementEntityFrameworkCoreModule),
-    //typeof(AbpSettingManagementEntityFrameworkCoreModule),
-    //typeof(AbpIdentityHttpApiModule),
-    //typeof(AbpIdentityEntityFrameworkCoreModule),
-    //typeof(AbpIdentityApplicationModule),
-    //typeof(AbpAspNetCoreMultiTenancyModule),
-    //typeof(AbpTenantManagementEntityFrameworkCoreModule)
-    //)]
-
-
-
-
-
     [DependsOn(
         typeof(AbpAutofacModule),
         typeof(AbpAspNetCoreMvcModule),
