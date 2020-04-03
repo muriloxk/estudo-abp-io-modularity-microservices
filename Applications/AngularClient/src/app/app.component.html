@@ -1,0 +1,3 @@
+<button *ngIf="!isLoggedIn" (click)="login()">Login</button>
+<button *ngIf="isLoggedIn" (click)="login()">Logout</button>
+<router-outlet></router-outlet>

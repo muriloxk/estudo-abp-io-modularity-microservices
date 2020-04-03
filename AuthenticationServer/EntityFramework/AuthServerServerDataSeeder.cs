@@ -44,8 +44,9 @@ namespace AuthenticationServer.EntityFramework
         {
             await CreateApiResourceAsync("BankingService", new[] { "role" });
             await CreateApiResourceAsync("TranferLogService", new[] { "role" });
+            await CreateApiResourceAsync("IdentityService", new[] { "role" });
 
-
+            #region Cliente criado só por exemplo para ver um negócio 
             const string commonSecret = "E5Xd4yMqjP5kjWFKrYgySBju6JVfCzMyFp7n2QmMrME=";
 
             var commonScopes = new[]
@@ -64,6 +65,7 @@ namespace AuthenticationServer.EntityFramework
            new[] { "BloggingService", "IdentityService", "InternalGateway", "ProductService", "TenantManagementService" },
            new[] { "client_credentials", "password" },
            commonSecret );
+           #endregion
         }
 
 
