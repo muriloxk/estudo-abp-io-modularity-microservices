@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HelloworldComponent } from './helloworld/helloworld.component';
 import { SigninRedirectComponent } from './home/signin-redirect-callback.component';
 import { SignoutRedirectComponent } from './home/signout-redirect-callback.component';
+import { AuthService } from './core/auth-service.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,9 @@ import { SignoutRedirectComponent } from './home/signout-redirect-callback.compo
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    AuthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

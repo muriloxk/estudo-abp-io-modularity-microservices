@@ -232,3 +232,1261 @@
 2020-04-02 14:43:32.356 -03:00 [INF] Request finished in 95.6335ms 200 application/jwk-set+json; charset=UTF-8
 2020-04-02 18:28:12.053 -03:00 [DBG] Stopped background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
 2020-04-02 18:28:12.170 -03:00 [INF] Application is shutting down...
+2020-04-03 18:09:26.503 -03:00 [INF] Starting AuthenticationServer
+2020-04-03 18:09:33.036 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-04-03 18:09:33.578 -03:00 [INF] Loaded ABP modules:
+2020-04-03 18:09:33.579 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-04-03 18:09:33.579 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-04-03 18:09:33.579 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-04-03 18:09:33.579 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-04-03 18:09:33.579 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-04-03 18:09:33.579 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-04-03 18:09:33.579 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-04-03 18:09:33.579 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-04-03 18:09:33.579 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-04-03 18:09:33.579 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-04-03 18:09:33.579 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-04-03 18:09:33.579 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-04-03 18:09:33.579 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-04-03 18:09:33.579 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-04-03 18:09:33.579 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-04-03 18:09:33.579 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-04-03 18:09:33.580 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-04-03 18:09:33.580 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-04-03 18:09:33.580 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-04-03 18:09:33.580 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-04-03 18:09:33.580 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-04-03 18:09:33.580 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-04-03 18:09:33.580 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-04-03 18:09:33.580 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-04-03 18:09:33.580 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-04-03 18:09:33.580 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-04-03 18:09:33.580 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-04-03 18:09:33.580 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-04-03 18:09:33.580 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-04-03 18:09:33.580 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-04-03 18:09:33.580 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-04-03 18:09:33.580 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-04-03 18:09:33.580 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-04-03 18:09:33.581 -03:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-04-03 18:09:33.581 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-04-03 18:09:33.581 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-04-03 18:09:33.581 -03:00 [INF] - Volo.Abp.Identity.AspNetCore.AbpIdentityAspNetCoreModule
+2020-04-03 18:09:33.581 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-04-03 18:09:33.581 -03:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-04-03 18:09:33.581 -03:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-04-03 18:09:33.581 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-04-03 18:09:33.581 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-04-03 18:09:33.581 -03:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2020-04-03 18:09:33.581 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2020-04-03 18:09:33.581 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2020-04-03 18:09:33.581 -03:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2020-04-03 18:09:33.581 -03:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2020-04-03 18:09:33.581 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-04-03 18:09:33.581 -03:00 [INF] - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2020-04-03 18:09:33.582 -03:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2020-04-03 18:09:33.582 -03:00 [INF] - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2020-04-03 18:09:33.582 -03:00 [INF] - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2020-04-03 18:09:33.582 -03:00 [INF] - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2020-04-03 18:09:33.582 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-04-03 18:09:33.582 -03:00 [INF] - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2020-04-03 18:09:33.582 -03:00 [INF] - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2020-04-03 18:09:33.582 -03:00 [INF] - AuthenticationServer.AuthenticationServerModule
+2020-04-03 18:09:34.087 -03:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2020-04-03 18:09:34.123 -03:00 [INF] Starting IdentityServer4 version 3.0.2.0
+2020-04-03 18:09:34.365 -03:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2020-04-03 18:09:34.365 -03:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2020-04-03 18:09:34.365 -03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2020-04-03 18:09:34.366 -03:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2020-04-03 18:09:34.366 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2020-04-03 18:09:34.366 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2020-04-03 18:09:40.414 -03:00 [INF] Initialized all ABP modules.
+2020-04-03 18:09:40.801 -03:00 [INF] Now listening on: http://localhost:5000
+2020-04-03 18:09:40.802 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-04-03 18:09:40.802 -03:00 [INF] Hosting environment: Development
+2020-04-03 18:09:40.802 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer
+2020-04-03 18:12:20.242 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2020-04-03 18:12:20.438 -03:00 [DBG] Login Url: /Account/Login
+2020-04-03 18:12:20.438 -03:00 [DBG] Login Return Url Parameter: ReturnUrl
+2020-04-03 18:12:20.438 -03:00 [DBG] Logout Url: /Account/Logout
+2020-04-03 18:12:20.439 -03:00 [DBG] ConsentUrl Url: /consent
+2020-04-03 18:12:20.439 -03:00 [DBG] Consent Return Url Parameter: returnUrl
+2020-04-03 18:12:20.439 -03:00 [DBG] Error Url: /home/error
+2020-04-03 18:12:20.439 -03:00 [DBG] Error Id Parameter: errorId
+2020-04-03 18:12:20.466 -03:00 [INF] Executing endpoint 'AuthenticationServer.HomeController.Index (AuthenticationServer)'
+2020-04-03 18:12:20.639 -03:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AuthenticationServer.HomeController (AuthenticationServer).
+2020-04-03 18:12:20.779 -03:00 [INF] Executing ViewResult, running view Index.
+2020-04-03 18:12:20.919 -03:00 [INF] Executed ViewResult - view Index executed in 215.802ms.
+2020-04-03 18:12:20.921 -03:00 [INF] Executed action AuthenticationServer.HomeController.Index (AuthenticationServer) in 282.0167ms
+2020-04-03 18:12:20.922 -03:00 [INF] Executed endpoint 'AuthenticationServer.HomeController.Index (AuthenticationServer)'
+2020-04-03 18:12:20.925 -03:00 [INF] Request finished in 696.2014ms 200 text/html; charset=utf-8
+2020-04-03 18:13:42.413 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/.well-known/openid-configuration  
+2020-04-03 18:13:42.440 -03:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2020-04-03 18:13:42.680 -03:00 [WRN] Origin is not allowed: http://localhost:4200
+2020-04-03 18:13:42.681 -03:00 [WRN] CorsPolicyService did not allow origin: http://localhost:4200
+2020-04-03 18:13:42.684 -03:00 [INF] No CORS policy found for the specified request.
+2020-04-03 18:13:42.685 -03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-04-03 18:13:42.706 -03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-04-03 18:13:42.707 -03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-04-03 18:13:42.722 -03:00 [DBG] Start discovery request
+2020-04-03 18:13:43.021 -03:00 [INF] Request finished in 608.3912ms 200 application/json; charset=UTF-8
+2020-04-03 18:16:46.189 -03:00 [DBG] Stopped background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2020-04-03 18:16:46.212 -03:00 [INF] Application is shutting down...
+2020-04-03 18:17:05.985 -03:00 [INF] Starting AuthenticationServer
+2020-04-03 18:17:10.595 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-04-03 18:17:10.806 -03:00 [INF] Loaded ABP modules:
+2020-04-03 18:17:10.807 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-04-03 18:17:10.807 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-04-03 18:17:10.807 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-04-03 18:17:10.807 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-04-03 18:17:10.807 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-04-03 18:17:10.808 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-04-03 18:17:10.808 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-04-03 18:17:10.808 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-04-03 18:17:10.808 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-04-03 18:17:10.808 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-04-03 18:17:10.808 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-04-03 18:17:10.808 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-04-03 18:17:10.809 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-04-03 18:17:10.809 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-04-03 18:17:10.809 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-04-03 18:17:10.809 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-04-03 18:17:10.809 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-04-03 18:17:10.809 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-04-03 18:17:10.809 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-04-03 18:17:10.809 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-04-03 18:17:10.809 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-04-03 18:17:10.809 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-04-03 18:17:10.809 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-04-03 18:17:10.810 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-04-03 18:17:10.810 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-04-03 18:17:10.810 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-04-03 18:17:10.810 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-04-03 18:17:10.810 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-04-03 18:17:10.810 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-04-03 18:17:10.810 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-04-03 18:17:10.810 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-04-03 18:17:10.811 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-04-03 18:17:10.811 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-04-03 18:17:10.811 -03:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-04-03 18:17:10.811 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-04-03 18:17:10.811 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-04-03 18:17:10.811 -03:00 [INF] - Volo.Abp.Identity.AspNetCore.AbpIdentityAspNetCoreModule
+2020-04-03 18:17:10.811 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-04-03 18:17:10.811 -03:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-04-03 18:17:10.812 -03:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-04-03 18:17:10.812 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-04-03 18:17:10.812 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-04-03 18:17:10.812 -03:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2020-04-03 18:17:10.812 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2020-04-03 18:17:10.812 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2020-04-03 18:17:10.812 -03:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2020-04-03 18:17:10.812 -03:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2020-04-03 18:17:10.812 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-04-03 18:17:10.812 -03:00 [INF] - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2020-04-03 18:17:10.812 -03:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2020-04-03 18:17:10.813 -03:00 [INF] - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2020-04-03 18:17:10.813 -03:00 [INF] - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2020-04-03 18:17:10.813 -03:00 [INF] - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2020-04-03 18:17:10.813 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-04-03 18:17:10.813 -03:00 [INF] - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2020-04-03 18:17:10.813 -03:00 [INF] - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2020-04-03 18:17:10.813 -03:00 [INF] - AuthenticationServer.AuthenticationServerModule
+2020-04-03 18:17:11.264 -03:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2020-04-03 18:17:11.287 -03:00 [INF] Starting IdentityServer4 version 3.0.2.0
+2020-04-03 18:17:11.562 -03:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2020-04-03 18:17:11.562 -03:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2020-04-03 18:17:11.563 -03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2020-04-03 18:17:11.564 -03:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2020-04-03 18:17:11.566 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2020-04-03 18:17:11.566 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2020-04-03 18:17:16.122 -03:00 [INF] Initialized all ABP modules.
+2020-04-03 18:17:16.446 -03:00 [INF] Now listening on: http://localhost:5000
+2020-04-03 18:17:16.446 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-04-03 18:17:16.446 -03:00 [INF] Hosting environment: Development
+2020-04-03 18:17:16.447 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer
+2020-04-03 18:20:20.793 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2020-04-03 18:20:21.020 -03:00 [DBG] Login Url: /Account/Login
+2020-04-03 18:20:21.020 -03:00 [DBG] Login Return Url Parameter: ReturnUrl
+2020-04-03 18:20:21.020 -03:00 [DBG] Logout Url: /Account/Logout
+2020-04-03 18:20:21.021 -03:00 [DBG] ConsentUrl Url: /consent
+2020-04-03 18:20:21.021 -03:00 [DBG] Consent Return Url Parameter: returnUrl
+2020-04-03 18:20:21.021 -03:00 [DBG] Error Url: /home/error
+2020-04-03 18:20:21.021 -03:00 [DBG] Error Id Parameter: errorId
+2020-04-03 18:20:21.082 -03:00 [INF] Executing endpoint 'AuthenticationServer.HomeController.Index (AuthenticationServer)'
+2020-04-03 18:20:21.236 -03:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller AuthenticationServer.HomeController (AuthenticationServer).
+2020-04-03 18:20:21.399 -03:00 [INF] Executing ViewResult, running view Index.
+2020-04-03 18:20:21.535 -03:00 [INF] Executed ViewResult - view Index executed in 203.5557ms.
+2020-04-03 18:20:21.539 -03:00 [INF] Executed action AuthenticationServer.HomeController.Index (AuthenticationServer) in 302.3445ms
+2020-04-03 18:20:21.540 -03:00 [INF] Executed endpoint 'AuthenticationServer.HomeController.Index (AuthenticationServer)'
+2020-04-03 18:20:21.543 -03:00 [INF] Request finished in 790.2278ms 200 text/html; charset=utf-8
+2020-04-03 18:20:21.595 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/icon.png  
+2020-04-03 18:20:21.595 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/icon.jpg  
+2020-04-03 18:20:21.595 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/css/site.css  
+2020-04-03 18:20:21.783 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/css/bootstrap.css  
+2020-04-03 18:20:21.801 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/js/bootstrap.js  
+2020-04-03 18:20:21.801 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery/jquery.js  
+2020-04-03 18:20:22.034 -03:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer/wwwroot/css/site.css'
+2020-04-03 18:20:22.034 -03:00 [INF] Sending file. Request path: '/icon.jpg'. Physical path: '/Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer/wwwroot/icon.jpg'
+2020-04-03 18:20:22.034 -03:00 [INF] Sending file. Request path: '/icon.png'. Physical path: '/Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer/wwwroot/icon.png'
+2020-04-03 18:20:22.034 -03:00 [INF] Request finished in 438.8191ms 200 text/css
+2020-04-03 18:20:22.035 -03:00 [INF] Request finished in 439.4386ms 200 image/jpeg
+2020-04-03 18:20:22.036 -03:00 [INF] Request finished in 440.4127ms 200 image/png
+2020-04-03 18:20:22.085 -03:00 [INF] Sending file. Request path: '/lib/bootstrap/js/bootstrap.js'. Physical path: '/Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer/wwwroot/lib/bootstrap/js/bootstrap.js'
+2020-04-03 18:20:22.086 -03:00 [INF] Request finished in 285.2747ms 200 application/javascript
+2020-04-03 18:20:22.086 -03:00 [INF] Sending file. Request path: '/lib/bootstrap/css/bootstrap.css'. Physical path: '/Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer/wwwroot/lib/bootstrap/css/bootstrap.css'
+2020-04-03 18:20:22.087 -03:00 [INF] Request finished in 303.9679ms 200 text/css
+2020-04-03 18:20:22.087 -03:00 [INF] Sending file. Request path: '/lib/jquery/jquery.js'. Physical path: '/Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer/wwwroot/lib/jquery/jquery.js'
+2020-04-03 18:20:22.087 -03:00 [INF] Request finished in 286.8591ms 200 application/javascript
+2020-04-03 18:20:23.889 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/.well-known/openid-configuration  
+2020-04-03 18:20:23.892 -03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-04-03 18:20:23.915 -03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-04-03 18:20:23.915 -03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-04-03 18:20:23.977 -03:00 [DBG] Start discovery request
+2020-04-03 18:20:24.249 -03:00 [INF] Request finished in 360.6824ms 200 application/json; charset=UTF-8
+2020-04-03 18:21:04.016 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/.well-known/openid-configuration  
+2020-04-03 18:21:04.021 -03:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2020-04-03 18:21:04.103 -03:00 [WRN] Origin is not allowed: http://localhost:4200
+2020-04-03 18:21:04.104 -03:00 [WRN] CorsPolicyService did not allow origin: http://localhost:4200
+2020-04-03 18:21:04.107 -03:00 [INF] No CORS policy found for the specified request.
+2020-04-03 18:21:04.108 -03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-04-03 18:21:04.110 -03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-04-03 18:21:04.111 -03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-04-03 18:21:04.111 -03:00 [DBG] Start discovery request
+2020-04-03 18:21:04.121 -03:00 [INF] Request finished in 105.7729ms 200 application/json; charset=UTF-8
+2020-04-03 18:22:08.515 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/.well-known/openid-configuration  
+2020-04-03 18:22:08.517 -03:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2020-04-03 18:22:08.522 -03:00 [WRN] Origin is not allowed: http://localhost:4200
+2020-04-03 18:22:08.523 -03:00 [WRN] CorsPolicyService did not allow origin: http://localhost:4200
+2020-04-03 18:22:08.523 -03:00 [INF] No CORS policy found for the specified request.
+2020-04-03 18:22:08.524 -03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-04-03 18:22:08.528 -03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-04-03 18:22:08.528 -03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-04-03 18:22:08.529 -03:00 [DBG] Start discovery request
+2020-04-03 18:22:08.542 -03:00 [INF] Request finished in 28.0043ms 200 application/json; charset=UTF-8
+2020-04-03 18:22:08.567 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/.well-known/openid-configuration  
+2020-04-03 18:22:08.568 -03:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2020-04-03 18:22:08.569 -03:00 [WRN] Origin is not allowed: http://localhost:4200
+2020-04-03 18:22:08.569 -03:00 [WRN] CorsPolicyService did not allow origin: http://localhost:4200
+2020-04-03 18:22:08.569 -03:00 [INF] No CORS policy found for the specified request.
+2020-04-03 18:22:08.570 -03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-04-03 18:22:08.573 -03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-04-03 18:22:08.573 -03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-04-03 18:22:08.573 -03:00 [DBG] Start discovery request
+2020-04-03 18:22:08.583 -03:00 [INF] Request finished in 15.7786ms 200 application/json; charset=UTF-8
+2020-04-03 18:24:35.501 -03:00 [DBG] Stopped background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2020-04-03 18:24:35.501 -03:00 [INF] Application is shutting down...
+2020-04-03 18:24:51.341 -03:00 [INF] Starting AuthenticationServer
+2020-04-03 18:24:53.769 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-04-03 18:24:54.024 -03:00 [INF] Loaded ABP modules:
+2020-04-03 18:24:54.024 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-04-03 18:24:54.025 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-04-03 18:24:54.025 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-04-03 18:24:54.025 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-04-03 18:24:54.025 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-04-03 18:24:54.025 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-04-03 18:24:54.025 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-04-03 18:24:54.025 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-04-03 18:24:54.025 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-04-03 18:24:54.025 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-04-03 18:24:54.025 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-04-03 18:24:54.025 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-04-03 18:24:54.025 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-04-03 18:24:54.025 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-04-03 18:24:54.025 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-04-03 18:24:54.026 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-04-03 18:24:54.026 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-04-03 18:24:54.026 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-04-03 18:24:54.026 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-04-03 18:24:54.026 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-04-03 18:24:54.026 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-04-03 18:24:54.026 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-04-03 18:24:54.026 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-04-03 18:24:54.026 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-04-03 18:24:54.026 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-04-03 18:24:54.026 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-04-03 18:24:54.026 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-04-03 18:24:54.026 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-04-03 18:24:54.026 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-04-03 18:24:54.026 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-04-03 18:24:54.026 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-04-03 18:24:54.026 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-04-03 18:24:54.027 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-04-03 18:24:54.027 -03:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-04-03 18:24:54.027 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-04-03 18:24:54.027 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-04-03 18:24:54.027 -03:00 [INF] - Volo.Abp.Identity.AspNetCore.AbpIdentityAspNetCoreModule
+2020-04-03 18:24:54.027 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-04-03 18:24:54.027 -03:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-04-03 18:24:54.027 -03:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-04-03 18:24:54.027 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-04-03 18:24:54.027 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-04-03 18:24:54.027 -03:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2020-04-03 18:24:54.027 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2020-04-03 18:24:54.027 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2020-04-03 18:24:54.027 -03:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2020-04-03 18:24:54.027 -03:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2020-04-03 18:24:54.027 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-04-03 18:24:54.028 -03:00 [INF] - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2020-04-03 18:24:54.028 -03:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2020-04-03 18:24:54.028 -03:00 [INF] - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2020-04-03 18:24:54.028 -03:00 [INF] - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2020-04-03 18:24:54.028 -03:00 [INF] - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2020-04-03 18:24:54.028 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-04-03 18:24:54.028 -03:00 [INF] - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2020-04-03 18:24:54.028 -03:00 [INF] - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2020-04-03 18:24:54.028 -03:00 [INF] - AuthenticationServer.AuthenticationServerModule
+2020-04-03 18:24:54.299 -03:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2020-04-03 18:24:54.302 -03:00 [INF] Starting IdentityServer4 version 3.0.2.0
+2020-04-03 18:24:54.503 -03:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2020-04-03 18:24:54.503 -03:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2020-04-03 18:24:54.503 -03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2020-04-03 18:24:54.503 -03:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2020-04-03 18:24:54.503 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2020-04-03 18:24:54.503 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2020-04-03 18:24:57.477 -03:00 [INF] Initialized all ABP modules.
+2020-04-03 18:24:57.510 -03:00 [INF] Now listening on: http://localhost:5000
+2020-04-03 18:24:57.510 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-04-03 18:24:57.510 -03:00 [INF] Hosting environment: Development
+2020-04-03 18:24:57.510 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer
+2020-04-03 18:25:11.042 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/.well-known/openid-configuration  
+2020-04-03 18:25:11.054 -03:00 [INF] CORS policy execution successful.
+2020-04-03 18:25:11.092 -03:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2020-04-03 18:25:11.136 -03:00 [WRN] Origin is not allowed: http://localhost:4200
+2020-04-03 18:25:11.137 -03:00 [WRN] CorsPolicyService did not allow origin: http://localhost:4200
+2020-04-03 18:25:11.137 -03:00 [INF] No CORS policy found for the specified request.
+2020-04-03 18:25:11.158 -03:00 [DBG] Login Url: /Account/Login
+2020-04-03 18:25:11.158 -03:00 [DBG] Login Return Url Parameter: ReturnUrl
+2020-04-03 18:25:11.158 -03:00 [DBG] Logout Url: /Account/Logout
+2020-04-03 18:25:11.159 -03:00 [DBG] ConsentUrl Url: /consent
+2020-04-03 18:25:11.159 -03:00 [DBG] Consent Return Url Parameter: returnUrl
+2020-04-03 18:25:11.159 -03:00 [DBG] Error Url: /home/error
+2020-04-03 18:25:11.159 -03:00 [DBG] Error Id Parameter: errorId
+2020-04-03 18:25:11.172 -03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-04-03 18:25:11.196 -03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-04-03 18:25:11.196 -03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-04-03 18:25:11.197 -03:00 [DBG] Start discovery request
+2020-04-03 18:25:11.400 -03:00 [INF] Request finished in 359.8742ms 200 application/json; charset=UTF-8
+2020-04-03 18:25:11.448 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/connect/authorize?client_id=spa-client&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2Fsignin-callback&response_type=code&scope=openid%20profile%20transferlogapi%20bankingapi&state=3746f44790a241cc92ac6d30cdd9b362&code_challenge=i76WKRDBVt4LxTVGnm39vuE-v1P2BF9Aa_5PS5FaCzE&code_challenge_method=S256&response_mode=query  
+2020-04-03 18:25:11.452 -03:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2020-04-03 18:25:11.519 -03:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2020-04-03 18:25:11.519 -03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2020-04-03 18:25:11.521 -03:00 [DBG] Start authorize request
+2020-04-03 18:25:11.571 -03:00 [DBG] No user present in authorize request
+2020-04-03 18:25:11.590 -03:00 [DBG] Start authorize request protocol validation
+2020-04-03 18:25:11.681 -03:00 [DBG] client configuration validation for client spa-client succeeded.
+2020-04-03 18:25:11.738 -03:00 [ERR] Invalid redirect_uri: http://localhost:4200/signin-callback
+{"ClientId":"spa-client","ClientName":"spa-client","RedirectUri":null,"AllowedRedirectUris":[],"SubjectId":"anonymous","ResponseType":null,"ResponseMode":null,"GrantType":null,"RequestedScopes":"","State":null,"UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"spa-client","redirect_uri":"http://localhost:4200/signin-callback","response_type":"code","scope":"openid profile transferlogapi bankingapi","state":"3746f44790a241cc92ac6d30cdd9b362","code_challenge":"i76WKRDBVt4LxTVGnm39vuE-v1P2BF9Aa_5PS5FaCzE","code_challenge_method":"S256","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2020-04-03 18:25:11.750 -03:00 [ERR] Request validation failed
+2020-04-03 18:25:11.750 -03:00 [INF] {"ClientId":"spa-client","ClientName":"spa-client","RedirectUri":null,"AllowedRedirectUris":[],"SubjectId":"anonymous","ResponseType":null,"ResponseMode":null,"GrantType":null,"RequestedScopes":"","State":null,"UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"spa-client","redirect_uri":"http://localhost:4200/signin-callback","response_type":"code","scope":"openid profile transferlogapi bankingapi","state":"3746f44790a241cc92ac6d30cdd9b362","code_challenge":"i76WKRDBVt4LxTVGnm39vuE-v1P2BF9Aa_5PS5FaCzE","code_challenge_method":"S256","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2020-04-03 18:25:11.756 -03:00 [INF] {"ClientId":"spa-client","ClientName":"spa-client","RedirectUri":null,"Endpoint":"Authorize","SubjectId":null,"Scopes":"","GrantType":null,"Error":"unauthorized_client","ErrorDescription":"Invalid redirect_uri","Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HLUO2LUQCEGI:00000001","TimeStamp":"2020-04-03T21:25:11.0000000Z","ProcessId":8651,"LocalIpAddress":"127.0.0.1:5000","RemoteIpAddress":"127.0.0.1","$type":"TokenIssuedFailureEvent"}
+2020-04-03 18:25:11.800 -03:00 [INF] Request finished in 352.4894ms 302 
+2020-04-03 18:25:11.808 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/home/error?errorId=CfDJ8Kq2Wa3E_3NPt0n3fFHtqeI6BZ16TKnx1baVuOpXVUAPWO01bwBcHuKsSKGm7acxuIOZa7EWofZ7WK0WS5iOm-kzR9y4FRzmvoWq4DHvpTBkLo-P6tjIBdXaiyDAAEzpj5M5BCI24msmA1gcSVa8Wr8rUgjYBAJZccBKlelG_JT4CLyaxynap8PtiLGVQVQIopWsbIDSfULv1As6OWm3HBpY1wWO9n7lRHlcn1lH7fQ4DQ3d_r5qoA1EjH5CuDCeNpBQLkS3CItCNwbPcrqf6X56FqvOVDIVis7FjwSIpYQo2HiQzfsvtv3VpwQIAQsHeSyf2Pf1pi8je-dqcZQWm6A  
+2020-04-03 18:25:11.809 -03:00 [INF] Executing endpoint 'AuthenticationServer.HomeController.Error (AuthenticationServer)'
+2020-04-03 18:25:11.941 -03:00 [INF] Route matched with {action = "Error", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Error(System.String) on controller AuthenticationServer.HomeController (AuthenticationServer).
+2020-04-03 18:25:12.062 -03:00 [INF] Executing ViewResult, running view Error.
+2020-04-03 18:25:12.135 -03:00 [INF] Executed ViewResult - view Error executed in 106.8469ms.
+2020-04-03 18:25:12.138 -03:00 [INF] Executed action AuthenticationServer.HomeController.Error (AuthenticationServer) in 195.7152ms
+2020-04-03 18:25:12.138 -03:00 [INF] Executed endpoint 'AuthenticationServer.HomeController.Error (AuthenticationServer)'
+2020-04-03 18:25:12.141 -03:00 [INF] Request finished in 333.2599ms 200 text/html; charset=utf-8
+2020-04-03 18:25:12.196 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/css/bootstrap.css  
+2020-04-03 18:25:12.200 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery/jquery.js  
+2020-04-03 18:25:12.200 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/js/bootstrap.js  
+2020-04-03 18:25:12.201 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/css/site.css  
+2020-04-03 18:25:12.212 -03:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer/wwwroot/css/site.css'
+2020-04-03 18:25:12.213 -03:00 [INF] Request finished in 11.4145ms 200 text/css
+2020-04-03 18:25:12.214 -03:00 [INF] Sending file. Request path: '/lib/bootstrap/js/bootstrap.js'. Physical path: '/Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer/wwwroot/lib/bootstrap/js/bootstrap.js'
+2020-04-03 18:25:12.215 -03:00 [INF] Request finished in 14.8636ms 200 application/javascript
+2020-04-03 18:25:12.215 -03:00 [INF] Sending file. Request path: '/lib/bootstrap/css/bootstrap.css'. Physical path: '/Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer/wwwroot/lib/bootstrap/css/bootstrap.css'
+2020-04-03 18:25:12.215 -03:00 [INF] Sending file. Request path: '/lib/jquery/jquery.js'. Physical path: '/Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer/wwwroot/lib/jquery/jquery.js'
+2020-04-03 18:25:12.216 -03:00 [INF] Request finished in 20.2215ms 200 text/css
+2020-04-03 18:25:12.216 -03:00 [INF] Request finished in 15.6747ms 200 application/javascript
+2020-04-03 18:25:12.216 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/icon.png  
+2020-04-03 18:25:12.217 -03:00 [INF] Sending file. Request path: '/icon.png'. Physical path: '/Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer/wwwroot/icon.png'
+2020-04-03 18:25:12.217 -03:00 [INF] Request finished in 1.1515ms 200 image/png
+2020-04-03 18:25:12.331 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+2020-04-03 18:25:12.354 -03:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: '/Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer/wwwroot/favicon.ico'
+2020-04-03 18:25:12.355 -03:00 [INF] Request finished in 24.2366ms 200 image/x-icon
+2020-04-03 18:25:12.486 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/css/bootstrap.css.map  
+2020-04-03 18:25:12.528 -03:00 [INF] Sending file. Request path: '/lib/bootstrap/css/bootstrap.css.map'. Physical path: '/Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer/wwwroot/lib/bootstrap/css/bootstrap.css.map'
+2020-04-03 18:25:12.530 -03:00 [INF] Request finished in 43.3746ms 200 text/plain
+2020-04-03 18:27:02.148 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/.well-known/openid-configuration  
+2020-04-03 18:27:02.162 -03:00 [INF] CORS policy execution successful.
+2020-04-03 18:27:02.163 -03:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2020-04-03 18:27:02.167 -03:00 [WRN] Origin is not allowed: http://localhost:4200
+2020-04-03 18:27:02.168 -03:00 [WRN] CorsPolicyService did not allow origin: http://localhost:4200
+2020-04-03 18:27:02.168 -03:00 [INF] No CORS policy found for the specified request.
+2020-04-03 18:27:02.169 -03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-04-03 18:27:02.174 -03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-04-03 18:27:02.174 -03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-04-03 18:27:02.174 -03:00 [DBG] Start discovery request
+2020-04-03 18:27:02.188 -03:00 [INF] Request finished in 40.4353ms 200 application/json; charset=UTF-8
+2020-04-03 18:27:02.210 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/connect/authorize?client_id=754ee75c-d0de-3b85-b4b2-39f4540d946a&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2Fsignin-callback&response_type=code&scope=openid%20profile%20transferlogapi%20bankingapi&state=ebb998607e1c4926872a5394e4a3e631&code_challenge=BiH2Wg5LHEtFknUEOKaEsYUFlVxTkK_y6eKzQQWd3eQ&code_challenge_method=S256&response_mode=query  
+2020-04-03 18:27:02.211 -03:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2020-04-03 18:27:02.215 -03:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2020-04-03 18:27:02.216 -03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2020-04-03 18:27:02.216 -03:00 [DBG] Start authorize request
+2020-04-03 18:27:02.217 -03:00 [DBG] No user present in authorize request
+2020-04-03 18:27:02.217 -03:00 [DBG] Start authorize request protocol validation
+2020-04-03 18:27:02.222 -03:00 [ERR] Unknown client or not enabled: 754ee75c-d0de-3b85-b4b2-39f4540d946a
+{"ClientId":null,"ClientName":null,"RedirectUri":null,"AllowedRedirectUris":null,"SubjectId":"anonymous","ResponseType":null,"ResponseMode":null,"GrantType":null,"RequestedScopes":"","State":null,"UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"754ee75c-d0de-3b85-b4b2-39f4540d946a","redirect_uri":"http://localhost:4200/signin-callback","response_type":"code","scope":"openid profile transferlogapi bankingapi","state":"ebb998607e1c4926872a5394e4a3e631","code_challenge":"BiH2Wg5LHEtFknUEOKaEsYUFlVxTkK_y6eKzQQWd3eQ","code_challenge_method":"S256","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2020-04-03 18:27:02.223 -03:00 [ERR] Request validation failed
+2020-04-03 18:27:02.223 -03:00 [INF] {"ClientId":null,"ClientName":null,"RedirectUri":null,"AllowedRedirectUris":null,"SubjectId":"anonymous","ResponseType":null,"ResponseMode":null,"GrantType":null,"RequestedScopes":"","State":null,"UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"754ee75c-d0de-3b85-b4b2-39f4540d946a","redirect_uri":"http://localhost:4200/signin-callback","response_type":"code","scope":"openid profile transferlogapi bankingapi","state":"ebb998607e1c4926872a5394e4a3e631","code_challenge":"BiH2Wg5LHEtFknUEOKaEsYUFlVxTkK_y6eKzQQWd3eQ","code_challenge_method":"S256","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2020-04-03 18:27:02.224 -03:00 [INF] {"ClientId":"754ee75c-d0de-3b85-b4b2-39f4540d946a","ClientName":null,"RedirectUri":null,"Endpoint":"Authorize","SubjectId":null,"Scopes":"","GrantType":null,"Error":"unauthorized_client","ErrorDescription":"Unknown client or client not enabled","Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HLUO2LUQCEGK:00000004","TimeStamp":"2020-04-03T21:27:02.0000000Z","ProcessId":8651,"LocalIpAddress":"127.0.0.1:5000","RemoteIpAddress":"127.0.0.1","$type":"TokenIssuedFailureEvent"}
+2020-04-03 18:27:02.225 -03:00 [INF] Request finished in 15.1938ms 302 
+2020-04-03 18:27:02.228 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/home/error?errorId=CfDJ8Kq2Wa3E_3NPt0n3fFHtqeK4btBF3LVvQnirnmM-HAD7oICxlUr-gXHsNJOOu9GOU1wLtxl0yqktI9xN8sQ7hFrxgjONuTd7czYR9vh2NBGnME751LfCURgIgeaJlh_48Hwm0fRVDoFZnbpUxe24WO3kQFDIR3nWeX3fuDFIqJLm7vIczt-vkKu4O0wykF4CuK0Usji0I3bxY_SoYgDC351k9r3dVBMmPCawlhjynpYG-vpk16kfZiyzqHYISr9YilYCurHm-igcty16pwZBoDfzIu-FiTZjO6fnMl7ziCzcdbUBM6iOnvN_4xMeP4vGDzclDSCBBqnDA_Lk0cyK1Hn6jeWEDhS5pcqIZr6pYCX_R4hlvx79c20PhzSZr6TAq3ubmREuPsUBu2OAE7zGXYk  
+2020-04-03 18:27:02.230 -03:00 [INF] Executing endpoint 'AuthenticationServer.HomeController.Error (AuthenticationServer)'
+2020-04-03 18:27:02.231 -03:00 [INF] Route matched with {action = "Error", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Error(System.String) on controller AuthenticationServer.HomeController (AuthenticationServer).
+2020-04-03 18:27:02.234 -03:00 [INF] Executing ViewResult, running view Error.
+2020-04-03 18:27:02.237 -03:00 [INF] Executed ViewResult - view Error executed in 2.7017ms.
+2020-04-03 18:27:02.237 -03:00 [INF] Executed action AuthenticationServer.HomeController.Error (AuthenticationServer) in 5.8683ms
+2020-04-03 18:27:02.237 -03:00 [INF] Executed endpoint 'AuthenticationServer.HomeController.Error (AuthenticationServer)'
+2020-04-03 18:27:02.238 -03:00 [INF] Request finished in 9.6062ms 200 text/html; charset=utf-8
+2020-04-03 18:27:02.255 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/css/bootstrap.css  
+2020-04-03 18:27:02.255 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/css/site.css  
+2020-04-03 18:27:02.255 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery/jquery.js  
+2020-04-03 18:27:02.256 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/js/bootstrap.js  
+2020-04-03 18:27:02.464 -03:00 [INF] The file /lib/jquery/jquery.js was not modified
+2020-04-03 18:27:02.464 -03:00 [INF] The file /lib/bootstrap/js/bootstrap.js was not modified
+2020-04-03 18:27:02.464 -03:00 [INF] The file /lib/bootstrap/css/bootstrap.css was not modified
+2020-04-03 18:27:02.464 -03:00 [INF] The file /css/site.css was not modified
+2020-04-03 18:27:02.465 -03:00 [INF] Request finished in 208.9491ms 304 application/javascript
+2020-04-03 18:27:02.465 -03:00 [INF] Request finished in 210.2125ms 304 text/css
+2020-04-03 18:27:02.465 -03:00 [INF] Request finished in 209.4427ms 304 application/javascript
+2020-04-03 18:27:02.465 -03:00 [INF] Request finished in 210.3179ms 304 text/css
+2020-04-03 18:27:02.466 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/icon.png  
+2020-04-03 18:27:02.466 -03:00 [INF] The file /icon.png was not modified
+2020-04-03 18:27:02.466 -03:00 [INF] Request finished in 0.9061ms 304 image/png
+2020-04-03 18:27:02.637 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/css/bootstrap.css.map  
+2020-04-03 18:27:02.638 -03:00 [INF] The file /lib/bootstrap/css/bootstrap.css.map was not modified
+2020-04-03 18:27:02.638 -03:00 [INF] Request finished in 1.369ms 304 text/plain
+2020-04-03 18:27:33.236 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/.well-known/openid-configuration  
+2020-04-03 18:27:33.237 -03:00 [INF] CORS policy execution successful.
+2020-04-03 18:27:33.238 -03:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2020-04-03 18:27:33.240 -03:00 [WRN] Origin is not allowed: http://localhost:4200
+2020-04-03 18:27:33.240 -03:00 [WRN] CorsPolicyService did not allow origin: http://localhost:4200
+2020-04-03 18:27:33.241 -03:00 [INF] No CORS policy found for the specified request.
+2020-04-03 18:27:33.243 -03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-04-03 18:27:33.247 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/.well-known/openid-configuration  
+2020-04-03 18:27:33.248 -03:00 [INF] CORS policy execution successful.
+2020-04-03 18:27:33.249 -03:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2020-04-03 18:27:33.251 -03:00 [WRN] Origin is not allowed: http://localhost:4200
+2020-04-03 18:27:33.252 -03:00 [WRN] CorsPolicyService did not allow origin: http://localhost:4200
+2020-04-03 18:27:33.252 -03:00 [INF] No CORS policy found for the specified request.
+2020-04-03 18:27:33.254 -03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-04-03 18:27:33.270 -03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-04-03 18:27:33.270 -03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-04-03 18:27:33.271 -03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-04-03 18:27:33.271 -03:00 [DBG] Start discovery request
+2020-04-03 18:27:33.272 -03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-04-03 18:27:33.272 -03:00 [DBG] Start discovery request
+2020-04-03 18:27:33.293 -03:00 [INF] Request finished in 57.2699ms 200 application/json; charset=UTF-8
+2020-04-03 18:27:33.304 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/connect/authorize?client_id=754ee75c-d0de-3b85-b4b2-39f4540d946a&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2Fsignin-callback&response_type=code&scope=openid%20profile%20transferlogapi%20bankingapi&state=e26ea33904044bd8992738db90e0959d&code_challenge=31lGvoFschSTPnIkHtIx3w0ibOfRXcq4k1j3KJObiow&code_challenge_method=S256&response_mode=query  
+2020-04-03 18:27:33.305 -03:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2020-04-03 18:27:33.310 -03:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2020-04-03 18:27:33.310 -03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2020-04-03 18:27:33.310 -03:00 [DBG] Start authorize request
+2020-04-03 18:27:33.310 -03:00 [DBG] No user present in authorize request
+2020-04-03 18:27:33.311 -03:00 [DBG] Start authorize request protocol validation
+2020-04-03 18:27:33.315 -03:00 [ERR] Unknown client or not enabled: 754ee75c-d0de-3b85-b4b2-39f4540d946a
+{"ClientId":null,"ClientName":null,"RedirectUri":null,"AllowedRedirectUris":null,"SubjectId":"anonymous","ResponseType":null,"ResponseMode":null,"GrantType":null,"RequestedScopes":"","State":null,"UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"754ee75c-d0de-3b85-b4b2-39f4540d946a","redirect_uri":"http://localhost:4200/signin-callback","response_type":"code","scope":"openid profile transferlogapi bankingapi","state":"e26ea33904044bd8992738db90e0959d","code_challenge":"31lGvoFschSTPnIkHtIx3w0ibOfRXcq4k1j3KJObiow","code_challenge_method":"S256","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2020-04-03 18:27:33.316 -03:00 [ERR] Request validation failed
+2020-04-03 18:27:33.316 -03:00 [INF] {"ClientId":null,"ClientName":null,"RedirectUri":null,"AllowedRedirectUris":null,"SubjectId":"anonymous","ResponseType":null,"ResponseMode":null,"GrantType":null,"RequestedScopes":"","State":null,"UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"754ee75c-d0de-3b85-b4b2-39f4540d946a","redirect_uri":"http://localhost:4200/signin-callback","response_type":"code","scope":"openid profile transferlogapi bankingapi","state":"e26ea33904044bd8992738db90e0959d","code_challenge":"31lGvoFschSTPnIkHtIx3w0ibOfRXcq4k1j3KJObiow","code_challenge_method":"S256","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2020-04-03 18:27:33.318 -03:00 [INF] {"ClientId":"754ee75c-d0de-3b85-b4b2-39f4540d946a","ClientName":null,"RedirectUri":null,"Endpoint":"Authorize","SubjectId":null,"Scopes":"","GrantType":null,"Error":"unauthorized_client","ErrorDescription":"Unknown client or client not enabled","Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HLUO2LUQCEGK:00000008","TimeStamp":"2020-04-03T21:27:33.0000000Z","ProcessId":8651,"LocalIpAddress":"127.0.0.1:5000","RemoteIpAddress":"127.0.0.1","$type":"TokenIssuedFailureEvent"}
+2020-04-03 18:27:33.319 -03:00 [INF] Request finished in 15.144ms 302 
+2020-04-03 18:27:33.321 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/home/error?errorId=CfDJ8Kq2Wa3E_3NPt0n3fFHtqeKPc3iBxW81rPPicnOHDIY3XfQuRPyTLeCedcNfoI2H0LIR9TS56VW_aeBigSBVYRv8TzHV8MHTu3ru74fl0cf9tCCNWKx4M7UocOt15SrkeT0_y-AzGmktcSN1TqQSHvkyMblUFGkAOzzWFZqd3RKNB4epRZrfMSRtGhVIlrFDe1eLGxZhhi0lWU1POyS10YWoAR3Rv4K-2wttW_OYEhCofK3iYbtheZwvIkscao0YwvHWCyiG6vVASNHFNuVYj-tYLGjTgPg-Wq_XfvpTlr9zAyc7uZUtqC3X_U_iCbaENN-yFK0QCjuqXUEHHBfKLIxnH5Nh_HXQz4Vf6nQu1eNsIqRbi7Ss3J1cim0ZRY7BbssyYbw_eDRAvN1gBm-w7i0  
+2020-04-03 18:27:33.322 -03:00 [INF] Executing endpoint 'AuthenticationServer.HomeController.Error (AuthenticationServer)'
+2020-04-03 18:27:33.323 -03:00 [INF] Route matched with {action = "Error", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Error(System.String) on controller AuthenticationServer.HomeController (AuthenticationServer).
+2020-04-03 18:27:33.326 -03:00 [INF] Executing ViewResult, running view Error.
+2020-04-03 18:27:33.328 -03:00 [INF] Executed ViewResult - view Error executed in 2.5548ms.
+2020-04-03 18:27:33.329 -03:00 [INF] Executed action AuthenticationServer.HomeController.Error (AuthenticationServer) in 5.6851ms
+2020-04-03 18:27:33.329 -03:00 [INF] Executed endpoint 'AuthenticationServer.HomeController.Error (AuthenticationServer)'
+2020-04-03 18:27:33.329 -03:00 [INF] Request finished in 8.5524ms 200 text/html; charset=utf-8
+2020-04-03 18:27:33.385 -03:00 [ERR] Failed executing DbCommand (0ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`ConcurrencyStamp`, `i`.`CreationTime`, `i`.`CreatorId`, `i`.`DeleterId`, `i`.`DeletionTime`, `i`.`Description`, `i`.`DisplayName`, `i`.`Emphasize`, `i`.`Enabled`, `i`.`ExtraProperties`, `i`.`IsDeleted`, `i`.`LastModificationTime`, `i`.`LastModifierId`, `i`.`Name`, `i`.`Properties`, `i`.`Required`, `i`.`ShowInDiscoveryDocument`, `i0`.`IdentityResourceId`, `i0`.`Type`
+FROM `IdentityServerIdentityResources` AS `i`
+LEFT JOIN `IdentityServerIdentityClaims` AS `i0` ON `i`.`Id` = `i0`.`IdentityResourceId`
+WHERE @__ef_filter__p_0 OR NOT (`i`.`IsDeleted`)
+ORDER BY `i`.`Id`, `i0`.`IdentityResourceId`, `i0`.`Type`
+2020-04-03 18:27:33.863 -03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext'.
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\CommandExecutor.cs:line 20
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\CommandExecutor.cs:line 20
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2020-04-03 18:27:33.916 -03:00 [INF] {"Details":"System.OperationCanceledException: The operation was canceled.\n   at System.Threading.CancellationToken.ThrowOperationCanceledException()\n   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\\projects\\mysqlconnector\\src\\MySqlConnector\\Core\\CommandExecutor.cs:line 20\n   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)\n   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)\n   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)\n   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)\n   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)\n   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()\n   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)\n   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)\n   at Volo.Abp.Domain.Repositories.EntityFrameworkCore.EfCoreRepository`2.GetListAsync(Boolean includeDetails, CancellationToken cancellationToken)\n   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)\n   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()\n   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)\n   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)\n   at Volo.Abp.IdentityServer.ResourceStore.GetAllResourcesAsync()\n   at IdentityServer4.Stores.IResourceStoreExtensions.GetAllEnabledResourcesAsync(IResourceStore store)\n   at IdentityServer4.ResponseHandling.DiscoveryResponseGenerator.CreateDiscoveryDocumentAsync(String baseUrl, String issuerUri)\n   at IdentityServer4.Endpoints.DiscoveryEndpoint.ProcessAsync(HttpContext context)\n   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events)","Category":"Error","Name":"Unhandled Exception","EventType":"Error","Id":3000,"Message":"The operation was canceled.","ActivityId":"0HLUO2LUQCEGN:00000001","TimeStamp":"2020-04-03T21:27:33.0000000Z","ProcessId":8651,"LocalIpAddress":"127.0.0.1:5000","RemoteIpAddress":"127.0.0.1","$type":"UnhandledExceptionEvent"}
+2020-04-03 18:27:33.917 -03:00 [FTL] Unhandled exception: The operation was canceled.
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\CommandExecutor.cs:line 20
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Volo.Abp.Domain.Repositories.EntityFrameworkCore.EfCoreRepository`2.GetListAsync(Boolean includeDetails, CancellationToken cancellationToken)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.IdentityServer.ResourceStore.GetAllResourcesAsync()
+   at IdentityServer4.Stores.IResourceStoreExtensions.GetAllEnabledResourcesAsync(IResourceStore store)
+   at IdentityServer4.ResponseHandling.DiscoveryResponseGenerator.CreateDiscoveryDocumentAsync(String baseUrl, String issuerUri)
+   at IdentityServer4.Endpoints.DiscoveryEndpoint.ProcessAsync(HttpContext context)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events)
+2020-04-03 18:27:33.944 -03:00 [ERR] Connection id "0HLUO2LUQCEGN", Request id "0HLUO2LUQCEGN:00000001": An unhandled exception was thrown by the application.
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\CommandExecutor.cs:line 20
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Volo.Abp.Domain.Repositories.EntityFrameworkCore.EfCoreRepository`2.GetListAsync(Boolean includeDetails, CancellationToken cancellationToken)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.IdentityServer.ResourceStore.GetAllResourcesAsync()
+   at IdentityServer4.Stores.IResourceStoreExtensions.GetAllEnabledResourcesAsync(IResourceStore store)
+   at IdentityServer4.ResponseHandling.DiscoveryResponseGenerator.CreateDiscoveryDocumentAsync(String baseUrl, String issuerUri)
+   at IdentityServer4.Endpoints.DiscoveryEndpoint.ProcessAsync(HttpContext context)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events)
+   at IdentityServer4.Hosting.MutualTlsTokenEndpointMiddleware.Invoke(HttpContext context, IAuthenticationSchemeProvider schemes)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2020-04-03 18:27:33.959 -03:00 [INF] Request finished in 713.0375ms 0 
+2020-04-03 18:32:00.942 -03:00 [DBG] Stopped background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2020-04-03 18:32:00.968 -03:00 [INF] Application is shutting down...
+2020-04-03 18:33:02.247 -03:00 [INF] Starting AuthenticationServer
+2020-04-03 18:33:14.349 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-04-03 18:33:15.362 -03:00 [INF] Loaded ABP modules:
+2020-04-03 18:33:15.363 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-04-03 18:33:15.363 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-04-03 18:33:15.363 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-04-03 18:33:15.363 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-04-03 18:33:15.363 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-04-03 18:33:15.363 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-04-03 18:33:15.363 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-04-03 18:33:15.363 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-04-03 18:33:15.363 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-04-03 18:33:15.363 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-04-03 18:33:15.363 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-04-03 18:33:15.363 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-04-03 18:33:15.363 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-04-03 18:33:15.363 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-04-03 18:33:15.364 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-04-03 18:33:15.364 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-04-03 18:33:15.364 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-04-03 18:33:15.364 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-04-03 18:33:15.364 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-04-03 18:33:15.364 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-04-03 18:33:15.364 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-04-03 18:33:15.364 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-04-03 18:33:15.364 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-04-03 18:33:15.364 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-04-03 18:33:15.364 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-04-03 18:33:15.364 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-04-03 18:33:15.364 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-04-03 18:33:15.365 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-04-03 18:33:15.365 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-04-03 18:33:15.365 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-04-03 18:33:15.365 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-04-03 18:33:15.365 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-04-03 18:33:15.365 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-04-03 18:33:15.365 -03:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-04-03 18:33:15.365 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-04-03 18:33:15.365 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-04-03 18:33:15.365 -03:00 [INF] - Volo.Abp.Identity.AspNetCore.AbpIdentityAspNetCoreModule
+2020-04-03 18:33:15.366 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-04-03 18:33:15.366 -03:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-04-03 18:33:15.366 -03:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-04-03 18:33:15.366 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-04-03 18:33:15.366 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-04-03 18:33:15.366 -03:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2020-04-03 18:33:15.366 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2020-04-03 18:33:15.366 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2020-04-03 18:33:15.366 -03:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2020-04-03 18:33:15.366 -03:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2020-04-03 18:33:15.366 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-04-03 18:33:15.366 -03:00 [INF] - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2020-04-03 18:33:15.366 -03:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2020-04-03 18:33:15.367 -03:00 [INF] - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2020-04-03 18:33:15.367 -03:00 [INF] - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2020-04-03 18:33:15.367 -03:00 [INF] - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2020-04-03 18:33:15.367 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-04-03 18:33:15.367 -03:00 [INF] - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2020-04-03 18:33:15.367 -03:00 [INF] - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2020-04-03 18:33:15.367 -03:00 [INF] - AuthenticationServer.AuthenticationServerModule
+2020-04-03 18:33:15.678 -03:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2020-04-03 18:33:15.705 -03:00 [INF] Starting IdentityServer4 version 3.0.2.0
+2020-04-03 18:33:15.934 -03:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2020-04-03 18:33:15.934 -03:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2020-04-03 18:33:15.935 -03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2020-04-03 18:33:15.935 -03:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2020-04-03 18:33:15.935 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2020-04-03 18:33:15.935 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2020-04-03 18:33:21.906 -03:00 [INF] Initialized all ABP modules.
+2020-04-03 18:33:22.052 -03:00 [INF] Now listening on: http://localhost:5000
+2020-04-03 18:33:22.053 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-04-03 18:33:22.053 -03:00 [INF] Hosting environment: Development
+2020-04-03 18:33:22.053 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer
+2020-04-03 18:43:49.100 -03:00 [DBG] Stopped background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2020-04-03 18:43:49.207 -03:00 [INF] Application is shutting down...
+2020-04-03 18:45:01.552 -03:00 [INF] Starting AuthenticationServer
+2020-04-03 18:45:04.546 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-04-03 18:45:04.760 -03:00 [INF] Loaded ABP modules:
+2020-04-03 18:45:04.760 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-04-03 18:45:04.760 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-04-03 18:45:04.760 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-04-03 18:45:04.760 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-04-03 18:45:04.760 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-04-03 18:45:04.760 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-04-03 18:45:04.760 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-04-03 18:45:04.760 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-04-03 18:45:04.760 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-04-03 18:45:04.761 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-04-03 18:45:04.761 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-04-03 18:45:04.761 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-04-03 18:45:04.761 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-04-03 18:45:04.761 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-04-03 18:45:04.761 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-04-03 18:45:04.761 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-04-03 18:45:04.761 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-04-03 18:45:04.761 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-04-03 18:45:04.761 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-04-03 18:45:04.761 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-04-03 18:45:04.761 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-04-03 18:45:04.762 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-04-03 18:45:04.762 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-04-03 18:45:04.762 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-04-03 18:45:04.762 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-04-03 18:45:04.762 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-04-03 18:45:04.762 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-04-03 18:45:04.762 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-04-03 18:45:04.762 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-04-03 18:45:04.762 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-04-03 18:45:04.762 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-04-03 18:45:04.762 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-04-03 18:45:04.762 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-04-03 18:45:04.762 -03:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-04-03 18:45:04.763 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-04-03 18:45:04.763 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-04-03 18:45:04.763 -03:00 [INF] - Volo.Abp.Identity.AspNetCore.AbpIdentityAspNetCoreModule
+2020-04-03 18:45:04.763 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-04-03 18:45:04.763 -03:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-04-03 18:45:04.763 -03:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-04-03 18:45:04.763 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-04-03 18:45:04.763 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-04-03 18:45:04.763 -03:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2020-04-03 18:45:04.764 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2020-04-03 18:45:04.764 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2020-04-03 18:45:04.764 -03:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2020-04-03 18:45:04.764 -03:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2020-04-03 18:45:04.764 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-04-03 18:45:04.764 -03:00 [INF] - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2020-04-03 18:45:04.764 -03:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2020-04-03 18:45:04.765 -03:00 [INF] - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2020-04-03 18:45:04.765 -03:00 [INF] - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2020-04-03 18:45:04.765 -03:00 [INF] - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2020-04-03 18:45:04.765 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-04-03 18:45:04.766 -03:00 [INF] - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2020-04-03 18:45:04.766 -03:00 [INF] - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2020-04-03 18:45:04.767 -03:00 [INF] - AuthenticationServer.AuthenticationServerModule
+2020-04-03 18:45:05.057 -03:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2020-04-03 18:45:05.060 -03:00 [INF] Starting IdentityServer4 version 3.0.2.0
+2020-04-03 18:45:05.258 -03:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2020-04-03 18:45:05.258 -03:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2020-04-03 18:45:05.258 -03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2020-04-03 18:45:05.259 -03:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2020-04-03 18:45:05.259 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2020-04-03 18:45:05.259 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2020-04-03 18:45:08.330 -03:00 [INF] Initialized all ABP modules.
+2020-04-03 18:45:08.360 -03:00 [INF] Now listening on: http://localhost:5000
+2020-04-03 18:45:08.360 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-04-03 18:45:08.360 -03:00 [INF] Hosting environment: Development
+2020-04-03 18:45:08.360 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer
+2020-04-03 19:03:44.523 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/.well-known/openid-configuration  
+2020-04-03 19:03:44.547 -03:00 [INF] CORS policy execution successful.
+2020-04-03 19:03:44.714 -03:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2020-04-03 19:03:44.832 -03:00 [WRN] Origin is not allowed: http://localhost:4200
+2020-04-03 19:03:44.833 -03:00 [WRN] CorsPolicyService did not allow origin: http://localhost:4200
+2020-04-03 19:03:44.833 -03:00 [INF] No CORS policy found for the specified request.
+2020-04-03 19:03:44.894 -03:00 [DBG] Login Url: /Account/Login
+2020-04-03 19:03:44.894 -03:00 [DBG] Login Return Url Parameter: ReturnUrl
+2020-04-03 19:03:44.894 -03:00 [DBG] Logout Url: /Account/Logout
+2020-04-03 19:03:44.895 -03:00 [DBG] ConsentUrl Url: /consent
+2020-04-03 19:03:44.895 -03:00 [DBG] Consent Return Url Parameter: returnUrl
+2020-04-03 19:03:44.895 -03:00 [DBG] Error Url: /home/error
+2020-04-03 19:03:44.895 -03:00 [DBG] Error Id Parameter: errorId
+2020-04-03 19:03:44.922 -03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-04-03 19:03:44.975 -03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-04-03 19:03:44.976 -03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-04-03 19:03:44.977 -03:00 [DBG] Start discovery request
+2020-04-03 19:03:45.184 -03:00 [INF] Request finished in 683.3448ms 200 application/json; charset=UTF-8
+2020-04-03 19:03:45.192 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/connect/authorize?client_id=754ee75c-d0de-3b85-b4b2-39f4540d946a&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2Fsignin-callback&response_type=code&scope=openid%20profile%20BankingService%20TranferLogService%20IdentityService&state=5c25675c74d74d679870ee4e13c3894d&code_challenge=Oez3d97RcXNSpJxH5AEJPMWC-v_L-j9feoSQyZ7n49U&code_challenge_method=S256&response_mode=query  
+2020-04-03 19:03:45.196 -03:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2020-04-03 19:03:45.359 -03:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2020-04-03 19:03:45.359 -03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2020-04-03 19:03:45.361 -03:00 [DBG] Start authorize request
+2020-04-03 19:03:45.370 -03:00 [DBG] No user present in authorize request
+2020-04-03 19:03:45.394 -03:00 [DBG] Start authorize request protocol validation
+2020-04-03 19:03:45.429 -03:00 [ERR] Unknown client or not enabled: 754ee75c-d0de-3b85-b4b2-39f4540d946a
+{"ClientId":null,"ClientName":null,"RedirectUri":null,"AllowedRedirectUris":null,"SubjectId":"anonymous","ResponseType":null,"ResponseMode":null,"GrantType":null,"RequestedScopes":"","State":null,"UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"754ee75c-d0de-3b85-b4b2-39f4540d946a","redirect_uri":"http://localhost:4200/signin-callback","response_type":"code","scope":"openid profile BankingService TranferLogService IdentityService","state":"5c25675c74d74d679870ee4e13c3894d","code_challenge":"Oez3d97RcXNSpJxH5AEJPMWC-v_L-j9feoSQyZ7n49U","code_challenge_method":"S256","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2020-04-03 19:03:45.439 -03:00 [ERR] Request validation failed
+2020-04-03 19:03:45.439 -03:00 [INF] {"ClientId":null,"ClientName":null,"RedirectUri":null,"AllowedRedirectUris":null,"SubjectId":"anonymous","ResponseType":null,"ResponseMode":null,"GrantType":null,"RequestedScopes":"","State":null,"UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"754ee75c-d0de-3b85-b4b2-39f4540d946a","redirect_uri":"http://localhost:4200/signin-callback","response_type":"code","scope":"openid profile BankingService TranferLogService IdentityService","state":"5c25675c74d74d679870ee4e13c3894d","code_challenge":"Oez3d97RcXNSpJxH5AEJPMWC-v_L-j9feoSQyZ7n49U","code_challenge_method":"S256","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2020-04-03 19:03:45.446 -03:00 [INF] {"ClientId":"754ee75c-d0de-3b85-b4b2-39f4540d946a","ClientName":null,"RedirectUri":null,"Endpoint":"Authorize","SubjectId":null,"Scopes":"","GrantType":null,"Error":"unauthorized_client","ErrorDescription":"Unknown client or client not enabled","Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HLUO3BG8UG4S:00000001","TimeStamp":"2020-04-03T22:03:45.0000000Z","ProcessId":8732,"LocalIpAddress":"127.0.0.1:5000","RemoteIpAddress":"127.0.0.1","$type":"TokenIssuedFailureEvent"}
+2020-04-03 19:03:45.463 -03:00 [INF] Request finished in 271.2807ms 302 
+2020-04-03 19:03:45.502 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/home/error?errorId=CfDJ8Kq2Wa3E_3NPt0n3fFHtqeL1EyXPDHu48XacLdXPqzlkX_0gMBv0y1uKBV6yFcgD65zOHv5NLpz_tUTFU25M-dZM8Imcw0PbOOgGm561aUnZIQBxPXDL0lLsu2dO8Tcryv3tIL1SOrr9Aqe8UsEYQ2y7NBTmZnCVE9Gn8PIqGz_dxGwZ-0yly10TsV4kyWR_TH6w0h5FrEqyuOgRmNcZ0jbz9qhYZjdlZ0sKIknmLJ462VMoxs9YujvQVENnywT3-FTMS0JExdzggBr5Bi8Z0zxavjMlyP21Cvpq2oodvu_EqUHbDPyOSaFFbqgxK0ox4XqwIyw9m9ZTPTCx4qaY4lInKEFskMDaVoOCDBnrgsc4ZJZwKFcBBxDTw1YuLN5SqJ-8t2Qz2GQF38jZJjVWNww  
+2020-04-03 19:03:45.503 -03:00 [INF] Executing endpoint 'AuthenticationServer.HomeController.Error (AuthenticationServer)'
+2020-04-03 19:03:45.659 -03:00 [INF] Route matched with {action = "Error", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Error(System.String) on controller AuthenticationServer.HomeController (AuthenticationServer).
+2020-04-03 19:03:45.883 -03:00 [INF] Executing ViewResult, running view Error.
+2020-04-03 19:03:46.018 -03:00 [INF] Executed ViewResult - view Error executed in 282.7087ms.
+2020-04-03 19:03:46.020 -03:00 [INF] Executed action AuthenticationServer.HomeController.Error (AuthenticationServer) in 359.3261ms
+2020-04-03 19:03:46.020 -03:00 [INF] Executed endpoint 'AuthenticationServer.HomeController.Error (AuthenticationServer)'
+2020-04-03 19:03:46.022 -03:00 [INF] Request finished in 520.6015ms 200 text/html; charset=utf-8
+2020-04-03 19:03:46.031 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/css/bootstrap.css  
+2020-04-03 19:03:46.032 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery/jquery.js  
+2020-04-03 19:03:46.033 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/js/bootstrap.js  
+2020-04-03 19:03:46.033 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/css/site.css  
+2020-04-03 19:03:46.172 -03:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer/wwwroot/css/site.css'
+2020-04-03 19:03:46.172 -03:00 [INF] Request finished in 139.5625ms 200 text/css
+2020-04-03 19:03:46.219 -03:00 [INF] Sending file. Request path: '/lib/bootstrap/js/bootstrap.js'. Physical path: '/Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer/wwwroot/lib/bootstrap/js/bootstrap.js'
+2020-04-03 19:03:46.219 -03:00 [INF] Sending file. Request path: '/lib/bootstrap/css/bootstrap.css'. Physical path: '/Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer/wwwroot/lib/bootstrap/css/bootstrap.css'
+2020-04-03 19:03:46.219 -03:00 [INF] Request finished in 186.8298ms 200 application/javascript
+2020-04-03 19:03:46.220 -03:00 [INF] Request finished in 188.2984ms 200 text/css
+2020-04-03 19:03:46.220 -03:00 [INF] Sending file. Request path: '/lib/jquery/jquery.js'. Physical path: '/Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer/wwwroot/lib/jquery/jquery.js'
+2020-04-03 19:03:46.220 -03:00 [INF] Request finished in 188.1889ms 200 application/javascript
+2020-04-03 19:03:46.242 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+2020-04-03 19:03:46.243 -03:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: '/Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer/wwwroot/favicon.ico'
+2020-04-03 19:03:46.243 -03:00 [INF] Request finished in 1.5663ms 200 image/x-icon
+2020-04-03 19:04:25.737 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/.well-known/openid-configuration  
+2020-04-03 19:04:25.739 -03:00 [INF] CORS policy execution successful.
+2020-04-03 19:04:25.741 -03:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2020-04-03 19:04:25.746 -03:00 [WRN] Origin is not allowed: http://localhost:4200
+2020-04-03 19:04:25.746 -03:00 [WRN] CorsPolicyService did not allow origin: http://localhost:4200
+2020-04-03 19:04:25.746 -03:00 [INF] No CORS policy found for the specified request.
+2020-04-03 19:04:25.747 -03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-04-03 19:04:25.751 -03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-04-03 19:04:25.751 -03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-04-03 19:04:25.752 -03:00 [DBG] Start discovery request
+2020-04-03 19:04:25.766 -03:00 [INF] Request finished in 28.8438ms 200 application/json; charset=UTF-8
+2020-04-03 19:04:25.773 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/connect/authorize?client_id=spa-client&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2Fsignin-callback&response_type=code&scope=openid%20profile%20BankingService%20TranferLogService%20IdentityService&state=bb233d098d9640e59d450a3bc1f66a40&code_challenge=vlbwvRGbsAkVsXGCyxt-mNKo2Wtbt_GnfkmILU5K5xw&code_challenge_method=S256&response_mode=query  
+2020-04-03 19:04:25.774 -03:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2020-04-03 19:04:25.779 -03:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2020-04-03 19:04:25.780 -03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2020-04-03 19:04:25.780 -03:00 [DBG] Start authorize request
+2020-04-03 19:04:25.780 -03:00 [DBG] No user present in authorize request
+2020-04-03 19:04:25.780 -03:00 [DBG] Start authorize request protocol validation
+2020-04-03 19:04:25.848 -03:00 [DBG] client configuration validation for client spa-client succeeded.
+2020-04-03 19:04:25.857 -03:00 [ERR] Invalid redirect_uri: http://localhost:4200/signin-callback
+{"ClientId":"spa-client","ClientName":"spa-client","RedirectUri":null,"AllowedRedirectUris":[],"SubjectId":"anonymous","ResponseType":null,"ResponseMode":null,"GrantType":null,"RequestedScopes":"","State":null,"UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"spa-client","redirect_uri":"http://localhost:4200/signin-callback","response_type":"code","scope":"openid profile BankingService TranferLogService IdentityService","state":"bb233d098d9640e59d450a3bc1f66a40","code_challenge":"vlbwvRGbsAkVsXGCyxt-mNKo2Wtbt_GnfkmILU5K5xw","code_challenge_method":"S256","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2020-04-03 19:04:25.859 -03:00 [ERR] Request validation failed
+2020-04-03 19:04:25.859 -03:00 [INF] {"ClientId":"spa-client","ClientName":"spa-client","RedirectUri":null,"AllowedRedirectUris":[],"SubjectId":"anonymous","ResponseType":null,"ResponseMode":null,"GrantType":null,"RequestedScopes":"","State":null,"UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"spa-client","redirect_uri":"http://localhost:4200/signin-callback","response_type":"code","scope":"openid profile BankingService TranferLogService IdentityService","state":"bb233d098d9640e59d450a3bc1f66a40","code_challenge":"vlbwvRGbsAkVsXGCyxt-mNKo2Wtbt_GnfkmILU5K5xw","code_challenge_method":"S256","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2020-04-03 19:04:25.860 -03:00 [INF] {"ClientId":"spa-client","ClientName":"spa-client","RedirectUri":null,"Endpoint":"Authorize","SubjectId":null,"Scopes":"","GrantType":null,"Error":"unauthorized_client","ErrorDescription":"Invalid redirect_uri","Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HLUO3BG8UG4V:00000002","TimeStamp":"2020-04-03T22:04:25.0000000Z","ProcessId":8732,"LocalIpAddress":"127.0.0.1:5000","RemoteIpAddress":"127.0.0.1","$type":"TokenIssuedFailureEvent"}
+2020-04-03 19:04:25.861 -03:00 [INF] Request finished in 88.5321ms 302 
+2020-04-03 19:04:25.864 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/home/error?errorId=CfDJ8Kq2Wa3E_3NPt0n3fFHtqeKxBUQyUw6ngeXE_VdIUOVGVPF1ghRopqZBrUj-kZm5mzJq6biEmcPl_0iAFJ3uH4qzbNcedTzoMHCECFSXBNWKzie9-TOgCOsQ42snk32IDDoDAPxpCNMT9jZVS_InN-YZLXYM40kxsgPANGSOlI8lD9AQnQ7N80XlGg4MtNXVRDG7QNkgXDHid6Cj_QH5gV-G6Cb6MPqN8Z_4Zqxe22XgtYIpSubNcwyuxUJ0Z37a1B2f0vPbGZI6chkMl-eHXf3rvMvymc6HzYh69ZtanjvnRzYoE6R5-hKUgumT15td3PEj-P_DkhaJNzFqNRV_IWE  
+2020-04-03 19:04:25.865 -03:00 [INF] Executing endpoint 'AuthenticationServer.HomeController.Error (AuthenticationServer)'
+2020-04-03 19:04:25.866 -03:00 [INF] Route matched with {action = "Error", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Error(System.String) on controller AuthenticationServer.HomeController (AuthenticationServer).
+2020-04-03 19:04:25.869 -03:00 [INF] Executing ViewResult, running view Error.
+2020-04-03 19:04:25.872 -03:00 [INF] Executed ViewResult - view Error executed in 3.0127ms.
+2020-04-03 19:04:25.872 -03:00 [INF] Executed action AuthenticationServer.HomeController.Error (AuthenticationServer) in 6.337ms
+2020-04-03 19:04:25.873 -03:00 [INF] Executed endpoint 'AuthenticationServer.HomeController.Error (AuthenticationServer)'
+2020-04-03 19:04:25.873 -03:00 [INF] Request finished in 9.5497ms 200 text/html; charset=utf-8
+2020-04-03 19:04:25.915 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/css/bootstrap.css  
+2020-04-03 19:04:25.916 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery/jquery.js  
+2020-04-03 19:04:25.917 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/css/site.css  
+2020-04-03 19:04:25.917 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/js/bootstrap.js  
+2020-04-03 19:04:25.918 -03:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer/wwwroot/css/site.css'
+2020-04-03 19:04:25.918 -03:00 [INF] Request finished in 1.6537ms 200 text/css
+2020-04-03 19:04:25.920 -03:00 [INF] Sending file. Request path: '/lib/bootstrap/js/bootstrap.js'. Physical path: '/Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer/wwwroot/lib/bootstrap/js/bootstrap.js'
+2020-04-03 19:04:25.920 -03:00 [INF] Request finished in 3.5314ms 200 application/javascript
+2020-04-03 19:04:25.920 -03:00 [INF] Sending file. Request path: '/lib/bootstrap/css/bootstrap.css'. Physical path: '/Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer/wwwroot/lib/bootstrap/css/bootstrap.css'
+2020-04-03 19:04:25.921 -03:00 [INF] Request finished in 6.238ms 200 text/css
+2020-04-03 19:04:25.921 -03:00 [INF] Sending file. Request path: '/lib/jquery/jquery.js'. Physical path: '/Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer/wwwroot/lib/jquery/jquery.js'
+2020-04-03 19:04:25.921 -03:00 [INF] Request finished in 5.05ms 200 application/javascript
+2020-04-03 19:04:25.982 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+2020-04-03 19:04:25.983 -03:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: '/Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer/wwwroot/favicon.ico'
+2020-04-03 19:04:25.983 -03:00 [INF] Request finished in 1.4776ms 200 image/x-icon
+2020-04-03 19:11:01.964 -03:00 [DBG] Stopped background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2020-04-03 19:11:01.965 -03:00 [INF] Application is shutting down...
+2020-04-03 19:11:18.761 -03:00 [INF] Starting AuthenticationServer
+2020-04-03 19:11:20.720 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-04-03 19:11:20.854 -03:00 [INF] Loaded ABP modules:
+2020-04-03 19:11:20.854 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-04-03 19:11:20.855 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-04-03 19:11:20.855 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-04-03 19:11:20.855 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-04-03 19:11:20.855 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-04-03 19:11:20.855 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-04-03 19:11:20.855 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-04-03 19:11:20.855 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-04-03 19:11:20.855 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-04-03 19:11:20.855 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-04-03 19:11:20.855 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-04-03 19:11:20.855 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-04-03 19:11:20.855 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-04-03 19:11:20.855 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-04-03 19:11:20.855 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-04-03 19:11:20.856 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-04-03 19:11:20.856 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-04-03 19:11:20.856 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-04-03 19:11:20.856 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-04-03 19:11:20.856 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-04-03 19:11:20.856 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-04-03 19:11:20.856 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-04-03 19:11:20.856 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-04-03 19:11:20.856 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-04-03 19:11:20.856 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-04-03 19:11:20.856 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-04-03 19:11:20.856 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-04-03 19:11:20.856 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-04-03 19:11:20.856 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-04-03 19:11:20.856 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-04-03 19:11:20.857 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-04-03 19:11:20.857 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-04-03 19:11:20.857 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-04-03 19:11:20.857 -03:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-04-03 19:11:20.857 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-04-03 19:11:20.857 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-04-03 19:11:20.857 -03:00 [INF] - Volo.Abp.Identity.AspNetCore.AbpIdentityAspNetCoreModule
+2020-04-03 19:11:20.857 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-04-03 19:11:20.857 -03:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-04-03 19:11:20.857 -03:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-04-03 19:11:20.857 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-04-03 19:11:20.857 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-04-03 19:11:20.857 -03:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2020-04-03 19:11:20.857 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2020-04-03 19:11:20.857 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2020-04-03 19:11:20.858 -03:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2020-04-03 19:11:20.858 -03:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2020-04-03 19:11:20.858 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-04-03 19:11:20.858 -03:00 [INF] - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2020-04-03 19:11:20.858 -03:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2020-04-03 19:11:20.858 -03:00 [INF] - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2020-04-03 19:11:20.858 -03:00 [INF] - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2020-04-03 19:11:20.858 -03:00 [INF] - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2020-04-03 19:11:20.858 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-04-03 19:11:20.858 -03:00 [INF] - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2020-04-03 19:11:20.858 -03:00 [INF] - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2020-04-03 19:11:20.858 -03:00 [INF] - AuthenticationServer.AuthenticationServerModule
+2020-04-03 19:11:21.111 -03:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2020-04-03 19:11:21.114 -03:00 [INF] Starting IdentityServer4 version 3.0.2.0
+2020-04-03 19:11:21.287 -03:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2020-04-03 19:11:21.287 -03:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2020-04-03 19:11:21.288 -03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2020-04-03 19:11:21.288 -03:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2020-04-03 19:11:21.288 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2020-04-03 19:11:21.288 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2020-04-03 19:11:24.256 -03:00 [INF] Initialized all ABP modules.
+2020-04-03 19:11:24.291 -03:00 [INF] Now listening on: http://localhost:5000
+2020-04-03 19:11:24.291 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-04-03 19:11:24.291 -03:00 [INF] Hosting environment: Development
+2020-04-03 19:11:24.291 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer
+2020-04-03 19:26:23.630 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/.well-known/openid-configuration  
+2020-04-03 19:26:23.728 -03:00 [INF] CORS policy execution successful.
+2020-04-03 19:26:23.762 -03:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2020-04-03 19:26:23.821 -03:00 [WRN] Origin is not allowed: http://localhost:4200
+2020-04-03 19:26:23.822 -03:00 [WRN] CorsPolicyService did not allow origin: http://localhost:4200
+2020-04-03 19:26:23.822 -03:00 [INF] No CORS policy found for the specified request.
+2020-04-03 19:26:23.841 -03:00 [DBG] Login Url: /Account/Login
+2020-04-03 19:26:23.841 -03:00 [DBG] Login Return Url Parameter: ReturnUrl
+2020-04-03 19:26:23.842 -03:00 [DBG] Logout Url: /Account/Logout
+2020-04-03 19:26:23.842 -03:00 [DBG] ConsentUrl Url: /consent
+2020-04-03 19:26:23.842 -03:00 [DBG] Consent Return Url Parameter: returnUrl
+2020-04-03 19:26:23.842 -03:00 [DBG] Error Url: /home/error
+2020-04-03 19:26:23.842 -03:00 [DBG] Error Id Parameter: errorId
+2020-04-03 19:26:23.854 -03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-04-03 19:26:23.874 -03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-04-03 19:26:23.874 -03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-04-03 19:26:23.876 -03:00 [DBG] Start discovery request
+2020-04-03 19:26:24.184 -03:00 [INF] Request finished in 557.002ms 200 application/json; charset=UTF-8
+2020-04-03 19:26:24.193 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/connect/authorize?client_id=spa-client&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2Fsignin-callback&response_type=code&scope=openid%20profile%20BankingService%20TranferLogService%20IdentityService&state=a3280c6216f245f28f3041acce8cb00e&code_challenge=prBVx_dV0dSF5u1XJQfW_jNGCf5RBqONDTlu9lpSN2E&code_challenge_method=S256&response_mode=query  
+2020-04-03 19:26:24.196 -03:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2020-04-03 19:26:24.234 -03:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2020-04-03 19:26:24.234 -03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2020-04-03 19:26:24.235 -03:00 [DBG] Start authorize request
+2020-04-03 19:26:24.247 -03:00 [DBG] No user present in authorize request
+2020-04-03 19:26:24.249 -03:00 [DBG] Start authorize request protocol validation
+2020-04-03 19:26:24.301 -03:00 [DBG] client configuration validation for client spa-client succeeded.
+2020-04-03 19:26:24.311 -03:00 [DBG] Checking for PKCE parameters
+2020-04-03 19:26:24.322 -03:00 [ERR] Invalid grant type for client: authorization_code
+{"ClientId":"spa-client","ClientName":"spa-client","RedirectUri":"http://localhost:4200/signin-callback","AllowedRedirectUris":["http://localhost:4200/signin-callback"],"SubjectId":"anonymous","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"","State":"a3280c6216f245f28f3041acce8cb00e","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"spa-client","redirect_uri":"http://localhost:4200/signin-callback","response_type":"code","scope":"openid profile BankingService TranferLogService IdentityService","state":"a3280c6216f245f28f3041acce8cb00e","code_challenge":"prBVx_dV0dSF5u1XJQfW_jNGCf5RBqONDTlu9lpSN2E","code_challenge_method":"S256","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2020-04-03 19:26:24.333 -03:00 [ERR] Request validation failed
+2020-04-03 19:26:24.333 -03:00 [INF] {"ClientId":"spa-client","ClientName":"spa-client","RedirectUri":"http://localhost:4200/signin-callback","AllowedRedirectUris":["http://localhost:4200/signin-callback"],"SubjectId":"anonymous","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"","State":"a3280c6216f245f28f3041acce8cb00e","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"spa-client","redirect_uri":"http://localhost:4200/signin-callback","response_type":"code","scope":"openid profile BankingService TranferLogService IdentityService","state":"a3280c6216f245f28f3041acce8cb00e","code_challenge":"prBVx_dV0dSF5u1XJQfW_jNGCf5RBqONDTlu9lpSN2E","code_challenge_method":"S256","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2020-04-03 19:26:24.341 -03:00 [INF] {"ClientId":"spa-client","ClientName":"spa-client","RedirectUri":"http://localhost:4200/signin-callback","Endpoint":"Authorize","SubjectId":null,"Scopes":"","GrantType":"authorization_code","Error":"unauthorized_client","ErrorDescription":"Invalid grant type for client","Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HLUO3O5ATG1U:00000001","TimeStamp":"2020-04-03T22:26:24.0000000Z","ProcessId":8817,"LocalIpAddress":"127.0.0.1:5000","RemoteIpAddress":"127.0.0.1","$type":"TokenIssuedFailureEvent"}
+2020-04-03 19:26:24.362 -03:00 [INF] Request finished in 169.14ms 302 
+2020-04-03 19:26:24.367 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/home/error?errorId=CfDJ8Kq2Wa3E_3NPt0n3fFHtqeK7pDkkM1zdlHS1WO3HCGSqSXH9qPVxPvIzhNMNcW7_uHmYOk8ugnZxjbnsgrQOu_68aQwuSJZAC8CvMRA-PunqjLZgo9ySJFiCw7qW07P_M1iwpR-IMDf0XgpAYhs8vH9kWjkKoA1Mw6TtEG8mAfBeJdrZw8604wXqujATNTbr3OED4ndLODzVoUdDn_YeQZ_BoEgZ1rrS8OEgpf6uN_gztJxYbNe6agiA4AKSr2mHtjQdZr1o8JSZwNtY6qGiAfGA6ql1NZYGLLJbaQ8sVoNs0jQA2jJZgXqPzSBNwnBhY8W8l55W4XkxRve8462uTneTkoCCd9j_P3V16YSJcyGmOm9mCUIjQLrhhs4Mvnp774AOcVUoatm7O7icZKdK2B7ge655gOKQNtrWkQpGxxhzCKLaozPk-aePRV8HYDdOoJeCTrooWvOpYmcmanWgY_U2jmiIyQYAGtJ0Va3VPYWSWQ0KC8bUI6kxGvzsOzkunesAxL0GlpAEog2ALlU0gratss7zGaCbLT0lEY9hiffIwptQFBfidAILhEriAkpVRtxcUqrz8sc7W7ryNpmSwzAe2I5u8P0ddLxowgPWpmvA  
+2020-04-03 19:26:24.369 -03:00 [INF] Executing endpoint 'AuthenticationServer.HomeController.Error (AuthenticationServer)'
+2020-04-03 19:26:24.448 -03:00 [INF] Route matched with {action = "Error", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Error(System.String) on controller AuthenticationServer.HomeController (AuthenticationServer).
+2020-04-03 19:26:24.759 -03:00 [INF] Executing ViewResult, running view Error.
+2020-04-03 19:26:24.825 -03:00 [INF] Executed ViewResult - view Error executed in 104.5751ms.
+2020-04-03 19:26:24.826 -03:00 [INF] Executed action AuthenticationServer.HomeController.Error (AuthenticationServer) in 350.4201ms
+2020-04-03 19:26:24.827 -03:00 [INF] Executed endpoint 'AuthenticationServer.HomeController.Error (AuthenticationServer)'
+2020-04-03 19:26:24.829 -03:00 [INF] Request finished in 461.9475ms 200 text/html; charset=utf-8
+2020-04-03 19:26:24.839 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/css/bootstrap.css  
+2020-04-03 19:26:24.842 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/js/bootstrap.js  
+2020-04-03 19:26:24.842 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery/jquery.js  
+2020-04-03 19:26:24.843 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/css/site.css  
+2020-04-03 19:26:24.857 -03:00 [INF] Sending file. Request path: '/lib/jquery/jquery.js'. Physical path: '/Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer/wwwroot/lib/jquery/jquery.js'
+2020-04-03 19:26:24.857 -03:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer/wwwroot/css/site.css'
+2020-04-03 19:26:24.857 -03:00 [INF] Sending file. Request path: '/lib/bootstrap/js/bootstrap.js'. Physical path: '/Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer/wwwroot/lib/bootstrap/js/bootstrap.js'
+2020-04-03 19:26:24.857 -03:00 [INF] Request finished in 15.0137ms 200 application/javascript
+2020-04-03 19:26:24.857 -03:00 [INF] Request finished in 15.187ms 200 application/javascript
+2020-04-03 19:26:24.857 -03:00 [INF] Sending file. Request path: '/lib/bootstrap/css/bootstrap.css'. Physical path: '/Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer/wwwroot/lib/bootstrap/css/bootstrap.css'
+2020-04-03 19:26:24.858 -03:00 [INF] Request finished in 15.4661ms 200 text/css
+2020-04-03 19:26:24.858 -03:00 [INF] Request finished in 18.9384ms 200 text/css
+2020-04-03 19:33:54.799 -03:00 [DBG] Stopped background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2020-04-03 19:33:54.800 -03:00 [INF] Application is shutting down...
+2020-04-03 19:34:11.292 -03:00 [INF] Starting AuthenticationServer
+2020-04-03 19:34:13.497 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-04-03 19:34:14.011 -03:00 [INF] Loaded ABP modules:
+2020-04-03 19:34:14.012 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-04-03 19:34:14.012 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-04-03 19:34:14.012 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-04-03 19:34:14.012 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-04-03 19:34:14.012 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-04-03 19:34:14.012 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-04-03 19:34:14.012 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-04-03 19:34:14.012 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-04-03 19:34:14.012 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-04-03 19:34:14.012 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-04-03 19:34:14.012 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-04-03 19:34:14.012 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-04-03 19:34:14.013 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-04-03 19:34:14.013 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-04-03 19:34:14.013 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-04-03 19:34:14.013 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-04-03 19:34:14.013 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-04-03 19:34:14.013 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-04-03 19:34:14.013 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-04-03 19:34:14.013 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-04-03 19:34:14.013 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-04-03 19:34:14.013 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-04-03 19:34:14.013 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-04-03 19:34:14.013 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-04-03 19:34:14.013 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-04-03 19:34:14.013 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-04-03 19:34:14.013 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-04-03 19:34:14.013 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-04-03 19:34:14.013 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-04-03 19:34:14.014 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-04-03 19:34:14.014 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-04-03 19:34:14.014 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-04-03 19:34:14.014 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-04-03 19:34:14.014 -03:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-04-03 19:34:14.014 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-04-03 19:34:14.014 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-04-03 19:34:14.014 -03:00 [INF] - Volo.Abp.Identity.AspNetCore.AbpIdentityAspNetCoreModule
+2020-04-03 19:34:14.014 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-04-03 19:34:14.014 -03:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-04-03 19:34:14.014 -03:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-04-03 19:34:14.014 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-04-03 19:34:14.014 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-04-03 19:34:14.014 -03:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2020-04-03 19:34:14.014 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2020-04-03 19:34:14.014 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2020-04-03 19:34:14.014 -03:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2020-04-03 19:34:14.015 -03:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2020-04-03 19:34:14.015 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-04-03 19:34:14.015 -03:00 [INF] - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2020-04-03 19:34:14.015 -03:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2020-04-03 19:34:14.015 -03:00 [INF] - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2020-04-03 19:34:14.015 -03:00 [INF] - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2020-04-03 19:34:14.015 -03:00 [INF] - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2020-04-03 19:34:14.015 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-04-03 19:34:14.015 -03:00 [INF] - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2020-04-03 19:34:14.015 -03:00 [INF] - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2020-04-03 19:34:14.015 -03:00 [INF] - AuthenticationServer.AuthenticationServerModule
+2020-04-03 19:34:14.317 -03:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2020-04-03 19:34:14.349 -03:00 [INF] Starting IdentityServer4 version 3.0.2.0
+2020-04-03 19:34:14.553 -03:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2020-04-03 19:34:14.554 -03:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2020-04-03 19:34:14.554 -03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2020-04-03 19:34:14.554 -03:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2020-04-03 19:34:14.554 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2020-04-03 19:34:14.554 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2020-04-03 19:34:17.930 -03:00 [INF] Initialized all ABP modules.
+2020-04-03 19:34:17.966 -03:00 [INF] Now listening on: http://localhost:5000
+2020-04-03 19:34:17.967 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-04-03 19:34:17.967 -03:00 [INF] Hosting environment: Development
+2020-04-03 19:34:17.968 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer
+2020-04-03 19:36:12.509 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/.well-known/openid-configuration  
+2020-04-03 19:36:12.520 -03:00 [INF] CORS policy execution successful.
+2020-04-03 19:36:12.557 -03:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2020-04-03 19:36:12.600 -03:00 [WRN] Origin is not allowed: http://localhost:4200
+2020-04-03 19:36:12.601 -03:00 [WRN] CorsPolicyService did not allow origin: http://localhost:4200
+2020-04-03 19:36:12.602 -03:00 [INF] No CORS policy found for the specified request.
+2020-04-03 19:36:12.620 -03:00 [DBG] Login Url: /Account/Login
+2020-04-03 19:36:12.620 -03:00 [DBG] Login Return Url Parameter: ReturnUrl
+2020-04-03 19:36:12.621 -03:00 [DBG] Logout Url: /Account/Logout
+2020-04-03 19:36:12.621 -03:00 [DBG] ConsentUrl Url: /consent
+2020-04-03 19:36:12.621 -03:00 [DBG] Consent Return Url Parameter: returnUrl
+2020-04-03 19:36:12.622 -03:00 [DBG] Error Url: /home/error
+2020-04-03 19:36:12.622 -03:00 [DBG] Error Id Parameter: errorId
+2020-04-03 19:36:12.635 -03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-04-03 19:36:12.655 -03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-04-03 19:36:12.656 -03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-04-03 19:36:12.657 -03:00 [DBG] Start discovery request
+2020-04-03 19:36:12.820 -03:00 [INF] Request finished in 314.7119ms 200 application/json; charset=UTF-8
+2020-04-03 19:36:12.830 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/connect/authorize?client_id=spa-client&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2Fsignin-callback&response_type=code&scope=openid%20profile%20BankingService%20TranferLogService%20IdentityService&state=1530db48d6a64fe089b029928faeecc6&code_challenge=s9GSQNZQVE4L6lJXCtodLbpsMBfW0T7g_5HIbfJGlgI&code_challenge_method=S256&response_mode=query  
+2020-04-03 19:36:12.833 -03:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2020-04-03 19:36:12.874 -03:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2020-04-03 19:36:12.874 -03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2020-04-03 19:36:12.875 -03:00 [DBG] Start authorize request
+2020-04-03 19:36:12.885 -03:00 [DBG] No user present in authorize request
+2020-04-03 19:36:12.887 -03:00 [DBG] Start authorize request protocol validation
+2020-04-03 19:36:12.939 -03:00 [DBG] client configuration validation for client spa-client succeeded.
+2020-04-03 19:36:12.948 -03:00 [DBG] Checking for PKCE parameters
+2020-04-03 19:36:13.174 -03:00 [ERR] Requested scope not allowed: openid
+2020-04-03 19:36:13.176 -03:00 [ERR] Request validation failed
+2020-04-03 19:36:13.186 -03:00 [INF] {"ClientId":"spa-client","ClientName":"spa-client","RedirectUri":"http://localhost:4200/signin-callback","AllowedRedirectUris":["http://localhost:4200/signin-callback"],"SubjectId":"anonymous","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile BankingService TranferLogService IdentityService","State":"1530db48d6a64fe089b029928faeecc6","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"spa-client","redirect_uri":"http://localhost:4200/signin-callback","response_type":"code","scope":"openid profile BankingService TranferLogService IdentityService","state":"1530db48d6a64fe089b029928faeecc6","code_challenge":"s9GSQNZQVE4L6lJXCtodLbpsMBfW0T7g_5HIbfJGlgI","code_challenge_method":"S256","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2020-04-03 19:36:13.200 -03:00 [INF] {"ClientId":"spa-client","ClientName":"spa-client","RedirectUri":"http://localhost:4200/signin-callback","Endpoint":"Authorize","SubjectId":null,"Scopes":"openid profile BankingService TranferLogService IdentityService","GrantType":"authorization_code","Error":"unauthorized_client","ErrorDescription":"Invalid scope for client","Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HLUO3TKQSCQS:00000001","TimeStamp":"2020-04-03T22:36:13.0000000Z","ProcessId":8897,"LocalIpAddress":"127.0.0.1:5000","RemoteIpAddress":"127.0.0.1","$type":"TokenIssuedFailureEvent"}
+2020-04-03 19:36:13.218 -03:00 [INF] Request finished in 387.823ms 302 
+2020-04-03 19:36:13.223 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/home/error?errorId=CfDJ8Kq2Wa3E_3NPt0n3fFHtqeIJy2s0qdXTfYrB-UHIFLl9Es2C5xP_SQL1nwoIrj4CgJSbouaNgt0ptfjbbYDKjuLKMu7w_N_JDiEuK7FodlvoCmR5JlEmZX4HZsH2KI3xfAU5_t4oI-Gz-IOyn82u3baWUKrRl5Ij32NaxoZ6L3f5iYCtjv6wh_uif2boTlJh6hVhxJAxPstd61SPvWrzDOmy9muIPZvAvKMhkpx8JjnVq18ZwkWKswxDVBIg1WSqBkGC3NTbAikKvQxAp0OvbERbI42NIPVdAmjwsatay_QwYfLzDXq96gkKDxhfeoHChsUmNC-JVkD4f3nSDtUtUIxAjArBFPOL1Hv3mlUDVYRxmXK8c6_NFfK2x7NT28zY9QjXIWr4kb_WMenl1NbOnIwJl63yDNAHmtbqgosrL7lKplobwSu4Ei39OvRHxojusAT370kZvocxSBsHQQ9lf3WMTSmh36Oq3YU51IY54DIwB4WNyz-gQwtwHJKz-0p8wni8pCeoqC7ysD12ECIhJEq8D0-0Lnga_64NHxjpc88F2blfTXl2yf16rVvPW9bP_z9I55rGn4OUO5Rg0duVNZiloG-a2HXZEyGeqKdLgrhi  
+2020-04-03 19:36:13.224 -03:00 [INF] Executing endpoint 'AuthenticationServer.HomeController.Error (AuthenticationServer)'
+2020-04-03 19:36:13.295 -03:00 [INF] Route matched with {action = "Error", controller = "Home", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Error(System.String) on controller AuthenticationServer.HomeController (AuthenticationServer).
+2020-04-03 19:36:13.358 -03:00 [INF] Executing ViewResult, running view Error.
+2020-04-03 19:36:13.423 -03:00 [INF] Executed ViewResult - view Error executed in 76.0024ms.
+2020-04-03 19:36:13.424 -03:00 [INF] Executed action AuthenticationServer.HomeController.Error (AuthenticationServer) in 128.7482ms
+2020-04-03 19:36:13.425 -03:00 [INF] Executed endpoint 'AuthenticationServer.HomeController.Error (AuthenticationServer)'
+2020-04-03 19:36:13.427 -03:00 [INF] Request finished in 203.9885ms 200 text/html; charset=utf-8
+2020-04-03 19:36:13.439 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/css/bootstrap.css  
+2020-04-03 19:36:13.455 -03:00 [INF] Sending file. Request path: '/lib/bootstrap/css/bootstrap.css'. Physical path: '/Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer/wwwroot/lib/bootstrap/css/bootstrap.css'
+2020-04-03 19:36:13.456 -03:00 [INF] Request finished in 16.6099ms 200 text/css
+2020-04-03 19:36:13.457 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/icon.png  
+2020-04-03 19:36:13.523 -03:00 [INF] Sending file. Request path: '/icon.png'. Physical path: '/Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer/wwwroot/icon.png'
+2020-04-03 19:36:13.524 -03:00 [INF] Request finished in 67.2119ms 200 image/png
+2020-04-03 19:36:13.689 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+2020-04-03 19:36:13.690 -03:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: '/Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer/wwwroot/favicon.ico'
+2020-04-03 19:36:13.690 -03:00 [INF] Request finished in 1.4609ms 200 image/x-icon
+2020-04-03 19:39:38.504 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/.well-known/openid-configuration  
+2020-04-03 19:39:38.539 -03:00 [INF] CORS policy execution successful.
+2020-04-03 19:39:38.540 -03:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2020-04-03 19:39:38.545 -03:00 [WRN] Origin is not allowed: http://localhost:4200
+2020-04-03 19:39:38.545 -03:00 [WRN] CorsPolicyService did not allow origin: http://localhost:4200
+2020-04-03 19:39:38.546 -03:00 [INF] No CORS policy found for the specified request.
+2020-04-03 19:39:38.547 -03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-04-03 19:39:38.551 -03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-04-03 19:39:38.551 -03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-04-03 19:39:38.552 -03:00 [DBG] Start discovery request
+2020-04-03 19:39:38.587 -03:00 [INF] Request finished in 83.0489ms 200 application/json; charset=UTF-8
+2020-04-03 19:39:38.596 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/connect/authorize?client_id=spa-client&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2Fsignin-callback&response_type=code&scope=openid%20profile%20BankingService%20TranferLogService%20IdentityService&state=bfa872074d7d4df183c92368c0138dc4&code_challenge=zNdGPZjSqn6Fp23kQDV4S9R9qHXHCRmWIgTXg702f_M&code_challenge_method=S256&response_mode=query  
+2020-04-03 19:39:38.596 -03:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2020-04-03 19:39:38.601 -03:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2020-04-03 19:39:38.601 -03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2020-04-03 19:39:38.602 -03:00 [DBG] Start authorize request
+2020-04-03 19:39:38.602 -03:00 [DBG] No user present in authorize request
+2020-04-03 19:39:38.602 -03:00 [DBG] Start authorize request protocol validation
+2020-04-03 19:39:38.610 -03:00 [DBG] client configuration validation for client spa-client succeeded.
+2020-04-03 19:39:38.610 -03:00 [DBG] Checking for PKCE parameters
+2020-04-03 19:39:38.627 -03:00 [ERR] Requested scope not allowed: openid
+2020-04-03 19:39:38.627 -03:00 [ERR] Request validation failed
+2020-04-03 19:39:38.627 -03:00 [INF] {"ClientId":"spa-client","ClientName":"spa-client","RedirectUri":"http://localhost:4200/signin-callback","AllowedRedirectUris":["http://localhost:4200/signin-callback"],"SubjectId":"anonymous","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile BankingService TranferLogService IdentityService","State":"bfa872074d7d4df183c92368c0138dc4","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"spa-client","redirect_uri":"http://localhost:4200/signin-callback","response_type":"code","scope":"openid profile BankingService TranferLogService IdentityService","state":"bfa872074d7d4df183c92368c0138dc4","code_challenge":"zNdGPZjSqn6Fp23kQDV4S9R9qHXHCRmWIgTXg702f_M","code_challenge_method":"S256","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2020-04-03 19:39:38.628 -03:00 [INF] {"ClientId":"spa-client","ClientName":"spa-client","RedirectUri":"http://localhost:4200/signin-callback","Endpoint":"Authorize","SubjectId":null,"Scopes":"openid profile BankingService TranferLogService IdentityService","GrantType":"authorization_code","Error":"unauthorized_client","ErrorDescription":"Invalid scope for client","Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HLUO3TKQSCR0:00000001","TimeStamp":"2020-04-03T22:39:38.0000000Z","ProcessId":8897,"LocalIpAddress":"127.0.0.1:5000","RemoteIpAddress":"127.0.0.1","$type":"TokenIssuedFailureEvent"}
+2020-04-03 19:39:38.630 -03:00 [INF] Request finished in 34.7357ms 302 
+2020-04-03 19:39:38.633 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/home/error?errorId=CfDJ8Kq2Wa3E_3NPt0n3fFHtqeJZhiAYbTAYFj22wAc4PU3Kwz03LYG42k-3WtWtE4Smi3DHBeHhCEmN94kG0yTkXDeUKFPPsJDKNZIOfyjCAj2nZnWv6ZiYKioMzbpOWcy43mmc7CXR8b47UTygsXANb0Bq-uWzjez6Mb7UP2E686SS2eOPn4bBESu78J4R0HvXCJrW_PaprPOz3m_aoypZFju6YZoWLeT34TLnVTXHmNMxuguWG7BfbltwYZavC_pZkxwLPAnF3dp0alQcDrsW5pO16EJZ3_kF_AjzRqYuLHjtTmRIUFxq282cNcshd_dD41EinGb_P5-WY7fc_WYATkG5UzYQ50SDXuztIxTQfDUoHL-xoHkg7RHyl0XhHQ7F5EMkFWMhFLMhU6PGXi3OeQrob5JrpkbDy9vVC_ijUsivrAdsO0RrOI6qfEbKnOPsZoG-nT_AklCgq7tN2QqEdp6woXS44vZzs_VavL0ygrCDHlIizBltq1sCFnYlT1newLHjoRd-zzZeeGR3GmWKIeFwQl5fI7v-7GzmNDE1xAnBXGhJNBJyu1ZkJA6OjRp0eHTyOWQzOnTlzkrUQ4fMsmprUkMBmcn9DCi2MVvkVxiZ  
+2020-04-03 19:39:38.634 -03:00 [INF] Executing endpoint 'AuthenticationServer.HomeController.Error (AuthenticationServer)'
+2020-04-03 19:39:38.738 -03:00 [INF] Executed endpoint 'AuthenticationServer.HomeController.Error (AuthenticationServer)'
+2020-04-03 19:39:38.752 -03:00 [ERR] Connection id "0HLUO3TKQSCR0", Request id "0HLUO3TKQSCR0:00000002": An unhandled exception was thrown by the application.
+System.Globalization.CultureNotFoundException: Culture is not supported. (Parameter 'name')
+U	�X��X is an invalid culture identifier.
+   at System.Globalization.CultureInfo.GetCultureInfo(String name)
+   at System.Reflection.RuntimeAssembly.GetLocale()
+   at System.Reflection.RuntimeAssembly.GetName(Boolean copiedName)
+   at System.Reflection.Assembly.GetName()
+   at Microsoft.AspNetCore.Mvc.MvcCoreLoggerExtensions.ExecutingAction(ILogger logger, ActionDescriptor action)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events)
+   at IdentityServer4.Hosting.MutualTlsTokenEndpointMiddleware.Invoke(HttpContext context, IAuthenticationSchemeProvider schemes)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2020-04-03 19:39:38.867 -03:00 [INF] Request finished in 234.2471ms 500 
+2020-04-03 19:39:57.019 -03:00 [DBG] Stopped background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2020-04-03 19:39:57.020 -03:00 [INF] Application is shutting down...
+2020-04-03 19:40:02.792 -03:00 [INF] Starting AuthenticationServer
+2020-04-03 19:40:04.506 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-04-03 19:40:04.588 -03:00 [INF] Loaded ABP modules:
+2020-04-03 19:40:04.588 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-04-03 19:40:04.588 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-04-03 19:40:04.588 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-04-03 19:40:04.588 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-04-03 19:40:04.588 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-04-03 19:40:04.588 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-04-03 19:40:04.588 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-04-03 19:40:04.588 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-04-03 19:40:04.588 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-04-03 19:40:04.589 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-04-03 19:40:04.589 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-04-03 19:40:04.589 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-04-03 19:40:04.589 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-04-03 19:40:04.589 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-04-03 19:40:04.589 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-04-03 19:40:04.589 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-04-03 19:40:04.589 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-04-03 19:40:04.589 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-04-03 19:40:04.589 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-04-03 19:40:04.589 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-04-03 19:40:04.589 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-04-03 19:40:04.589 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-04-03 19:40:04.589 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-04-03 19:40:04.589 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-04-03 19:40:04.589 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-04-03 19:40:04.589 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-04-03 19:40:04.589 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-04-03 19:40:04.589 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-04-03 19:40:04.589 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-04-03 19:40:04.590 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-04-03 19:40:04.590 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-04-03 19:40:04.590 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-04-03 19:40:04.590 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-04-03 19:40:04.590 -03:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-04-03 19:40:04.590 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-04-03 19:40:04.590 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-04-03 19:40:04.590 -03:00 [INF] - Volo.Abp.Identity.AspNetCore.AbpIdentityAspNetCoreModule
+2020-04-03 19:40:04.590 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-04-03 19:40:04.590 -03:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-04-03 19:40:04.590 -03:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-04-03 19:40:04.590 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-04-03 19:40:04.590 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-04-03 19:40:04.590 -03:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2020-04-03 19:40:04.590 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2020-04-03 19:40:04.590 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2020-04-03 19:40:04.590 -03:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2020-04-03 19:40:04.590 -03:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2020-04-03 19:40:04.590 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-04-03 19:40:04.591 -03:00 [INF] - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2020-04-03 19:40:04.591 -03:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2020-04-03 19:40:04.591 -03:00 [INF] - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2020-04-03 19:40:04.591 -03:00 [INF] - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2020-04-03 19:40:04.591 -03:00 [INF] - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2020-04-03 19:40:04.591 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-04-03 19:40:04.591 -03:00 [INF] - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2020-04-03 19:40:04.591 -03:00 [INF] - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2020-04-03 19:40:04.591 -03:00 [INF] - AuthenticationServer.AuthenticationServerModule
+2020-04-03 19:40:04.855 -03:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2020-04-03 19:40:04.858 -03:00 [INF] Starting IdentityServer4 version 3.0.2.0
+2020-04-03 19:40:05.057 -03:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2020-04-03 19:40:05.057 -03:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2020-04-03 19:40:05.057 -03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2020-04-03 19:40:05.058 -03:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2020-04-03 19:40:05.058 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2020-04-03 19:40:05.058 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2020-04-03 19:40:07.894 -03:00 [INF] Initialized all ABP modules.
+2020-04-03 19:40:07.933 -03:00 [INF] Now listening on: http://localhost:5000
+2020-04-03 19:40:07.933 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-04-03 19:40:07.933 -03:00 [INF] Hosting environment: Development
+2020-04-03 19:40:07.933 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer
+2020-04-03 19:40:15.514 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/.well-known/openid-configuration  
+2020-04-03 19:40:15.525 -03:00 [INF] CORS policy execution successful.
+2020-04-03 19:40:15.564 -03:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2020-04-03 19:40:15.608 -03:00 [WRN] Origin is not allowed: http://localhost:4200
+2020-04-03 19:40:15.609 -03:00 [WRN] CorsPolicyService did not allow origin: http://localhost:4200
+2020-04-03 19:40:15.609 -03:00 [INF] No CORS policy found for the specified request.
+2020-04-03 19:40:15.628 -03:00 [DBG] Login Url: /Account/Login
+2020-04-03 19:40:15.629 -03:00 [DBG] Login Return Url Parameter: ReturnUrl
+2020-04-03 19:40:15.629 -03:00 [DBG] Logout Url: /Account/Logout
+2020-04-03 19:40:15.629 -03:00 [DBG] ConsentUrl Url: /consent
+2020-04-03 19:40:15.629 -03:00 [DBG] Consent Return Url Parameter: returnUrl
+2020-04-03 19:40:15.630 -03:00 [DBG] Error Url: /home/error
+2020-04-03 19:40:15.630 -03:00 [DBG] Error Id Parameter: errorId
+2020-04-03 19:40:15.642 -03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-04-03 19:40:15.665 -03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-04-03 19:40:15.665 -03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-04-03 19:40:15.667 -03:00 [DBG] Start discovery request
+2020-04-03 19:40:15.828 -03:00 [INF] Request finished in 316.3207ms 200 application/json; charset=UTF-8
+2020-04-03 19:40:15.836 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/connect/authorize?client_id=spa-client&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2Fsignin-callback&response_type=code&scope=openid%20profile%20BankingService%20TranferLogService%20IdentityService&state=8c7a8bbca05248969c79aa3a232d3dca&code_challenge=7rwgkeDyoIiTStdM0x-EXUXPrzWWCm76uqZVXA_jAv0&code_challenge_method=S256&response_mode=query  
+2020-04-03 19:40:15.839 -03:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2020-04-03 19:40:15.877 -03:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2020-04-03 19:40:15.878 -03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2020-04-03 19:40:15.879 -03:00 [DBG] Start authorize request
+2020-04-03 19:40:15.891 -03:00 [DBG] No user present in authorize request
+2020-04-03 19:40:15.894 -03:00 [DBG] Start authorize request protocol validation
+2020-04-03 19:40:15.945 -03:00 [DBG] client configuration validation for client spa-client succeeded.
+2020-04-03 19:40:15.954 -03:00 [DBG] Checking for PKCE parameters
+2020-04-03 19:40:16.085 -03:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-04-03 19:40:16.096 -03:00 [DBG] ValidatedAuthorizeRequest
+{"ClientId":"spa-client","ClientName":"spa-client","RedirectUri":"http://localhost:4200/signin-callback","AllowedRedirectUris":["http://localhost:4200/signin-callback"],"SubjectId":"anonymous","ResponseType":"code","ResponseMode":"query","GrantType":"authorization_code","RequestedScopes":"openid profile BankingService TranferLogService IdentityService","State":"8c7a8bbca05248969c79aa3a232d3dca","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"spa-client","redirect_uri":"http://localhost:4200/signin-callback","response_type":"code","scope":"openid profile BankingService TranferLogService IdentityService","state":"8c7a8bbca05248969c79aa3a232d3dca","code_challenge":"7rwgkeDyoIiTStdM0x-EXUXPrzWWCm76uqZVXA_jAv0","code_challenge_method":"S256","response_mode":"query"},"$type":"AuthorizeRequestValidationLog"}
+2020-04-03 19:40:16.121 -03:00 [INF] Showing login: User is not authenticated
+2020-04-03 19:40:16.127 -03:00 [INF] Request finished in 291.3166ms 302 
+2020-04-03 19:40:16.135 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Account/Login?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dspa-client%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252Fsignin-callback%26response_type%3Dcode%26scope%3Dopenid%2520profile%2520BankingService%2520TranferLogService%2520IdentityService%26state%3D8c7a8bbca05248969c79aa3a232d3dca%26code_challenge%3D7rwgkeDyoIiTStdM0x-EXUXPrzWWCm76uqZVXA_jAv0%26code_challenge_method%3DS256%26response_mode%3Dquery  
+2020-04-03 19:40:16.136 -03:00 [INF] Executing endpoint 'AuthenticationServer.AccountController.Login (AuthenticationServer)'
+2020-04-03 19:40:16.207 -03:00 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(System.String) on controller AuthenticationServer.AccountController (AuthenticationServer).
+2020-04-03 19:40:16.256 -03:00 [DBG] Start authorize request protocol validation
+2020-04-03 19:40:16.263 -03:00 [DBG] client configuration validation for client spa-client succeeded.
+2020-04-03 19:40:16.263 -03:00 [DBG] Checking for PKCE parameters
+2020-04-03 19:40:16.274 -03:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-04-03 19:40:16.283 -03:00 [DBG] client configuration validation for client spa-client succeeded.
+2020-04-03 19:40:16.335 -03:00 [INF] Executing ViewResult, running view Login.
+2020-04-03 19:40:16.610 -03:00 [INF] Executed ViewResult - view Login executed in 300.5594ms.
+2020-04-03 19:40:16.612 -03:00 [INF] Executed action AuthenticationServer.AccountController.Login (AuthenticationServer) in 404.1898ms
+2020-04-03 19:40:16.613 -03:00 [INF] Executed endpoint 'AuthenticationServer.AccountController.Login (AuthenticationServer)'
+2020-04-03 19:40:16.615 -03:00 [INF] Request finished in 480.2392ms 200 text/html; charset=utf-8
+2020-04-03 19:40:49.257 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Account/Login?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dspa-client%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252Fsignin-callback%26response_type%3Dcode%26scope%3Dopenid%2520profile%2520BankingService%2520TranferLogService%2520IdentityService%26state%3D8c7a8bbca05248969c79aa3a232d3dca%26code_challenge%3D7rwgkeDyoIiTStdM0x-EXUXPrzWWCm76uqZVXA_jAv0%26code_challenge_method%3DS256%26response_mode%3Dquery application/x-www-form-urlencoded 672
+2020-04-03 19:40:49.258 -03:00 [INF] CORS policy execution successful.
+2020-04-03 19:40:49.260 -03:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2020-04-03 19:40:49.260 -03:00 [INF] No CORS policy found for the specified request.
+2020-04-03 19:40:49.261 -03:00 [INF] Executing endpoint 'AuthenticationServer.AccountController.Login (AuthenticationServer)'
+2020-04-03 19:40:49.293 -03:00 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(AuthenticationServer.LoginInputModel, System.String) on controller AuthenticationServer.AccountController (AuthenticationServer).
+2020-04-03 19:40:49.404 -03:00 [DBG] Start authorize request protocol validation
+2020-04-03 19:40:49.414 -03:00 [DBG] client configuration validation for client spa-client succeeded.
+2020-04-03 19:40:49.414 -03:00 [DBG] Checking for PKCE parameters
+2020-04-03 19:40:49.424 -03:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-04-03 19:40:49.429 -03:00 [INF] {"Username":"muriloxk","Endpoint":"UI","ClientId":"spa-client","Category":"Authentication","Name":"User Login Failure","EventType":"Failure","Id":1001,"Message":"invalid credentials","ActivityId":"0HLUO3VT8C8T8:00000003","TimeStamp":"2020-04-03T22:40:49.0000000Z","ProcessId":8916,"LocalIpAddress":"127.0.0.1:5000","RemoteIpAddress":"127.0.0.1","$type":"UserLoginFailureEvent"}
+2020-04-03 19:40:49.431 -03:00 [DBG] Start authorize request protocol validation
+2020-04-03 19:40:49.436 -03:00 [DBG] client configuration validation for client spa-client succeeded.
+2020-04-03 19:40:49.436 -03:00 [DBG] Checking for PKCE parameters
+2020-04-03 19:40:49.443 -03:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-04-03 19:40:49.448 -03:00 [DBG] client configuration validation for client spa-client succeeded.
+2020-04-03 19:40:49.453 -03:00 [INF] Executing ViewResult, running view Login.
+2020-04-03 19:40:49.479 -03:00 [INF] Executed ViewResult - view Login executed in 26.5288ms.
+2020-04-03 19:40:49.481 -03:00 [INF] Executed action AuthenticationServer.AccountController.Login (AuthenticationServer) in 187.0248ms
+2020-04-03 19:40:49.481 -03:00 [INF] Executed endpoint 'AuthenticationServer.AccountController.Login (AuthenticationServer)'
+2020-04-03 19:40:49.482 -03:00 [INF] Request finished in 224.876ms 200 text/html; charset=utf-8
+2020-04-03 19:41:39.179 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Account/Login?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dspa-client%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252Fsignin-callback%26response_type%3Dcode%26scope%3Dopenid%2520profile%2520BankingService%2520TranferLogService%2520IdentityService%26state%3D8c7a8bbca05248969c79aa3a232d3dca%26code_challenge%3D7rwgkeDyoIiTStdM0x-EXUXPrzWWCm76uqZVXA_jAv0%26code_challenge_method%3DS256%26response_mode%3Dquery application/x-www-form-urlencoded 672
+2020-04-03 19:41:39.180 -03:00 [INF] CORS policy execution successful.
+2020-04-03 19:41:39.180 -03:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2020-04-03 19:41:39.181 -03:00 [INF] No CORS policy found for the specified request.
+2020-04-03 19:41:39.182 -03:00 [INF] Executing endpoint 'AuthenticationServer.AccountController.Login (AuthenticationServer)'
+2020-04-03 19:41:39.182 -03:00 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(AuthenticationServer.LoginInputModel, System.String) on controller AuthenticationServer.AccountController (AuthenticationServer).
+2020-04-03 19:41:39.186 -03:00 [DBG] Start authorize request protocol validation
+2020-04-03 19:41:39.196 -03:00 [DBG] client configuration validation for client spa-client succeeded.
+2020-04-03 19:41:39.196 -03:00 [DBG] Checking for PKCE parameters
+2020-04-03 19:41:39.205 -03:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-04-03 19:41:39.206 -03:00 [INF] {"Username":"muriloxk","Endpoint":"UI","ClientId":"spa-client","Category":"Authentication","Name":"User Login Failure","EventType":"Failure","Id":1001,"Message":"invalid credentials","ActivityId":"0HLUO3VT8C8T8:00000004","TimeStamp":"2020-04-03T22:41:39.0000000Z","ProcessId":8916,"LocalIpAddress":"127.0.0.1:5000","RemoteIpAddress":"127.0.0.1","$type":"UserLoginFailureEvent"}
+2020-04-03 19:41:39.207 -03:00 [DBG] Start authorize request protocol validation
+2020-04-03 19:41:39.212 -03:00 [DBG] client configuration validation for client spa-client succeeded.
+2020-04-03 19:41:39.212 -03:00 [DBG] Checking for PKCE parameters
+2020-04-03 19:41:39.221 -03:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-04-03 19:41:39.225 -03:00 [DBG] client configuration validation for client spa-client succeeded.
+2020-04-03 19:41:39.229 -03:00 [INF] Executing ViewResult, running view Login.
+2020-04-03 19:41:39.233 -03:00 [INF] Executed ViewResult - view Login executed in 4.6665ms.
+2020-04-03 19:41:39.234 -03:00 [INF] Executed action AuthenticationServer.AccountController.Login (AuthenticationServer) in 51.068ms
+2020-04-03 19:41:39.234 -03:00 [INF] Executed endpoint 'AuthenticationServer.AccountController.Login (AuthenticationServer)'
+2020-04-03 19:41:39.235 -03:00 [INF] Request finished in 55.7998ms 200 text/html; charset=utf-8
+2020-04-03 19:41:56.072 -03:00 [DBG] Stopped background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2020-04-03 19:41:56.072 -03:00 [INF] Application is shutting down...

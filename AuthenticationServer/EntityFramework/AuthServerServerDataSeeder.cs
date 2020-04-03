@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Volo.Abp.Authorization.Permissions;
 using Volo.Abp.Data;
@@ -59,24 +60,26 @@ namespace AuthenticationServer.EntityFramework
                 "address"
             };
 
-
             await CreateClientAsync(
-           "console-client-demo",
-           new[] { "BloggingService", "IdentityService", "InternalGateway", "ProductService", "TenantManagementService" },
-           new[] { "client_credentials", "password" },
-           commonSecret );
+                   "spa-client",
+                   commonScopes.Union(new [] { "BankingService", "TranferLogService", "IdentityService" }),
+                   new[] { "authorization_code" },
+                   commonSecret,
+                   "http://localhost:4200/signin-callback",
+                   "http://localhost:4200/signout-callback");
+
            #endregion
         }
 
 
-        private async Task<Client> CreateClientAsync(
-      string name,
-      IEnumerable<string> scopes,
-      IEnumerable<string> grantTypes,
-      string secret,
-      string redirectUri = null,
-      string postLogoutRedirectUri = null,
-      IEnumerable<string> permissions = null)
+    private async Task<Client> CreateClientAsync( string name,
+                                                  IEnumerable<string> scopes,
+                                                  IEnumerable<string> grantTypes,
+                                                  string secret,
+                                                  string redirectUri = null,
+                                                  string postLogoutRedirectUri = null,
+                                                  IEnumerable<string> permissions = null)
+
         {
             var client = await _clientRepository.FindByCliendIdAsync(name);
             if (client == null)
@@ -90,6 +93,7 @@ namespace AuthenticationServer.EntityFramework
                         ClientName = name,
                         ProtocolType = "oidc",
                         Description = name,
+                        RequirePkce = true,
                         AlwaysIncludeUserClaimsInIdToken = true,
                         AllowOfflineAccess = true,
                         AbsoluteRefreshTokenLifetime = 31536000, //365 days

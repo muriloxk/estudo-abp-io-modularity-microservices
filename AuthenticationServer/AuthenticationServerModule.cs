@@ -40,6 +40,10 @@ namespace AuthenticationServer
 
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
+            context.Services.AddCors(options => options.AddDefaultPolicy(builder => builder.AllowAnyOrigin()
+                                                                                           .AllowAnyHeader()
+                                                                                           .AllowAnyMethod()));
+
             context.Services.AddControllersWithViews();
             context.Services.AddAbpDbContext<AuthServerDbContext>(options =>
             {
@@ -69,7 +73,7 @@ namespace AuthenticationServer
         {
             var app = context.GetApplicationBuilder();
 
-
+            app.UseCors();
             app.UseRouting();
             app.UseStaticFiles();
 
