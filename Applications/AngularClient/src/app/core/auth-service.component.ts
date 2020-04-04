@@ -6,7 +6,7 @@ import { Subject } from 'rxjs';
 
 @Injectable({providedIn: CoreModule})
 export class AuthService {
-
+    
     private _userManager: UserManager;
     private _user: User;
     private _loginChangedSubject = new Subject<boolean>();
@@ -32,7 +32,9 @@ export class AuthService {
 
     isLoggedIn(): Promise<boolean> {
         return this._userManager.getUser().then(user => {
-            const userCurrent = user && !user.expired;
+            const userCurrent = !!user && !user.expired;
+            
+            console.log("Usuário", user);
 
             if (this._user !== user) {
                 this._loginChangedSubject.next(userCurrent);
@@ -46,7 +48,7 @@ export class AuthService {
     completeLogin() {
         return this._userManager.signinRedirectCallback().then(user => {
             this._user = user;
-            this._loginChangedSubject.next(user && !user.expired);
+            this._loginChangedSubject.next(!!user && !user.expired);
             return user;
         });
     }

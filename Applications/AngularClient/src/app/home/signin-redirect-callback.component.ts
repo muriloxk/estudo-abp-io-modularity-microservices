@@ -8,11 +8,15 @@ import { Router } from '@angular/router';
 })
 
 export class SigninRedirectComponent implements OnInit {
+    
     constructor(private _authService: AuthService,
                 private _router: Router) { }
 
-    ngOnInit() { 
+                    
+
+    ngOnInit() {
         this._authService.completeLogin().then(user => {
+           
             this._router.navigate(['/'], {replaceUrl: true});
         })
     }

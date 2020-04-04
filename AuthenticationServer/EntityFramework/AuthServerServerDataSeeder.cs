@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Volo.Abp.Authorization.Permissions;
@@ -61,12 +62,12 @@ namespace AuthenticationServer.EntityFramework
             };
 
             await CreateClientAsync(
-                   "spa-client",
-                   commonScopes.Union(new [] { "BankingService", "TranferLogService", "IdentityService" }),
-                   new[] { "authorization_code" },
-                   commonSecret,
-                   "http://localhost:4200/signin-callback",
-                   "http://localhost:4200/signout-callback");
+                   name: "spa-client",
+                   scopes: commonScopes.Union(new [] { "BankingService", "TranferLogService", "IdentityService" }),
+                   grantTypes: new[] { "authorization_code" },
+                   secret: null,
+                   redirectUri: "http://localhost:4200/signin-callback",
+                   postLogoutRedirectUri:  "http://localhost:4200/signout-callback");
 
            #endregion
         }
@@ -94,6 +95,7 @@ namespace AuthenticationServer.EntityFramework
                         ProtocolType = "oidc",
                         Description = name,
                         RequirePkce = true,
+                        RequireClientSecret = false,
                         AlwaysIncludeUserClaimsInIdToken = true,
                         AllowOfflineAccess = true,
                         AbsoluteRefreshTokenLifetime = 31536000, //365 days
@@ -103,7 +105,7 @@ namespace AuthenticationServer.EntityFramework
                         RequireConsent = false
                     },
                     autoSave: true
-                );
+                ); 
             }
 
             foreach (var scope in scopes)
@@ -122,9 +124,12 @@ namespace AuthenticationServer.EntityFramework
                 }
             }
 
-            if (client.FindSecret(secret) == null)
+            if (!String.IsNullOrWhiteSpace(secret))
             {
-                client.AddSecret(secret);
+                if (client.FindSecret(secret) == null)
+                {
+                    client.AddSecret(secret);
+                }
             }
 
             if (redirectUri != null)

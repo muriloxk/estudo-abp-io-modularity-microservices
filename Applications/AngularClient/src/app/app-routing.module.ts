@@ -6,19 +6,17 @@ import { SignoutRedirectComponent } from './home/signout-redirect-callback.compo
 
 const routes: Routes = [
           {
-            path: '**',
-            component: HelloworldComponent
-          },
-
-          {
             path: 'signin-callback',
             component: SigninRedirectComponent
           },
-
           {
             path: 'signout-callback',
             component: SignoutRedirectComponent
-          }
+          },
+          {
+            path: '**',
+            component: HelloworldComponent
+          },
         ];
 
 @NgModule({
