@@ -34,8 +34,6 @@ export class AuthService {
         return this._userManager.getUser().then(user => {
             const userCurrent = !!user && !user.expired;
             
-            console.log("Usuário", user);
-
             if (this._user !== user) {
                 this._loginChangedSubject.next(userCurrent);
             }
