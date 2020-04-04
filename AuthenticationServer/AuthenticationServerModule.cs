@@ -4,7 +4,6 @@ using Volo.Abp.MultiTenancy;
 using Volo.Abp;
 using Volo.Abp.EntityFrameworkCore.MySQL;
 using Volo.Abp.EntityFrameworkCore;
-using Volo.Abp.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Volo.Abp.AspNetCore.MultiTenancy;
 using Volo.Abp.Autofac;
@@ -16,9 +15,11 @@ using Volo.Abp.Threading;
 using Volo.Abp.Data;
 using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.PermissionManagement.IdentityServer;
-using IdentityServer4;
 using Volo.Abp.Identity.AspNetCore;
 using Volo.Abp.SettingManagement.EntityFrameworkCore;
+using Volo.Abp.Account.Web;
+using Volo.Abp.Account;
+using Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic;
 
 namespace AuthenticationServer
 {
@@ -28,16 +29,18 @@ namespace AuthenticationServer
                typeof(AbpIdentityAspNetCoreModule),
                typeof(AbpPermissionManagementEntityFrameworkCoreModule),
                typeof(AbpSettingManagementEntityFrameworkCoreModule),
-               typeof(AbpIdentityServerEntityFrameworkCoreModule),
                typeof(AbpIdentityEntityFrameworkCoreModule),
+               typeof(AbpAccountApplicationModule),
+               typeof(AbpIdentityServerEntityFrameworkCoreModule),
                typeof(AbpEntityFrameworkCoreMySQLModule),
+               typeof(AbpAccountWebIdentityServerModule),
+               typeof(AbpAspNetCoreMvcUiBasicThemeModule),
                typeof(AbpPermissionManagementDomainIdentityServerModule),
                typeof(AbpMultiTenancyModule),
                typeof(AbpAspNetCoreMultiTenancyModule)
    )]
     public class AuthenticationServerModule : AbpModule
     {
-
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
             context.Services.AddCors(options => options.AddDefaultPolicy(builder => builder.AllowAnyOrigin()
@@ -61,11 +64,11 @@ namespace AuthenticationServer
             });
 
 
-            context.Services.AddAuthentication(o =>
-            {
-                o.DefaultAuthenticateScheme = IdentityServerConstants.DefaultCookieAuthenticationScheme;
-                o.DefaultSignOutScheme = IdentityServerConstants.SignoutScheme;
-            });
+            //context.Services.AddAuthentication(o =>
+            //{
+            //    o.DefaultAuthenticateScheme = IdentityServerConstants.DefaultCookieAuthenticationScheme;
+            //    o.DefaultSignOutScheme = IdentityServerConstants.SignoutScheme;
+            //});
 
         }
 

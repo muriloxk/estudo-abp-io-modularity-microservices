@@ -14,6 +14,7 @@ using Volo.Abp.PermissionManagement.EntityFrameworkCore;
 using Volo.Abp.SettingManagement.EntityFrameworkCore;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
 
+
 namespace IdentityService
 {
     [DependsOn(
@@ -37,6 +38,8 @@ namespace IdentityService
                 options.ConventionalControllers.Create(typeof(AbpIdentityApplicationModule).Assembly);
             });
 
+
+
             Configure<AbpMultiTenancyOptions>(options =>
             {
                 options.IsEnabled = true;
@@ -49,6 +52,7 @@ namespace IdentityService
                         options.ApiName = configuration["AuthServer:ApiName"];
                         options.RequireHttpsMetadata = false;
                    });
+
 
             context.Services.AddSwaggerGen(options =>
             {
