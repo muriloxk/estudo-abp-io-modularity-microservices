@@ -1085,3 +1085,214 @@ Volo.Abp.Identity.AbpIdentityResultException: Passwords must have at least one u
 2020-04-02 15:12:36.400 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
 2020-04-02 15:12:36.400 -03:00 [INF] Request finished in 2.4906ms 200 image/png
 2020-04-02 15:12:36.491 -03:00 [INF] Request finished in 104.4826ms 200 application/json;charset=utf-8
+2020-04-05 13:00:25.383 -03:00 [INF] Starting Identity Service
+2020-04-05 13:00:28.351 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-04-05 13:00:28.502 -03:00 [INF] Loaded ABP modules:
+2020-04-05 13:00:28.503 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-04-05 13:00:28.503 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-04-05 13:00:28.503 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-04-05 13:00:28.503 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-04-05 13:00:28.503 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-04-05 13:00:28.503 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-04-05 13:00:28.503 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-04-05 13:00:28.503 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-04-05 13:00:28.503 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-04-05 13:00:28.503 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-04-05 13:00:28.503 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-04-05 13:00:28.504 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-04-05 13:00:28.504 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-04-05 13:00:28.504 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-04-05 13:00:28.504 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-04-05 13:00:28.504 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-04-05 13:00:28.504 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-04-05 13:00:28.504 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-04-05 13:00:28.504 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-04-05 13:00:28.504 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-04-05 13:00:28.504 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-04-05 13:00:28.504 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-04-05 13:00:28.504 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-04-05 13:00:28.504 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-04-05 13:00:28.504 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-04-05 13:00:28.505 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-04-05 13:00:28.505 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-04-05 13:00:28.505 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-04-05 13:00:28.505 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-04-05 13:00:28.505 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-04-05 13:00:28.505 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-04-05 13:00:28.505 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-04-05 13:00:28.505 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-04-05 13:00:28.506 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-04-05 13:00:28.506 -03:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-04-05 13:00:28.506 -03:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-04-05 13:00:28.506 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-04-05 13:00:28.506 -03:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2020-04-05 13:00:28.506 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2020-04-05 13:00:28.506 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2020-04-05 13:00:28.506 -03:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2020-04-05 13:00:28.506 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-04-05 13:00:28.506 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-04-05 13:00:28.506 -03:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-04-05 13:00:28.506 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-04-05 13:00:28.506 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-04-05 13:00:28.506 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-04-05 13:00:28.507 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-04-05 13:00:28.507 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-04-05 13:00:28.507 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2020-04-05 13:00:28.507 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2020-04-05 13:00:28.507 -03:00 [INF] - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2020-04-05 13:00:28.507 -03:00 [INF] - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2020-04-05 13:00:28.507 -03:00 [INF] - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2020-04-05 13:00:28.507 -03:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2020-04-05 13:00:28.507 -03:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2020-04-05 13:00:28.507 -03:00 [INF] - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2020-04-05 13:00:28.507 -03:00 [INF] - IdentityService.IdentityServiceModule
+2020-04-05 13:00:31.280 -03:00 [INF] Initialized all ABP modules.
+2020-04-05 13:00:31.380 -03:00 [INF] Now listening on: https://localhost:5005
+2020-04-05 13:00:31.380 -03:00 [INF] Now listening on: http://localhost:5004
+2020-04-05 13:00:31.381 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-04-05 13:00:31.381 -03:00 [INF] Hosting environment: Development
+2020-04-05 13:00:31.381 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/IdentityService
+2020-04-05 14:22:42.226 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5004/swagger/index.html  
+2020-04-05 14:22:42.546 -03:00 [INF] Request finished in 323.0176ms 307 
+2020-04-05 14:22:42.927 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/swagger/index.html  
+2020-04-05 14:22:43.354 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-05 14:22:43.463 -03:00 [INF] Request finished in 535.8442ms 200 text/html;charset=utf-8
+2020-04-05 14:22:44.125 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/swagger/swagger-ui.css  
+2020-04-05 14:22:44.142 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/swagger/swagger-ui-bundle.js  
+2020-04-05 14:22:44.153 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/swagger/swagger-ui-standalone-preset.js  
+2020-04-05 14:22:44.275 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-05 14:22:44.315 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-05 14:22:44.315 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-05 14:22:44.462 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-04-05 14:22:44.471 -03:00 [INF] Request finished in 345.9735ms 200 text/css
+2020-04-05 14:22:45.308 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-04-05 14:22:45.309 -03:00 [INF] Request finished in 1155.8745ms 200 application/javascript
+2020-04-05 14:22:45.359 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-04-05 14:22:45.361 -03:00 [INF] Request finished in 1219.1526ms 200 application/javascript
+2020-04-05 14:22:45.669 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/swagger/v1/swagger.json  
+2020-04-05 14:22:45.672 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-05 14:22:45.888 -03:00 [INF] Request finished in 220.0616ms 200 application/json;charset=utf-8
+2020-04-05 14:24:48.880 -03:00 [INF] Application is shutting down...
+2020-04-05 14:26:20.212 -03:00 [INF] Starting Identity Service
+2020-04-05 14:26:21.216 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-04-05 14:26:21.342 -03:00 [INF] Loaded ABP modules:
+2020-04-05 14:26:21.342 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-04-05 14:26:21.342 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-04-05 14:26:21.343 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-04-05 14:26:21.343 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-04-05 14:26:21.343 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-04-05 14:26:21.343 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-04-05 14:26:21.343 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-04-05 14:26:21.343 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-04-05 14:26:21.343 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-04-05 14:26:21.343 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-04-05 14:26:21.343 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-04-05 14:26:21.343 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-04-05 14:26:21.343 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-04-05 14:26:21.343 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-04-05 14:26:21.343 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-04-05 14:26:21.343 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-04-05 14:26:21.344 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-04-05 14:26:21.344 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-04-05 14:26:21.344 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-04-05 14:26:21.344 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-04-05 14:26:21.344 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-04-05 14:26:21.344 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-04-05 14:26:21.344 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-04-05 14:26:21.344 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-04-05 14:26:21.344 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-04-05 14:26:21.344 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-04-05 14:26:21.344 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-04-05 14:26:21.344 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-04-05 14:26:21.344 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-04-05 14:26:21.344 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-04-05 14:26:21.344 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-04-05 14:26:21.345 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-04-05 14:26:21.345 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-04-05 14:26:21.345 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-04-05 14:26:21.345 -03:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-04-05 14:26:21.345 -03:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-04-05 14:26:21.345 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-04-05 14:26:21.345 -03:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2020-04-05 14:26:21.345 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2020-04-05 14:26:21.345 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2020-04-05 14:26:21.345 -03:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2020-04-05 14:26:21.345 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-04-05 14:26:21.345 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-04-05 14:26:21.345 -03:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-04-05 14:26:21.345 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-04-05 14:26:21.345 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-04-05 14:26:21.346 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-04-05 14:26:21.346 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-04-05 14:26:21.346 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-04-05 14:26:21.346 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2020-04-05 14:26:21.346 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2020-04-05 14:26:21.346 -03:00 [INF] - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2020-04-05 14:26:21.346 -03:00 [INF] - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2020-04-05 14:26:21.346 -03:00 [INF] - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2020-04-05 14:26:21.346 -03:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2020-04-05 14:26:21.346 -03:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2020-04-05 14:26:21.346 -03:00 [INF] - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2020-04-05 14:26:21.346 -03:00 [INF] - IdentityService.IdentityServiceModule
+2020-04-05 14:26:21.997 -03:00 [INF] Initialized all ABP modules.
+2020-04-05 14:26:22.059 -03:00 [INF] Now listening on: https://localhost:5005
+2020-04-05 14:26:22.060 -03:00 [INF] Now listening on: http://localhost:5004
+2020-04-05 14:26:22.060 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-04-05 14:26:22.060 -03:00 [INF] Hosting environment: Development
+2020-04-05 14:26:22.061 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/IdentityService
+2020-04-05 14:32:34.767 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5004/swagger/index.html  
+2020-04-05 14:32:35.346 -03:00 [INF] Request finished in 581.1797ms 307 
+2020-04-05 14:32:36.002 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/swagger/index.html  
+2020-04-05 14:32:36.055 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-05 14:32:36.182 -03:00 [INF] Request finished in 179.7475ms 200 text/html;charset=utf-8
+2020-04-05 14:32:36.213 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/swagger/swagger-ui.css  
+2020-04-05 14:32:36.214 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-05 14:32:36.242 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-04-05 14:32:36.245 -03:00 [INF] Request finished in 32.4592ms 200 text/css
+2020-04-05 14:32:37.147 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/swagger/swagger-ui-standalone-preset.js  
+2020-04-05 14:32:37.149 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-05 14:32:37.205 -03:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-04-05 14:32:37.207 -03:00 [INF] Request finished in 59.8656ms 304 application/javascript
+2020-04-05 14:32:37.216 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/swagger/swagger-ui-bundle.js  
+2020-04-05 14:32:37.217 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-05 14:32:37.219 -03:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-04-05 14:32:37.219 -03:00 [INF] Request finished in 3.4629ms 304 application/javascript
+2020-04-05 14:32:37.770 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/swagger/favicon-32x32.png  
+2020-04-05 14:32:37.772 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-05 14:32:37.846 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/swagger/v1/swagger.json  
+2020-04-05 14:32:37.847 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-05 14:32:37.897 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2020-04-05 14:32:37.898 -03:00 [INF] Request finished in 127.8426ms 200 image/png
+2020-04-05 14:32:37.973 -03:00 [INF] Request finished in 127.403ms 200 application/json;charset=utf-8
+2020-04-05 14:35:53.964 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/swagger/index.html  
+2020-04-05 14:35:54.011 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-05 14:35:54.014 -03:00 [INF] Request finished in 50.2012ms 200 text/html;charset=utf-8
+2020-04-05 14:35:54.025 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/swagger/swagger-ui.css  
+2020-04-05 14:35:54.026 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-05 14:35:54.030 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-04-05 14:35:54.031 -03:00 [INF] Request finished in 5.5386ms 200 text/css
+2020-04-05 14:35:54.046 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/swagger/swagger-ui-bundle.js  
+2020-04-05 14:35:54.046 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-05 14:35:54.060 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/swagger/swagger-ui-standalone-preset.js  
+2020-04-05 14:35:54.061 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-05 14:35:54.061 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-04-05 14:35:54.061 -03:00 [INF] Request finished in 15.7393ms 200 application/javascript
+2020-04-05 14:35:54.068 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-04-05 14:35:54.069 -03:00 [INF] Request finished in 8.7059ms 200 application/javascript
+2020-04-05 14:35:54.321 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/swagger/favicon-32x32.png  
+2020-04-05 14:35:54.322 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-05 14:35:54.328 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2020-04-05 14:35:54.335 -03:00 [INF] Request finished in 12.3705ms 200 image/png
+2020-04-05 14:35:54.374 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/swagger/v1/swagger.json  
+2020-04-05 14:35:54.375 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-05 14:35:54.400 -03:00 [INF] Request finished in 26.345ms 200 application/json;charset=utf-8
+2020-04-05 14:37:52.877 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/swagger/index.html  
+2020-04-05 14:37:52.878 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-05 14:37:52.880 -03:00 [INF] Request finished in 3.6413ms 200 text/html;charset=utf-8
+2020-04-05 14:37:53.223 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/swagger/v1/swagger.json  
+2020-04-05 14:37:53.250 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-05 14:37:53.266 -03:00 [INF] Request finished in 43.6544ms 200 application/json;charset=utf-8
+2020-04-05 14:37:53.516 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/swagger/favicon-32x32.png  
+2020-04-05 14:37:53.517 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-05 14:37:53.519 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2020-04-05 14:37:53.519 -03:00 [INF] Request finished in 3.0058ms 200 image/png

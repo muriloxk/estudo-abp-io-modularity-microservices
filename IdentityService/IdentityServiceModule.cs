@@ -35,7 +35,11 @@ namespace IdentityService
 
             Configure<AbpAspNetCoreMvcOptions>(options =>
             {
-                options.ConventionalControllers.Create(typeof(AbpIdentityApplicationModule).Assembly);
+                options.ConventionalControllers.Create(typeof(AbpIdentityApplicationModule).Assembly, opts =>
+                {
+
+                    opts.RootPath = "identityservice";
+                });
             });
 
 

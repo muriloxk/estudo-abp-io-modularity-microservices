@@ -1,14 +1,22 @@
-﻿using System.Collections.Generic;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 using Volo.Abp;
+using Volo.Abp.AspNetCore.MultiTenancy;
+using Volo.Abp.Autofac;
+using Volo.Abp.EntityFrameworkCore.MySQL;
 using Volo.Abp.Modularity;
+using Volo.Abp.PermissionManagement.EntityFrameworkCore;
 
 namespace WebGateway
 {
+
+    [DependsOn(typeof(AbpAutofacModule))]
+    [DependsOn(typeof(AbpEntityFrameworkCoreMySQLModule))]
+    [DependsOn(typeof(AbpPermissionManagementEntityFrameworkCoreModule))]
+    [DependsOn(typeof(AbpAspNetCoreMultiTenancyModule))]
     public class WebGatewayModule : AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)

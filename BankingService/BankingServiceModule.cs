@@ -95,7 +95,10 @@ namespace BankingService
         {
             Configure<AbpAspNetCoreMvcOptions>(options =>
             {
-                options.ConventionalControllers.Create(typeof(BankingApplicationModule).Assembly);
+                options.ConventionalControllers.Create(typeof(BankingApplicationModule).Assembly, opts =>
+                {
+                    opts.RootPath = "bankingservice";
+                });
             });
         }
 

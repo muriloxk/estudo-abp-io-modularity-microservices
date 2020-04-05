@@ -77,7 +77,10 @@ namespace TransferLogService
         {
             Configure<AbpAspNetCoreMvcOptions>(options =>
             {
-                options.ConventionalControllers.Create(typeof(TransferApplicationModule).Assembly);
+                options.ConventionalControllers.Create(typeof(TransferApplicationModule).Assembly, opts =>
+                {
+                    opts.RootPath = "transferlogservice";
+                });
             });
         }
 

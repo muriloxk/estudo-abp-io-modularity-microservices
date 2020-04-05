@@ -1,0 +1,88 @@
+2020-04-05 14:40:18.454 -03:00 [INF] Starting WebGateway
+2020-04-05 14:40:19.995 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-04-05 14:40:20.130 -03:00 [FTL] Application startup exception
+Autofac.Core.Registration.ComponentNotRegisteredException: The requested service 'Volo.Abp.DependencyInjection.ObjectAccessor`1[[Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Http.Abstractions, Version=3.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]' has not been registered. To avoid this exception, either register a component to provide the service, check for service registration using IsRegistered(), or use the ResolveOptional() method to resolve an optional dependency.
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Builder.AbpApplicationBuilderExtensions.InitializeApplication(IApplicationBuilder app)
+   at WebGateway.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /Users/murilosanches/Projects/AbpMicroRabbit/WebGateway/Startup.cs:line 26
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass13_0.<UseStartup>b__2(IApplicationBuilder app)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2020-04-05 14:40:20.189 -03:00 [FTL] WebGateway terminated unexpectedly!
+Autofac.Core.Registration.ComponentNotRegisteredException: The requested service 'Volo.Abp.DependencyInjection.ObjectAccessor`1[[Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Http.Abstractions, Version=3.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]' has not been registered. To avoid this exception, either register a component to provide the service, check for service registration using IsRegistered(), or use the ResolveOptional() method to resolve an optional dependency.
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Builder.AbpApplicationBuilderExtensions.InitializeApplication(IApplicationBuilder app)
+   at WebGateway.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /Users/murilosanches/Projects/AbpMicroRabbit/WebGateway/Startup.cs:line 26
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass13_0.<UseStartup>b__2(IApplicationBuilder app)
+   at Microsoft.AspNetCore.MiddlewareAnalysis.AnalysisStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at WebGateway.Program.Main(String[] args) in /Users/murilosanches/Projects/AbpMicroRabbit/WebGateway/Program.cs:line 26
+2020-04-05 14:51:32.168 -03:00 [INF] Starting WebGateway
+2020-04-05 14:51:35.492 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-04-05 14:51:35.719 -03:00 [INF] Loaded ABP modules:
+2020-04-05 14:51:35.719 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-04-05 14:51:35.719 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-04-05 14:51:35.719 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-04-05 14:51:35.719 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-04-05 14:51:35.720 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-04-05 14:51:35.720 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-04-05 14:51:35.720 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-04-05 14:51:35.720 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-04-05 14:51:35.720 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-04-05 14:51:35.720 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-04-05 14:51:35.720 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-04-05 14:51:35.720 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-04-05 14:51:35.720 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-04-05 14:51:35.720 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-04-05 14:51:35.720 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-04-05 14:51:35.720 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-04-05 14:51:35.720 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-04-05 14:51:35.720 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-04-05 14:51:35.720 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-04-05 14:51:35.720 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-04-05 14:51:35.720 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-04-05 14:51:35.720 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-04-05 14:51:35.720 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-04-05 14:51:35.720 -03:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-04-05 14:51:35.720 -03:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-04-05 14:51:35.721 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-04-05 14:51:35.721 -03:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2020-04-05 14:51:35.721 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-04-05 14:51:35.721 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-04-05 14:51:35.721 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-04-05 14:51:35.721 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-04-05 14:51:35.721 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-04-05 14:51:35.721 -03:00 [INF] - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2020-04-05 14:51:35.721 -03:00 [INF] - WebGateway.WebGatewayModule
+2020-04-05 14:51:35.993 -03:00 [INF] Initialized all ABP modules.
+2020-04-05 14:51:36.096 -03:00 [INF] Now listening on: https://localhost:17692
+2020-04-05 14:51:36.096 -03:00 [INF] Now listening on: http://localhost:54309
+2020-04-05 14:51:36.097 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-04-05 14:51:36.097 -03:00 [INF] Hosting environment: Development
+2020-04-05 14:51:36.097 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/WebGateway
