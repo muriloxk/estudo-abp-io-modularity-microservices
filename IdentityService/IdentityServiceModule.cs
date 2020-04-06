@@ -68,11 +68,7 @@ namespace IdentityService
             Configure<AbpDbContextOptions>(options =>
             {
                 options.UseMySQL();
-            });
-
-
-            //TEST:
-            context.Services.AddAlwaysAllowAuthorization();
+            });      
         }
 
         public override void OnApplicationInitialization(ApplicationInitializationContext context)

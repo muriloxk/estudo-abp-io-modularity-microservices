@@ -31,6 +31,7 @@ namespace AuthenticationServer
                typeof(AbpSettingManagementEntityFrameworkCoreModule),
                typeof(AbpIdentityEntityFrameworkCoreModule),
                typeof(AbpAccountApplicationModule),
+               typeof(AbpAccountWebModule), //testar interface 
                typeof(AbpIdentityServerEntityFrameworkCoreModule),
                typeof(AbpEntityFrameworkCoreMySQLModule),
                typeof(AbpAccountWebIdentityServerModule),
