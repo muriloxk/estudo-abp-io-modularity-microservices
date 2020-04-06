@@ -7,6 +7,9 @@ import { HelloworldComponent } from './helloworld/helloworld.component';
 import { SigninRedirectComponent } from './home/signin-redirect-callback.component';
 import { SignoutRedirectComponent } from './home/signout-redirect-callback.component';
 import { AuthService } from './core/auth-service.component';
+import { HttpClient } from '@angular/common/http';
+import { BankingService } from './core/banking-service.component';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -17,10 +20,13 @@ import { AuthService } from './core/auth-service.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CoreModule,
   ],
   providers: [
-    AuthService
+    AuthService,
+    BankingService,
+    HttpClient 
   ],
   bootstrap: [AppComponent]
 })

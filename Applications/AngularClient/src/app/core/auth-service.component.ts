@@ -4,7 +4,7 @@ import { UserManager, User } from 'oidc-client';
 import { Constants } from './Constants';
 import { Subject } from 'rxjs';
 
-@Injectable({providedIn: CoreModule})
+@Injectable()
 export class AuthService {
     
     private _userManager: UserManager;
@@ -58,5 +58,14 @@ export class AuthService {
     completeLogout() {
         this._user = null;
         return this._userManager.signoutCallback();
+    }
+
+    getAccessToken() {
+       return this._userManager.getUser().then(user => {
+            if(!!user && !user.expired)
+                return user.access_token;
+
+            return null;
+        });
     }
 }

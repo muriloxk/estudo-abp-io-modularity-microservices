@@ -4,24 +4,32 @@ using Microsoft.OpenApi.Models;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 using Volo.Abp;
+using Volo.Abp.AspNetCore;
 using Volo.Abp.AspNetCore.MultiTenancy;
+using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.Autofac;
 using Volo.Abp.EntityFrameworkCore.MySQL;
 using Volo.Abp.Modularity;
 using Volo.Abp.PermissionManagement.EntityFrameworkCore;
+using Volo.Abp.SettingManagement.EntityFrameworkCore;
 
 namespace WebGateway
 {
-
     [DependsOn(typeof(AbpAutofacModule))]
+    [DependsOn(typeof(AbpAspNetCoreMvcModule))]
     [DependsOn(typeof(AbpEntityFrameworkCoreMySQLModule))]
     [DependsOn(typeof(AbpPermissionManagementEntityFrameworkCoreModule))]
+    [DependsOn(typeof(AbpSettingManagementEntityFrameworkCoreModule))]
     [DependsOn(typeof(AbpAspNetCoreMultiTenancyModule))]
     public class WebGatewayModule : AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
             var configuration = context.Services.GetConfiguration();
+
+            context.Services.AddCors(options => options.AddDefaultPolicy(builder => builder.AllowAnyOrigin()
+                                                                                      .AllowAnyHeader()
+                                                                                      .AllowAnyMethod()));
 
             context.Services.AddAuthentication("Bearer")
                             .AddIdentityServerAuthentication(options =>
@@ -30,7 +38,6 @@ namespace WebGateway
                                 options.ApiName = configuration["AuthServer:ApiName"];
                                 options.RequireHttpsMetadata = false;
                             });
-
 
             context.Services.AddSwaggerGen(options =>
             {
@@ -46,6 +53,7 @@ namespace WebGateway
         {
             var app = context.GetApplicationBuilder();
 
+            app.UseCors();
             app.UseRouting();
             app.UseAuthentication();
 
