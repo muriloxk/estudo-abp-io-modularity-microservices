@@ -7,11 +7,13 @@ using Volo.Abp;
 using Volo.Abp.AspNetCore.MultiTenancy;
 using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.Autofac;
+using Volo.Abp.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore.MySQL;
 using Volo.Abp.Modularity;
 using Volo.Abp.MultiTenancy;
 using Volo.Abp.PermissionManagement.EntityFrameworkCore;
 using Volo.Abp.SettingManagement.EntityFrameworkCore;
+using Volo.Abp.TenantManagement.EntityFrameworkCore;
 
 namespace WebGateway
 {
@@ -20,6 +22,7 @@ namespace WebGateway
     [DependsOn(typeof(AbpEntityFrameworkCoreMySQLModule))]
     [DependsOn(typeof(AbpPermissionManagementEntityFrameworkCoreModule))]
     [DependsOn(typeof(AbpSettingManagementEntityFrameworkCoreModule))]
+    [DependsOn(typeof(AbpTenantManagementEntityFrameworkCoreModule))]  
     [DependsOn(typeof(AbpAspNetCoreMultiTenancyModule))]
     public class WebGatewayModule : AbpModule
     {
@@ -27,10 +30,24 @@ namespace WebGateway
         {
             var configuration = context.Services.GetConfiguration();
 
+
+            Configure<AbpDbContextOptions>(options =>
+            {
+                options.UseMySQL();
+            });
+
             Configure<AbpMultiTenancyOptions>(options =>
             {
                 options.IsEnabled = true;
             });
+
+            Configure<AbpTenantResolveOptions>(options =>
+            {
+                options.TenantResolvers.Insert(1, new QueryStringTenantResolveContributor());
+            });
+
+
+
 
             context.Services.AddCors(options => options.AddDefaultPolicy(builder => builder.AllowAnyOrigin()
                                                                                            .AllowAnyHeader()

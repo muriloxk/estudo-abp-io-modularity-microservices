@@ -17,6 +17,7 @@ using Volo.Abp.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore.MySQL;
 using Volo.Abp.Modularity;
 using Volo.Abp.MultiTenancy;
+using Volo.Abp.TenantManagement.EntityFrameworkCore;
 
 namespace TransferLogService
 {
@@ -27,6 +28,7 @@ namespace TransferLogService
                typeof(AbpAutofacModule),
                typeof(AbpEntityFrameworkCoreMySQLModule),
                typeof(AbpMicroRabbitSharedInfraBusModule),
+               typeof(AbpTenantManagementEntityFrameworkCoreModule),
                typeof(AbpAspNetCoreMultiTenancyModule))]
     public class TransferLogServiceModule : AbpModule
     {
@@ -59,10 +61,6 @@ namespace TransferLogService
                 options.IsEnabled = true;
             });
 
-            Configure<AbpAspNetCoreMultiTenancyOptions>(options =>
-            {
-                options.TenantKey = "Tenant";
-            });
 
             Configure<AbpTenantResolveOptions>(options =>
             {

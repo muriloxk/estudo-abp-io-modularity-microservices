@@ -17,6 +17,7 @@ using AbpMicroRabbit.Banking.Domain;
 using AbpMicroRabbit.Banking.Application.Contracts;
 using Volo.Abp.AspNetCore.MultiTenancy;
 using Volo.Abp.MultiTenancy;
+using Volo.Abp.TenantManagement.EntityFrameworkCore;
 
 namespace BankingService
 {
@@ -28,6 +29,7 @@ namespace BankingService
                 typeof(AbpEntityFrameworkCoreMySQLModule),
                 typeof(AbpEventBusRabbitMqModule),
                 typeof(AbpMicroRabbitSharedInfraBusModule),
+                typeof(AbpTenantManagementEntityFrameworkCoreModule),
                 typeof(AbpAspNetCoreMultiTenancyModule))]
     public class BankingServiceModule : AbpModule
     {
@@ -57,10 +59,6 @@ namespace BankingService
                 options.IsEnabled = true;
             });
 
-            Configure<AbpAspNetCoreMultiTenancyOptions>(options =>
-            {
-                options.TenantKey = "Tenant";
-            });
 
             Configure<AbpTenantResolveOptions>(options =>
             {

@@ -47,17 +47,20 @@ namespace IdentityService
                 options.IsEnabled = true;
             });
 
-            Configure<AbpAspNetCoreMultiTenancyOptions>(options =>
-            {
-                options.TenantKey = "Tenant";
-            });
-
             Configure<AbpTenantResolveOptions>(options =>
             {
                 options.TenantResolvers.Insert(1, new QueryStringTenantResolveContributor());
             });
 
-            context.Services.AddAuthentication("Bearer")
+            //Configure<AbpTenantResolveOptions>(options =>
+            //{
+            //    options.
+            //});
+
+     
+  
+
+                context.Services.AddAuthentication("Bearer")
                    .AddIdentityServerAuthentication(options =>
                    {
                         options.Authority = configuration["AuthServer:Authority"];
