@@ -20,6 +20,8 @@ using Volo.Abp.SettingManagement.EntityFrameworkCore;
 using Volo.Abp.Account.Web;
 using Volo.Abp.Account;
 using Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
+using System;
 
 namespace AuthenticationServer
 {
@@ -44,10 +46,10 @@ namespace AuthenticationServer
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
-            context.Services.AddCors(options => options.AddDefaultPolicy(builder => builder.AllowAnyOrigin()
-                                                                                           .AllowAnyHeader()
-                                                                                           .AllowAnyMethod()));
-
+            context.Services.AddCors(options => options.AddDefaultPolicy(builder =>
+                                                                                    builder.AllowAnyOrigin()
+                                                                                            .AllowAnyHeader()
+                                                                                            .AllowAnyMethod()));
             context.Services.AddControllersWithViews();
             context.Services.AddAbpDbContext<AuthServerDbContext>(options =>
             {
@@ -61,16 +63,8 @@ namespace AuthenticationServer
 
             Configure<AbpDbContextOptions>(options =>
             {
-                options.UseMySQL();
+                options.UseMySQL(options => options.ServerVersion(new Version(8, 0, 19), ServerType.MySql));
             });
-
-
-            //context.Services.AddAuthentication(o =>
-            //{
-            //    o.DefaultAuthenticateScheme = IdentityServerConstants.DefaultCookieAuthenticationScheme;
-            //    o.DefaultSignOutScheme = IdentityServerConstants.SignoutScheme;
-            //});
-
         }
 
         public override void OnApplicationInitialization(ApplicationInitializationContext context)

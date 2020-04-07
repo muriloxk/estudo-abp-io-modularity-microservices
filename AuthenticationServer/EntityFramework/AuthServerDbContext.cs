@@ -4,6 +4,7 @@ using Volo.Abp.Identity.EntityFrameworkCore;
 using Volo.Abp.IdentityServer.EntityFrameworkCore;
 using Volo.Abp.PermissionManagement.EntityFrameworkCore;
 using Volo.Abp.SettingManagement.EntityFrameworkCore;
+using Volo.Abp.TenantManagement.EntityFrameworkCore;
 
 namespace AuthenticationServer.EntityFramework
 {
@@ -21,6 +22,7 @@ namespace AuthenticationServer.EntityFramework
 
             modelBuilder.ConfigurePermissionManagement();
             modelBuilder.ConfigureSettingManagement();
+            modelBuilder.ConfigureTenantManagement();
             modelBuilder.ConfigureIdentity();
             modelBuilder.ConfigureIdentityServer(options =>
             {

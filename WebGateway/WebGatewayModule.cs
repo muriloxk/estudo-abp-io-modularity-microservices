@@ -4,7 +4,6 @@ using Microsoft.OpenApi.Models;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 using Volo.Abp;
-using Volo.Abp.AspNetCore;
 using Volo.Abp.AspNetCore.MultiTenancy;
 using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.Autofac;
@@ -78,6 +77,13 @@ namespace WebGateway
                 options.SwaggerEndpoint("/swagger/v1/swagger.json", "PublicWebSite Gateway API");
             });
 
+            ConfigurarRotasParaDocumentacaoEGerarProxys(app);
+
+            app.UseOcelot().Wait();
+        }
+
+        private static void ConfigurarRotasParaDocumentacaoEGerarProxys(IApplicationBuilder app)
+        {
             app.MapWhen(
                  ctx => ctx.Request.Path.ToString().StartsWith("/api/abp/") ||
                         ctx.Request.Path.ToString().StartsWith("/Abp/"),
@@ -87,8 +93,6 @@ namespace WebGateway
                      app2.UseMvcWithDefaultRouteAndArea();
                  }
              );
-
-            app.UseOcelot().Wait();
         }
     }
 }
