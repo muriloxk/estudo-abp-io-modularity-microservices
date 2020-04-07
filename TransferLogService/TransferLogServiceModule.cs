@@ -32,9 +32,20 @@ namespace TransferLogService
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
+
+            var configuration = context.Services.GetConfiguration();
             //base.ConfigureServices(context);
 
             ConfigurarMultiTenancy();
+
+            context.Services.AddAuthentication("Bearer")
+                .AddIdentityServerAuthentication(options =>
+                {
+                    options.Authority = configuration["AuthServer:Authority"];
+                    options.ApiName = configuration["AuthServer:ApiName"];
+                    options.RequireHttpsMetadata = false;
+                });
+
             ConfigurarControllersGeradosAutomaticamente();
             ConfigurarProviderDoEfCore();
             ConfigurarSwagger(context);

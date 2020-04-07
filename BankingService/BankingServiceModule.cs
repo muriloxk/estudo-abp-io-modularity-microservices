@@ -34,18 +34,18 @@ namespace BankingService
 
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
+            var configuration = context.Services.GetConfiguration();
+
             ConfigurarMultiTenancy();
 
 
-            //TODO: Criar AuthServer;
-            //context.Services.AddAuthentication("Bearer")
-            //   .AddIdentityServerAuthentication(options =>
-            //   {
-            //       options.Authority = configuration["AuthServer:Authority"];
-            //       options.ApiName = configuration["AuthServer:ApiName"];
-            //       options.RequireHttpsMetadata = false;
-            //   });
-
+            context.Services.AddAuthentication("Bearer")
+                            .AddIdentityServerAuthentication(options =>
+                            {
+                                options.Authority = configuration["AuthServer:Authority"];
+                                options.ApiName = configuration["AuthServer:ApiName"];
+                                options.RequireHttpsMetadata = false;
+                            });
 
             ConfigurarControllersGeradosAutomaticamente();
             ConfigurarProviderDoEfCore();

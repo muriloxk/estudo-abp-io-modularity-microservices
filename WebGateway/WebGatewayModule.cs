@@ -9,6 +9,7 @@ using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.Autofac;
 using Volo.Abp.EntityFrameworkCore.MySQL;
 using Volo.Abp.Modularity;
+using Volo.Abp.MultiTenancy;
 using Volo.Abp.PermissionManagement.EntityFrameworkCore;
 using Volo.Abp.SettingManagement.EntityFrameworkCore;
 
@@ -26,9 +27,14 @@ namespace WebGateway
         {
             var configuration = context.Services.GetConfiguration();
 
+            Configure<AbpMultiTenancyOptions>(options =>
+            {
+                options.IsEnabled = true;
+            });
+
             context.Services.AddCors(options => options.AddDefaultPolicy(builder => builder.AllowAnyOrigin()
-                                                                                      .AllowAnyHeader()
-                                                                                      .AllowAnyMethod()));
+                                                                                           .AllowAnyHeader()
+                                                                                           .AllowAnyMethod()));
 
             context.Services.AddAuthentication("Bearer")
                             .AddIdentityServerAuthentication(options =>
@@ -54,22 +60,11 @@ namespace WebGateway
 
             app.UseCors();
             app.UseRouting();
+
+   
             app.UseAuthentication();
 
-            //app.Use(async (ctx, next) =>
-            //{
-            //    var currentPrincipalAccessor = ctx.RequestServices.GetRequiredService<ICurrentPrincipalAccessor>();
-            //    var map = new Dictionary<string, string>()
-            //    {
-            //        { "sub", AbpClaimTypes.UserId },
-            //        { "role", AbpClaimTypes.Role },
-            //        { "email", AbpClaimTypes.Email },
-            //        //any other map
-            //    };
-            //    var mapClaims = currentPrincipalAccessor.Principal.Claims.Where(p => map.Keys.Contains(p.Type)).ToList();
-            //    currentPrincipalAccessor.Principal.AddIdentity(new ClaimsIdentity(mapClaims.Select(p => new Claim(map[p.Type], p.Value, p.ValueType, p.Issuer))));
-            //    await next();
-            //});
+            app.UseMultiTenancy();
 
             app.UseSwagger();
             app.UseSwaggerUI(options =>
