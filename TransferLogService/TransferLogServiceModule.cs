@@ -58,6 +58,16 @@ namespace TransferLogService
             {
                 options.IsEnabled = true;
             });
+
+            Configure<AbpAspNetCoreMultiTenancyOptions>(options =>
+            {
+                options.TenantKey = "Tenant";
+            });
+
+            Configure<AbpTenantResolveOptions>(options =>
+            {
+                options.TenantResolvers.Insert(1, new QueryStringTenantResolveContributor());
+            });
         }
 
         private static void ConfigurarRabbitMQEventBus(ServiceConfigurationContext context)

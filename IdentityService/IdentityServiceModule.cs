@@ -42,11 +42,19 @@ namespace IdentityService
                 });
             });
 
-
-
             Configure<AbpMultiTenancyOptions>(options =>
             {
                 options.IsEnabled = true;
+            });
+
+            Configure<AbpAspNetCoreMultiTenancyOptions>(options =>
+            {
+                options.TenantKey = "Tenant";
+            });
+
+            Configure<AbpTenantResolveOptions>(options =>
+            {
+                options.TenantResolvers.Insert(1, new QueryStringTenantResolveContributor());
             });
 
             context.Services.AddAuthentication("Bearer")

@@ -36,9 +36,6 @@ namespace BankingService
         {
             var configuration = context.Services.GetConfiguration();
 
-            ConfigurarMultiTenancy();
-
-
             context.Services.AddAuthentication("Bearer")
                             .AddIdentityServerAuthentication(options =>
                             {
@@ -58,6 +55,16 @@ namespace BankingService
             Configure<AbpMultiTenancyOptions>(options =>
             {
                 options.IsEnabled = true;
+            });
+
+            Configure<AbpAspNetCoreMultiTenancyOptions>(options =>
+            {
+                options.TenantKey = "Tenant";
+            });
+
+            Configure<AbpTenantResolveOptions>(options =>
+            {
+                options.TenantResolvers.Insert(1, new QueryStringTenantResolveContributor());
             });
         }
 

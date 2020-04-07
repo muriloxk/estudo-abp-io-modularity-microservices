@@ -39,12 +39,12 @@ namespace TenantService
             });
 
             context.Services.AddAuthentication("Bearer")
-               .AddIdentityServerAuthentication(options =>
-               {
-                   options.Authority = configuration["AuthServer:Authority"];
-                   options.ApiName = configuration["AuthServer:ApiName"];
-                   options.RequireHttpsMetadata = false;
-               });
+                            .AddIdentityServerAuthentication(options =>
+                            {
+                                options.Authority = configuration["AuthServer:Authority"];
+                                options.ApiName = configuration["AuthServer:ApiName"];
+                                options.RequireHttpsMetadata = false;
+                            });
 
             context.Services.AddSwaggerGen(options =>
             {
