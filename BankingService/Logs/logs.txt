@@ -1757,3 +1757,890 @@ Volo.Abp.AbpException: There is no tenant with given tenant id or name: abp
 2020-04-07 13:01:09.981 -03:00 [DBG] Stopped background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
 2020-04-07 13:01:09.997 -03:00 [DBG] Disposed channel pool with no channels in the pool.
 2020-04-07 13:01:10.007 -03:00 [INF] Application is shutting down...
+2020-04-07 14:10:46.553 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-04-07 14:10:46.717 -03:00 [INF] Loaded ABP modules:
+2020-04-07 14:10:46.717 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-04-07 14:10:46.717 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-04-07 14:10:46.717 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-04-07 14:10:46.717 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-04-07 14:10:46.718 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-04-07 14:10:46.718 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-04-07 14:10:46.718 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-04-07 14:10:46.718 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-04-07 14:10:46.718 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-04-07 14:10:46.718 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-04-07 14:10:46.718 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-04-07 14:10:46.718 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-04-07 14:10:46.718 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-04-07 14:10:46.719 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-04-07 14:10:46.719 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-04-07 14:10:46.719 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-04-07 14:10:46.719 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-04-07 14:10:46.719 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-04-07 14:10:46.719 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-04-07 14:10:46.719 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-04-07 14:10:46.719 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-04-07 14:10:46.719 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-04-07 14:10:46.719 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-04-07 14:10:46.720 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-04-07 14:10:46.720 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-04-07 14:10:46.720 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-04-07 14:10:46.720 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-04-07 14:10:46.720 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-04-07 14:10:46.720 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-04-07 14:10:46.720 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-04-07 14:10:46.720 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-04-07 14:10:46.720 -03:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-04-07 14:10:46.720 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-04-07 14:10:46.721 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-04-07 14:10:46.721 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-04-07 14:10:46.721 -03:00 [INF] - AbpMicroRabbit.Banking.Application.Contracts.BankingApplicationContractsModule
+2020-04-07 14:10:46.721 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-04-07 14:10:46.721 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-04-07 14:10:46.721 -03:00 [INF] - AbpMicroRabbit.Shared.Domain.AbpMicroRabbitSharedDomainModule
+2020-04-07 14:10:46.721 -03:00 [INF] - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2020-04-07 14:10:46.721 -03:00 [INF] - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2020-04-07 14:10:46.721 -03:00 [INF] - AbpMicroRabbit.Shared.Infra.Bus.AbpMicroRabbitSharedInfraBusModule
+2020-04-07 14:10:46.721 -03:00 [INF] - AbpMicroRabbit.Banking.Domain.BankingDomainModule
+2020-04-07 14:10:46.721 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-04-07 14:10:46.721 -03:00 [INF] - AbpMicroRabbit.Banking.Application.BankingApplicationModule
+2020-04-07 14:10:46.722 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-04-07 14:10:46.722 -03:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2020-04-07 14:10:46.722 -03:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-04-07 14:10:46.722 -03:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-04-07 14:10:46.722 -03:00 [INF] - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2020-04-07 14:10:46.722 -03:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2020-04-07 14:10:46.722 -03:00 [INF] - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2020-04-07 14:10:46.722 -03:00 [INF] - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2020-04-07 14:10:46.722 -03:00 [INF] - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2020-04-07 14:10:46.722 -03:00 [INF] - AbpMicroRabbit.Banking.EntityFrameworkCore.BankingEntityFrameworkModule
+2020-04-07 14:10:46.722 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-04-07 14:10:46.722 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-04-07 14:10:46.723 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-04-07 14:10:46.723 -03:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2020-04-07 14:10:46.723 -03:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2020-04-07 14:10:46.723 -03:00 [INF] - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2020-04-07 14:10:46.723 -03:00 [INF] - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2020-04-07 14:10:46.723 -03:00 [INF] - BankingService.BankingServiceModule
+2020-04-07 14:10:47.090 -03:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2020-04-07 14:10:47.991 -03:00 [INF] Initialized all ABP modules.
+2020-04-07 14:10:48.020 -03:00 [INF] Now listening on: http://localhost:64056
+2020-04-07 14:10:48.020 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-04-07 14:10:48.020 -03:00 [INF] Hosting environment: Development
+2020-04-07 14:10:48.020 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/BankingService
+2020-04-07 14:15:11.717 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:64056/api/bankingservice/account?__tenant=abp  0
+2020-04-07 14:15:11.717 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:64056/api/bankingservice/account?__tenant=abp  0
+2020-04-07 14:15:11.723 -03:00 [WRN] Failed to determine the https port for redirect.
+2020-04-07 14:15:12.515 -03:00 [INF] Entity Framework Core 3.1.2 initialized 'TenantManagementDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2020-04-07 14:15:12.515 -03:00 [INF] Entity Framework Core 3.1.2 initialized 'TenantManagementDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2020-04-07 14:15:13.019 -03:00 [INF] Executed DbCommand (23ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__name_0='?' (Size = 64)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`ConcurrencyStamp`, `t`.`CreationTime`, `t`.`CreatorId`, `t`.`DeleterId`, `t`.`DeletionTime`, `t`.`ExtraProperties`, `t`.`IsDeleted`, `t`.`LastModificationTime`, `t`.`LastModifierId`, `t`.`Name`, `a0`.`TenantId`, `a0`.`Name`, `a0`.`Value`
+FROM (
+    SELECT `a`.`Id`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorId`, `a`.`DeleterId`, `a`.`DeletionTime`, `a`.`ExtraProperties`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierId`, `a`.`Name`
+    FROM `AbpTenants` AS `a`
+    WHERE (@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (`a`.`Name` = @__name_0)
+    LIMIT 1
+) AS `t`
+LEFT JOIN `AbpTenantConnectionStrings` AS `a0` ON `t`.`Id` = `a0`.`TenantId`
+ORDER BY `t`.`Id`, `a0`.`TenantId`, `a0`.`Name`
+2020-04-07 14:15:13.019 -03:00 [INF] Executed DbCommand (23ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__name_0='?' (Size = 64)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`ConcurrencyStamp`, `t`.`CreationTime`, `t`.`CreatorId`, `t`.`DeleterId`, `t`.`DeletionTime`, `t`.`ExtraProperties`, `t`.`IsDeleted`, `t`.`LastModificationTime`, `t`.`LastModifierId`, `t`.`Name`, `a0`.`TenantId`, `a0`.`Name`, `a0`.`Value`
+FROM (
+    SELECT `a`.`Id`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorId`, `a`.`DeleterId`, `a`.`DeletionTime`, `a`.`ExtraProperties`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierId`, `a`.`Name`
+    FROM `AbpTenants` AS `a`
+    WHERE (@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (`a`.`Name` = @__name_0)
+    LIMIT 1
+) AS `t`
+LEFT JOIN `AbpTenantConnectionStrings` AS `a0` ON `t`.`Id` = `a0`.`TenantId`
+ORDER BY `t`.`Id`, `a0`.`TenantId`, `a0`.`Name`
+2020-04-07 14:15:13.177 -03:00 [INF] Executing endpoint 'AbpMicroRabbit.Banking.Application.Services.AccountAppService.GetList (AbpMicroRabbit.Banking.Application)'
+2020-04-07 14:15:13.177 -03:00 [INF] Executing endpoint 'AbpMicroRabbit.Banking.Application.Services.AccountAppService.GetList (AbpMicroRabbit.Banking.Application)'
+2020-04-07 14:15:13.246 -03:00 [INF] Route matched with {action = "GetList", controller = "Account", area = ""}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[AbpMicroRabbit.Banking.Domain.Entities.Account] GetList() on controller AbpMicroRabbit.Banking.Application.Services.AccountAppService (AbpMicroRabbit.Banking.Application).
+2020-04-07 14:15:13.246 -03:00 [INF] Route matched with {action = "GetList", controller = "Account", area = ""}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[AbpMicroRabbit.Banking.Domain.Entities.Account] GetList() on controller AbpMicroRabbit.Banking.Application.Services.AccountAppService (AbpMicroRabbit.Banking.Application).
+2020-04-07 14:15:13.289 -03:00 [INF] Entity Framework Core 3.1.2 initialized 'TenantManagementDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2020-04-07 14:15:13.289 -03:00 [INF] Entity Framework Core 3.1.2 initialized 'TenantManagementDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2020-04-07 14:15:13.314 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`ConcurrencyStamp`, `t`.`CreationTime`, `t`.`CreatorId`, `t`.`DeleterId`, `t`.`DeletionTime`, `t`.`ExtraProperties`, `t`.`IsDeleted`, `t`.`LastModificationTime`, `t`.`LastModifierId`, `t`.`Name`, `a0`.`TenantId`, `a0`.`Name`, `a0`.`Value`
+FROM (
+    SELECT `a`.`Id`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorId`, `a`.`DeleterId`, `a`.`DeletionTime`, `a`.`ExtraProperties`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierId`, `a`.`Name`
+    FROM `AbpTenants` AS `a`
+    WHERE (@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (`a`.`Id` = @__id_0)
+    LIMIT 1
+) AS `t`
+LEFT JOIN `AbpTenantConnectionStrings` AS `a0` ON `t`.`Id` = `a0`.`TenantId`
+ORDER BY `t`.`Id`, `a0`.`TenantId`, `a0`.`Name`
+2020-04-07 14:15:13.314 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`ConcurrencyStamp`, `t`.`CreationTime`, `t`.`CreatorId`, `t`.`DeleterId`, `t`.`DeletionTime`, `t`.`ExtraProperties`, `t`.`IsDeleted`, `t`.`LastModificationTime`, `t`.`LastModifierId`, `t`.`Name`, `a0`.`TenantId`, `a0`.`Name`, `a0`.`Value`
+FROM (
+    SELECT `a`.`Id`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorId`, `a`.`DeleterId`, `a`.`DeletionTime`, `a`.`ExtraProperties`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierId`, `a`.`Name`
+    FROM `AbpTenants` AS `a`
+    WHERE (@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (`a`.`Id` = @__id_0)
+    LIMIT 1
+) AS `t`
+LEFT JOIN `AbpTenantConnectionStrings` AS `a0` ON `t`.`Id` = `a0`.`TenantId`
+ORDER BY `t`.`Id`, `a0`.`TenantId`, `a0`.`Name`
+2020-04-07 14:15:13.335 -03:00 [WRN] * CURRENT TENANT: * 497f79b8-1699-5764-2b8e-39f465435497
+2020-04-07 14:15:13.336 -03:00 [WRN] * CURRENT TENANT: * 497f79b8-1699-5764-2b8e-39f465435497
+2020-04-07 14:15:13.343 -03:00 [INF] Entity Framework Core 3.1.2 initialized 'BankingDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2020-04-07 14:15:13.343 -03:00 [INF] Entity Framework Core 3.1.2 initialized 'BankingDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2020-04-07 14:15:13.371 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Guid), @___currentTenant_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`AccountBalance`, `a`.`AccountType`, `a`.`ConcurrencyStamp`, `a`.`ExtraProperties`, `a`.`TenantId`
+FROM `Accounts` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_1)) AND (`a`.`TenantId` = @___currentTenant_Id_0)
+2020-04-07 14:15:13.373 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Guid), @___currentTenant_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`AccountBalance`, `a`.`AccountType`, `a`.`ConcurrencyStamp`, `a`.`ExtraProperties`, `a`.`TenantId`
+FROM `Accounts` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_1)) AND (`a`.`TenantId` = @___currentTenant_Id_0)
+2020-04-07 14:15:13.377 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AbpMicroRabbit.Banking.Domain.Entities.Account, AbpMicroRabbit.Banking.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-07 14:15:13.377 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AbpMicroRabbit.Banking.Domain.Entities.Account, AbpMicroRabbit.Banking.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-04-07 14:15:13.417 -03:00 [INF] Executed action AbpMicroRabbit.Banking.Application.Services.AccountAppService.GetList (AbpMicroRabbit.Banking.Application) in 165.2799ms
+2020-04-07 14:15:13.417 -03:00 [INF] Executed action AbpMicroRabbit.Banking.Application.Services.AccountAppService.GetList (AbpMicroRabbit.Banking.Application) in 165.2609ms
+2020-04-07 14:15:13.418 -03:00 [INF] Executed endpoint 'AbpMicroRabbit.Banking.Application.Services.AccountAppService.GetList (AbpMicroRabbit.Banking.Application)'
+2020-04-07 14:15:13.418 -03:00 [INF] Executed endpoint 'AbpMicroRabbit.Banking.Application.Services.AccountAppService.GetList (AbpMicroRabbit.Banking.Application)'
+2020-04-07 14:15:13.420 -03:00 [INF] Request finished in 1707.2157ms 200 application/json; charset=utf-8
+2020-04-07 14:15:13.421 -03:00 [INF] Request finished in 1707.2236ms 200 application/json; charset=utf-8
+2020-04-07 15:29:26.770 -03:00 [ERR] An exception was thrown while activating Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext -> λ:Microsoft.EntityFrameworkCore.DbContextOptions`1[[Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext, Volo.Abp.IdentityServer.EntityFrameworkCore, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null]].
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext -> λ:Microsoft.EntityFrameworkCore.DbContextOptions`1[[Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext, Volo.Abp.IdentityServer.EntityFrameworkCore, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null]].
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'connectionString')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotEmpty(String value, String parameterName)
+   at Microsoft.EntityFrameworkCore.MySqlDbContextOptionsExtensions.UseMySql(DbContextOptionsBuilder optionsBuilder, String connectionString, Action`1 mySqlOptionsAction)
+   at Volo.Abp.EntityFrameworkCore.AbpDbContextConfigurationContextMySQLExtensions.UseMySQL(AbpDbContextConfigurationContext context, Action`1 mySQLOptionsAction)
+   at Volo.Abp.EntityFrameworkCore.AbpDbContextOptionsMySQLExtensions.<>c__DisplayClass0_0.<UseMySQL>b__0(AbpDbContextConfigurationContext context)
+   at Volo.Abp.EntityFrameworkCore.DependencyInjection.DbContextOptionsFactory.Configure[TDbContext](AbpDbContextOptions options, AbpDbContextConfigurationContext`1 context)
+   at Volo.Abp.EntityFrameworkCore.DependencyInjection.DbContextOptionsFactory.Create[TDbContext](IServiceProvider serviceProvider)
+   at Autofac.Extensions.DependencyInjection.AutofacRegistration.<>c__DisplayClass2_0.<Register>b__0(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters, Object& decoratorTarget)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters, Object& decoratorTarget)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.CreateDbContextWithTransaction(IUnitOfWork unitOfWork)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.CreateDbContext(IUnitOfWork unitOfWork)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.CreateDbContext(IUnitOfWork unitOfWork, String connectionStringName, String connectionString)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.<>c__DisplayClass3_0.<GetDbContext>b__0()
+   at System.Collections.Generic.AbpDictionaryExtensions.<>c__DisplayClass6_0`2.<GetOrAdd>b__0(TKey k)
+   at System.Collections.Generic.AbpDictionaryExtensions.GetOrAdd[TKey,TValue](IDictionary`2 dictionary, TKey key, Func`2 factory)
+   at System.Collections.Generic.AbpDictionaryExtensions.GetOrAdd[TKey,TValue](IDictionary`2 dictionary, TKey key, Func`1 factory)
+   at Volo.Abp.Uow.UnitOfWork.GetOrAddDatabaseApi(String key, Func`1 factory)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.GetDbContext()
+   at Volo.Abp.Domain.Repositories.EntityFrameworkCore.EfCoreRepository`2.get_DbContext()
+   at Volo.Abp.Domain.Repositories.EntityFrameworkCore.EfCoreRepository`2.get_DbSet()
+   at Volo.Abp.IdentityServer.Grants.PersistentGrantRepository.GetListByExpirationAsync(DateTime maxExpirationDate, Int32 maxResultCount, CancellationToken cancellationToken)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.IdentityServer.Tokens.TokenCleanupService.RemoveGrantsAsync()
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.IdentityServer.Tokens.TokenCleanupService.CleanAsync()
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker.DoWorkAsync(PeriodicBackgroundWorkerContext workerContext)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Volo.Abp.Threading.AsyncHelper.RunSync(Func`1 action)
+   at Volo.Abp.BackgroundWorkers.AsyncPeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e)
+2020-04-07 15:29:26.885 -03:00 [ERR] ---------- Exception Data ----------
+2020-04-07 15:29:26.886 -03:00 [ERR] ActivatorChain = Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext -> λ:Microsoft.EntityFrameworkCore.DbContextOptions`1[[Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext, Volo.Abp.IdentityServer.EntityFrameworkCore, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null]]
+2020-04-07 16:29:26.885 -03:00 [ERR] An exception was thrown while activating Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext -> λ:Microsoft.EntityFrameworkCore.DbContextOptions`1[[Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext, Volo.Abp.IdentityServer.EntityFrameworkCore, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null]].
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext -> λ:Microsoft.EntityFrameworkCore.DbContextOptions`1[[Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext, Volo.Abp.IdentityServer.EntityFrameworkCore, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null]].
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'connectionString')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotEmpty(String value, String parameterName)
+   at Microsoft.EntityFrameworkCore.MySqlDbContextOptionsExtensions.UseMySql(DbContextOptionsBuilder optionsBuilder, String connectionString, Action`1 mySqlOptionsAction)
+   at Volo.Abp.EntityFrameworkCore.AbpDbContextConfigurationContextMySQLExtensions.UseMySQL(AbpDbContextConfigurationContext context, Action`1 mySQLOptionsAction)
+   at Volo.Abp.EntityFrameworkCore.AbpDbContextOptionsMySQLExtensions.<>c__DisplayClass0_0.<UseMySQL>b__0(AbpDbContextConfigurationContext context)
+   at Volo.Abp.EntityFrameworkCore.DependencyInjection.DbContextOptionsFactory.Configure[TDbContext](AbpDbContextOptions options, AbpDbContextConfigurationContext`1 context)
+   at Volo.Abp.EntityFrameworkCore.DependencyInjection.DbContextOptionsFactory.Create[TDbContext](IServiceProvider serviceProvider)
+   at Autofac.Extensions.DependencyInjection.AutofacRegistration.<>c__DisplayClass2_0.<Register>b__0(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters, Object& decoratorTarget)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters, Object& decoratorTarget)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.CreateDbContextWithTransaction(IUnitOfWork unitOfWork)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.CreateDbContext(IUnitOfWork unitOfWork)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.CreateDbContext(IUnitOfWork unitOfWork, String connectionStringName, String connectionString)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.<>c__DisplayClass3_0.<GetDbContext>b__0()
+   at System.Collections.Generic.AbpDictionaryExtensions.<>c__DisplayClass6_0`2.<GetOrAdd>b__0(TKey k)
+   at System.Collections.Generic.AbpDictionaryExtensions.GetOrAdd[TKey,TValue](IDictionary`2 dictionary, TKey key, Func`2 factory)
+   at System.Collections.Generic.AbpDictionaryExtensions.GetOrAdd[TKey,TValue](IDictionary`2 dictionary, TKey key, Func`1 factory)
+   at Volo.Abp.Uow.UnitOfWork.GetOrAddDatabaseApi(String key, Func`1 factory)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.GetDbContext()
+   at Volo.Abp.Domain.Repositories.EntityFrameworkCore.EfCoreRepository`2.get_DbContext()
+   at Volo.Abp.Domain.Repositories.EntityFrameworkCore.EfCoreRepository`2.get_DbSet()
+   at Volo.Abp.IdentityServer.Grants.PersistentGrantRepository.GetListByExpirationAsync(DateTime maxExpirationDate, Int32 maxResultCount, CancellationToken cancellationToken)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.IdentityServer.Tokens.TokenCleanupService.RemoveGrantsAsync()
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.IdentityServer.Tokens.TokenCleanupService.CleanAsync()
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker.DoWorkAsync(PeriodicBackgroundWorkerContext workerContext)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Volo.Abp.Threading.AsyncHelper.RunSync(Func`1 action)
+   at Volo.Abp.BackgroundWorkers.AsyncPeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e)
+2020-04-07 16:29:26.964 -03:00 [ERR] ---------- Exception Data ----------
+2020-04-07 16:29:26.964 -03:00 [ERR] ActivatorChain = Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext -> λ:Microsoft.EntityFrameworkCore.DbContextOptions`1[[Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext, Volo.Abp.IdentityServer.EntityFrameworkCore, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null]]
+2020-04-07 17:29:26.951 -03:00 [ERR] An exception was thrown while activating Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext -> λ:Microsoft.EntityFrameworkCore.DbContextOptions`1[[Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext, Volo.Abp.IdentityServer.EntityFrameworkCore, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null]].
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext -> λ:Microsoft.EntityFrameworkCore.DbContextOptions`1[[Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext, Volo.Abp.IdentityServer.EntityFrameworkCore, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null]].
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'connectionString')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotEmpty(String value, String parameterName)
+   at Microsoft.EntityFrameworkCore.MySqlDbContextOptionsExtensions.UseMySql(DbContextOptionsBuilder optionsBuilder, String connectionString, Action`1 mySqlOptionsAction)
+   at Volo.Abp.EntityFrameworkCore.AbpDbContextConfigurationContextMySQLExtensions.UseMySQL(AbpDbContextConfigurationContext context, Action`1 mySQLOptionsAction)
+   at Volo.Abp.EntityFrameworkCore.AbpDbContextOptionsMySQLExtensions.<>c__DisplayClass0_0.<UseMySQL>b__0(AbpDbContextConfigurationContext context)
+   at Volo.Abp.EntityFrameworkCore.DependencyInjection.DbContextOptionsFactory.Configure[TDbContext](AbpDbContextOptions options, AbpDbContextConfigurationContext`1 context)
+   at Volo.Abp.EntityFrameworkCore.DependencyInjection.DbContextOptionsFactory.Create[TDbContext](IServiceProvider serviceProvider)
+   at Autofac.Extensions.DependencyInjection.AutofacRegistration.<>c__DisplayClass2_0.<Register>b__0(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters, Object& decoratorTarget)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters, Object& decoratorTarget)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.CreateDbContextWithTransaction(IUnitOfWork unitOfWork)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.CreateDbContext(IUnitOfWork unitOfWork)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.CreateDbContext(IUnitOfWork unitOfWork, String connectionStringName, String connectionString)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.<>c__DisplayClass3_0.<GetDbContext>b__0()
+   at System.Collections.Generic.AbpDictionaryExtensions.<>c__DisplayClass6_0`2.<GetOrAdd>b__0(TKey k)
+   at System.Collections.Generic.AbpDictionaryExtensions.GetOrAdd[TKey,TValue](IDictionary`2 dictionary, TKey key, Func`2 factory)
+   at System.Collections.Generic.AbpDictionaryExtensions.GetOrAdd[TKey,TValue](IDictionary`2 dictionary, TKey key, Func`1 factory)
+   at Volo.Abp.Uow.UnitOfWork.GetOrAddDatabaseApi(String key, Func`1 factory)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.GetDbContext()
+   at Volo.Abp.Domain.Repositories.EntityFrameworkCore.EfCoreRepository`2.get_DbContext()
+   at Volo.Abp.Domain.Repositories.EntityFrameworkCore.EfCoreRepository`2.get_DbSet()
+   at Volo.Abp.IdentityServer.Grants.PersistentGrantRepository.GetListByExpirationAsync(DateTime maxExpirationDate, Int32 maxResultCount, CancellationToken cancellationToken)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.IdentityServer.Tokens.TokenCleanupService.RemoveGrantsAsync()
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.IdentityServer.Tokens.TokenCleanupService.CleanAsync()
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker.DoWorkAsync(PeriodicBackgroundWorkerContext workerContext)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Volo.Abp.Threading.AsyncHelper.RunSync(Func`1 action)
+   at Volo.Abp.BackgroundWorkers.AsyncPeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e)
+2020-04-07 17:29:26.998 -03:00 [ERR] ---------- Exception Data ----------
+2020-04-07 17:29:26.999 -03:00 [ERR] ActivatorChain = Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext -> λ:Microsoft.EntityFrameworkCore.DbContextOptions`1[[Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext, Volo.Abp.IdentityServer.EntityFrameworkCore, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null]]
+2020-04-08 21:52:54.004 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-04-08 21:52:54.125 -03:00 [INF] Loaded ABP modules:
+2020-04-08 21:52:54.126 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-04-08 21:52:54.126 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-04-08 21:52:54.126 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-04-08 21:52:54.126 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-04-08 21:52:54.126 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-04-08 21:52:54.126 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-04-08 21:52:54.126 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-04-08 21:52:54.127 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-04-08 21:52:54.127 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-04-08 21:52:54.127 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-04-08 21:52:54.127 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-04-08 21:52:54.127 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-04-08 21:52:54.127 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-04-08 21:52:54.127 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-04-08 21:52:54.127 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-04-08 21:52:54.127 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-04-08 21:52:54.127 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-04-08 21:52:54.128 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-04-08 21:52:54.128 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-04-08 21:52:54.128 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-04-08 21:52:54.128 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-04-08 21:52:54.128 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-04-08 21:52:54.128 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-04-08 21:52:54.128 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-04-08 21:52:54.128 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-04-08 21:52:54.128 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-04-08 21:52:54.128 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-04-08 21:52:54.129 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-04-08 21:52:54.129 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-04-08 21:52:54.129 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-04-08 21:52:54.129 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-04-08 21:52:54.129 -03:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-04-08 21:52:54.129 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-04-08 21:52:54.129 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-04-08 21:52:54.129 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-04-08 21:52:54.129 -03:00 [INF] - AbpMicroRabbit.Banking.Application.Contracts.BankingApplicationContractsModule
+2020-04-08 21:52:54.129 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-04-08 21:52:54.129 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-04-08 21:52:54.129 -03:00 [INF] - AbpMicroRabbit.Shared.Domain.AbpMicroRabbitSharedDomainModule
+2020-04-08 21:52:54.130 -03:00 [INF] - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2020-04-08 21:52:54.130 -03:00 [INF] - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2020-04-08 21:52:54.130 -03:00 [INF] - AbpMicroRabbit.Shared.Infra.Bus.AbpMicroRabbitSharedInfraBusModule
+2020-04-08 21:52:54.130 -03:00 [INF] - AbpMicroRabbit.Banking.Domain.BankingDomainModule
+2020-04-08 21:52:54.130 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-04-08 21:52:54.130 -03:00 [INF] - AbpMicroRabbit.Banking.Application.BankingApplicationModule
+2020-04-08 21:52:54.130 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-04-08 21:52:54.130 -03:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2020-04-08 21:52:54.130 -03:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-04-08 21:52:54.130 -03:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-04-08 21:52:54.130 -03:00 [INF] - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2020-04-08 21:52:54.130 -03:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2020-04-08 21:52:54.131 -03:00 [INF] - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2020-04-08 21:52:54.131 -03:00 [INF] - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2020-04-08 21:52:54.131 -03:00 [INF] - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2020-04-08 21:52:54.131 -03:00 [INF] - AbpMicroRabbit.Banking.EntityFrameworkCore.BankingEntityFrameworkModule
+2020-04-08 21:52:54.131 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-04-08 21:52:54.131 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-04-08 21:52:54.131 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-04-08 21:52:54.131 -03:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2020-04-08 21:52:54.131 -03:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2020-04-08 21:52:54.131 -03:00 [INF] - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2020-04-08 21:52:54.131 -03:00 [INF] - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2020-04-08 21:52:54.131 -03:00 [INF] - BankingService.BankingServiceModule
+2020-04-08 21:52:54.442 -03:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2020-04-08 21:52:55.330 -03:00 [INF] Initialized all ABP modules.
+2020-04-08 21:52:55.356 -03:00 [INF] Now listening on: http://localhost:64056
+2020-04-08 21:52:55.357 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-04-08 21:52:55.357 -03:00 [INF] Hosting environment: Development
+2020-04-08 21:52:55.357 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/BankingService
+2020-04-08 22:52:54.611 -03:00 [ERR] An exception was thrown while activating Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext -> λ:Microsoft.EntityFrameworkCore.DbContextOptions`1[[Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext, Volo.Abp.IdentityServer.EntityFrameworkCore, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null]].
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext -> λ:Microsoft.EntityFrameworkCore.DbContextOptions`1[[Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext, Volo.Abp.IdentityServer.EntityFrameworkCore, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null]].
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'connectionString')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotEmpty(String value, String parameterName)
+   at Microsoft.EntityFrameworkCore.MySqlDbContextOptionsExtensions.UseMySql(DbContextOptionsBuilder optionsBuilder, String connectionString, Action`1 mySqlOptionsAction)
+   at Volo.Abp.EntityFrameworkCore.AbpDbContextConfigurationContextMySQLExtensions.UseMySQL(AbpDbContextConfigurationContext context, Action`1 mySQLOptionsAction)
+   at Volo.Abp.EntityFrameworkCore.AbpDbContextOptionsMySQLExtensions.<>c__DisplayClass0_0.<UseMySQL>b__0(AbpDbContextConfigurationContext context)
+   at Volo.Abp.EntityFrameworkCore.DependencyInjection.DbContextOptionsFactory.Configure[TDbContext](AbpDbContextOptions options, AbpDbContextConfigurationContext`1 context)
+   at Volo.Abp.EntityFrameworkCore.DependencyInjection.DbContextOptionsFactory.Create[TDbContext](IServiceProvider serviceProvider)
+   at Autofac.Extensions.DependencyInjection.AutofacRegistration.<>c__DisplayClass2_0.<Register>b__0(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters, Object& decoratorTarget)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters, Object& decoratorTarget)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.CreateDbContextWithTransaction(IUnitOfWork unitOfWork)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.CreateDbContext(IUnitOfWork unitOfWork)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.CreateDbContext(IUnitOfWork unitOfWork, String connectionStringName, String connectionString)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.<>c__DisplayClass3_0.<GetDbContext>b__0()
+   at System.Collections.Generic.AbpDictionaryExtensions.<>c__DisplayClass6_0`2.<GetOrAdd>b__0(TKey k)
+   at System.Collections.Generic.AbpDictionaryExtensions.GetOrAdd[TKey,TValue](IDictionary`2 dictionary, TKey key, Func`2 factory)
+   at System.Collections.Generic.AbpDictionaryExtensions.GetOrAdd[TKey,TValue](IDictionary`2 dictionary, TKey key, Func`1 factory)
+   at Volo.Abp.Uow.UnitOfWork.GetOrAddDatabaseApi(String key, Func`1 factory)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.GetDbContext()
+   at Volo.Abp.Domain.Repositories.EntityFrameworkCore.EfCoreRepository`2.get_DbContext()
+   at Volo.Abp.Domain.Repositories.EntityFrameworkCore.EfCoreRepository`2.get_DbSet()
+   at Volo.Abp.IdentityServer.Grants.PersistentGrantRepository.GetListByExpirationAsync(DateTime maxExpirationDate, Int32 maxResultCount, CancellationToken cancellationToken)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.IdentityServer.Tokens.TokenCleanupService.RemoveGrantsAsync()
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.IdentityServer.Tokens.TokenCleanupService.CleanAsync()
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker.DoWorkAsync(PeriodicBackgroundWorkerContext workerContext)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Volo.Abp.Threading.AsyncHelper.RunSync(Func`1 action)
+   at Volo.Abp.BackgroundWorkers.AsyncPeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e)
+2020-04-08 22:52:54.629 -03:00 [ERR] ---------- Exception Data ----------
+2020-04-08 22:52:54.630 -03:00 [ERR] ActivatorChain = Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext -> λ:Microsoft.EntityFrameworkCore.DbContextOptions`1[[Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext, Volo.Abp.IdentityServer.EntityFrameworkCore, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null]]
+2020-04-09 14:29:40.969 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-04-09 14:29:41.105 -03:00 [INF] Loaded ABP modules:
+2020-04-09 14:29:41.105 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-04-09 14:29:41.105 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-04-09 14:29:41.105 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-04-09 14:29:41.105 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-04-09 14:29:41.105 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-04-09 14:29:41.105 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-04-09 14:29:41.106 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-04-09 14:29:41.106 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-04-09 14:29:41.106 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-04-09 14:29:41.106 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-04-09 14:29:41.106 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-04-09 14:29:41.106 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-04-09 14:29:41.106 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-04-09 14:29:41.106 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-04-09 14:29:41.106 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-04-09 14:29:41.106 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-04-09 14:29:41.106 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-04-09 14:29:41.107 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-04-09 14:29:41.107 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-04-09 14:29:41.107 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-04-09 14:29:41.107 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-04-09 14:29:41.107 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-04-09 14:29:41.107 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-04-09 14:29:41.107 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-04-09 14:29:41.107 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-04-09 14:29:41.107 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-04-09 14:29:41.107 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-04-09 14:29:41.108 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-04-09 14:29:41.108 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-04-09 14:29:41.108 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-04-09 14:29:41.108 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-04-09 14:29:41.108 -03:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-04-09 14:29:41.108 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-04-09 14:29:41.108 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-04-09 14:29:41.108 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-04-09 14:29:41.108 -03:00 [INF] - AbpMicroRabbit.Banking.Application.Contracts.BankingApplicationContractsModule
+2020-04-09 14:29:41.108 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-04-09 14:29:41.108 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-04-09 14:29:41.108 -03:00 [INF] - AbpMicroRabbit.Shared.Domain.AbpMicroRabbitSharedDomainModule
+2020-04-09 14:29:41.109 -03:00 [INF] - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2020-04-09 14:29:41.109 -03:00 [INF] - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2020-04-09 14:29:41.109 -03:00 [INF] - AbpMicroRabbit.Shared.Infra.Bus.AbpMicroRabbitSharedInfraBusModule
+2020-04-09 14:29:41.109 -03:00 [INF] - AbpMicroRabbit.Banking.Domain.BankingDomainModule
+2020-04-09 14:29:41.109 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-04-09 14:29:41.109 -03:00 [INF] - AbpMicroRabbit.Banking.Application.BankingApplicationModule
+2020-04-09 14:29:41.109 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-04-09 14:29:41.109 -03:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2020-04-09 14:29:41.109 -03:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-04-09 14:29:41.109 -03:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-04-09 14:29:41.110 -03:00 [INF] - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2020-04-09 14:29:41.110 -03:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2020-04-09 14:29:41.110 -03:00 [INF] - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2020-04-09 14:29:41.110 -03:00 [INF] - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2020-04-09 14:29:41.110 -03:00 [INF] - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2020-04-09 14:29:41.110 -03:00 [INF] - AbpMicroRabbit.Banking.EntityFrameworkCore.BankingEntityFrameworkModule
+2020-04-09 14:29:41.110 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-04-09 14:29:41.110 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-04-09 14:29:41.110 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-04-09 14:29:41.110 -03:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2020-04-09 14:29:41.111 -03:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2020-04-09 14:29:41.111 -03:00 [INF] - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2020-04-09 14:29:41.111 -03:00 [INF] - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2020-04-09 14:29:41.111 -03:00 [INF] - BankingService.BankingServiceModule
+2020-04-09 14:29:41.478 -03:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2020-04-09 14:29:42.630 -03:00 [INF] Initialized all ABP modules.
+2020-04-09 14:29:42.679 -03:00 [INF] Now listening on: http://localhost:64056
+2020-04-09 14:29:42.680 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-04-09 14:29:42.680 -03:00 [INF] Hosting environment: Development
+2020-04-09 14:29:42.680 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/BankingService
+2020-04-09 15:29:41.764 -03:00 [ERR] An exception was thrown while activating Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext -> λ:Microsoft.EntityFrameworkCore.DbContextOptions`1[[Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext, Volo.Abp.IdentityServer.EntityFrameworkCore, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null]].
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext -> λ:Microsoft.EntityFrameworkCore.DbContextOptions`1[[Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext, Volo.Abp.IdentityServer.EntityFrameworkCore, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null]].
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'connectionString')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotEmpty(String value, String parameterName)
+   at Microsoft.EntityFrameworkCore.MySqlDbContextOptionsExtensions.UseMySql(DbContextOptionsBuilder optionsBuilder, String connectionString, Action`1 mySqlOptionsAction)
+   at Volo.Abp.EntityFrameworkCore.AbpDbContextConfigurationContextMySQLExtensions.UseMySQL(AbpDbContextConfigurationContext context, Action`1 mySQLOptionsAction)
+   at Volo.Abp.EntityFrameworkCore.AbpDbContextOptionsMySQLExtensions.<>c__DisplayClass0_0.<UseMySQL>b__0(AbpDbContextConfigurationContext context)
+   at Volo.Abp.EntityFrameworkCore.DependencyInjection.DbContextOptionsFactory.Configure[TDbContext](AbpDbContextOptions options, AbpDbContextConfigurationContext`1 context)
+   at Volo.Abp.EntityFrameworkCore.DependencyInjection.DbContextOptionsFactory.Create[TDbContext](IServiceProvider serviceProvider)
+   at Autofac.Extensions.DependencyInjection.AutofacRegistration.<>c__DisplayClass2_0.<Register>b__0(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters, Object& decoratorTarget)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters, Object& decoratorTarget)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.CreateDbContextWithTransaction(IUnitOfWork unitOfWork)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.CreateDbContext(IUnitOfWork unitOfWork)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.CreateDbContext(IUnitOfWork unitOfWork, String connectionStringName, String connectionString)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.<>c__DisplayClass3_0.<GetDbContext>b__0()
+   at System.Collections.Generic.AbpDictionaryExtensions.<>c__DisplayClass6_0`2.<GetOrAdd>b__0(TKey k)
+   at System.Collections.Generic.AbpDictionaryExtensions.GetOrAdd[TKey,TValue](IDictionary`2 dictionary, TKey key, Func`2 factory)
+   at System.Collections.Generic.AbpDictionaryExtensions.GetOrAdd[TKey,TValue](IDictionary`2 dictionary, TKey key, Func`1 factory)
+   at Volo.Abp.Uow.UnitOfWork.GetOrAddDatabaseApi(String key, Func`1 factory)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.GetDbContext()
+   at Volo.Abp.Domain.Repositories.EntityFrameworkCore.EfCoreRepository`2.get_DbContext()
+   at Volo.Abp.Domain.Repositories.EntityFrameworkCore.EfCoreRepository`2.get_DbSet()
+   at Volo.Abp.IdentityServer.Grants.PersistentGrantRepository.GetListByExpirationAsync(DateTime maxExpirationDate, Int32 maxResultCount, CancellationToken cancellationToken)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.IdentityServer.Tokens.TokenCleanupService.RemoveGrantsAsync()
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.IdentityServer.Tokens.TokenCleanupService.CleanAsync()
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker.DoWorkAsync(PeriodicBackgroundWorkerContext workerContext)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Volo.Abp.Threading.AsyncHelper.RunSync(Func`1 action)
+   at Volo.Abp.BackgroundWorkers.AsyncPeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e)
+2020-04-09 15:29:41.939 -03:00 [ERR] ---------- Exception Data ----------
+2020-04-09 15:29:41.939 -03:00 [ERR] ActivatorChain = Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext -> λ:Microsoft.EntityFrameworkCore.DbContextOptions`1[[Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext, Volo.Abp.IdentityServer.EntityFrameworkCore, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null]]
+2020-04-09 16:29:41.934 -03:00 [ERR] An exception was thrown while activating Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext -> λ:Microsoft.EntityFrameworkCore.DbContextOptions`1[[Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext, Volo.Abp.IdentityServer.EntityFrameworkCore, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null]].
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext -> λ:Microsoft.EntityFrameworkCore.DbContextOptions`1[[Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext, Volo.Abp.IdentityServer.EntityFrameworkCore, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null]].
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'connectionString')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotEmpty(String value, String parameterName)
+   at Microsoft.EntityFrameworkCore.MySqlDbContextOptionsExtensions.UseMySql(DbContextOptionsBuilder optionsBuilder, String connectionString, Action`1 mySqlOptionsAction)
+   at Volo.Abp.EntityFrameworkCore.AbpDbContextConfigurationContextMySQLExtensions.UseMySQL(AbpDbContextConfigurationContext context, Action`1 mySQLOptionsAction)
+   at Volo.Abp.EntityFrameworkCore.AbpDbContextOptionsMySQLExtensions.<>c__DisplayClass0_0.<UseMySQL>b__0(AbpDbContextConfigurationContext context)
+   at Volo.Abp.EntityFrameworkCore.DependencyInjection.DbContextOptionsFactory.Configure[TDbContext](AbpDbContextOptions options, AbpDbContextConfigurationContext`1 context)
+   at Volo.Abp.EntityFrameworkCore.DependencyInjection.DbContextOptionsFactory.Create[TDbContext](IServiceProvider serviceProvider)
+   at Autofac.Extensions.DependencyInjection.AutofacRegistration.<>c__DisplayClass2_0.<Register>b__0(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters, Object& decoratorTarget)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters, Object& decoratorTarget)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.CreateDbContextWithTransaction(IUnitOfWork unitOfWork)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.CreateDbContext(IUnitOfWork unitOfWork)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.CreateDbContext(IUnitOfWork unitOfWork, String connectionStringName, String connectionString)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.<>c__DisplayClass3_0.<GetDbContext>b__0()
+   at System.Collections.Generic.AbpDictionaryExtensions.<>c__DisplayClass6_0`2.<GetOrAdd>b__0(TKey k)
+   at System.Collections.Generic.AbpDictionaryExtensions.GetOrAdd[TKey,TValue](IDictionary`2 dictionary, TKey key, Func`2 factory)
+   at System.Collections.Generic.AbpDictionaryExtensions.GetOrAdd[TKey,TValue](IDictionary`2 dictionary, TKey key, Func`1 factory)
+   at Volo.Abp.Uow.UnitOfWork.GetOrAddDatabaseApi(String key, Func`1 factory)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.GetDbContext()
+   at Volo.Abp.Domain.Repositories.EntityFrameworkCore.EfCoreRepository`2.get_DbContext()
+   at Volo.Abp.Domain.Repositories.EntityFrameworkCore.EfCoreRepository`2.get_DbSet()
+   at Volo.Abp.IdentityServer.Grants.PersistentGrantRepository.GetListByExpirationAsync(DateTime maxExpirationDate, Int32 maxResultCount, CancellationToken cancellationToken)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.IdentityServer.Tokens.TokenCleanupService.RemoveGrantsAsync()
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.IdentityServer.Tokens.TokenCleanupService.CleanAsync()
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker.DoWorkAsync(PeriodicBackgroundWorkerContext workerContext)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Volo.Abp.Threading.AsyncHelper.RunSync(Func`1 action)
+   at Volo.Abp.BackgroundWorkers.AsyncPeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e)
+2020-04-09 16:29:41.940 -03:00 [ERR] ---------- Exception Data ----------
+2020-04-09 16:29:41.940 -03:00 [ERR] ActivatorChain = Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext -> λ:Microsoft.EntityFrameworkCore.DbContextOptions`1[[Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext, Volo.Abp.IdentityServer.EntityFrameworkCore, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null]]
+2020-04-09 17:29:41.939 -03:00 [ERR] An exception was thrown while activating Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext -> λ:Microsoft.EntityFrameworkCore.DbContextOptions`1[[Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext, Volo.Abp.IdentityServer.EntityFrameworkCore, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null]].
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext -> λ:Microsoft.EntityFrameworkCore.DbContextOptions`1[[Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext, Volo.Abp.IdentityServer.EntityFrameworkCore, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null]].
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'connectionString')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotEmpty(String value, String parameterName)
+   at Microsoft.EntityFrameworkCore.MySqlDbContextOptionsExtensions.UseMySql(DbContextOptionsBuilder optionsBuilder, String connectionString, Action`1 mySqlOptionsAction)
+   at Volo.Abp.EntityFrameworkCore.AbpDbContextConfigurationContextMySQLExtensions.UseMySQL(AbpDbContextConfigurationContext context, Action`1 mySQLOptionsAction)
+   at Volo.Abp.EntityFrameworkCore.AbpDbContextOptionsMySQLExtensions.<>c__DisplayClass0_0.<UseMySQL>b__0(AbpDbContextConfigurationContext context)
+   at Volo.Abp.EntityFrameworkCore.DependencyInjection.DbContextOptionsFactory.Configure[TDbContext](AbpDbContextOptions options, AbpDbContextConfigurationContext`1 context)
+   at Volo.Abp.EntityFrameworkCore.DependencyInjection.DbContextOptionsFactory.Create[TDbContext](IServiceProvider serviceProvider)
+   at Autofac.Extensions.DependencyInjection.AutofacRegistration.<>c__DisplayClass2_0.<Register>b__0(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters, Object& decoratorTarget)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters, Object& decoratorTarget)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.CreateDbContextWithTransaction(IUnitOfWork unitOfWork)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.CreateDbContext(IUnitOfWork unitOfWork)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.CreateDbContext(IUnitOfWork unitOfWork, String connectionStringName, String connectionString)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.<>c__DisplayClass3_0.<GetDbContext>b__0()
+   at System.Collections.Generic.AbpDictionaryExtensions.<>c__DisplayClass6_0`2.<GetOrAdd>b__0(TKey k)
+   at System.Collections.Generic.AbpDictionaryExtensions.GetOrAdd[TKey,TValue](IDictionary`2 dictionary, TKey key, Func`2 factory)
+   at System.Collections.Generic.AbpDictionaryExtensions.GetOrAdd[TKey,TValue](IDictionary`2 dictionary, TKey key, Func`1 factory)
+   at Volo.Abp.Uow.UnitOfWork.GetOrAddDatabaseApi(String key, Func`1 factory)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.GetDbContext()
+   at Volo.Abp.Domain.Repositories.EntityFrameworkCore.EfCoreRepository`2.get_DbContext()
+   at Volo.Abp.Domain.Repositories.EntityFrameworkCore.EfCoreRepository`2.get_DbSet()
+   at Volo.Abp.IdentityServer.Grants.PersistentGrantRepository.GetListByExpirationAsync(DateTime maxExpirationDate, Int32 maxResultCount, CancellationToken cancellationToken)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.IdentityServer.Tokens.TokenCleanupService.RemoveGrantsAsync()
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.IdentityServer.Tokens.TokenCleanupService.CleanAsync()
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker.DoWorkAsync(PeriodicBackgroundWorkerContext workerContext)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Volo.Abp.Threading.AsyncHelper.RunSync(Func`1 action)
+   at Volo.Abp.BackgroundWorkers.AsyncPeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e)
+2020-04-09 17:29:41.942 -03:00 [ERR] ---------- Exception Data ----------
+2020-04-09 17:29:41.942 -03:00 [ERR] ActivatorChain = Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext -> λ:Microsoft.EntityFrameworkCore.DbContextOptions`1[[Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext, Volo.Abp.IdentityServer.EntityFrameworkCore, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null]]
+2020-04-09 18:29:41.943 -03:00 [ERR] An exception was thrown while activating Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext -> λ:Microsoft.EntityFrameworkCore.DbContextOptions`1[[Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext, Volo.Abp.IdentityServer.EntityFrameworkCore, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null]].
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext -> λ:Microsoft.EntityFrameworkCore.DbContextOptions`1[[Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext, Volo.Abp.IdentityServer.EntityFrameworkCore, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null]].
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'connectionString')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotEmpty(String value, String parameterName)
+   at Microsoft.EntityFrameworkCore.MySqlDbContextOptionsExtensions.UseMySql(DbContextOptionsBuilder optionsBuilder, String connectionString, Action`1 mySqlOptionsAction)
+   at Volo.Abp.EntityFrameworkCore.AbpDbContextConfigurationContextMySQLExtensions.UseMySQL(AbpDbContextConfigurationContext context, Action`1 mySQLOptionsAction)
+   at Volo.Abp.EntityFrameworkCore.AbpDbContextOptionsMySQLExtensions.<>c__DisplayClass0_0.<UseMySQL>b__0(AbpDbContextConfigurationContext context)
+   at Volo.Abp.EntityFrameworkCore.DependencyInjection.DbContextOptionsFactory.Configure[TDbContext](AbpDbContextOptions options, AbpDbContextConfigurationContext`1 context)
+   at Volo.Abp.EntityFrameworkCore.DependencyInjection.DbContextOptionsFactory.Create[TDbContext](IServiceProvider serviceProvider)
+   at Autofac.Extensions.DependencyInjection.AutofacRegistration.<>c__DisplayClass2_0.<Register>b__0(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters, Object& decoratorTarget)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters, Object& decoratorTarget)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.CreateDbContextWithTransaction(IUnitOfWork unitOfWork)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.CreateDbContext(IUnitOfWork unitOfWork)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.CreateDbContext(IUnitOfWork unitOfWork, String connectionStringName, String connectionString)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.<>c__DisplayClass3_0.<GetDbContext>b__0()
+   at System.Collections.Generic.AbpDictionaryExtensions.<>c__DisplayClass6_0`2.<GetOrAdd>b__0(TKey k)
+   at System.Collections.Generic.AbpDictionaryExtensions.GetOrAdd[TKey,TValue](IDictionary`2 dictionary, TKey key, Func`2 factory)
+   at System.Collections.Generic.AbpDictionaryExtensions.GetOrAdd[TKey,TValue](IDictionary`2 dictionary, TKey key, Func`1 factory)
+   at Volo.Abp.Uow.UnitOfWork.GetOrAddDatabaseApi(String key, Func`1 factory)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.GetDbContext()
+   at Volo.Abp.Domain.Repositories.EntityFrameworkCore.EfCoreRepository`2.get_DbContext()
+   at Volo.Abp.Domain.Repositories.EntityFrameworkCore.EfCoreRepository`2.get_DbSet()
+   at Volo.Abp.IdentityServer.Grants.PersistentGrantRepository.GetListByExpirationAsync(DateTime maxExpirationDate, Int32 maxResultCount, CancellationToken cancellationToken)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.IdentityServer.Tokens.TokenCleanupService.RemoveGrantsAsync()
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.IdentityServer.Tokens.TokenCleanupService.CleanAsync()
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker.DoWorkAsync(PeriodicBackgroundWorkerContext workerContext)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Volo.Abp.Threading.AsyncHelper.RunSync(Func`1 action)
+   at Volo.Abp.BackgroundWorkers.AsyncPeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e)
+2020-04-09 18:29:41.975 -03:00 [ERR] ---------- Exception Data ----------
+2020-04-09 18:29:41.975 -03:00 [ERR] ActivatorChain = Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext -> λ:Microsoft.EntityFrameworkCore.DbContextOptions`1[[Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext, Volo.Abp.IdentityServer.EntityFrameworkCore, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null]]
+2020-04-09 19:29:41.961 -03:00 [ERR] An exception was thrown while activating Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext -> λ:Microsoft.EntityFrameworkCore.DbContextOptions`1[[Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext, Volo.Abp.IdentityServer.EntityFrameworkCore, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null]].
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext -> λ:Microsoft.EntityFrameworkCore.DbContextOptions`1[[Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext, Volo.Abp.IdentityServer.EntityFrameworkCore, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null]].
+ ---> System.ArgumentNullException: Value cannot be null. (Parameter 'connectionString')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotEmpty(String value, String parameterName)
+   at Microsoft.EntityFrameworkCore.MySqlDbContextOptionsExtensions.UseMySql(DbContextOptionsBuilder optionsBuilder, String connectionString, Action`1 mySqlOptionsAction)
+   at Volo.Abp.EntityFrameworkCore.AbpDbContextConfigurationContextMySQLExtensions.UseMySQL(AbpDbContextConfigurationContext context, Action`1 mySQLOptionsAction)
+   at Volo.Abp.EntityFrameworkCore.AbpDbContextOptionsMySQLExtensions.<>c__DisplayClass0_0.<UseMySQL>b__0(AbpDbContextConfigurationContext context)
+   at Volo.Abp.EntityFrameworkCore.DependencyInjection.DbContextOptionsFactory.Configure[TDbContext](AbpDbContextOptions options, AbpDbContextConfigurationContext`1 context)
+   at Volo.Abp.EntityFrameworkCore.DependencyInjection.DbContextOptionsFactory.Create[TDbContext](IServiceProvider serviceProvider)
+   at Autofac.Extensions.DependencyInjection.AutofacRegistration.<>c__DisplayClass2_0.<Register>b__0(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Delegate.DelegateActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters, Object& decoratorTarget)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters, Object& decoratorTarget)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.CreateDbContextWithTransaction(IUnitOfWork unitOfWork)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.CreateDbContext(IUnitOfWork unitOfWork)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.CreateDbContext(IUnitOfWork unitOfWork, String connectionStringName, String connectionString)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.<>c__DisplayClass3_0.<GetDbContext>b__0()
+   at System.Collections.Generic.AbpDictionaryExtensions.<>c__DisplayClass6_0`2.<GetOrAdd>b__0(TKey k)
+   at System.Collections.Generic.AbpDictionaryExtensions.GetOrAdd[TKey,TValue](IDictionary`2 dictionary, TKey key, Func`2 factory)
+   at System.Collections.Generic.AbpDictionaryExtensions.GetOrAdd[TKey,TValue](IDictionary`2 dictionary, TKey key, Func`1 factory)
+   at Volo.Abp.Uow.UnitOfWork.GetOrAddDatabaseApi(String key, Func`1 factory)
+   at Volo.Abp.Uow.EntityFrameworkCore.UnitOfWorkDbContextProvider`1.GetDbContext()
+   at Volo.Abp.Domain.Repositories.EntityFrameworkCore.EfCoreRepository`2.get_DbContext()
+   at Volo.Abp.Domain.Repositories.EntityFrameworkCore.EfCoreRepository`2.get_DbSet()
+   at Volo.Abp.IdentityServer.Grants.PersistentGrantRepository.GetListByExpirationAsync(DateTime maxExpirationDate, Int32 maxResultCount, CancellationToken cancellationToken)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.IdentityServer.Tokens.TokenCleanupService.RemoveGrantsAsync()
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.IdentityServer.Tokens.TokenCleanupService.CleanAsync()
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker.DoWorkAsync(PeriodicBackgroundWorkerContext workerContext)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Volo.Abp.Threading.AsyncHelper.RunSync(Func`1 action)
+   at Volo.Abp.BackgroundWorkers.AsyncPeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e)
+2020-04-09 19:29:42.023 -03:00 [ERR] ---------- Exception Data ----------
+2020-04-09 19:29:42.023 -03:00 [ERR] ActivatorChain = Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext -> λ:Microsoft.EntityFrameworkCore.DbContextOptions`1[[Volo.Abp.IdentityServer.EntityFrameworkCore.IdentityServerDbContext, Volo.Abp.IdentityServer.EntityFrameworkCore, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null]]

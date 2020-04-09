@@ -2159,3 +2159,247 @@ Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException: IDX10214: 
 2020-04-07 12:57:30.298 -03:00 [INF] Request finished in 2125.4051ms 500 
 2020-04-07 12:57:30.299 -03:00 [INF] Request finished in 2060.2185ms 500 
 2020-04-07 13:01:16.165 -03:00 [INF] Application is shutting down...
+2020-04-07 14:10:16.293 -03:00 [INF] Starting WebGateway
+2020-04-07 14:10:24.845 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-04-07 14:10:25.219 -03:00 [INF] Loaded ABP modules:
+2020-04-07 14:10:25.219 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-04-07 14:10:25.220 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-04-07 14:10:25.220 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-04-07 14:10:25.220 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-04-07 14:10:25.220 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-04-07 14:10:25.220 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-04-07 14:10:25.220 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-04-07 14:10:25.220 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-04-07 14:10:25.220 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-04-07 14:10:25.220 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-04-07 14:10:25.220 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-04-07 14:10:25.220 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-04-07 14:10:25.220 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-04-07 14:10:25.220 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-04-07 14:10:25.220 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-04-07 14:10:25.220 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-04-07 14:10:25.220 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-04-07 14:10:25.221 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-04-07 14:10:25.221 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-04-07 14:10:25.221 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-04-07 14:10:25.221 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-04-07 14:10:25.221 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-04-07 14:10:25.221 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-04-07 14:10:25.221 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-04-07 14:10:25.221 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-04-07 14:10:25.221 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-04-07 14:10:25.221 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-04-07 14:10:25.221 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-04-07 14:10:25.221 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-04-07 14:10:25.221 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-04-07 14:10:25.221 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-04-07 14:10:25.221 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-04-07 14:10:25.221 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-04-07 14:10:25.221 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-04-07 14:10:25.222 -03:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-04-07 14:10:25.222 -03:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-04-07 14:10:25.222 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-04-07 14:10:25.222 -03:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2020-04-07 14:10:25.222 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2020-04-07 14:10:25.222 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2020-04-07 14:10:25.222 -03:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2020-04-07 14:10:25.222 -03:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2020-04-07 14:10:25.222 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-04-07 14:10:25.222 -03:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2020-04-07 14:10:25.222 -03:00 [INF] - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2020-04-07 14:10:25.222 -03:00 [INF] - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2020-04-07 14:10:25.222 -03:00 [INF] - WebGateway.WebGatewayModule
+2020-04-07 14:10:27.718 -03:00 [INF] Initialized all ABP modules.
+2020-04-07 14:10:27.836 -03:00 [INF] Now listening on: https://localhost:17692
+2020-04-07 14:10:27.836 -03:00 [INF] Now listening on: http://localhost:54309
+2020-04-07 14:10:27.837 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-04-07 14:10:27.837 -03:00 [INF] Hosting environment: Development
+2020-04-07 14:10:27.837 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/WebGateway
+2020-04-07 14:15:09.873 -03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:54309/api/bankingservice/account?__tenant=abp  
+2020-04-07 14:15:09.873 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54309/api/bankingservice/account?__tenant=abp  
+2020-04-07 14:15:09.898 -03:00 [INF] CORS policy execution successful.
+2020-04-07 14:15:09.899 -03:00 [INF] CORS policy execution successful.
+2020-04-07 14:15:09.930 -03:00 [INF] Request finished in 60.6354ms 204 
+2020-04-07 14:15:09.964 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:54309/api/bankingservice/account?__tenant=abp  
+2020-04-07 14:15:09.964 -03:00 [INF] CORS policy execution successful.
+2020-04-07 14:15:09.998 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-07 14:15:10.393 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException: IDX10214: Audience validation failed. Audiences: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. Did not match: validationParameters.ValidAudience: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' or validationParameters.ValidAudiences: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateAudience(IEnumerable`1 audiences, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateAudience(IEnumerable`1 audiences, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-04-07 14:15:10.408 -03:00 [INF] BearerIdentityServerAuthenticationJwt was not authenticated. Failure message: IDX10214: Audience validation failed. Audiences: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. Did not match: validationParameters.ValidAudience: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' or validationParameters.ValidAudiences: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2020-04-07 14:15:10.409 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10214: Audience validation failed. Audiences: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. Did not match: validationParameters.ValidAudience: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' or validationParameters.ValidAudiences: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2020-04-07 14:15:11.602 -03:00 [DBG] requestId: 0HLUR2SSUDPQJ:00000001, previousRequestId: no previous request id, message: ocelot pipeline started
+2020-04-07 14:15:11.602 -03:00 [DBG] requestId: 0HLUR2SSUDPQK:00000001, previousRequestId: no previous request id, message: ocelot pipeline started
+2020-04-07 14:15:11.607 -03:00 [DBG] requestId: 0HLUR2SSUDPQK:00000001, previousRequestId: no previous request id, message: Upstream url path is /api/bankingservice/account
+2020-04-07 14:15:11.607 -03:00 [DBG] requestId: 0HLUR2SSUDPQJ:00000001, previousRequestId: no previous request id, message: Upstream url path is /api/bankingservice/account
+2020-04-07 14:15:11.625 -03:00 [DBG] requestId: 0HLUR2SSUDPQK:00000001, previousRequestId: no previous request id, message: downstream templates are /api/bankingservice/{everything}
+2020-04-07 14:15:11.625 -03:00 [DBG] requestId: 0HLUR2SSUDPQJ:00000001, previousRequestId: no previous request id, message: downstream templates are /api/bankingservice/{everything}
+2020-04-07 14:15:11.649 -03:00 [INF] requestId: 0HLUR2SSUDPQJ:00000001, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/bankingservice/{everything}
+2020-04-07 14:15:11.649 -03:00 [INF] requestId: 0HLUR2SSUDPQK:00000001, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/bankingservice/{everything}
+2020-04-07 14:15:11.652 -03:00 [INF] requestId: 0HLUR2SSUDPQK:00000001, previousRequestId: no previous request id, message: No authentication needed for /api/bankingservice/account
+2020-04-07 14:15:11.652 -03:00 [INF] requestId: 0HLUR2SSUDPQJ:00000001, previousRequestId: no previous request id, message: No authentication needed for /api/bankingservice/account
+2020-04-07 14:15:11.655 -03:00 [INF] requestId: 0HLUR2SSUDPQK:00000001, previousRequestId: no previous request id, message: /api/bankingservice/{everything} route does not require user to be authorised
+2020-04-07 14:15:11.655 -03:00 [INF] requestId: 0HLUR2SSUDPQJ:00000001, previousRequestId: no previous request id, message: /api/bankingservice/{everything} route does not require user to be authorised
+2020-04-07 14:15:11.667 -03:00 [DBG] requestId: 0HLUR2SSUDPQK:00000001, previousRequestId: no previous request id, message: Downstream url is http://localhost:64056/api/bankingservice/account?__tenant=abp
+2020-04-07 14:15:11.667 -03:00 [DBG] requestId: 0HLUR2SSUDPQJ:00000001, previousRequestId: no previous request id, message: Downstream url is http://localhost:64056/api/bankingservice/account?__tenant=abp
+2020-04-07 14:15:13.416 -03:00 [INF] requestId: 0HLUR2SSUDPQJ:00000001, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:64056/api/bankingservice/account?__tenant=abp
+2020-04-07 14:15:13.416 -03:00 [INF] requestId: 0HLUR2SSUDPQK:00000001, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:64056/api/bankingservice/account?__tenant=abp
+2020-04-07 14:15:13.417 -03:00 [DBG] requestId: 0HLUR2SSUDPQJ:00000001, previousRequestId: no previous request id, message: setting http response message
+2020-04-07 14:15:13.417 -03:00 [DBG] requestId: 0HLUR2SSUDPQK:00000001, previousRequestId: no previous request id, message: setting http response message
+2020-04-07 14:15:13.434 -03:00 [DBG] requestId: 0HLUR2SSUDPQK:00000001, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2020-04-07 14:15:13.434 -03:00 [DBG] requestId: 0HLUR2SSUDPQJ:00000001, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2020-04-07 14:15:13.440 -03:00 [DBG] requestId: 0HLUR2SSUDPQK:00000001, previousRequestId: no previous request id, message: ocelot pipeline finished
+2020-04-07 14:15:13.440 -03:00 [DBG] requestId: 0HLUR2SSUDPQJ:00000001, previousRequestId: no previous request id, message: ocelot pipeline finished
+2020-04-07 14:15:13.447 -03:00 [INF] Request finished in 3483.1699ms 200 application/json; charset=utf-8
+2020-04-07 14:15:13.447 -03:00 [INF] Request finished in 3578.1958ms 200 application/json; charset=utf-8
+2020-04-08 21:52:12.386 -03:00 [INF] Starting WebGateway
+2020-04-08 21:52:14.378 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-04-08 21:52:14.454 -03:00 [INF] Loaded ABP modules:
+2020-04-08 21:52:14.454 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-04-08 21:52:14.454 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-04-08 21:52:14.454 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-04-08 21:52:14.454 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-04-08 21:52:14.454 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-04-08 21:52:14.454 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-04-08 21:52:14.454 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-04-08 21:52:14.454 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-04-08 21:52:14.454 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-04-08 21:52:14.455 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-04-08 21:52:14.455 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-04-08 21:52:14.455 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-04-08 21:52:14.455 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-04-08 21:52:14.455 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-04-08 21:52:14.455 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-04-08 21:52:14.455 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-04-08 21:52:14.455 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-04-08 21:52:14.455 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-04-08 21:52:14.455 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-04-08 21:52:14.455 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-04-08 21:52:14.455 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-04-08 21:52:14.455 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-04-08 21:52:14.455 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-04-08 21:52:14.456 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-04-08 21:52:14.456 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-04-08 21:52:14.456 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-04-08 21:52:14.456 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-04-08 21:52:14.456 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-04-08 21:52:14.456 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-04-08 21:52:14.456 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-04-08 21:52:14.456 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-04-08 21:52:14.456 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-04-08 21:52:14.456 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-04-08 21:52:14.456 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-04-08 21:52:14.456 -03:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-04-08 21:52:14.456 -03:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-04-08 21:52:14.456 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-04-08 21:52:14.456 -03:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2020-04-08 21:52:14.457 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2020-04-08 21:52:14.457 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2020-04-08 21:52:14.457 -03:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2020-04-08 21:52:14.457 -03:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2020-04-08 21:52:14.457 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-04-08 21:52:14.457 -03:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2020-04-08 21:52:14.457 -03:00 [INF] - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2020-04-08 21:52:14.457 -03:00 [INF] - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2020-04-08 21:52:14.457 -03:00 [INF] - WebGateway.WebGatewayModule
+2020-04-08 21:52:15.585 -03:00 [INF] Initialized all ABP modules.
+2020-04-08 21:52:15.685 -03:00 [INF] Now listening on: https://localhost:17692
+2020-04-08 21:52:15.685 -03:00 [INF] Now listening on: http://localhost:54309
+2020-04-08 21:52:15.685 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-04-08 21:52:15.685 -03:00 [INF] Hosting environment: Development
+2020-04-08 21:52:15.685 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/WebGateway
+2020-04-09 14:29:09.403 -03:00 [INF] Starting WebGateway
+2020-04-09 14:29:23.542 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-04-09 14:29:24.281 -03:00 [INF] Loaded ABP modules:
+2020-04-09 14:29:24.281 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-04-09 14:29:24.281 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-04-09 14:29:24.281 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-04-09 14:29:24.282 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-04-09 14:29:24.282 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-04-09 14:29:24.282 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-04-09 14:29:24.282 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-04-09 14:29:24.282 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-04-09 14:29:24.282 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-04-09 14:29:24.282 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-04-09 14:29:24.283 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-04-09 14:29:24.283 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-04-09 14:29:24.283 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-04-09 14:29:24.284 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-04-09 14:29:24.284 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-04-09 14:29:24.284 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-04-09 14:29:24.285 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-04-09 14:29:24.285 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-04-09 14:29:24.285 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-04-09 14:29:24.285 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-04-09 14:29:24.285 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-04-09 14:29:24.285 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-04-09 14:29:24.285 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-04-09 14:29:24.285 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-04-09 14:29:24.285 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-04-09 14:29:24.285 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-04-09 14:29:24.285 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-04-09 14:29:24.285 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-04-09 14:29:24.285 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-04-09 14:29:24.285 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-04-09 14:29:24.285 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-04-09 14:29:24.285 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-04-09 14:29:24.285 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-04-09 14:29:24.285 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-04-09 14:29:24.286 -03:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-04-09 14:29:24.286 -03:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-04-09 14:29:24.286 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-04-09 14:29:24.286 -03:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2020-04-09 14:29:24.286 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2020-04-09 14:29:24.286 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2020-04-09 14:29:24.286 -03:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2020-04-09 14:29:24.286 -03:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2020-04-09 14:29:24.286 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-04-09 14:29:24.286 -03:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2020-04-09 14:29:24.286 -03:00 [INF] - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2020-04-09 14:29:24.286 -03:00 [INF] - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2020-04-09 14:29:24.287 -03:00 [INF] - WebGateway.WebGatewayModule
+2020-04-09 14:29:31.373 -03:00 [INF] Initialized all ABP modules.
+2020-04-09 14:29:31.484 -03:00 [INF] Now listening on: https://localhost:17692
+2020-04-09 14:29:31.484 -03:00 [INF] Now listening on: http://localhost:54309
+2020-04-09 14:29:31.484 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-04-09 14:29:31.485 -03:00 [INF] Hosting environment: Development
+2020-04-09 14:29:31.485 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/WebGateway
+2020-04-09 14:36:56.772 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:54309/api/identityservice/  0
+2020-04-09 14:36:56.789 -03:00 [INF] CORS policy execution successful.
+2020-04-09 14:36:56.859 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-09 14:36:58.326 -03:00 [DBG] requestId: 0HLUSLICPHAQ1:00000001, previousRequestId: no previous request id, message: ocelot pipeline started
+2020-04-09 14:36:58.330 -03:00 [DBG] requestId: 0HLUSLICPHAQ1:00000001, previousRequestId: no previous request id, message: Upstream url path is /api/identityservice/
+2020-04-09 14:36:58.341 -03:00 [WRN] requestId: 0HLUSLICPHAQ1:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match ReRoute configuration for upstream path: /api/identityservice/, verb: POST.
+2020-04-09 14:36:58.342 -03:00 [WRN] requestId: 0HLUSLICPHAQ1:00000001, previousRequestId: no previous request id, message: Failed to match ReRoute configuration for upstream path: /api/identityservice/, verb: POST.
+2020-04-09 14:36:58.343 -03:00 [WRN] requestId: 0HLUSLICPHAQ1:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match ReRoute configuration for upstream path: /api/identityservice/, verb: POST. errors found in ResponderMiddleware. Setting error response for request path:/api/identityservice/, request method: POST
+2020-04-09 14:36:58.344 -03:00 [DBG] requestId: 0HLUSLICPHAQ1:00000001, previousRequestId: no previous request id, message: ocelot pipeline finished
+2020-04-09 14:36:58.371 -03:00 [INF] Request finished in 1601.4903ms 404 
+2020-04-09 14:46:51.571 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:54309/api/identityservice/ application/json 256
+2020-04-09 14:46:51.573 -03:00 [INF] CORS policy execution successful.
+2020-04-09 14:46:51.574 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-09 14:46:51.609 -03:00 [DBG] requestId: 0HLUSLICPHAQ2:00000001, previousRequestId: no previous request id, message: ocelot pipeline started
+2020-04-09 14:46:51.609 -03:00 [DBG] requestId: 0HLUSLICPHAQ2:00000001, previousRequestId: no previous request id, message: Upstream url path is /api/identityservice/
+2020-04-09 14:46:51.610 -03:00 [WRN] requestId: 0HLUSLICPHAQ2:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match ReRoute configuration for upstream path: /api/identityservice/, verb: POST.
+2020-04-09 14:46:51.610 -03:00 [WRN] requestId: 0HLUSLICPHAQ2:00000001, previousRequestId: no previous request id, message: Failed to match ReRoute configuration for upstream path: /api/identityservice/, verb: POST.
+2020-04-09 14:46:51.610 -03:00 [WRN] requestId: 0HLUSLICPHAQ2:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match ReRoute configuration for upstream path: /api/identityservice/, verb: POST. errors found in ResponderMiddleware. Setting error response for request path:/api/identityservice/, request method: POST
+2020-04-09 14:46:51.611 -03:00 [DBG] requestId: 0HLUSLICPHAQ2:00000001, previousRequestId: no previous request id, message: ocelot pipeline finished
+2020-04-09 14:46:51.612 -03:00 [INF] Request finished in 41.486ms 404 
+2020-04-09 14:47:28.059 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:54309/api/identityservice/identityUser application/json 256
+2020-04-09 14:47:28.060 -03:00 [INF] CORS policy execution successful.
+2020-04-09 14:47:28.060 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-09 14:47:28.111 -03:00 [DBG] requestId: 0HLUSLICPHAQ2:00000002, previousRequestId: no previous request id, message: ocelot pipeline started
+2020-04-09 14:47:28.112 -03:00 [DBG] requestId: 0HLUSLICPHAQ2:00000002, previousRequestId: no previous request id, message: Upstream url path is /api/identityservice/identityUser
+2020-04-09 14:47:28.116 -03:00 [DBG] requestId: 0HLUSLICPHAQ2:00000002, previousRequestId: no previous request id, message: downstream templates are /api/identityservice/{everything}
+2020-04-09 14:47:28.144 -03:00 [INF] requestId: 0HLUSLICPHAQ2:00000002, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/identityservice/{everything}
+2020-04-09 14:47:28.146 -03:00 [INF] requestId: 0HLUSLICPHAQ2:00000002, previousRequestId: no previous request id, message: No authentication needed for /api/identityservice/identityUser
+2020-04-09 14:47:28.148 -03:00 [INF] requestId: 0HLUSLICPHAQ2:00000002, previousRequestId: no previous request id, message: /api/identityservice/{everything} route does not require user to be authorised
+2020-04-09 14:47:28.161 -03:00 [DBG] requestId: 0HLUSLICPHAQ2:00000002, previousRequestId: no previous request id, message: Downstream url is http://localhost:5004/api/identityservice/identityUser
+2020-04-09 14:47:28.237 -03:00 [INF] requestId: 0HLUSLICPHAQ2:00000002, previousRequestId: no previous request id, message: 307 (Temporary Redirect) status code, request uri: http://localhost:5004/api/identityservice/identityUser
+2020-04-09 14:47:28.237 -03:00 [DBG] requestId: 0HLUSLICPHAQ2:00000002, previousRequestId: no previous request id, message: setting http response message
+2020-04-09 14:47:28.251 -03:00 [DBG] requestId: 0HLUSLICPHAQ2:00000002, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2020-04-09 14:47:28.256 -03:00 [DBG] requestId: 0HLUSLICPHAQ2:00000002, previousRequestId: no previous request id, message: ocelot pipeline finished
+2020-04-09 14:47:28.258 -03:00 [INF] Request finished in 199.4863ms 307 

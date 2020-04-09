@@ -10,10 +10,11 @@ using Volo.Abp.Identity;
 using Volo.Abp.Identity.EntityFrameworkCore;
 using Volo.Abp.Modularity;
 using Volo.Abp.MultiTenancy;
+using Volo.Abp.PermissionManagement;
 using Volo.Abp.PermissionManagement.EntityFrameworkCore;
+using Volo.Abp.PermissionManagement.Identity;
 using Volo.Abp.SettingManagement.EntityFrameworkCore;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
-
 
 namespace IdentityService
 {
@@ -21,8 +22,10 @@ namespace IdentityService
         typeof(AbpAutofacModule),
         typeof(AbpAspNetCoreMvcModule),
         typeof(AbpEntityFrameworkCoreMySQLModule),
-        typeof(AbpPermissionManagementEntityFrameworkCoreModule),
         typeof(AbpSettingManagementEntityFrameworkCoreModule),
+        typeof(AbpPermissionManagementDomainIdentityModule),
+        typeof(AbpPermissionManagementApplicationModule),
+        typeof(AbpPermissionManagementEntityFrameworkCoreModule),
         typeof(AbpIdentityApplicationModule),
         typeof(AbpIdentityEntityFrameworkCoreModule),
         typeof(AbpAspNetCoreMultiTenancyModule),
@@ -37,7 +40,11 @@ namespace IdentityService
             {
                 options.ConventionalControllers.Create(typeof(AbpIdentityApplicationModule).Assembly, opts =>
                 {
+                    opts.RootPath = "identityservice";
+                });
 
+                options.ConventionalControllers.Create(typeof(AbpPermissionManagementApplicationModule).Assembly, opts =>
+                {
                     opts.RootPath = "identityservice";
                 });
             });
@@ -49,25 +56,18 @@ namespace IdentityService
 
             Configure<AbpTenantResolveOptions>(options =>
             {
-                options.TenantResolvers.Insert(1, new QueryStringTenantResolveContributor());
+                options.TenantResolvers.Insert(1, new HeaderTenantResolveContributor());
             });
 
-            //Configure<AbpTenantResolveOptions>(options =>
-            //{
-            //    options.
-            //});
-
-     
-  
-
+            Configure<AbpTenantResolveOptions>(options =>
                 context.Services.AddAuthentication("Bearer")
-                   .AddIdentityServerAuthentication(options =>
-                   {
+                    .AddIdentityServerAuthentication(options =>
+                    {
                         options.Authority = configuration["AuthServer:Authority"];
                         options.ApiName = configuration["AuthServer:ApiName"];
                         options.RequireHttpsMetadata = false;
-                   });
-
+                    })
+            );
 
             context.Services.AddSwaggerGen(options =>
             {
@@ -79,7 +79,11 @@ namespace IdentityService
             Configure<AbpDbContextOptions>(options =>
             {
                 options.UseMySQL();
-            });      
+            });
+
+
+            //TODO: TESTE PELO SWAGGER
+            context.Services.AddAlwaysAllowAuthorization();
         }
 
         public override void OnApplicationInitialization(ApplicationInitializationContext context)

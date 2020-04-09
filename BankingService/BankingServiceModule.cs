@@ -18,19 +18,20 @@ using AbpMicroRabbit.Banking.Application.Contracts;
 using Volo.Abp.AspNetCore.MultiTenancy;
 using Volo.Abp.MultiTenancy;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
+using Volo.Abp.Authorization.Permissions;
 
 namespace BankingService
 {
-     [DependsOn(typeof(AbpAspNetCoreMvcModule),
-                typeof(BankingApplicationContractsModule),
-                typeof(BankingApplicationModule),
-                typeof(BankingEntityFrameworkModule),
-                typeof(AbpAutofacModule),
-                typeof(AbpEntityFrameworkCoreMySQLModule),
-                typeof(AbpEventBusRabbitMqModule),
-                typeof(AbpMicroRabbitSharedInfraBusModule),
-                typeof(AbpTenantManagementEntityFrameworkCoreModule),
-                typeof(AbpAspNetCoreMultiTenancyModule))]
+    [DependsOn(typeof(AbpAspNetCoreMvcModule),
+               typeof(BankingApplicationContractsModule),
+               typeof(BankingApplicationModule),
+               typeof(BankingEntityFrameworkModule),
+               typeof(AbpAutofacModule),
+               typeof(AbpEntityFrameworkCoreMySQLModule),
+               typeof(AbpEventBusRabbitMqModule),
+               typeof(AbpMicroRabbitSharedInfraBusModule),
+               typeof(AbpTenantManagementEntityFrameworkCoreModule),
+               typeof(AbpAspNetCoreMultiTenancyModule))]
     public class BankingServiceModule : AbpModule
     {
 
@@ -45,6 +46,8 @@ namespace BankingService
                                 options.ApiName = configuration["AuthServer:ApiName"];
                                 options.RequireHttpsMetadata = false;
                             });
+
+      
 
             ConfigurarControllersGeradosAutomaticamente();
             ConfigurarProviderDoEfCore();
@@ -62,7 +65,7 @@ namespace BankingService
 
             Configure<AbpTenantResolveOptions>(options =>
             {
-                options.TenantResolvers.Insert(1, new QueryStringTenantResolveContributor());
+                options.TenantResolvers.Insert(1, new HeaderTenantResolveContributor());
             });
         }
 

@@ -40,8 +40,7 @@ namespace AuthenticationServer
                typeof(AbpAspNetCoreMvcUiBasicThemeModule),
                typeof(AbpPermissionManagementDomainIdentityServerModule),
                typeof(AbpMultiTenancyModule),
-               typeof(AbpAspNetCoreMultiTenancyModule)
-   )]
+               typeof(AbpAspNetCoreMultiTenancyModule))]
     public class AuthenticationServerModule : AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
@@ -59,6 +58,11 @@ namespace AuthenticationServer
             Configure<AbpMultiTenancyOptions>(options =>
             {
                 options.IsEnabled = true;
+            });
+
+            Configure<AbpTenantResolveOptions>(options =>
+            {
+                options.TenantResolvers.Insert(1, new HeaderTenantResolveContributor());
             });
 
             Configure<AbpDbContextOptions>(options =>

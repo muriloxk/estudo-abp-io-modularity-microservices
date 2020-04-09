@@ -8,7 +8,6 @@ import { TransferLog } from './Entities/TransferLog';
 
 @Injectable()
 export class BankingService {
-
     // private readonly _tenantTeste: String = "497f79b8-1699-5764-2b8e-39f465435497";
     private readonly _tenantTeste: String = "abp";
 

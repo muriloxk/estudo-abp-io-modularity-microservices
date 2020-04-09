@@ -38,6 +38,11 @@ namespace TenantService
                 options.IsEnabled = true;
             });
 
+            Configure<AbpTenantResolveOptions>(options =>
+            {
+                options.TenantResolvers.Insert(1, new HeaderTenantResolveContributor());
+            });
+
             context.Services.AddAuthentication("Bearer")
                             .AddIdentityServerAuthentication(options =>
                             {

@@ -318,3 +318,177 @@ Volo.Abp.Authorization.AbpAuthorizationException: Authorization failed! Given po
 2020-04-07 02:21:56.085 -03:00 [INF] Executed action Volo.Abp.TenantManagement.TenantController.CreateAsync (Volo.Abp.TenantManagement.HttpApi) in 1641.843ms
 2020-04-07 02:21:56.088 -03:00 [INF] Executed endpoint 'Volo.Abp.TenantManagement.TenantController.CreateAsync (Volo.Abp.TenantManagement.HttpApi)'
 2020-04-07 02:21:56.089 -03:00 [INF] Request finished in 1746.6153ms 200 application/json; charset=utf-8
+2020-04-08 21:53:28.973 -03:00 [INF] Starting Identity Service
+2020-04-08 21:53:30.328 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-04-08 21:53:30.399 -03:00 [INF] Loaded ABP modules:
+2020-04-08 21:53:30.399 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-04-08 21:53:30.399 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-04-08 21:53:30.399 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-04-08 21:53:30.399 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-04-08 21:53:30.399 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-04-08 21:53:30.399 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-04-08 21:53:30.400 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-04-08 21:53:30.400 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-04-08 21:53:30.400 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-04-08 21:53:30.400 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-04-08 21:53:30.400 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-04-08 21:53:30.400 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-04-08 21:53:30.400 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-04-08 21:53:30.400 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-04-08 21:53:30.400 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-04-08 21:53:30.400 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-04-08 21:53:30.400 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-04-08 21:53:30.400 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-04-08 21:53:30.400 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-04-08 21:53:30.400 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-04-08 21:53:30.400 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-04-08 21:53:30.400 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-04-08 21:53:30.400 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-04-08 21:53:30.400 -03:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-04-08 21:53:30.400 -03:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-04-08 21:53:30.401 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-04-08 21:53:30.401 -03:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2020-04-08 21:53:30.401 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2020-04-08 21:53:30.401 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2020-04-08 21:53:30.401 -03:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2020-04-08 21:53:30.401 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-04-08 21:53:30.401 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-04-08 21:53:30.401 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-04-08 21:53:30.401 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-04-08 21:53:30.401 -03:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2020-04-08 21:53:30.401 -03:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2020-04-08 21:53:30.401 -03:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2020-04-08 21:53:30.401 -03:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2020-04-08 21:53:30.401 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-04-08 21:53:30.401 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-04-08 21:53:30.401 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-04-08 21:53:30.401 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-04-08 21:53:30.401 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-04-08 21:53:30.401 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-04-08 21:53:30.402 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-04-08 21:53:30.402 -03:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2020-04-08 21:53:30.402 -03:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2020-04-08 21:53:30.402 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-04-08 21:53:30.402 -03:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2020-04-08 21:53:30.402 -03:00 [INF] - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2020-04-08 21:53:30.402 -03:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementApplicationModule
+2020-04-08 21:53:30.402 -03:00 [INF] - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2020-04-08 21:53:30.402 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-04-08 21:53:30.402 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-04-08 21:53:30.402 -03:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-04-08 21:53:30.402 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-04-08 21:53:30.402 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-04-08 21:53:30.402 -03:00 [INF] - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2020-04-08 21:53:30.402 -03:00 [INF] - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2020-04-08 21:53:30.402 -03:00 [INF] - TenantService.TenantServiceModule
+2020-04-08 21:53:31.463 -03:00 [INF] Initialized all ABP modules.
+2020-04-08 21:53:31.522 -03:00 [INF] Now listening on: https://localhost:48125
+2020-04-08 21:53:31.522 -03:00 [INF] Now listening on: http://localhost:22043
+2020-04-08 21:53:31.522 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-04-08 21:53:31.522 -03:00 [INF] Hosting environment: Development
+2020-04-08 21:53:31.523 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/TenantService
+2020-04-08 22:20:44.279 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:22043/swagger/index.html  
+2020-04-08 22:20:44.354 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-08 22:20:45.736 -03:00 [INF] Request finished in 1459.8137ms 200 text/html;charset=utf-8
+2020-04-08 22:20:45.792 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:22043/swagger/swagger-ui-standalone-preset.js  
+2020-04-08 22:20:45.792 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:22043/swagger/swagger-ui-bundle.js  
+2020-04-08 22:20:45.793 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-08 22:20:45.793 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-08 22:20:45.795 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:22043/swagger/swagger-ui.css  
+2020-04-08 22:20:45.795 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-08 22:20:45.837 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-04-08 22:20:45.839 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-04-08 22:20:45.840 -03:00 [INF] Request finished in 45.2516ms 200 text/css
+2020-04-08 22:20:45.840 -03:00 [INF] Request finished in 48.5016ms 200 application/javascript
+2020-04-08 22:20:45.841 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-04-08 22:20:45.842 -03:00 [INF] Request finished in 49.987ms 200 application/javascript
+2020-04-08 22:20:46.060 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:22043/swagger/v1/swagger.json  
+2020-04-08 22:20:46.062 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-08 22:20:46.085 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:22043/swagger/favicon-32x32.png  
+2020-04-08 22:20:46.086 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-08 22:20:46.089 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2020-04-08 22:20:46.089 -03:00 [INF] Request finished in 5.016ms 200 image/png
+2020-04-08 22:20:46.178 -03:00 [INF] Request finished in 117.9706ms 200 application/json;charset=utf-8
+2020-04-09 14:29:14.837 -03:00 [INF] Starting Identity Service
+2020-04-09 14:29:23.147 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-04-09 14:29:24.280 -03:00 [INF] Loaded ABP modules:
+2020-04-09 14:29:24.280 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-04-09 14:29:24.280 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-04-09 14:29:24.280 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-04-09 14:29:24.280 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-04-09 14:29:24.280 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-04-09 14:29:24.280 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-04-09 14:29:24.280 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-04-09 14:29:24.280 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-04-09 14:29:24.280 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-04-09 14:29:24.280 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-04-09 14:29:24.281 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-04-09 14:29:24.281 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-04-09 14:29:24.281 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-04-09 14:29:24.281 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-04-09 14:29:24.281 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-04-09 14:29:24.281 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-04-09 14:29:24.281 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-04-09 14:29:24.281 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-04-09 14:29:24.281 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-04-09 14:29:24.281 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-04-09 14:29:24.281 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-04-09 14:29:24.281 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-04-09 14:29:24.281 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-04-09 14:29:24.281 -03:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-04-09 14:29:24.281 -03:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-04-09 14:29:24.281 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-04-09 14:29:24.281 -03:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2020-04-09 14:29:24.281 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2020-04-09 14:29:24.281 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2020-04-09 14:29:24.282 -03:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2020-04-09 14:29:24.282 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-04-09 14:29:24.282 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-04-09 14:29:24.282 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-04-09 14:29:24.282 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-04-09 14:29:24.282 -03:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2020-04-09 14:29:24.282 -03:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2020-04-09 14:29:24.282 -03:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2020-04-09 14:29:24.282 -03:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2020-04-09 14:29:24.282 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-04-09 14:29:24.282 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-04-09 14:29:24.282 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-04-09 14:29:24.282 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-04-09 14:29:24.282 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-04-09 14:29:24.282 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-04-09 14:29:24.282 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-04-09 14:29:24.282 -03:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2020-04-09 14:29:24.283 -03:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2020-04-09 14:29:24.283 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-04-09 14:29:24.283 -03:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2020-04-09 14:29:24.283 -03:00 [INF] - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2020-04-09 14:29:24.283 -03:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementApplicationModule
+2020-04-09 14:29:24.283 -03:00 [INF] - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2020-04-09 14:29:24.283 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-04-09 14:29:24.283 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-04-09 14:29:24.283 -03:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-04-09 14:29:24.283 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-04-09 14:29:24.283 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-04-09 14:29:24.283 -03:00 [INF] - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2020-04-09 14:29:24.283 -03:00 [INF] - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2020-04-09 14:29:24.284 -03:00 [INF] - TenantService.TenantServiceModule
+2020-04-09 14:29:30.941 -03:00 [INF] Initialized all ABP modules.
+2020-04-09 14:29:31.427 -03:00 [INF] Now listening on: https://localhost:48125
+2020-04-09 14:29:31.428 -03:00 [INF] Now listening on: http://localhost:22043
+2020-04-09 14:29:31.428 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-04-09 14:29:31.428 -03:00 [INF] Hosting environment: Development
+2020-04-09 14:29:31.428 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/TenantService
+2020-04-09 15:45:58.481 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:22043/swagger/index.html  
+2020-04-09 15:45:58.740 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-09 15:46:00.329 -03:00 [INF] Request finished in 1850.9331ms 200 text/html;charset=utf-8
+2020-04-09 15:46:00.389 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:22043/swagger/swagger-ui-standalone-preset.js  
+2020-04-09 15:46:00.390 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-09 15:46:00.391 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:22043/swagger/swagger-ui-bundle.js  
+2020-04-09 15:46:00.391 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-09 15:46:00.486 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-04-09 15:46:00.489 -03:00 [INF] Request finished in 100.5809ms 200 application/javascript
+2020-04-09 15:46:00.550 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-04-09 15:46:00.550 -03:00 [INF] Request finished in 159.469ms 200 application/javascript
+2020-04-09 15:46:00.785 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:22043/swagger/v1/swagger.json  
+2020-04-09 15:46:00.788 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2020-04-09 15:46:00.895 -03:00 [INF] Request finished in 109.7801ms 200 application/json;charset=utf-8

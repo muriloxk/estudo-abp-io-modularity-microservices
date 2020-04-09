@@ -61,10 +61,9 @@ namespace TransferLogService
                 options.IsEnabled = true;
             });
 
-
             Configure<AbpTenantResolveOptions>(options =>
             {
-                options.TenantResolvers.Insert(1, new QueryStringTenantResolveContributor());
+                options.TenantResolvers.Insert(1, new HeaderTenantResolveContributor());
             });
         }
 

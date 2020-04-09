@@ -8696,3 +8696,216 @@ Volo.Abp.AbpException: No theme registered! Use AbpThemingOptions to register th
 2020-04-07 12:57:28.621 -03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
 2020-04-07 12:57:28.621 -03:00 [DBG] Start key discovery request
 2020-04-07 12:57:28.622 -03:00 [INF] Request finished in 3.1015ms 200 application/jwk-set+json; charset=UTF-8
+2020-04-07 14:15:09.813 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/.well-known/openid-configuration  
+2020-04-07 14:15:09.842 -03:00 [INF] CORS policy execution successful.
+2020-04-07 14:15:09.843 -03:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2020-04-07 14:15:09.883 -03:00 [WRN] Origin is not allowed: http://localhost:4200
+2020-04-07 14:15:09.883 -03:00 [WRN] CorsPolicyService did not allow origin: http://localhost:4200
+2020-04-07 14:15:09.884 -03:00 [INF] No CORS policy found for the specified request.
+2020-04-07 14:15:09.884 -03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-04-07 14:15:09.954 -03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-04-07 14:15:09.954 -03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-04-07 14:15:09.955 -03:00 [DBG] Start discovery request
+2020-04-07 14:15:09.966 -03:00 [INF] Request finished in 152.6509ms 200 application/json; charset=UTF-8
+2020-04-07 14:15:09.981 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/connect/checksession  
+2020-04-07 14:15:10.002 -03:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2020-04-07 14:15:10.002 -03:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2020-04-07 14:15:10.002 -03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2020-04-07 14:15:10.003 -03:00 [DBG] Rendering check session result
+2020-04-07 14:15:10.003 -03:00 [INF] Request finished in 22.3922ms 200 text/html; charset=UTF-8
+2020-04-07 14:15:10.110 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/.well-known/openid-configuration  
+2020-04-07 14:15:10.110 -03:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-04-07 14:15:10.112 -03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-04-07 14:15:10.112 -03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-04-07 14:15:10.124 -03:00 [DBG] Start discovery request
+2020-04-07 14:15:10.137 -03:00 [INF] Request finished in 27.6415ms 200 application/json; charset=UTF-8
+2020-04-07 14:15:10.327 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/.well-known/openid-configuration/jwks  
+2020-04-07 14:15:10.327 -03:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2020-04-07 14:15:10.329 -03:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2020-04-07 14:15:10.329 -03:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2020-04-07 14:15:10.330 -03:00 [DBG] Start key discovery request
+2020-04-07 14:15:10.330 -03:00 [INF] Request finished in 3.0738ms 200 application/jwk-set+json; charset=UTF-8
+2020-04-08 21:51:41.753 -03:00 [INF] Starting AuthenticationServer
+2020-04-08 21:51:45.560 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-04-08 21:51:45.835 -03:00 [INF] Loaded ABP modules:
+2020-04-08 21:51:45.835 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-04-08 21:51:45.835 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-04-08 21:51:45.835 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-04-08 21:51:45.835 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-04-08 21:51:45.835 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-04-08 21:51:45.835 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-04-08 21:51:45.835 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-04-08 21:51:45.836 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-04-08 21:51:45.836 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-04-08 21:51:45.836 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-04-08 21:51:45.836 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-04-08 21:51:45.836 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-04-08 21:51:45.836 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-04-08 21:51:45.836 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-04-08 21:51:45.836 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-04-08 21:51:45.836 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-04-08 21:51:45.836 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-04-08 21:51:45.837 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-04-08 21:51:45.837 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-04-08 21:51:45.837 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-04-08 21:51:45.837 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-04-08 21:51:45.837 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-04-08 21:51:45.837 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-04-08 21:51:45.837 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-04-08 21:51:45.837 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-04-08 21:51:45.837 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-04-08 21:51:45.837 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-04-08 21:51:45.837 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-04-08 21:51:45.837 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-04-08 21:51:45.837 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-04-08 21:51:45.837 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-04-08 21:51:45.837 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-04-08 21:51:45.837 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-04-08 21:51:45.837 -03:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-04-08 21:51:45.837 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-04-08 21:51:45.838 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-04-08 21:51:45.838 -03:00 [INF] - Volo.Abp.Identity.AspNetCore.AbpIdentityAspNetCoreModule
+2020-04-08 21:51:45.838 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-04-08 21:51:45.838 -03:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-04-08 21:51:45.838 -03:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-04-08 21:51:45.838 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-04-08 21:51:45.838 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-04-08 21:51:45.838 -03:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2020-04-08 21:51:45.838 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2020-04-08 21:51:45.838 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2020-04-08 21:51:45.838 -03:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2020-04-08 21:51:45.838 -03:00 [INF] - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2020-04-08 21:51:45.838 -03:00 [INF] - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2020-04-08 21:51:45.839 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-04-08 21:51:45.839 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-04-08 21:51:45.839 -03:00 [INF] - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2020-04-08 21:51:45.839 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-04-08 21:51:45.839 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2020-04-08 21:51:45.839 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2020-04-08 21:51:45.839 -03:00 [INF] - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2020-04-08 21:51:45.839 -03:00 [INF] - Volo.Abp.Account.AbpAccountApplicationModule
+2020-04-08 21:51:45.839 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2020-04-08 21:51:45.840 -03:00 [INF] - Volo.Abp.Account.AbpAccountHttpApiModule
+2020-04-08 21:51:45.840 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2020-04-08 21:51:45.840 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2020-04-08 21:51:45.840 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2020-04-08 21:51:45.840 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2020-04-08 21:51:45.840 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2020-04-08 21:51:45.840 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2020-04-08 21:51:45.840 -03:00 [INF] - Volo.Abp.Account.Web.AbpAccountWebModule
+2020-04-08 21:51:45.840 -03:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2020-04-08 21:51:45.840 -03:00 [INF] - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2020-04-08 21:51:45.841 -03:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2020-04-08 21:51:45.841 -03:00 [INF] - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2020-04-08 21:51:45.841 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-04-08 21:51:45.841 -03:00 [INF] - Volo.Abp.Account.Web.AbpAccountWebIdentityServerModule
+2020-04-08 21:51:45.841 -03:00 [INF] - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2020-04-08 21:51:45.841 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2020-04-08 21:51:45.841 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic.AbpAspNetCoreMvcUiBasicThemeModule
+2020-04-08 21:51:45.841 -03:00 [INF] - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2020-04-08 21:51:45.841 -03:00 [INF] - AuthenticationServer.AuthenticationServerModule
+2020-04-08 21:51:46.172 -03:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2020-04-08 21:51:46.201 -03:00 [INF] Starting IdentityServer4 version 3.0.2.0
+2020-04-08 21:51:46.382 -03:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2020-04-08 21:51:46.382 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2020-04-08 21:51:46.382 -03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2020-04-08 21:51:46.382 -03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2020-04-08 21:51:46.382 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2020-04-08 21:51:46.382 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2020-04-08 21:51:50.643 -03:00 [INF] Initialized all ABP modules.
+2020-04-08 21:51:50.743 -03:00 [INF] Now listening on: http://localhost:5000
+2020-04-08 21:51:50.743 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-04-08 21:51:50.743 -03:00 [INF] Hosting environment: Development
+2020-04-08 21:51:50.743 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer
+2020-04-09 14:29:03.076 -03:00 [INF] Starting AuthenticationServer
+2020-04-09 14:29:24.894 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-04-09 14:29:24.989 -03:00 [INF] Loaded ABP modules:
+2020-04-09 14:29:24.989 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-04-09 14:29:24.990 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-04-09 14:29:24.990 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-04-09 14:29:24.990 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-04-09 14:29:24.990 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-04-09 14:29:24.990 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-04-09 14:29:24.990 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-04-09 14:29:24.990 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-04-09 14:29:24.990 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-04-09 14:29:24.990 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-04-09 14:29:24.990 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-04-09 14:29:24.990 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-04-09 14:29:24.990 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-04-09 14:29:24.990 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-04-09 14:29:24.990 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-04-09 14:29:24.990 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-04-09 14:29:24.990 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-04-09 14:29:24.990 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-04-09 14:29:24.990 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-04-09 14:29:24.991 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-04-09 14:29:24.991 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-04-09 14:29:24.991 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-04-09 14:29:24.991 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-04-09 14:29:24.991 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-04-09 14:29:24.991 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-04-09 14:29:24.991 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-04-09 14:29:24.991 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-04-09 14:29:24.991 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-04-09 14:29:24.991 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-04-09 14:29:24.991 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-04-09 14:29:24.991 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-04-09 14:29:24.991 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-04-09 14:29:24.991 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-04-09 14:29:24.991 -03:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-04-09 14:29:24.992 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-04-09 14:29:24.992 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-04-09 14:29:24.992 -03:00 [INF] - Volo.Abp.Identity.AspNetCore.AbpIdentityAspNetCoreModule
+2020-04-09 14:29:24.992 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-04-09 14:29:24.992 -03:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-04-09 14:29:24.992 -03:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-04-09 14:29:24.992 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-04-09 14:29:24.992 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-04-09 14:29:24.993 -03:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2020-04-09 14:29:24.993 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2020-04-09 14:29:24.993 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2020-04-09 14:29:24.993 -03:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2020-04-09 14:29:24.993 -03:00 [INF] - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2020-04-09 14:29:24.993 -03:00 [INF] - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2020-04-09 14:29:24.993 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-04-09 14:29:24.993 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-04-09 14:29:24.993 -03:00 [INF] - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2020-04-09 14:29:24.993 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-04-09 14:29:24.993 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2020-04-09 14:29:24.993 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2020-04-09 14:29:24.993 -03:00 [INF] - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2020-04-09 14:29:24.993 -03:00 [INF] - Volo.Abp.Account.AbpAccountApplicationModule
+2020-04-09 14:29:24.993 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2020-04-09 14:29:24.993 -03:00 [INF] - Volo.Abp.Account.AbpAccountHttpApiModule
+2020-04-09 14:29:24.994 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2020-04-09 14:29:24.994 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2020-04-09 14:29:24.994 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2020-04-09 14:29:24.994 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2020-04-09 14:29:24.994 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2020-04-09 14:29:24.994 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2020-04-09 14:29:24.994 -03:00 [INF] - Volo.Abp.Account.Web.AbpAccountWebModule
+2020-04-09 14:29:24.994 -03:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2020-04-09 14:29:24.994 -03:00 [INF] - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2020-04-09 14:29:24.994 -03:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2020-04-09 14:29:24.994 -03:00 [INF] - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2020-04-09 14:29:24.994 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-04-09 14:29:24.994 -03:00 [INF] - Volo.Abp.Account.Web.AbpAccountWebIdentityServerModule
+2020-04-09 14:29:24.994 -03:00 [INF] - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2020-04-09 14:29:24.994 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2020-04-09 14:29:24.995 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic.AbpAspNetCoreMvcUiBasicThemeModule
+2020-04-09 14:29:24.995 -03:00 [INF] - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2020-04-09 14:29:24.995 -03:00 [INF] - AuthenticationServer.AuthenticationServerModule
+2020-04-09 14:29:25.725 -03:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2020-04-09 14:29:25.820 -03:00 [INF] Starting IdentityServer4 version 3.0.2.0
+2020-04-09 14:29:26.181 -03:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2020-04-09 14:29:26.181 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2020-04-09 14:29:26.181 -03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2020-04-09 14:29:26.181 -03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2020-04-09 14:29:26.181 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2020-04-09 14:29:26.181 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2020-04-09 14:29:39.305 -03:00 [INF] Initialized all ABP modules.
+2020-04-09 14:29:39.338 -03:00 [INF] Now listening on: http://localhost:5000
+2020-04-09 14:29:39.338 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-04-09 14:29:39.338 -03:00 [INF] Hosting environment: Development
+2020-04-09 14:29:39.338 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer
