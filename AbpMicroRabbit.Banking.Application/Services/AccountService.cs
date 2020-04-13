@@ -1,17 +1,18 @@
 ﻿using MicroRabbit.Banking.Application.Interfaces;
 using Volo.Abp.Application.Services;
 using AbpMicroRabbit.Banking.Domain.Repositories;
-using Volo.Abp.EventBus.Distributed;
 using System.Threading.Tasks;
 using AbpMicroRabbit.Banking.Application.Contracts.Dto;
 using AbpMicroRabbit.Banking.Domain.Commands;
-using AbpMicroRabbit.Shared.Infra.Bus;
 using System.Collections.Generic;
 using AbpMicroRabbit.Banking.Domain.Entities;
 using AbpMicroRabbit.Shared.Domain;
+using Microsoft.AspNetCore.Authorization;
+using AbpMicroRabbit.Banking.Application.Contracts.Permissions;
 
 namespace AbpMicroRabbit.Banking.Application.Services
 {
+    [Authorize(AccountPermissions.GroupName)]
     public class AccountAppService : ApplicationService, IAccountService
     {
         private readonly IAccountRepository _accountRepository;
@@ -28,6 +29,7 @@ namespace AbpMicroRabbit.Banking.Application.Services
             return _accountRepository.GetAccounts();
         }
 
+        [Authorize(AccountPermissions.Accounts.Transfer)]
         public async Task Transfer(AccountTransferDto accountTransfer)
         {
             var createTransferCommand = ObjectMapper.Map<AccountTransferDto, CreateTransferCommand>(accountTransfer);
