@@ -3,13 +3,10 @@
 - ~~Utilizar o provider do MySql e migrations.~~ 
 - ~~Analizar o event bus distributed com rabbitmq do framework~~
 - ~~Analizar como implementaria um CQRS~~ 
+- ~~Implementar multitenancy compartilhando os bancos.~~
+- ~~Autorização de papeis entre as funcionalidades.~~
 
 # Próximas issues:
-1. <a href="https://github.com/muriloxk/estudo-abp-io-modularity-microservices/issues/1" >  Criar um gateway bff mobile e web</a>
-1. <a href="https://github.com/muriloxk/estudo-abp-io-modularity-microservices/issues/2" > Criar autenticação via o gateway mobile (Hybrid grantype)</a>
-1. <a href="https://github.com/muriloxk/estudo-abp-io-modularity-microservices/issues/7">Criar autenticação Implicit grant type para web</a>
-1. <a href="https://github.com/muriloxk/estudo-abp-io-modularity-microservices/issues/3" > Implementar multitenancy compartilhando os bancos.</a>
-1. <a href="https://github.com/muriloxk/estudo-abp-io-modularity-microservices/issues/4" > Autorização de papeis entre as funcionalidades.</a>
 1. <a href="https://github.com/muriloxk/estudo-abp-io-modularity-microservices/issues/5" > Serilog com elasticsearch</a>
 1. <a href="https://github.com/muriloxk/estudo-abp-io-modularity-microservices/issues/6" > Implementar cache com redis de acordo com os inquilinos. </a>
 
