@@ -18,17 +18,22 @@ using AbpMicroRabbit.Banking.Application.Contracts;
 using Volo.Abp.AspNetCore.MultiTenancy;
 using Volo.Abp.MultiTenancy;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
-using Volo.Abp.Authorization.Permissions;
 using Volo.Abp.PermissionManagement.EntityFrameworkCore;
+using Volo.Abp.Threading;
+using Volo.Abp.Data;
+using Volo.Abp.Authorization.Permissions;
+using Volo.Abp.PermissionManagement;
+using Volo.Abp.PermissionManagement.Identity;
 
 namespace BankingService
 {
-    [DependsOn(typeof(AbpAspNetCoreMvcModule),
+    [DependsOn(typeof(AbpAutofacModule),
+               typeof(AbpAspNetCoreMvcModule),
                typeof(BankingApplicationContractsModule),
                typeof(BankingApplicationModule),
                typeof(BankingEntityFrameworkModule),
-               typeof(AbpAutofacModule),
                typeof(AbpEntityFrameworkCoreMySQLModule),
+               typeof(AbpPermissionManagementDomainIdentityModule),
                typeof(AbpPermissionManagementEntityFrameworkCoreModule),
                typeof(AbpEventBusRabbitMqModule),
                typeof(AbpMicroRabbitSharedInfraBusModule),
@@ -48,6 +53,13 @@ namespace BankingService
                                 options.ApiName = configuration["AuthServer:ApiName"];
                                 options.RequireHttpsMetadata = false;
                             });
+
+            ConfigurarMultiTenancy();
+
+            Configure<AbpPermissionOptions>(options =>
+            {
+                options.ValueProviders.Add<RolePermissionValueProvider>();
+            });
 
             ConfigurarControllersGeradosAutomaticamente();
             ConfigurarProviderDoEfCore();
@@ -139,6 +151,16 @@ namespace BankingService
             });
 
             app.UseMvcWithDefaultRouteAndArea();
+
+            AsyncHelper.RunSync(async () =>
+            {
+                using (var scope = context.ServiceProvider.CreateScope())
+                {
+                    await scope.ServiceProvider
+                        .GetRequiredService<IDataSeeder>()
+                        .SeedAsync();
+                }
+            });
         }
     }
 }

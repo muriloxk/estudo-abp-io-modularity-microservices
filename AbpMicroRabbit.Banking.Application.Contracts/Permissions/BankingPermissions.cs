@@ -2,7 +2,7 @@
 {
     public class BankingPermissions
     {
-        public const string GroupName = "Accounts";
+        public const string GroupName = "Banking";
 
         public static class Accounts
         {

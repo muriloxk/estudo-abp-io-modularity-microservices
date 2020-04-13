@@ -25,7 +25,6 @@ using System;
 
 namespace AuthenticationServer
 {
-
     [DependsOn(typeof(AbpAutofacModule),
                typeof(AbpAspNetCoreMvcModule),
                typeof(AbpIdentityAspNetCoreModule),
@@ -33,7 +32,7 @@ namespace AuthenticationServer
                typeof(AbpSettingManagementEntityFrameworkCoreModule),
                typeof(AbpIdentityEntityFrameworkCoreModule),
                typeof(AbpAccountApplicationModule),
-               typeof(AbpAccountWebModule), //testar interface 
+               typeof(AbpAccountWebModule),
                typeof(AbpIdentityServerEntityFrameworkCoreModule),
                typeof(AbpEntityFrameworkCoreMySQLModule),
                typeof(AbpAccountWebIdentityServerModule),
