@@ -19,6 +19,7 @@ using Volo.Abp.AspNetCore.MultiTenancy;
 using Volo.Abp.MultiTenancy;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
 using Volo.Abp.Authorization.Permissions;
+using Volo.Abp.PermissionManagement.EntityFrameworkCore;
 
 namespace BankingService
 {
@@ -28,6 +29,7 @@ namespace BankingService
                typeof(BankingEntityFrameworkModule),
                typeof(AbpAutofacModule),
                typeof(AbpEntityFrameworkCoreMySQLModule),
+               typeof(AbpPermissionManagementEntityFrameworkCoreModule),
                typeof(AbpEventBusRabbitMqModule),
                typeof(AbpMicroRabbitSharedInfraBusModule),
                typeof(AbpTenantManagementEntityFrameworkCoreModule),
@@ -46,8 +48,6 @@ namespace BankingService
                                 options.ApiName = configuration["AuthServer:ApiName"];
                                 options.RequireHttpsMetadata = false;
                             });
-
-      
 
             ConfigurarControllersGeradosAutomaticamente();
             ConfigurarProviderDoEfCore();
