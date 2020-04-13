@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using AbpMicroRabbit.Banking.Application.Contracts.Permissions;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Options;
 using Volo.Abp.Authorization.Permissions;
 using Volo.Abp.Data;
 using Volo.Abp.DependencyInjection;
@@ -22,16 +18,11 @@ namespace BankingService.EntityFramework
 
         public BankingServiceDataTestSeeder(IPermissionManager permissionManager,
                                         IPermissionGrantRepository permissionGrantRepository,
-                                        ICurrentTenant currentTenant,
-                                        IOptions<PermissionManagementOptions> options,
-                                        IServiceProvider serviceProvider)
+                                        ICurrentTenant currentTenant)
         {
             _currentTenant = currentTenant;
             _permissionManager = permissionManager;
-            _permissionGrantRepository = permissionGrantRepository;
-
-
-            _currentTenant.Change(new Guid("497f79b8-1699-5764-2b8e-39f465435497"));            
+            _permissionGrantRepository = permissionGrantRepository;     
         }
 
         [UnitOfWork]
