@@ -22,6 +22,8 @@ using Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 using System;
 using Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared;
+using Volo.Abp.TenantManagement.EntityFrameworkCore;
+using Volo.Abp.TenantManagement;
 
 namespace AuthenticationServer
 {
@@ -39,9 +41,19 @@ namespace AuthenticationServer
                typeof(AbpAspNetCoreMvcUiThemeSharedModule),
                typeof(AbpPermissionManagementDomainIdentityServerModule),
                typeof(AbpMultiTenancyModule),
-               typeof(AbpAspNetCoreMultiTenancyModule))]
+               typeof(AbpAspNetCoreMultiTenancyModule),
+               typeof(AbpTenantManagementEntityFrameworkCoreModule),
+               typeof(AbpTenantManagementApplicationContractsModule))]
     public class AuthenticationServerModule : AbpModule
     {
+
+        //private readonly ICurrentTenant _currentTenant;
+
+        //public AuthenticationServerModule(ICurrentTenant currentTenant)
+        //{
+        //    _currentTenant = currentTenant;
+        //}
+
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
             context.Services.AddCors(options => options.AddDefaultPolicy(builder =>
@@ -74,33 +86,59 @@ namespace AuthenticationServer
         {
             var app = context.GetApplicationBuilder();
 
-            app.UseCors();
             app.UseVirtualFiles();
             app.UseRouting();
+            app.UseCors();
             app.UseStaticFiles();
 
+            //app.Use(async (context, next) =>
+            //{
+            //    context.Request.Headers["__tenant"] = "de76993a-f5c5-dd94-9a26-39f48895efe5";
+
+            //    await next.Invoke();
+            //});
+
+            //app.Use(async (context, next) =>
+            //{
+            //    var teste = context.Request.Headers["__tenant"];
+            //    await next.Invoke();
+            //});
+
+            //app.Use(async (context, next) =>
+            //{
+            //    var cultureQuery = context.Request.Query["culture"];
+            //    if (!string.IsNullOrWhiteSpace(cultureQuery))
+            //    {
+            //        var culture = new CultureInfo("en-US");
+
+            //        CultureInfo.CurrentCulture = culture;
+            //        CultureInfo.CurrentUICulture = culture;
+            //    }
+
+            //    await next.Invoke();
+            //});
+
+
+
+            app.UseMultiTenancy();
             //app.UseAuthentication();
             app.UseIdentityServer();
+
+
 
             //app.UseMvc();
             app.UseMvcWithDefaultRouteAndArea();
 
-            //app.UseMultiTenancy();
 
             //app.UseAuthorization();
 
-            app.Use(async (context, next) =>
-            {
-                var headers = context.Request.Headers["__tenant"].ToString();
-
-                await next.Invoke();
-           
-            });
-
+   
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapDefaultControllerRoute();
             });
+
+           //var teste2 = _currentTenant.Id;
 
             AsyncHelper.RunSync(async () =>
             {
