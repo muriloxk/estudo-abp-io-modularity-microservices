@@ -2991,3 +2991,310 @@ System.MissingMethodException: Method not found: 'Volo.Abp.Authorization.Permiss
 2020-04-09 19:50:09.061 -03:00 [INF] Executed action Volo.Abp.PermissionManagement.PermissionAppService.GetAsync (Volo.Abp.PermissionManagement.Application) in 1384.4433ms
 2020-04-09 19:50:09.064 -03:00 [INF] Executed endpoint 'Volo.Abp.PermissionManagement.PermissionAppService.GetAsync (Volo.Abp.PermissionManagement.Application)'
 2020-04-09 19:50:09.070 -03:00 [INF] Request finished in 1635.342ms 200 application/json; charset=utf-8
+2020-04-13 16:28:32.030 -03:00 [INF] Starting Identity Service
+2020-04-13 16:28:33.990 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-04-13 16:28:34.064 -03:00 [INF] Loaded ABP modules:
+2020-04-13 16:28:34.064 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-04-13 16:28:34.064 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-04-13 16:28:34.064 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-04-13 16:28:34.064 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-04-13 16:28:34.065 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-04-13 16:28:34.065 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-04-13 16:28:34.065 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-04-13 16:28:34.065 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-04-13 16:28:34.065 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-04-13 16:28:34.065 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-04-13 16:28:34.065 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-04-13 16:28:34.065 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-04-13 16:28:34.065 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-04-13 16:28:34.065 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-04-13 16:28:34.065 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-04-13 16:28:34.065 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-04-13 16:28:34.065 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-04-13 16:28:34.065 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-04-13 16:28:34.065 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-04-13 16:28:34.065 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-04-13 16:28:34.065 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-04-13 16:28:34.065 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-04-13 16:28:34.065 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-04-13 16:28:34.065 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-04-13 16:28:34.065 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-04-13 16:28:34.066 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-04-13 16:28:34.066 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-04-13 16:28:34.066 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-04-13 16:28:34.066 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-04-13 16:28:34.066 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-04-13 16:28:34.066 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-04-13 16:28:34.066 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-04-13 16:28:34.066 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-04-13 16:28:34.066 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2020-04-13 16:28:34.066 -03:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-04-13 16:28:34.066 -03:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-04-13 16:28:34.066 -03:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2020-04-13 16:28:34.066 -03:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2020-04-13 16:28:34.066 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-04-13 16:28:34.066 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-04-13 16:28:34.066 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-04-13 16:28:34.066 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-04-13 16:28:34.066 -03:00 [INF] - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2020-04-13 16:28:34.066 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-04-13 16:28:34.067 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2020-04-13 16:28:34.067 -03:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2020-04-13 16:28:34.067 -03:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-04-13 16:28:34.067 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-04-13 16:28:34.067 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-04-13 16:28:34.067 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-04-13 16:28:34.067 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-04-13 16:28:34.067 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationModule
+2020-04-13 16:28:34.067 -03:00 [INF] - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2020-04-13 16:28:34.067 -03:00 [INF] - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2020-04-13 16:28:34.067 -03:00 [INF] - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2020-04-13 16:28:34.067 -03:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2020-04-13 16:28:34.067 -03:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2020-04-13 16:28:34.067 -03:00 [INF] - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2020-04-13 16:28:34.067 -03:00 [INF] - IdentityService.IdentityServiceModule
+2020-04-13 16:28:35.075 -03:00 [INF] Initialized all ABP modules.
+2020-04-13 16:28:35.138 -03:00 [INF] Now listening on: https://localhost:5005
+2020-04-13 16:28:35.139 -03:00 [INF] Now listening on: http://localhost:5004
+2020-04-13 16:28:35.139 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-04-13 16:28:35.139 -03:00 [INF] Hosting environment: Development
+2020-04-13 16:28:35.139 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/IdentityService
+2020-04-13 16:38:40.637 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5004/api/identityservice/identityUser application/json 256
+2020-04-13 16:38:40.644 -03:00 [INF] Request finished in 10.7988ms 307 
+2020-04-13 16:38:40.886 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:5005/api/identityservice/identityUser application/json 256
+2020-04-13 16:38:42.431 -03:00 [INF] Executing endpoint 'Volo.Abp.Identity.IdentityUserAppService.CreateAsync (Volo.Abp.Identity.Application)'
+2020-04-13 16:38:42.506 -03:00 [INF] Route matched with {action = "Create", controller = "IdentityUser", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Identity.IdentityUserDto] CreateAsync(Volo.Abp.Identity.IdentityUserCreateDto) on controller Volo.Abp.Identity.IdentityUserAppService (Volo.Abp.Identity.Application).
+2020-04-13 16:38:43.254 -03:00 [WRN] User a5de7576-5201-ec73-652e-39f48739e9a4 validation failed: DuplicateUserName;DuplicateEmail.
+2020-04-13 16:38:43.286 -03:00 [WRN] ---------- RemoteServiceErrorInfo ----------
+2020-04-13 16:38:43.293 -03:00 [WRN] {
+  "code": "Identity.DuplicateUserName",
+  "message": "O usuário 'muriloxk' já está em uso., O e-mail 'murilo@crmall.com' já está em uso.",
+  "details": null,
+  "validationErrors": null
+}
+2020-04-13 16:38:43.294 -03:00 [WRN] User name 'muriloxk' is already taken., Email 'murilo@crmall.com' is already taken.
+Volo.Abp.Identity.AbpIdentityResultException: User name 'muriloxk' is already taken., Email 'murilo@crmall.com' is already taken.
+   at Microsoft.AspNetCore.Identity.AbpIdentityResultExtensions.CheckErrors(IdentityResult identityResult)
+   at Volo.Abp.Identity.IdentityUserAppService.CreateAsync(IdentityUserCreateDto input)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Authorization.AuthorizationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Auditing.AuditingInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2020-04-13 16:38:43.307 -03:00 [WRN] Code:Identity.DuplicateUserName
+2020-04-13 16:38:43.307 -03:00 [WRN] Details:
+2020-04-13 16:38:43.313 -03:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
+2020-04-13 16:38:43.329 -03:00 [INF] Executed action Volo.Abp.Identity.IdentityUserAppService.CreateAsync (Volo.Abp.Identity.Application) in 817.9146ms
+2020-04-13 16:38:43.331 -03:00 [INF] Executed endpoint 'Volo.Abp.Identity.IdentityUserAppService.CreateAsync (Volo.Abp.Identity.Application)'
+2020-04-13 16:38:43.334 -03:00 [INF] Request finished in 2448.5505ms 403 application/json; charset=utf-8
+2020-04-13 16:39:44.859 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5004/api/identityservice/identityUser application/json 267
+2020-04-13 16:39:44.860 -03:00 [INF] Request finished in 1.097ms 307 
+2020-04-13 16:39:44.872 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:5005/api/identityservice/identityUser application/json 267
+2020-04-13 16:39:44.887 -03:00 [INF] Executing endpoint 'Volo.Abp.Identity.IdentityUserAppService.CreateAsync (Volo.Abp.Identity.Application)'
+2020-04-13 16:39:44.888 -03:00 [INF] Route matched with {action = "Create", controller = "IdentityUser", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Identity.IdentityUserDto] CreateAsync(Volo.Abp.Identity.IdentityUserCreateDto) on controller Volo.Abp.Identity.IdentityUserAppService (Volo.Abp.Identity.Application).
+2020-04-13 16:39:45.366 -03:00 [ERR] ---------- RemoteServiceErrorInfo ----------
+2020-04-13 16:39:45.366 -03:00 [ERR] {
+  "code": null,
+  "message": "Um erro interno ocorreu durante a requisição!",
+  "details": null,
+  "validationErrors": null
+}
+2020-04-13 16:39:45.366 -03:00 [ERR] Role ASSISTENTE does not exist!
+System.InvalidOperationException: Role ASSISTENTE does not exist!
+   at Volo.Abp.Identity.IdentityUserStore.AddToRoleAsync(IdentityUser user, String normalizedRoleName, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.AddToRolesAsync(TUser user, IEnumerable`1 roles)
+   at Volo.Abp.Identity.IdentityUserManager.SetRolesAsync(IdentityUser user, IEnumerable`1 roleNames)
+   at Volo.Abp.Identity.IdentityUserAppService.UpdateUserByInput(IdentityUser user, IdentityUserCreateOrUpdateDtoBase input)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Authorization.AuthorizationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Auditing.AuditingInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.Identity.IdentityUserAppService.CreateAsync(IdentityUserCreateDto input)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Authorization.AuthorizationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Auditing.AuditingInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2020-04-13 16:39:45.405 -03:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
+2020-04-13 16:39:45.406 -03:00 [INF] Executed action Volo.Abp.Identity.IdentityUserAppService.CreateAsync (Volo.Abp.Identity.Application) in 517.6413ms
+2020-04-13 16:39:45.406 -03:00 [INF] Executed endpoint 'Volo.Abp.Identity.IdentityUserAppService.CreateAsync (Volo.Abp.Identity.Application)'
+2020-04-13 16:39:45.407 -03:00 [INF] Request finished in 534.6177ms 500 application/json; charset=utf-8
+2020-04-13 16:45:36.119 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5004/api/swagger/index.html  
+2020-04-13 16:45:36.120 -03:00 [INF] Request finished in 1.3379ms 307 
+2020-04-13 16:45:36.144 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/api/swagger/index.html  
+2020-04-13 16:45:36.179 -03:00 [INF] Request finished in 34.768ms 404 
+2020-04-13 16:45:36.201 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/favicon.ico  
+2020-04-13 16:45:36.203 -03:00 [INF] Request finished in 2.099ms 404 
+2020-04-13 16:47:53.922 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5004//swagger/index.html  
+2020-04-13 16:47:53.924 -03:00 [INF] Request finished in 1.5452ms 307 
+2020-04-13 16:47:53.949 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005//swagger/index.html  
+2020-04-13 16:47:53.955 -03:00 [INF] Request finished in 6.0723ms 404 
+2020-04-13 16:47:58.915 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5004/swagger/index.html  
+2020-04-13 16:47:58.916 -03:00 [INF] Request finished in 1.0591ms 307 
+2020-04-13 16:47:58.919 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/swagger/index.html  
+2020-04-13 16:47:58.950 -03:00 [INF] Request finished in 31.8836ms 200 text/html;charset=utf-8
+2020-04-13 16:47:58.967 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/swagger/swagger-ui.css  
+2020-04-13 16:47:59.036 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-04-13 16:47:59.037 -03:00 [INF] Request finished in 69.8899ms 200 text/css
+2020-04-13 16:47:59.177 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/swagger/swagger-ui-standalone-preset.js  
+2020-04-13 16:47:59.243 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/swagger/swagger-ui-bundle.js  
+2020-04-13 16:47:59.244 -03:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2020-04-13 16:47:59.245 -03:00 [INF] The file /swagger-ui-bundle.js was not modified
+2020-04-13 16:47:59.245 -03:00 [INF] Request finished in 68.3506ms 304 application/javascript
+2020-04-13 16:47:59.245 -03:00 [INF] Request finished in 1.8072ms 304 application/javascript
+2020-04-13 16:47:59.605 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/swagger/favicon-32x32.png  
+2020-04-13 16:47:59.608 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2020-04-13 16:47:59.609 -03:00 [INF] Request finished in 3.667ms 200 image/png
+2020-04-13 16:47:59.654 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/swagger/v1/swagger.json  
+2020-04-13 16:47:59.770 -03:00 [INF] Request finished in 115.7299ms 200 application/json;charset=utf-8
+2020-04-13 16:50:56.143 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5004/api/identityservice/identityRole application/json 67
+2020-04-13 16:50:56.143 -03:00 [INF] Request finished in 0.8293ms 307 
+2020-04-13 16:50:56.165 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:5005/api/identityservice/identityRole application/json 67
+2020-04-13 16:50:56.201 -03:00 [INF] Executing endpoint 'Volo.Abp.Identity.IdentityRoleAppService.CreateAsync (Volo.Abp.Identity.Application)'
+2020-04-13 16:50:56.208 -03:00 [INF] Route matched with {action = "Create", controller = "IdentityRole", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Identity.IdentityRoleDto] CreateAsync(Volo.Abp.Identity.IdentityRoleCreateDto) on controller Volo.Abp.Identity.IdentityRoleAppService (Volo.Abp.Identity.Application).
+2020-04-13 16:50:56.283 -03:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Identity.IdentityRoleDto'.
+2020-04-13 16:50:56.287 -03:00 [INF] Executed action Volo.Abp.Identity.IdentityRoleAppService.CreateAsync (Volo.Abp.Identity.Application) in 78.3991ms
+2020-04-13 16:50:56.287 -03:00 [INF] Executed endpoint 'Volo.Abp.Identity.IdentityRoleAppService.CreateAsync (Volo.Abp.Identity.Application)'
+2020-04-13 16:50:56.288 -03:00 [INF] Request finished in 122.8042ms 200 application/json; charset=utf-8
+2020-04-13 16:51:33.790 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5004/api/identityservice/identityUser application/json 269
+2020-04-13 16:51:33.791 -03:00 [INF] Request finished in 0.6579ms 307 
+2020-04-13 16:51:33.806 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:5005/api/identityservice/identityUser application/json 269
+2020-04-13 16:51:33.816 -03:00 [INF] Executing endpoint 'Volo.Abp.Identity.IdentityUserAppService.CreateAsync (Volo.Abp.Identity.Application)'
+2020-04-13 16:51:33.817 -03:00 [INF] Route matched with {action = "Create", controller = "IdentityUser", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Identity.IdentityUserDto] CreateAsync(Volo.Abp.Identity.IdentityUserCreateDto) on controller Volo.Abp.Identity.IdentityUserAppService (Volo.Abp.Identity.Application).
+2020-04-13 16:51:34.041 -03:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Identity.IdentityUserDto'.
+2020-04-13 16:51:34.053 -03:00 [INF] Executed action Volo.Abp.Identity.IdentityUserAppService.CreateAsync (Volo.Abp.Identity.Application) in 234.9705ms
+2020-04-13 16:51:34.053 -03:00 [INF] Executed endpoint 'Volo.Abp.Identity.IdentityUserAppService.CreateAsync (Volo.Abp.Identity.Application)'
+2020-04-13 16:51:34.054 -03:00 [INF] Request finished in 247.9965ms 200 application/json; charset=utf-8
+2020-04-13 22:18:10.190 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5004/swagger/index.html  
+2020-04-13 22:18:10.310 -03:00 [INF] Request finished in 120.3313ms 307 
+2020-04-13 22:18:10.336 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/swagger/index.html  
+2020-04-13 22:18:10.340 -03:00 [INF] Request finished in 4.2266ms 200 text/html;charset=utf-8
+2020-04-13 22:18:10.447 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/swagger/swagger-ui.css  
+2020-04-13 22:18:10.451 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-04-13 22:18:10.451 -03:00 [INF] Request finished in 4.1219ms 200 text/css
+2020-04-13 22:18:10.464 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/swagger/swagger-ui-bundle.js  
+2020-04-13 22:18:10.476 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/swagger/swagger-ui-standalone-preset.js  
+2020-04-13 22:18:10.917 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-04-13 22:18:10.918 -03:00 [INF] Request finished in 441.23ms 200 application/javascript
+2020-04-13 22:18:11.014 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-04-13 22:18:11.014 -03:00 [INF] Request finished in 549.6835ms 200 application/javascript
+2020-04-13 22:18:11.430 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5005/swagger/v1/swagger.json  
+2020-04-13 22:18:11.464 -03:00 [INF] Request finished in 34.2848ms 200 application/json;charset=utf-8
+2020-04-13 22:35:38.347 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5004/api/identityservice/identityUser application/json 269
+2020-04-13 22:35:38.382 -03:00 [INF] Request finished in 34.7792ms 307 
+2020-04-13 22:35:38.410 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:5005/api/identityservice/identityUser application/json 269
+2020-04-13 22:35:38.433 -03:00 [INF] Executing endpoint 'Volo.Abp.Identity.IdentityUserAppService.CreateAsync (Volo.Abp.Identity.Application)'
+2020-04-13 22:35:38.434 -03:00 [INF] Route matched with {action = "Create", controller = "IdentityUser", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Identity.IdentityUserDto] CreateAsync(Volo.Abp.Identity.IdentityUserCreateDto) on controller Volo.Abp.Identity.IdentityUserAppService (Volo.Abp.Identity.Application).
+2020-04-13 22:35:38.557 -03:00 [WRN] User 081f37dc-8a9f-4966-bbfe-39f48880b02a validation failed: DuplicateUserName;DuplicateEmail.
+2020-04-13 22:35:38.561 -03:00 [WRN] ---------- RemoteServiceErrorInfo ----------
+2020-04-13 22:35:38.561 -03:00 [WRN] {
+  "code": "Identity.DuplicateUserName",
+  "message": "O usuário 'assistente' já está em uso., O e-mail 'assistente@crmall.com' já está em uso.",
+  "details": null,
+  "validationErrors": null
+}
+2020-04-13 22:35:38.561 -03:00 [WRN] User name 'assistente' is already taken., Email 'assistente@crmall.com' is already taken.
+Volo.Abp.Identity.AbpIdentityResultException: User name 'assistente' is already taken., Email 'assistente@crmall.com' is already taken.
+   at Microsoft.AspNetCore.Identity.AbpIdentityResultExtensions.CheckErrors(IdentityResult identityResult)
+   at Volo.Abp.Identity.IdentityUserAppService.CreateAsync(IdentityUserCreateDto input)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Authorization.AuthorizationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Auditing.AuditingInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2020-04-13 22:35:38.565 -03:00 [WRN] Code:Identity.DuplicateUserName
+2020-04-13 22:35:38.565 -03:00 [WRN] Details:
+2020-04-13 22:35:38.566 -03:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
+2020-04-13 22:35:38.567 -03:00 [INF] Executed action Volo.Abp.Identity.IdentityUserAppService.CreateAsync (Volo.Abp.Identity.Application) in 132.5912ms
+2020-04-13 22:35:38.567 -03:00 [INF] Executed endpoint 'Volo.Abp.Identity.IdentityUserAppService.CreateAsync (Volo.Abp.Identity.Application)'
+2020-04-13 22:35:38.567 -03:00 [INF] Request finished in 157.5376ms 403 application/json; charset=utf-8
+2020-04-13 22:54:18.649 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5004/api/identityservice/identityUser application/json 256
+2020-04-13 22:54:18.664 -03:00 [INF] Request finished in 15.2311ms 307 
+2020-04-13 22:54:18.687 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:5005/api/identityservice/identityUser application/json 256
+2020-04-13 22:54:18.689 -03:00 [INF] Executing endpoint 'Volo.Abp.Identity.IdentityUserAppService.CreateAsync (Volo.Abp.Identity.Application)'
+2020-04-13 22:54:18.689 -03:00 [INF] Route matched with {action = "Create", controller = "IdentityUser", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Identity.IdentityUserDto] CreateAsync(Volo.Abp.Identity.IdentityUserCreateDto) on controller Volo.Abp.Identity.IdentityUserAppService (Volo.Abp.Identity.Application).
+2020-04-13 22:54:18.902 -03:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Identity.IdentityUserDto'.
+2020-04-13 22:54:18.903 -03:00 [INF] Executed action Volo.Abp.Identity.IdentityUserAppService.CreateAsync (Volo.Abp.Identity.Application) in 213.3746ms
+2020-04-13 22:54:18.904 -03:00 [INF] Executed endpoint 'Volo.Abp.Identity.IdentityUserAppService.CreateAsync (Volo.Abp.Identity.Application)'
+2020-04-13 22:54:18.904 -03:00 [INF] Request finished in 217.1284ms 200 application/json; charset=utf-8
+2020-04-13 23:00:54.989 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5004/api/identityservice/identityUser application/json 257
+2020-04-13 23:00:55.010 -03:00 [INF] Request finished in 21.1621ms 307 
+2020-04-13 23:00:55.031 -03:00 [INF] Request starting HTTP/1.1 POST https://localhost:5005/api/identityservice/identityUser application/json 257
+2020-04-13 23:00:55.051 -03:00 [INF] Executing endpoint 'Volo.Abp.Identity.IdentityUserAppService.CreateAsync (Volo.Abp.Identity.Application)'
+2020-04-13 23:00:55.051 -03:00 [INF] Route matched with {action = "Create", controller = "IdentityUser", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Identity.IdentityUserDto] CreateAsync(Volo.Abp.Identity.IdentityUserCreateDto) on controller Volo.Abp.Identity.IdentityUserAppService (Volo.Abp.Identity.Application).
+2020-04-13 23:00:55.275 -03:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Identity.IdentityUserDto'.
+2020-04-13 23:00:55.276 -03:00 [INF] Executed action Volo.Abp.Identity.IdentityUserAppService.CreateAsync (Volo.Abp.Identity.Application) in 223.8755ms
+2020-04-13 23:00:55.276 -03:00 [INF] Executed endpoint 'Volo.Abp.Identity.IdentityUserAppService.CreateAsync (Volo.Abp.Identity.Application)'
+2020-04-13 23:00:55.276 -03:00 [INF] Request finished in 245.7991ms 200 application/json; charset=utf-8

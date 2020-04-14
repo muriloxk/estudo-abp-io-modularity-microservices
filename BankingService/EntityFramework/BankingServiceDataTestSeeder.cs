@@ -4,6 +4,7 @@ using AbpMicroRabbit.Banking.Application.Contracts.Permissions;
 using Volo.Abp.Authorization.Permissions;
 using Volo.Abp.Data;
 using Volo.Abp.DependencyInjection;
+using Volo.Abp.Identity;
 using Volo.Abp.MultiTenancy;
 using Volo.Abp.PermissionManagement;
 using Volo.Abp.Uow;
@@ -17,8 +18,8 @@ namespace BankingService.EntityFramework
         private readonly IPermissionGrantRepository _permissionGrantRepository;
 
         public BankingServiceDataTestSeeder(IPermissionManager permissionManager,
-                                        IPermissionGrantRepository permissionGrantRepository,
-                                        ICurrentTenant currentTenant)
+                                            IPermissionGrantRepository permissionGrantRepository,
+                                            ICurrentTenant currentTenant)
         {
             _currentTenant = currentTenant;
             _permissionManager = permissionManager;
@@ -28,7 +29,7 @@ namespace BankingService.EntityFramework
         [UnitOfWork]
         public virtual async Task SeedAsync(DataSeedContext context)
         {
-            _currentTenant.Change(new Guid("497f79b8-1699-5764-2b8e-39f465435497"));
+            _currentTenant.Change(new Guid("de76993a-f5c5-dd94-9a26-39f48895efe5"));
 
             await seedPermissoesAdmin();
             await seedPermissoesAssistente();
@@ -52,6 +53,17 @@ namespace BankingService.EntityFramework
 
             if (!await VerificarSePermissionParaORoleJaEstaCadastrada(role, BankingPermissions.Accounts.Transfer))
                 await _permissionManager.SetForRoleAsync(role, BankingPermissions.Accounts.Transfer, true);
+
+
+            //await _permissionManager.SetForRoleAsync(role, IdentityPermissions.Roles.Default, true);
+            //await _permissionManager.SetForRoleAsync(role, IdentityPermissions.Roles.Create, true);
+            //await _permissionManager.SetForRoleAsync(role, IdentityPermissions.Roles.Update, true);
+            //await _permissionManager.SetForRoleAsync(role, IdentityPermissions.Roles.Delete, true);
+
+            //await _permissionManager.SetForRoleAsync(role, IdentityPermissions.Users.Default, true);
+            //await _permissionManager.SetForRoleAsync(role, IdentityPermissions.Users.Create, true);
+            //await _permissionManager.SetForRoleAsync(role, IdentityPermissions.Users.Update, true);
+            //await _permissionManager.SetForRoleAsync(role, IdentityPermissions.Users.Delete, true);
         }
 
         private async Task seedPermissoesAssistente()

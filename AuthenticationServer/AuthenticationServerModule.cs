@@ -13,7 +13,6 @@ using AuthenticationServer.EntityFramework;
 using Volo.Abp.PermissionManagement.EntityFrameworkCore;
 using Volo.Abp.Threading;
 using Volo.Abp.Data;
-using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.PermissionManagement.IdentityServer;
 using Volo.Abp.Identity.AspNetCore;
 using Volo.Abp.SettingManagement.EntityFrameworkCore;
@@ -22,11 +21,11 @@ using Volo.Abp.Account;
 using Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 using System;
+using Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared;
 
 namespace AuthenticationServer
 {
     [DependsOn(typeof(AbpAutofacModule),
-               typeof(AbpAspNetCoreMvcModule),
                typeof(AbpIdentityAspNetCoreModule),
                typeof(AbpPermissionManagementEntityFrameworkCoreModule),
                typeof(AbpSettingManagementEntityFrameworkCoreModule),
@@ -37,6 +36,7 @@ namespace AuthenticationServer
                typeof(AbpEntityFrameworkCoreMySQLModule),
                typeof(AbpAccountWebIdentityServerModule),
                typeof(AbpAspNetCoreMvcUiBasicThemeModule),
+               typeof(AbpAspNetCoreMvcUiThemeSharedModule),
                typeof(AbpPermissionManagementDomainIdentityServerModule),
                typeof(AbpMultiTenancyModule),
                typeof(AbpAspNetCoreMultiTenancyModule))]
@@ -75,6 +75,7 @@ namespace AuthenticationServer
             var app = context.GetApplicationBuilder();
 
             app.UseCors();
+            app.UseVirtualFiles();
             app.UseRouting();
             app.UseStaticFiles();
 
@@ -87,6 +88,14 @@ namespace AuthenticationServer
             //app.UseMultiTenancy();
 
             //app.UseAuthorization();
+
+            app.Use(async (context, next) =>
+            {
+                var headers = context.Request.Headers["__tenant"].ToString();
+
+                await next.Invoke();
+           
+            });
 
             app.UseEndpoints(endpoints =>
             {
