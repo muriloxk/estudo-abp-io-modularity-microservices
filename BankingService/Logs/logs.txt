@@ -8941,3 +8941,402 @@ FROM `IdentityServerDeviceFlowCodes` AS `i`
 WHERE `i`.`Expiration` < @__maxExpirationDate_0
 ORDER BY `i`.`ClientId`
 LIMIT @__p_1
+2020-04-15 10:00:52.499 -03:00 [INF] User profile is available. Using '/Users/murilosanches/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2020-04-15 10:00:52.622 -03:00 [INF] Loaded ABP modules:
+2020-04-15 10:00:52.623 -03:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-04-15 10:00:52.623 -03:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-04-15 10:00:52.623 -03:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-04-15 10:00:52.623 -03:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-04-15 10:00:52.623 -03:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-04-15 10:00:52.623 -03:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-04-15 10:00:52.624 -03:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-04-15 10:00:52.624 -03:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-04-15 10:00:52.624 -03:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-04-15 10:00:52.624 -03:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-04-15 10:00:52.624 -03:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-04-15 10:00:52.624 -03:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-04-15 10:00:52.625 -03:00 [INF] - Volo.Abp.Minify.AbpMinifyModule
+2020-04-15 10:00:52.625 -03:00 [INF] - Volo.Abp.Http.AbpHttpModule
+2020-04-15 10:00:52.625 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-04-15 10:00:52.625 -03:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-04-15 10:00:52.625 -03:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-04-15 10:00:52.625 -03:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-04-15 10:00:52.626 -03:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-04-15 10:00:52.626 -03:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-04-15 10:00:52.626 -03:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-04-15 10:00:52.626 -03:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-04-15 10:00:52.626 -03:00 [INF] - Volo.Abp.UI.AbpUiModule
+2020-04-15 10:00:52.626 -03:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-04-15 10:00:52.627 -03:00 [INF] - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2020-04-15 10:00:52.627 -03:00 [INF] - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2020-04-15 10:00:52.627 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-04-15 10:00:52.627 -03:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-04-15 10:00:52.627 -03:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-04-15 10:00:52.627 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2020-04-15 10:00:52.627 -03:00 [INF] - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2020-04-15 10:00:52.628 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-04-15 10:00:52.628 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-04-15 10:00:52.628 -03:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-04-15 10:00:52.628 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-04-15 10:00:52.628 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-04-15 10:00:52.629 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-04-15 10:00:52.629 -03:00 [INF] - AbpMicroRabbit.Banking.Application.Contracts.BankingApplicationContractsModule
+2020-04-15 10:00:52.629 -03:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-04-15 10:00:52.629 -03:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-04-15 10:00:52.629 -03:00 [INF] - AbpMicroRabbit.Shared.Domain.AbpMicroRabbitSharedDomainModule
+2020-04-15 10:00:52.629 -03:00 [INF] - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2020-04-15 10:00:52.629 -03:00 [INF] - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2020-04-15 10:00:52.629 -03:00 [INF] - AbpMicroRabbit.Shared.Infra.Bus.AbpMicroRabbitSharedInfraBusModule
+2020-04-15 10:00:52.629 -03:00 [INF] - AbpMicroRabbit.Banking.Domain.BankingDomainModule
+2020-04-15 10:00:52.629 -03:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-04-15 10:00:52.629 -03:00 [INF] - AbpMicroRabbit.Banking.Application.BankingApplicationModule
+2020-04-15 10:00:52.630 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-04-15 10:00:52.630 -03:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2020-04-15 10:00:52.630 -03:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-04-15 10:00:52.630 -03:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-04-15 10:00:52.630 -03:00 [INF] - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2020-04-15 10:00:52.630 -03:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2020-04-15 10:00:52.630 -03:00 [INF] - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2020-04-15 10:00:52.630 -03:00 [INF] - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2020-04-15 10:00:52.630 -03:00 [INF] - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2020-04-15 10:00:52.630 -03:00 [INF] - AbpMicroRabbit.Banking.EntityFrameworkCore.BankingEntityFrameworkModule
+2020-04-15 10:00:52.630 -03:00 [INF] - Volo.Abp.EntityFrameworkCore.MySQL.AbpEntityFrameworkCoreMySQLModule
+2020-04-15 10:00:52.631 -03:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-04-15 10:00:52.631 -03:00 [INF] - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2020-04-15 10:00:52.631 -03:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2020-04-15 10:00:52.631 -03:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2020-04-15 10:00:52.631 -03:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2020-04-15 10:00:52.631 -03:00 [INF] - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2020-04-15 10:00:52.631 -03:00 [INF] - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2020-04-15 10:00:52.631 -03:00 [INF] - BankingService.BankingServiceModule
+2020-04-15 10:00:53.198 -03:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2020-04-15 10:00:57.411 -03:00 [INF] Entity Framework Core 3.1.2 initialized 'IdentityDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2020-04-15 10:00:59.016 -03:00 [INF] Executed DbCommand (388ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__normalizedUserName_0='?' (Size = 256), @__ef_filter__p_3='?' (DbType = Boolean), @__ef_filter__p_5='?' (DbType = Boolean), @__ef_filter__p_7='?' (DbType = Boolean), @__ef_filter__p_9='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`AccessFailedCount`, `t`.`ConcurrencyStamp`, `t`.`CreationTime`, `t`.`CreatorId`, `t`.`DeleterId`, `t`.`DeletionTime`, `t`.`Email`, `t`.`EmailConfirmed`, `t`.`ExtraProperties`, `t`.`IsDeleted`, `t`.`LastModificationTime`, `t`.`LastModifierId`, `t`.`LockoutEnabled`, `t`.`LockoutEnd`, `t`.`Name`, `t`.`NormalizedEmail`, `t`.`NormalizedUserName`, `t`.`PasswordHash`, `t`.`PhoneNumber`, `t`.`PhoneNumberConfirmed`, `t`.`SecurityStamp`, `t`.`Surname`, `t`.`TenantId`, `t`.`TwoFactorEnabled`, `t`.`UserName`, `t0`.`UserId`, `t0`.`RoleId`, `t0`.`TenantId`, `t1`.`UserId`, `t1`.`LoginProvider`, `t1`.`ProviderDisplayName`, `t1`.`ProviderKey`, `t1`.`TenantId`, `t2`.`Id`, `t2`.`ClaimType`, `t2`.`ClaimValue`, `t2`.`TenantId`, `t2`.`UserId`, `t3`.`UserId`, `t3`.`LoginProvider`, `t3`.`Name`, `t3`.`TenantId`, `t3`.`Value`
+FROM (
+    SELECT `a`.`Id`, `a`.`AccessFailedCount`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorId`, `a`.`DeleterId`, `a`.`DeletionTime`, `a`.`Email`, `a`.`EmailConfirmed`, `a`.`ExtraProperties`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierId`, `a`.`LockoutEnabled`, `a`.`LockoutEnd`, `a`.`Name`, `a`.`NormalizedEmail`, `a`.`NormalizedUserName`, `a`.`PasswordHash`, `a`.`PhoneNumber`, `a`.`PhoneNumberConfirmed`, `a`.`SecurityStamp`, `a`.`Surname`, `a`.`TenantId`, `a`.`TwoFactorEnabled`, `a`.`UserName`
+    FROM `AbpUsers` AS `a`
+    WHERE ((@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (@__ef_filter__p_1 OR `a`.`TenantId` IS NULL)) AND (`a`.`NormalizedUserName` = @__normalizedUserName_0)
+    LIMIT 1
+) AS `t`
+LEFT JOIN (
+    SELECT `a0`.`UserId`, `a0`.`RoleId`, `a0`.`TenantId`
+    FROM `AbpUserRoles` AS `a0`
+    WHERE @__ef_filter__p_3 OR `a0`.`TenantId` IS NULL
+) AS `t0` ON `t`.`Id` = `t0`.`UserId`
+LEFT JOIN (
+    SELECT `a1`.`UserId`, `a1`.`LoginProvider`, `a1`.`ProviderDisplayName`, `a1`.`ProviderKey`, `a1`.`TenantId`
+    FROM `AbpUserLogins` AS `a1`
+    WHERE @__ef_filter__p_5 OR `a1`.`TenantId` IS NULL
+) AS `t1` ON `t`.`Id` = `t1`.`UserId`
+LEFT JOIN (
+    SELECT `a2`.`Id`, `a2`.`ClaimType`, `a2`.`ClaimValue`, `a2`.`TenantId`, `a2`.`UserId`
+    FROM `AbpUserClaims` AS `a2`
+    WHERE @__ef_filter__p_7 OR `a2`.`TenantId` IS NULL
+) AS `t2` ON `t`.`Id` = `t2`.`UserId`
+LEFT JOIN (
+    SELECT `a3`.`UserId`, `a3`.`LoginProvider`, `a3`.`Name`, `a3`.`TenantId`, `a3`.`Value`
+    FROM `AbpUserTokens` AS `a3`
+    WHERE @__ef_filter__p_9 OR `a3`.`TenantId` IS NULL
+) AS `t3` ON `t`.`Id` = `t3`.`UserId`
+ORDER BY `t`.`Id`, `t0`.`UserId`, `t0`.`RoleId`, `t1`.`UserId`, `t1`.`LoginProvider`, `t2`.`Id`, `t3`.`UserId`, `t3`.`LoginProvider`, `t3`.`Name`
+2020-04-15 10:00:59.186 -03:00 [INF] Entity Framework Core 3.1.2 initialized 'PermissionManagementDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2020-04-15 10:00:59.197 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__name_0='?' (Size = 128), @__providerName_1='?' (Size = 64), @__providerKey_2='?' (Size = 64)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Name`, `a`.`ProviderKey`, `a`.`ProviderName`, `a`.`TenantId`
+FROM `AbpPermissionGrants` AS `a`
+WHERE (@__ef_filter__p_0 OR `a`.`TenantId` IS NULL) AND (((`a`.`Name` = @__name_0) AND (`a`.`ProviderName` = @__providerName_1)) AND (`a`.`ProviderKey` = @__providerKey_2))
+LIMIT 1
+2020-04-15 10:00:59.206 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__name_0='?' (Size = 128), @__providerName_1='?' (Size = 64), @__providerKey_2='?' (Size = 64)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Name`, `a`.`ProviderKey`, `a`.`ProviderName`, `a`.`TenantId`
+FROM `AbpPermissionGrants` AS `a`
+WHERE (@__ef_filter__p_0 OR `a`.`TenantId` IS NULL) AND (((`a`.`Name` = @__name_0) AND (`a`.`ProviderName` = @__providerName_1)) AND (`a`.`ProviderKey` = @__providerKey_2))
+LIMIT 1
+2020-04-15 10:00:59.207 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__name_0='?' (Size = 128), @__providerName_1='?' (Size = 64), @__providerKey_2='?' (Size = 64)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Name`, `a`.`ProviderKey`, `a`.`ProviderName`, `a`.`TenantId`
+FROM `AbpPermissionGrants` AS `a`
+WHERE (@__ef_filter__p_0 OR `a`.`TenantId` IS NULL) AND (((`a`.`Name` = @__name_0) AND (`a`.`ProviderName` = @__providerName_1)) AND (`a`.`ProviderKey` = @__providerKey_2))
+LIMIT 1
+2020-04-15 10:00:59.209 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__name_0='?' (Size = 128), @__providerName_1='?' (Size = 64), @__providerKey_2='?' (Size = 64)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Name`, `a`.`ProviderKey`, `a`.`ProviderName`, `a`.`TenantId`
+FROM `AbpPermissionGrants` AS `a`
+WHERE (@__ef_filter__p_0 OR `a`.`TenantId` IS NULL) AND (((`a`.`Name` = @__name_0) AND (`a`.`ProviderName` = @__providerName_1)) AND (`a`.`ProviderKey` = @__providerKey_2))
+LIMIT 1
+2020-04-15 10:00:59.210 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__name_0='?' (Size = 128), @__providerName_1='?' (Size = 64), @__providerKey_2='?' (Size = 64)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Name`, `a`.`ProviderKey`, `a`.`ProviderName`, `a`.`TenantId`
+FROM `AbpPermissionGrants` AS `a`
+WHERE (@__ef_filter__p_0 OR `a`.`TenantId` IS NULL) AND (((`a`.`Name` = @__name_0) AND (`a`.`ProviderName` = @__providerName_1)) AND (`a`.`ProviderKey` = @__providerKey_2))
+LIMIT 1
+2020-04-15 10:00:59.211 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__name_0='?' (Size = 128), @__providerName_1='?' (Size = 64), @__providerKey_2='?' (Size = 64)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Name`, `a`.`ProviderKey`, `a`.`ProviderName`, `a`.`TenantId`
+FROM `AbpPermissionGrants` AS `a`
+WHERE (@__ef_filter__p_0 OR `a`.`TenantId` IS NULL) AND (((`a`.`Name` = @__name_0) AND (`a`.`ProviderName` = @__providerName_1)) AND (`a`.`ProviderKey` = @__providerKey_2))
+LIMIT 1
+2020-04-15 10:00:59.212 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__name_0='?' (Size = 128), @__providerName_1='?' (Size = 64), @__providerKey_2='?' (Size = 64)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Name`, `a`.`ProviderKey`, `a`.`ProviderName`, `a`.`TenantId`
+FROM `AbpPermissionGrants` AS `a`
+WHERE (@__ef_filter__p_0 OR `a`.`TenantId` IS NULL) AND (((`a`.`Name` = @__name_0) AND (`a`.`ProviderName` = @__providerName_1)) AND (`a`.`ProviderKey` = @__providerKey_2))
+LIMIT 1
+2020-04-15 10:00:59.213 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__name_0='?' (Size = 128), @__providerName_1='?' (Size = 64), @__providerKey_2='?' (Size = 64)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Name`, `a`.`ProviderKey`, `a`.`ProviderName`, `a`.`TenantId`
+FROM `AbpPermissionGrants` AS `a`
+WHERE (@__ef_filter__p_0 OR `a`.`TenantId` IS NULL) AND (((`a`.`Name` = @__name_0) AND (`a`.`ProviderName` = @__providerName_1)) AND (`a`.`ProviderKey` = @__providerKey_2))
+LIMIT 1
+2020-04-15 10:00:59.214 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__name_0='?' (Size = 128), @__providerName_1='?' (Size = 64), @__providerKey_2='?' (Size = 64)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Name`, `a`.`ProviderKey`, `a`.`ProviderName`, `a`.`TenantId`
+FROM `AbpPermissionGrants` AS `a`
+WHERE (@__ef_filter__p_0 OR `a`.`TenantId` IS NULL) AND (((`a`.`Name` = @__name_0) AND (`a`.`ProviderName` = @__providerName_1)) AND (`a`.`ProviderKey` = @__providerKey_2))
+LIMIT 1
+2020-04-15 10:00:59.215 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__name_0='?' (Size = 128), @__providerName_1='?' (Size = 64), @__providerKey_2='?' (Size = 64)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Name`, `a`.`ProviderKey`, `a`.`ProviderName`, `a`.`TenantId`
+FROM `AbpPermissionGrants` AS `a`
+WHERE (@__ef_filter__p_0 OR `a`.`TenantId` IS NULL) AND (((`a`.`Name` = @__name_0) AND (`a`.`ProviderName` = @__providerName_1)) AND (`a`.`ProviderKey` = @__providerKey_2))
+LIMIT 1
+2020-04-15 10:00:59.216 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__name_0='?' (Size = 128), @__providerName_1='?' (Size = 64), @__providerKey_2='?' (Size = 64)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Name`, `a`.`ProviderKey`, `a`.`ProviderName`, `a`.`TenantId`
+FROM `AbpPermissionGrants` AS `a`
+WHERE (@__ef_filter__p_0 OR `a`.`TenantId` IS NULL) AND (((`a`.`Name` = @__name_0) AND (`a`.`ProviderName` = @__providerName_1)) AND (`a`.`ProviderKey` = @__providerKey_2))
+LIMIT 1
+2020-04-15 10:00:59.297 -03:00 [INF] Entity Framework Core 3.1.2 initialized 'TenantManagementDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2020-04-15 10:00:59.363 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`ConcurrencyStamp`, `t`.`CreationTime`, `t`.`CreatorId`, `t`.`DeleterId`, `t`.`DeletionTime`, `t`.`ExtraProperties`, `t`.`IsDeleted`, `t`.`LastModificationTime`, `t`.`LastModifierId`, `t`.`Name`, `a0`.`TenantId`, `a0`.`Name`, `a0`.`Value`
+FROM (
+    SELECT `a`.`Id`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorId`, `a`.`DeleterId`, `a`.`DeletionTime`, `a`.`ExtraProperties`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierId`, `a`.`Name`
+    FROM `AbpTenants` AS `a`
+    WHERE (@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (`a`.`Id` = @__id_0)
+    LIMIT 1
+) AS `t`
+LEFT JOIN `AbpTenantConnectionStrings` AS `a0` ON `t`.`Id` = `a0`.`TenantId`
+ORDER BY `t`.`Id`, `a0`.`TenantId`, `a0`.`Name`
+2020-04-15 10:00:59.388 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Guid), @__name_0='?' (Size = 128), @__providerName_1='?' (Size = 64), @__providerKey_2='?' (Size = 64)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Name`, `a`.`ProviderKey`, `a`.`ProviderName`, `a`.`TenantId`
+FROM `AbpPermissionGrants` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_1)) AND (((`a`.`Name` = @__name_0) AND (`a`.`ProviderName` = @__providerName_1)) AND (`a`.`ProviderKey` = @__providerKey_2))
+LIMIT 1
+2020-04-15 10:00:59.391 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`ConcurrencyStamp`, `t`.`CreationTime`, `t`.`CreatorId`, `t`.`DeleterId`, `t`.`DeletionTime`, `t`.`ExtraProperties`, `t`.`IsDeleted`, `t`.`LastModificationTime`, `t`.`LastModifierId`, `t`.`Name`, `a0`.`TenantId`, `a0`.`Name`, `a0`.`Value`
+FROM (
+    SELECT `a`.`Id`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorId`, `a`.`DeleterId`, `a`.`DeletionTime`, `a`.`ExtraProperties`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierId`, `a`.`Name`
+    FROM `AbpTenants` AS `a`
+    WHERE (@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (`a`.`Id` = @__id_0)
+    LIMIT 1
+) AS `t`
+LEFT JOIN `AbpTenantConnectionStrings` AS `a0` ON `t`.`Id` = `a0`.`TenantId`
+ORDER BY `t`.`Id`, `a0`.`TenantId`, `a0`.`Name`
+2020-04-15 10:00:59.393 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Guid), @__name_0='?' (Size = 128), @__providerName_1='?' (Size = 64), @__providerKey_2='?' (Size = 64)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Name`, `a`.`ProviderKey`, `a`.`ProviderName`, `a`.`TenantId`
+FROM `AbpPermissionGrants` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_1)) AND (((`a`.`Name` = @__name_0) AND (`a`.`ProviderName` = @__providerName_1)) AND (`a`.`ProviderKey` = @__providerKey_2))
+LIMIT 1
+2020-04-15 10:00:59.395 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`ConcurrencyStamp`, `t`.`CreationTime`, `t`.`CreatorId`, `t`.`DeleterId`, `t`.`DeletionTime`, `t`.`ExtraProperties`, `t`.`IsDeleted`, `t`.`LastModificationTime`, `t`.`LastModifierId`, `t`.`Name`, `a0`.`TenantId`, `a0`.`Name`, `a0`.`Value`
+FROM (
+    SELECT `a`.`Id`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorId`, `a`.`DeleterId`, `a`.`DeletionTime`, `a`.`ExtraProperties`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierId`, `a`.`Name`
+    FROM `AbpTenants` AS `a`
+    WHERE (@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (`a`.`Id` = @__id_0)
+    LIMIT 1
+) AS `t`
+LEFT JOIN `AbpTenantConnectionStrings` AS `a0` ON `t`.`Id` = `a0`.`TenantId`
+ORDER BY `t`.`Id`, `a0`.`TenantId`, `a0`.`Name`
+2020-04-15 10:00:59.396 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Guid), @__name_0='?' (Size = 128), @__providerName_1='?' (Size = 64), @__providerKey_2='?' (Size = 64)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Name`, `a`.`ProviderKey`, `a`.`ProviderName`, `a`.`TenantId`
+FROM `AbpPermissionGrants` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_1)) AND (((`a`.`Name` = @__name_0) AND (`a`.`ProviderName` = @__providerName_1)) AND (`a`.`ProviderKey` = @__providerKey_2))
+LIMIT 1
+2020-04-15 10:00:59.398 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`ConcurrencyStamp`, `t`.`CreationTime`, `t`.`CreatorId`, `t`.`DeleterId`, `t`.`DeletionTime`, `t`.`ExtraProperties`, `t`.`IsDeleted`, `t`.`LastModificationTime`, `t`.`LastModifierId`, `t`.`Name`, `a0`.`TenantId`, `a0`.`Name`, `a0`.`Value`
+FROM (
+    SELECT `a`.`Id`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorId`, `a`.`DeleterId`, `a`.`DeletionTime`, `a`.`ExtraProperties`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierId`, `a`.`Name`
+    FROM `AbpTenants` AS `a`
+    WHERE (@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (`a`.`Id` = @__id_0)
+    LIMIT 1
+) AS `t`
+LEFT JOIN `AbpTenantConnectionStrings` AS `a0` ON `t`.`Id` = `a0`.`TenantId`
+ORDER BY `t`.`Id`, `a0`.`TenantId`, `a0`.`Name`
+2020-04-15 10:00:59.400 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Guid), @__name_0='?' (Size = 128), @__providerName_1='?' (Size = 64), @__providerKey_2='?' (Size = 64)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Name`, `a`.`ProviderKey`, `a`.`ProviderName`, `a`.`TenantId`
+FROM `AbpPermissionGrants` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_1)) AND (((`a`.`Name` = @__name_0) AND (`a`.`ProviderName` = @__providerName_1)) AND (`a`.`ProviderKey` = @__providerKey_2))
+LIMIT 1
+2020-04-15 10:00:59.403 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`ConcurrencyStamp`, `t`.`CreationTime`, `t`.`CreatorId`, `t`.`DeleterId`, `t`.`DeletionTime`, `t`.`ExtraProperties`, `t`.`IsDeleted`, `t`.`LastModificationTime`, `t`.`LastModifierId`, `t`.`Name`, `a0`.`TenantId`, `a0`.`Name`, `a0`.`Value`
+FROM (
+    SELECT `a`.`Id`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorId`, `a`.`DeleterId`, `a`.`DeletionTime`, `a`.`ExtraProperties`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierId`, `a`.`Name`
+    FROM `AbpTenants` AS `a`
+    WHERE (@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (`a`.`Id` = @__id_0)
+    LIMIT 1
+) AS `t`
+LEFT JOIN `AbpTenantConnectionStrings` AS `a0` ON `t`.`Id` = `a0`.`TenantId`
+ORDER BY `t`.`Id`, `a0`.`TenantId`, `a0`.`Name`
+2020-04-15 10:00:59.405 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Guid), @__name_0='?' (Size = 128), @__providerName_1='?' (Size = 64), @__providerKey_2='?' (Size = 64)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Name`, `a`.`ProviderKey`, `a`.`ProviderName`, `a`.`TenantId`
+FROM `AbpPermissionGrants` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_1)) AND (((`a`.`Name` = @__name_0) AND (`a`.`ProviderName` = @__providerName_1)) AND (`a`.`ProviderKey` = @__providerKey_2))
+LIMIT 1
+2020-04-15 10:00:59.409 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`ConcurrencyStamp`, `t`.`CreationTime`, `t`.`CreatorId`, `t`.`DeleterId`, `t`.`DeletionTime`, `t`.`ExtraProperties`, `t`.`IsDeleted`, `t`.`LastModificationTime`, `t`.`LastModifierId`, `t`.`Name`, `a0`.`TenantId`, `a0`.`Name`, `a0`.`Value`
+FROM (
+    SELECT `a`.`Id`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorId`, `a`.`DeleterId`, `a`.`DeletionTime`, `a`.`ExtraProperties`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierId`, `a`.`Name`
+    FROM `AbpTenants` AS `a`
+    WHERE (@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (`a`.`Id` = @__id_0)
+    LIMIT 1
+) AS `t`
+LEFT JOIN `AbpTenantConnectionStrings` AS `a0` ON `t`.`Id` = `a0`.`TenantId`
+ORDER BY `t`.`Id`, `a0`.`TenantId`, `a0`.`Name`
+2020-04-15 10:00:59.411 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Guid), @__name_0='?' (Size = 128), @__providerName_1='?' (Size = 64), @__providerKey_2='?' (Size = 64)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Name`, `a`.`ProviderKey`, `a`.`ProviderName`, `a`.`TenantId`
+FROM `AbpPermissionGrants` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_1)) AND (((`a`.`Name` = @__name_0) AND (`a`.`ProviderName` = @__providerName_1)) AND (`a`.`ProviderKey` = @__providerKey_2))
+LIMIT 1
+2020-04-15 10:00:59.413 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`ConcurrencyStamp`, `t`.`CreationTime`, `t`.`CreatorId`, `t`.`DeleterId`, `t`.`DeletionTime`, `t`.`ExtraProperties`, `t`.`IsDeleted`, `t`.`LastModificationTime`, `t`.`LastModifierId`, `t`.`Name`, `a0`.`TenantId`, `a0`.`Name`, `a0`.`Value`
+FROM (
+    SELECT `a`.`Id`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorId`, `a`.`DeleterId`, `a`.`DeletionTime`, `a`.`ExtraProperties`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierId`, `a`.`Name`
+    FROM `AbpTenants` AS `a`
+    WHERE (@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (`a`.`Id` = @__id_0)
+    LIMIT 1
+) AS `t`
+LEFT JOIN `AbpTenantConnectionStrings` AS `a0` ON `t`.`Id` = `a0`.`TenantId`
+ORDER BY `t`.`Id`, `a0`.`TenantId`, `a0`.`Name`
+2020-04-15 10:00:59.414 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Guid), @__name_0='?' (Size = 128), @__providerName_1='?' (Size = 64), @__providerKey_2='?' (Size = 64)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Name`, `a`.`ProviderKey`, `a`.`ProviderName`, `a`.`TenantId`
+FROM `AbpPermissionGrants` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_1)) AND (((`a`.`Name` = @__name_0) AND (`a`.`ProviderName` = @__providerName_1)) AND (`a`.`ProviderKey` = @__providerKey_2))
+LIMIT 1
+2020-04-15 10:00:59.426 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`ConcurrencyStamp`, `t`.`CreationTime`, `t`.`CreatorId`, `t`.`DeleterId`, `t`.`DeletionTime`, `t`.`ExtraProperties`, `t`.`IsDeleted`, `t`.`LastModificationTime`, `t`.`LastModifierId`, `t`.`Name`, `a0`.`TenantId`, `a0`.`Name`, `a0`.`Value`
+FROM (
+    SELECT `a`.`Id`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorId`, `a`.`DeleterId`, `a`.`DeletionTime`, `a`.`ExtraProperties`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierId`, `a`.`Name`
+    FROM `AbpTenants` AS `a`
+    WHERE (@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (`a`.`Id` = @__id_0)
+    LIMIT 1
+) AS `t`
+LEFT JOIN `AbpTenantConnectionStrings` AS `a0` ON `t`.`Id` = `a0`.`TenantId`
+ORDER BY `t`.`Id`, `a0`.`TenantId`, `a0`.`Name`
+2020-04-15 10:00:59.427 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Guid), @__name_0='?' (Size = 128), @__providerName_1='?' (Size = 64), @__providerKey_2='?' (Size = 64)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Name`, `a`.`ProviderKey`, `a`.`ProviderName`, `a`.`TenantId`
+FROM `AbpPermissionGrants` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_1)) AND (((`a`.`Name` = @__name_0) AND (`a`.`ProviderName` = @__providerName_1)) AND (`a`.`ProviderKey` = @__providerKey_2))
+LIMIT 1
+2020-04-15 10:00:59.430 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`ConcurrencyStamp`, `t`.`CreationTime`, `t`.`CreatorId`, `t`.`DeleterId`, `t`.`DeletionTime`, `t`.`ExtraProperties`, `t`.`IsDeleted`, `t`.`LastModificationTime`, `t`.`LastModifierId`, `t`.`Name`, `a0`.`TenantId`, `a0`.`Name`, `a0`.`Value`
+FROM (
+    SELECT `a`.`Id`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorId`, `a`.`DeleterId`, `a`.`DeletionTime`, `a`.`ExtraProperties`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierId`, `a`.`Name`
+    FROM `AbpTenants` AS `a`
+    WHERE (@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (`a`.`Id` = @__id_0)
+    LIMIT 1
+) AS `t`
+LEFT JOIN `AbpTenantConnectionStrings` AS `a0` ON `t`.`Id` = `a0`.`TenantId`
+ORDER BY `t`.`Id`, `a0`.`TenantId`, `a0`.`Name`
+2020-04-15 10:00:59.432 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Guid), @__name_0='?' (Size = 128), @__providerName_1='?' (Size = 64), @__providerKey_2='?' (Size = 64)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Name`, `a`.`ProviderKey`, `a`.`ProviderName`, `a`.`TenantId`
+FROM `AbpPermissionGrants` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_1)) AND (((`a`.`Name` = @__name_0) AND (`a`.`ProviderName` = @__providerName_1)) AND (`a`.`ProviderKey` = @__providerKey_2))
+LIMIT 1
+2020-04-15 10:00:59.434 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`ConcurrencyStamp`, `t`.`CreationTime`, `t`.`CreatorId`, `t`.`DeleterId`, `t`.`DeletionTime`, `t`.`ExtraProperties`, `t`.`IsDeleted`, `t`.`LastModificationTime`, `t`.`LastModifierId`, `t`.`Name`, `a0`.`TenantId`, `a0`.`Name`, `a0`.`Value`
+FROM (
+    SELECT `a`.`Id`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorId`, `a`.`DeleterId`, `a`.`DeletionTime`, `a`.`ExtraProperties`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierId`, `a`.`Name`
+    FROM `AbpTenants` AS `a`
+    WHERE (@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (`a`.`Id` = @__id_0)
+    LIMIT 1
+) AS `t`
+LEFT JOIN `AbpTenantConnectionStrings` AS `a0` ON `t`.`Id` = `a0`.`TenantId`
+ORDER BY `t`.`Id`, `a0`.`TenantId`, `a0`.`Name`
+2020-04-15 10:00:59.435 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Guid), @__name_0='?' (Size = 128), @__providerName_1='?' (Size = 64), @__providerKey_2='?' (Size = 64)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Name`, `a`.`ProviderKey`, `a`.`ProviderName`, `a`.`TenantId`
+FROM `AbpPermissionGrants` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_1)) AND (((`a`.`Name` = @__name_0) AND (`a`.`ProviderName` = @__providerName_1)) AND (`a`.`ProviderKey` = @__providerKey_2))
+LIMIT 1
+2020-04-15 10:00:59.437 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`ConcurrencyStamp`, `t`.`CreationTime`, `t`.`CreatorId`, `t`.`DeleterId`, `t`.`DeletionTime`, `t`.`ExtraProperties`, `t`.`IsDeleted`, `t`.`LastModificationTime`, `t`.`LastModifierId`, `t`.`Name`, `a0`.`TenantId`, `a0`.`Name`, `a0`.`Value`
+FROM (
+    SELECT `a`.`Id`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorId`, `a`.`DeleterId`, `a`.`DeletionTime`, `a`.`ExtraProperties`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierId`, `a`.`Name`
+    FROM `AbpTenants` AS `a`
+    WHERE (@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (`a`.`Id` = @__id_0)
+    LIMIT 1
+) AS `t`
+LEFT JOIN `AbpTenantConnectionStrings` AS `a0` ON `t`.`Id` = `a0`.`TenantId`
+ORDER BY `t`.`Id`, `a0`.`TenantId`, `a0`.`Name`
+2020-04-15 10:00:59.438 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Guid), @__name_0='?' (Size = 128), @__providerName_1='?' (Size = 64), @__providerKey_2='?' (Size = 64)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Name`, `a`.`ProviderKey`, `a`.`ProviderName`, `a`.`TenantId`
+FROM `AbpPermissionGrants` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_1)) AND (((`a`.`Name` = @__name_0) AND (`a`.`ProviderName` = @__providerName_1)) AND (`a`.`ProviderKey` = @__providerKey_2))
+LIMIT 1
+2020-04-15 10:00:59.440 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`ConcurrencyStamp`, `t`.`CreationTime`, `t`.`CreatorId`, `t`.`DeleterId`, `t`.`DeletionTime`, `t`.`ExtraProperties`, `t`.`IsDeleted`, `t`.`LastModificationTime`, `t`.`LastModifierId`, `t`.`Name`, `a0`.`TenantId`, `a0`.`Name`, `a0`.`Value`
+FROM (
+    SELECT `a`.`Id`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorId`, `a`.`DeleterId`, `a`.`DeletionTime`, `a`.`ExtraProperties`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierId`, `a`.`Name`
+    FROM `AbpTenants` AS `a`
+    WHERE (@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (`a`.`Id` = @__id_0)
+    LIMIT 1
+) AS `t`
+LEFT JOIN `AbpTenantConnectionStrings` AS `a0` ON `t`.`Id` = `a0`.`TenantId`
+ORDER BY `t`.`Id`, `a0`.`TenantId`, `a0`.`Name`
+2020-04-15 10:00:59.441 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Guid), @__name_0='?' (Size = 128), @__providerName_1='?' (Size = 64), @__providerKey_2='?' (Size = 64)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Name`, `a`.`ProviderKey`, `a`.`ProviderName`, `a`.`TenantId`
+FROM `AbpPermissionGrants` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_1)) AND (((`a`.`Name` = @__name_0) AND (`a`.`ProviderName` = @__providerName_1)) AND (`a`.`ProviderKey` = @__providerKey_2))
+LIMIT 1
+2020-04-15 10:00:59.443 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`ConcurrencyStamp`, `t`.`CreationTime`, `t`.`CreatorId`, `t`.`DeleterId`, `t`.`DeletionTime`, `t`.`ExtraProperties`, `t`.`IsDeleted`, `t`.`LastModificationTime`, `t`.`LastModifierId`, `t`.`Name`, `a0`.`TenantId`, `a0`.`Name`, `a0`.`Value`
+FROM (
+    SELECT `a`.`Id`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorId`, `a`.`DeleterId`, `a`.`DeletionTime`, `a`.`ExtraProperties`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierId`, `a`.`Name`
+    FROM `AbpTenants` AS `a`
+    WHERE (@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (`a`.`Id` = @__id_0)
+    LIMIT 1
+) AS `t`
+LEFT JOIN `AbpTenantConnectionStrings` AS `a0` ON `t`.`Id` = `a0`.`TenantId`
+ORDER BY `t`.`Id`, `a0`.`TenantId`, `a0`.`Name`
+2020-04-15 10:00:59.445 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Guid), @__name_0='?' (Size = 128), @__providerName_1='?' (Size = 64), @__providerKey_2='?' (Size = 64)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Name`, `a`.`ProviderKey`, `a`.`ProviderName`, `a`.`TenantId`
+FROM `AbpPermissionGrants` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_1)) AND (((`a`.`Name` = @__name_0) AND (`a`.`ProviderName` = @__providerName_1)) AND (`a`.`ProviderKey` = @__providerKey_2))
+LIMIT 1
+2020-04-15 10:00:59.446 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`ConcurrencyStamp`, `t`.`CreationTime`, `t`.`CreatorId`, `t`.`DeleterId`, `t`.`DeletionTime`, `t`.`ExtraProperties`, `t`.`IsDeleted`, `t`.`LastModificationTime`, `t`.`LastModifierId`, `t`.`Name`, `a0`.`TenantId`, `a0`.`Name`, `a0`.`Value`
+FROM (
+    SELECT `a`.`Id`, `a`.`ConcurrencyStamp`, `a`.`CreationTime`, `a`.`CreatorId`, `a`.`DeleterId`, `a`.`DeletionTime`, `a`.`ExtraProperties`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`LastModifierId`, `a`.`Name`
+    FROM `AbpTenants` AS `a`
+    WHERE (@__ef_filter__p_0 OR NOT (`a`.`IsDeleted`)) AND (`a`.`Id` = @__id_0)
+    LIMIT 1
+) AS `t`
+LEFT JOIN `AbpTenantConnectionStrings` AS `a0` ON `t`.`Id` = `a0`.`TenantId`
+ORDER BY `t`.`Id`, `a0`.`TenantId`, `a0`.`Name`
+2020-04-15 10:00:59.448 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Guid), @__name_0='?' (Size = 128), @__providerName_1='?' (Size = 64), @__providerKey_2='?' (Size = 64)], CommandType='"Text"', CommandTimeout='30']
+SELECT `a`.`Id`, `a`.`Name`, `a`.`ProviderKey`, `a`.`ProviderName`, `a`.`TenantId`
+FROM `AbpPermissionGrants` AS `a`
+WHERE (@__ef_filter__p_0 OR (`a`.`TenantId` = @__ef_filter__CurrentTenantId_1)) AND (((`a`.`Name` = @__name_0) AND (`a`.`ProviderName` = @__providerName_1)) AND (`a`.`ProviderKey` = @__providerKey_2))
+LIMIT 1
+2020-04-15 10:00:59.533 -03:00 [INF] Initialized all ABP modules.
+2020-04-15 10:00:59.557 -03:00 [INF] Now listening on: http://localhost:64056
+2020-04-15 10:00:59.557 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-04-15 10:00:59.557 -03:00 [INF] Hosting environment: Development
+2020-04-15 10:00:59.558 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/BankingService
+2020-04-15 11:00:53.333 -03:00 [INF] Entity Framework Core 3.1.2 initialized 'IdentityServerDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2020-04-15 11:00:53.525 -03:00 [INF] Executed DbCommand (95ms) [Parameters=[@__maxExpirationDate_0='?' (DbType = DateTime), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `i`.`Key`, `i`.`ClientId`, `i`.`ConcurrencyStamp`, `i`.`CreationTime`, `i`.`Data`, `i`.`Expiration`, `i`.`ExtraProperties`, `i`.`Id`, `i`.`SubjectId`, `i`.`Type`
+FROM `IdentityServerPersistedGrants` AS `i`
+WHERE `i`.`Expiration` IS NOT NULL AND (`i`.`Expiration` < @__maxExpirationDate_0)
+ORDER BY `i`.`ClientId`
+LIMIT @__p_1
+2020-04-15 11:00:53.534 -03:00 [INF] Entity Framework Core 3.1.2 initialized 'IdentityServerDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2020-04-15 11:00:53.550 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__maxExpirationDate_0='?' (DbType = DateTime), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`ClientId`, `i`.`ConcurrencyStamp`, `i`.`CreationTime`, `i`.`CreatorId`, `i`.`Data`, `i`.`DeviceCode`, `i`.`Expiration`, `i`.`ExtraProperties`, `i`.`SubjectId`, `i`.`UserCode`
+FROM `IdentityServerDeviceFlowCodes` AS `i`
+WHERE `i`.`Expiration` < @__maxExpirationDate_0
+ORDER BY `i`.`ClientId`
+LIMIT @__p_1
+2020-04-15 12:00:53.566 -03:00 [INF] Entity Framework Core 3.1.2 initialized 'IdentityServerDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2020-04-15 12:00:53.627 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__maxExpirationDate_0='?' (DbType = DateTime), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `i`.`Key`, `i`.`ClientId`, `i`.`ConcurrencyStamp`, `i`.`CreationTime`, `i`.`Data`, `i`.`Expiration`, `i`.`ExtraProperties`, `i`.`Id`, `i`.`SubjectId`, `i`.`Type`
+FROM `IdentityServerPersistedGrants` AS `i`
+WHERE `i`.`Expiration` IS NOT NULL AND (`i`.`Expiration` < @__maxExpirationDate_0)
+ORDER BY `i`.`ClientId`
+LIMIT @__p_1
+2020-04-15 12:00:53.630 -03:00 [INF] Entity Framework Core 3.1.2 initialized 'IdentityServerDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2020-04-15 12:00:53.633 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__maxExpirationDate_0='?' (DbType = DateTime), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`ClientId`, `i`.`ConcurrencyStamp`, `i`.`CreationTime`, `i`.`CreatorId`, `i`.`Data`, `i`.`DeviceCode`, `i`.`Expiration`, `i`.`ExtraProperties`, `i`.`SubjectId`, `i`.`UserCode`
+FROM `IdentityServerDeviceFlowCodes` AS `i`
+WHERE `i`.`Expiration` < @__maxExpirationDate_0
+ORDER BY `i`.`ClientId`
+LIMIT @__p_1

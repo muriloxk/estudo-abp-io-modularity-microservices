@@ -46,14 +46,6 @@ namespace AuthenticationServer
                typeof(AbpTenantManagementApplicationContractsModule))]
     public class AuthenticationServerModule : AbpModule
     {
-
-        //private readonly ICurrentTenant _currentTenant;
-
-        //public AuthenticationServerModule(ICurrentTenant currentTenant)
-        //{
-        //    _currentTenant = currentTenant;
-        //}
-
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
             context.Services.AddCors(options => options.AddDefaultPolicy(builder =>
@@ -125,10 +117,8 @@ namespace AuthenticationServer
             app.UseIdentityServer();
 
 
-
             //app.UseMvc();
             app.UseMvcWithDefaultRouteAndArea();
-
 
             //app.UseAuthorization();
 
@@ -137,8 +127,6 @@ namespace AuthenticationServer
             {
                 endpoints.MapDefaultControllerRoute();
             });
-
-           //var teste2 = _currentTenant.Id;
 
             AsyncHelper.RunSync(async () =>
             {

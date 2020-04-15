@@ -9,6 +9,9 @@ using AbpMicroRabbit.Banking.Domain.Entities;
 using AbpMicroRabbit.Shared.Domain;
 using Microsoft.AspNetCore.Authorization;
 using AbpMicroRabbit.Banking.Application.Contracts.Permissions;
+using Volo.Abp.Caching;
+using Microsoft.Extensions.Caching.Distributed;
+using System;
 
 namespace AbpMicroRabbit.Banking.Application.Services
 {
@@ -18,15 +21,25 @@ namespace AbpMicroRabbit.Banking.Application.Services
         private readonly IAccountRepository _accountRepository;
         private readonly ITransferLogApplicationService _bus;
 
-        public AccountAppService(IAccountRepository accountRepository, ITransferLogApplicationService bus)
+        private readonly IDistributedCache<IEnumerable<Account>> _cache;
+
+        public AccountAppService(IAccountRepository accountRepository,
+                                 ITransferLogApplicationService bus,
+                                 IDistributedCache<IEnumerable<Account>> cache)
         {
             _accountRepository = accountRepository;
             _bus = bus;
+            _cache = cache;
         }
 
         public IEnumerable<Account> GetList()
         {
-            return _accountRepository.GetAccounts();
+            return  _cache.GetOrAdd(CurrentTenant.Id.ToString() + "AllAccounts",
+                                         () => _accountRepository.GetAccounts(),
+                                         () => new DistributedCacheEntryOptions
+                                            {
+                                             AbsoluteExpiration = DateTimeOffset.Now.AddHours(1)
+                                         });
         }
 
         [Authorize(BankingPermissions.Accounts.Transfer)]

@@ -22,8 +22,8 @@ using Volo.Abp.PermissionManagement.EntityFrameworkCore;
 using Volo.Abp.Threading;
 using Volo.Abp.Data;
 using Volo.Abp.Authorization.Permissions;
-using Volo.Abp.PermissionManagement;
 using Volo.Abp.PermissionManagement.Identity;
+using Microsoft.Extensions.Configuration;
 
 namespace BankingService
 {
@@ -55,16 +55,19 @@ namespace BankingService
                             });
 
             ConfigurarMultiTenancy();
-
-            Configure<AbpPermissionOptions>(options =>
-            {
-                options.ValueProviders.Add<RolePermissionValueProvider>();
-            });
-
             ConfigurarControllersGeradosAutomaticamente();
             ConfigurarProviderDoEfCore();
             ConfigurarSwagger(context);
             ConfigurarRabbitMQEventBus(context);
+            ConfigurarCacheNoRedis(context, configuration);
+        }
+
+        private static void ConfigurarCacheNoRedis(ServiceConfigurationContext context, IConfiguration configuration)
+        {
+            context.Services.AddStackExchangeRedisCache(options =>
+            {
+                options.Configuration = configuration["Redis:Configuration"];
+            });
         }
 
         private void ConfigurarMultiTenancy()
