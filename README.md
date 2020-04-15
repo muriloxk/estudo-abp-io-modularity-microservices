@@ -4,6 +4,7 @@
 - ~~Analizar o event bus distributed com rabbitmq do framework~~
 - ~~Analizar como implementaria um CQRS~~ 
 - ~~Implementar multitenancy compartilhando os bancos.~~
+- ~~Autenticação openid com identityserver4 (grant type authorization_code + pkce).~~ 
 - ~~Autorização de papeis entre as funcionalidades.~~
 - ~~Implementar cache com redis de acordo com os inquilinos.~~
 
