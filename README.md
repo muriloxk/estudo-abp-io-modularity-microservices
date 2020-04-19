@@ -4,11 +4,13 @@
 - ~~Analizar o event bus distributed com rabbitmq do framework~~
 - ~~Analizar como implementaria um CQRS~~ 
 - ~~Implementar multitenancy compartilhando os bancos.~~
+- ~~Autenticação openid com identityserver4 (grant type authorization_code + pkce).~~ 
 - ~~Autorização de papeis entre as funcionalidades.~~
+- ~~Implementar cache com redis de acordo com os inquilinos.~~
 
 # Próximas issues:
 1. <a href="https://github.com/muriloxk/estudo-abp-io-modularity-microservices/issues/5" > Serilog com elasticsearch</a>
-1. <a href="https://github.com/muriloxk/estudo-abp-io-modularity-microservices/issues/6" > Implementar cache com redis de acordo com os inquilinos. </a>
+
 
 
 # Anotações e observações sobre o estudo do framework abp
