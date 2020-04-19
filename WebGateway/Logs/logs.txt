@@ -3599,3 +3599,4 @@ Volo.Abp.AbpException: There is no tenant with given tenant id or name: abp
 2020-04-15 10:00:29.528 -03:00 [INF] Application started. Press Ctrl+C to shut down.
 2020-04-15 10:00:29.528 -03:00 [INF] Hosting environment: Development
 2020-04-15 10:00:29.528 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/WebGateway
+2020-04-15 13:59:01.502 -03:00 [INF] Application is shutting down...

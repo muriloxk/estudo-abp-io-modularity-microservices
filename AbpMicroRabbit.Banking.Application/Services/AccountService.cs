@@ -38,7 +38,7 @@ namespace AbpMicroRabbit.Banking.Application.Services
                                          () => _accountRepository.GetAccounts(),
                                          () => new DistributedCacheEntryOptions
                                             {
-                                             AbsoluteExpiration = DateTimeOffset.Now.AddHours(1)
+                                             AbsoluteExpiration = DateTimeOffset.Now.AddSeconds(20)
                                          });
         }
 

@@ -9340,3 +9340,20 @@ FROM `IdentityServerDeviceFlowCodes` AS `i`
 WHERE `i`.`Expiration` < @__maxExpirationDate_0
 ORDER BY `i`.`ClientId`
 LIMIT @__p_1
+2020-04-15 13:38:39.572 -03:00 [INF] Entity Framework Core 3.1.2 initialized 'IdentityServerDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2020-04-15 13:38:39.589 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__maxExpirationDate_0='?' (DbType = DateTime), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `i`.`Key`, `i`.`ClientId`, `i`.`ConcurrencyStamp`, `i`.`CreationTime`, `i`.`Data`, `i`.`Expiration`, `i`.`ExtraProperties`, `i`.`Id`, `i`.`SubjectId`, `i`.`Type`
+FROM `IdentityServerPersistedGrants` AS `i`
+WHERE `i`.`Expiration` IS NOT NULL AND (`i`.`Expiration` < @__maxExpirationDate_0)
+ORDER BY `i`.`ClientId`
+LIMIT @__p_1
+2020-04-15 13:38:39.590 -03:00 [INF] Entity Framework Core 3.1.2 initialized 'IdentityServerDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: None
+2020-04-15 13:38:39.592 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__maxExpirationDate_0='?' (DbType = DateTime), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`ClientId`, `i`.`ConcurrencyStamp`, `i`.`CreationTime`, `i`.`CreatorId`, `i`.`Data`, `i`.`DeviceCode`, `i`.`Expiration`, `i`.`ExtraProperties`, `i`.`SubjectId`, `i`.`UserCode`
+FROM `IdentityServerDeviceFlowCodes` AS `i`
+WHERE `i`.`Expiration` < @__maxExpirationDate_0
+ORDER BY `i`.`ClientId`
+LIMIT @__p_1
+2020-04-15 13:58:49.556 -03:00 [DBG] Stopped background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2020-04-15 13:58:49.616 -03:00 [DBG] Disposed channel pool with no channels in the pool.
+2020-04-15 13:58:49.626 -03:00 [INF] Application is shutting down...

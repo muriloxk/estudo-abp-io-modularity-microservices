@@ -24,38 +24,47 @@ using System;
 using Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
 using Volo.Abp.TenantManagement;
+using Volo.Abp.Auditing;
 
 namespace AuthenticationServer
 {
     [DependsOn(typeof(AbpAutofacModule),
-               typeof(AbpIdentityAspNetCoreModule),
-               typeof(AbpPermissionManagementEntityFrameworkCoreModule),
-               typeof(AbpSettingManagementEntityFrameworkCoreModule),
-               typeof(AbpIdentityEntityFrameworkCoreModule),
-               typeof(AbpAccountApplicationModule),
-               typeof(AbpAccountWebModule),
-               typeof(AbpIdentityServerEntityFrameworkCoreModule),
-               typeof(AbpEntityFrameworkCoreMySQLModule),
-               typeof(AbpAccountWebIdentityServerModule),
-               typeof(AbpAspNetCoreMvcUiBasicThemeModule),
-               typeof(AbpAspNetCoreMvcUiThemeSharedModule),
-               typeof(AbpPermissionManagementDomainIdentityServerModule),
-               typeof(AbpMultiTenancyModule),
-               typeof(AbpAspNetCoreMultiTenancyModule),
-               typeof(AbpTenantManagementEntityFrameworkCoreModule),
-               typeof(AbpTenantManagementApplicationContractsModule))]
+                typeof(AbpAuditingModule),
+                typeof(AbpIdentityAspNetCoreModule),
+                typeof(AbpPermissionManagementEntityFrameworkCoreModule),
+                typeof(AbpSettingManagementEntityFrameworkCoreModule),
+                typeof(AbpIdentityEntityFrameworkCoreModule),
+                typeof(AbpAccountApplicationModule),
+                typeof(AbpAccountWebModule),
+                typeof(AbpIdentityServerEntityFrameworkCoreModule),
+                typeof(AbpEntityFrameworkCoreMySQLModule),
+                typeof(AbpAccountWebIdentityServerModule),
+                typeof(AbpAspNetCoreMvcUiBasicThemeModule),
+                typeof(AbpAspNetCoreMvcUiThemeSharedModule),
+                typeof(AbpPermissionManagementDomainIdentityServerModule),
+                typeof(AbpMultiTenancyModule),
+                typeof(AbpAspNetCoreMultiTenancyModule),
+                typeof(AbpTenantManagementEntityFrameworkCoreModule),
+                typeof(AbpTenantManagementApplicationContractsModule))]
     public class AuthenticationServerModule : AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
             context.Services.AddCors(options => options.AddDefaultPolicy(builder =>
                                                                                     builder.AllowAnyOrigin()
-                                                                                            .AllowAnyHeader()
-                                                                                            .AllowAnyMethod()));
+                                                                                           .AllowAnyHeader()
+                                                                                           .AllowAnyMethod()));
             context.Services.AddControllersWithViews();
             context.Services.AddAbpDbContext<AuthServerDbContext>(options =>
             {
                 options.AddDefaultRepositories();
+            });
+
+            Configure<AbpAuditingOptions>(options =>
+            {
+                options.EntityHistorySelectors.AddAllEntities();
+                options.ApplicationName = "Banking Service";
+                options.IsEnabledForGetRequests = true;
             });
 
             Configure<AbpMultiTenancyOptions>(options =>
@@ -79,50 +88,21 @@ namespace AuthenticationServer
             var app = context.GetApplicationBuilder();
 
             app.UseVirtualFiles();
+
             app.UseRouting();
+
             app.UseCors();
+
             app.UseStaticFiles();
 
-            //app.Use(async (context, next) =>
-            //{
-            //    context.Request.Headers["__tenant"] = "de76993a-f5c5-dd94-9a26-39f48895efe5";
-
-            //    await next.Invoke();
-            //});
-
-            //app.Use(async (context, next) =>
-            //{
-            //    var teste = context.Request.Headers["__tenant"];
-            //    await next.Invoke();
-            //});
-
-            //app.Use(async (context, next) =>
-            //{
-            //    var cultureQuery = context.Request.Query["culture"];
-            //    if (!string.IsNullOrWhiteSpace(cultureQuery))
-            //    {
-            //        var culture = new CultureInfo("en-US");
-
-            //        CultureInfo.CurrentCulture = culture;
-            //        CultureInfo.CurrentUICulture = culture;
-            //    }
-
-            //    await next.Invoke();
-            //});
-
-
-
             app.UseMultiTenancy();
-            //app.UseAuthentication();
+      
             app.UseIdentityServer();
 
-
-            //app.UseMvc();
             app.UseMvcWithDefaultRouteAndArea();
 
-            //app.UseAuthorization();
+            app.UseAuditing();
 
-   
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapDefaultControllerRoute();

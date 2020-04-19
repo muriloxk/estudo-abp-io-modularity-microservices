@@ -34929,3 +34929,5 @@ Volo.Abp.UserFriendlyException: Inquilino não está disponível: tenant
 2020-04-15 10:01:20.665 -03:00 [INF] Application started. Press Ctrl+C to shut down.
 2020-04-15 10:01:20.665 -03:00 [INF] Hosting environment: Development
 2020-04-15 10:01:20.665 -03:00 [INF] Content root path: /Users/murilosanches/Projects/AbpMicroRabbit/AuthenticationServer
+2020-04-15 13:58:53.090 -03:00 [DBG] Stopped background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2020-04-15 13:58:53.186 -03:00 [INF] Application is shutting down...
