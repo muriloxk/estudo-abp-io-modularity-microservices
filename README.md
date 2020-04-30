@@ -7,11 +7,7 @@
 - ~~Autenticação openid com identityserver4 (grant type authorization_code + pkce).~~ 
 - ~~Autorização de papeis entre as funcionalidades.~~
 - ~~Implementar cache com redis de acordo com os inquilinos.~~
-
-# Próximas issues:
-1. <a href="https://github.com/muriloxk/estudo-abp-io-modularity-microservices/issues/5" > Serilog com elasticsearch</a>
-
-
+- ~~Serilog com elasticsearch~~
 
 # Anotações e observações sobre o estudo do framework abp
 
