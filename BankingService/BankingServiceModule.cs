@@ -21,9 +21,12 @@ using Volo.Abp.TenantManagement.EntityFrameworkCore;
 using Volo.Abp.PermissionManagement.EntityFrameworkCore;
 using Volo.Abp.Threading;
 using Volo.Abp.Data;
-using Volo.Abp.Authorization.Permissions;
 using Volo.Abp.PermissionManagement.Identity;
 using Microsoft.Extensions.Configuration;
+using System.Security.Claims;
+using Volo.Abp.Security.Claims;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace BankingService
 {
@@ -52,6 +55,7 @@ namespace BankingService
                                 options.Authority = configuration["AuthServer:Authority"];
                                 options.ApiName = configuration["AuthServer:ApiName"];
                                 options.RequireHttpsMetadata = false;
+                                //options.LegacyAudienceValidation = true;
                             });
 
             ConfigurarMultiTenancy();
@@ -133,8 +137,26 @@ namespace BankingService
 
             app.UseRouting();
 
-            // TODO:
-            //app.UseAuthentication();
+            app.UseAuthentication();
+
+
+            //TODO: https://github.com/abpframework/abp/issues/2001
+            app.Use(async (ctx, next) =>
+            {
+                var user = ctx.User;
+                var currentPrincipalAccessor = ctx.RequestServices.GetRequiredService<ICurrentPrincipalAccessor>();
+                var map = new Dictionary<string, string>()
+                {
+                    { "sub", AbpClaimTypes.UserId },
+                    { "role", AbpClaimTypes.Role },
+                    { "email", AbpClaimTypes.Email },
+                };
+                var mapClaims = currentPrincipalAccessor.Principal.Claims.Where(p => map.Keys.Contains(p.Type)).ToList();
+                //mapClaims.Add(new Claim("role", "admin", null, mapClaims[0].Issuer)); //TODO: REMOVER
+                currentPrincipalAccessor.Principal.AddIdentity(new ClaimsIdentity(mapClaims.Select(p => new Claim(map[p.Type], p.Value, p.ValueType, p.Issuer))));
+
+                await next();
+            });
 
             app.UseMultiTenancy();
 
@@ -145,7 +167,6 @@ namespace BankingService
                 endpoints.MapControllers();
             });
 
-         
             app.UseSwagger();   
 
             app.UseSwaggerUI(options =>

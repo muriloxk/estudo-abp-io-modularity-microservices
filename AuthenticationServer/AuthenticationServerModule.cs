@@ -28,7 +28,7 @@ using Volo.Abp.Auditing;
 
 namespace AuthenticationServer
 {
-    [DependsOn(typeof(AbpAutofacModule),
+     [DependsOn(typeof(AbpAutofacModule),
                 typeof(AbpAuditingModule),
                 typeof(AbpIdentityAspNetCoreModule),
                 typeof(AbpPermissionManagementEntityFrameworkCoreModule),
@@ -107,6 +107,7 @@ namespace AuthenticationServer
             {
                 endpoints.MapDefaultControllerRoute();
             });
+
 
             AsyncHelper.RunSync(async () =>
             {

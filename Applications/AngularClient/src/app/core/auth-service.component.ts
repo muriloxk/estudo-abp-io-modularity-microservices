@@ -18,7 +18,7 @@ export class AuthService {
             authority: Constants.stsAuthority,
             client_id: Constants.clientId,
             redirect_uri: `${Constants.clientRoot}signin-callback`,
-            scope: 'openid profile BankingService TranferLogService IdentityService',
+            scope: 'openid profile role BankingService TranferLogService IdentityService WebGateway TenantService',
             response_type: 'code',
             post_logout_redirect_uri: `${Constants.clientRoot}signout-callback`
         };

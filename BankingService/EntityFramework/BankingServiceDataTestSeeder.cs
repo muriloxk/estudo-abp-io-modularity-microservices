@@ -54,6 +54,7 @@ namespace BankingService.EntityFramework
             if (!await VerificarSePermissionParaORoleJaEstaCadastrada(role, BankingPermissions.Accounts.Transfer))
                 await _permissionManager.SetForRoleAsync(role, BankingPermissions.Accounts.Transfer, true);
 
+       
 
             //await _permissionManager.SetForRoleAsync(role, IdentityPermissions.Roles.Default, true);
             //await _permissionManager.SetForRoleAsync(role, IdentityPermissions.Roles.Create, true);
@@ -76,8 +77,8 @@ namespace BankingService.EntityFramework
             if (!await VerificarSePermissionParaORoleJaEstaCadastrada(role, BankingPermissions.Accounts.Create))
                 await _permissionManager.SetForRoleAsync(role, BankingPermissions.Accounts.Create, false);
 
-            if (!await VerificarSePermissionParaORoleJaEstaCadastrada(role, BankingPermissions.Accounts.Create))
-                await _permissionManager.SetForRoleAsync(role, BankingPermissions.Accounts.Create, false);
+            if (!await VerificarSePermissionParaORoleJaEstaCadastrada(role, BankingPermissions.Accounts.Update))
+                await _permissionManager.SetForRoleAsync(role, BankingPermissions.Accounts.Update, false);
 
             if (!await VerificarSePermissionParaORoleJaEstaCadastrada(role, BankingPermissions.Accounts.Delete))
                 await _permissionManager.SetForRoleAsync(role, BankingPermissions.Accounts.Delete, false);

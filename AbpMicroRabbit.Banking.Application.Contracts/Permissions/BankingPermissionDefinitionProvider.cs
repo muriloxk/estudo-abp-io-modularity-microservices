@@ -8,7 +8,6 @@ namespace AbpMicroRabbit.Banking.Application.Contracts.Permissions
     {
         private readonly IPermissionManager _permissionManager;
 
-
         public BankingPermissionDefinitionProvider(IPermissionManager permissionManager)
         {
             _permissionManager = permissionManager;
@@ -17,13 +16,14 @@ namespace AbpMicroRabbit.Banking.Application.Contracts.Permissions
         public override void Define(IPermissionDefinitionContext context)
         {
             var bankingGroup = context.AddGroup(BankingPermissions.GroupName);
+            var AccountPermission = bankingGroup.AddPermission(BankingPermissions.Accounts.Default, null, MultiTenancySides.Tenant);
 
-            bankingGroup.AddPermission(BankingPermissions.Accounts.Default, null, MultiTenancySides.Tenant)
-                          .AddChild(BankingPermissions.Accounts.Create, null, MultiTenancySides.Tenant)
-                          .AddChild(BankingPermissions.Accounts.Update, null, MultiTenancySides.Tenant)
-                          .AddChild(BankingPermissions.Accounts.Delete, null, MultiTenancySides.Tenant)
-                          .AddChild(BankingPermissions.Accounts.Transfer, null, MultiTenancySides.Tenant)
-                          .WithProviders(RolePermissionValueProvider.ProviderName);
+            AccountPermission.AddChild(BankingPermissions.Accounts.Create, null, MultiTenancySides.Tenant);
+            AccountPermission.AddChild(BankingPermissions.Accounts.Update, null, MultiTenancySides.Tenant);
+            AccountPermission.AddChild(BankingPermissions.Accounts.Delete, null, MultiTenancySides.Tenant);
+            AccountPermission.AddChild(BankingPermissions.Accounts.Transfer, null, MultiTenancySides.Tenant);
+
+            AccountPermission.WithProviders(RolePermissionValueProvider.ProviderName);
         }
     }
 }

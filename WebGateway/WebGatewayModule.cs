@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using Ocelot.DependencyInjection;
@@ -12,6 +15,7 @@ using Volo.Abp.EntityFrameworkCore.MySQL;
 using Volo.Abp.Modularity;
 using Volo.Abp.MultiTenancy;
 using Volo.Abp.PermissionManagement.EntityFrameworkCore;
+using Volo.Abp.Security.Claims;
 using Volo.Abp.SettingManagement.EntityFrameworkCore;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
 
@@ -30,7 +34,6 @@ namespace WebGateway
         {
             var configuration = context.Services.GetConfiguration();
 
-
             Configure<AbpDbContextOptions>(options =>
             {
                 options.UseMySQL();
@@ -46,9 +49,6 @@ namespace WebGateway
                 options.TenantResolvers.Insert(1, new QueryStringTenantResolveContributor());
             });
 
-
-
-
             context.Services.AddCors(options => options.AddDefaultPolicy(builder => builder.AllowAnyOrigin()
                                                                                            .AllowAnyHeader()
                                                                                            .AllowAnyMethod()));
@@ -59,6 +59,7 @@ namespace WebGateway
                                 options.Authority = configuration["AuthServer:Authority"];
                                 options.ApiName = configuration["AuthServer:ApiName"];
                                 options.RequireHttpsMetadata = false;
+                                //options.LegacyAudienceValidation = true;
                             });
 
             context.Services.AddSwaggerGen(options =>
@@ -77,9 +78,22 @@ namespace WebGateway
 
             app.UseCors();
             app.UseRouting();
-
-   
             app.UseAuthentication();
+
+            //TODO: https://github.com/abpframework/abp/issues/2001
+            app.Use(async (ctx, next) =>
+            {
+                var currentPrincipalAccessor = ctx.RequestServices.GetRequiredService<ICurrentPrincipalAccessor>();
+                var map = new Dictionary<string, string>()
+                {
+                    { "sub", AbpClaimTypes.UserId },
+                    { "role", AbpClaimTypes.Role },
+                    { "email", AbpClaimTypes.Email },
+                };
+                var mapClaims = currentPrincipalAccessor.Principal.Claims.Where(p => map.Keys.Contains(p.Type)).ToList();
+                currentPrincipalAccessor.Principal.AddIdentity(new ClaimsIdentity(mapClaims.Select(p => new Claim(map[p.Type], p.Value, p.ValueType, p.Issuer))));
+                await next();
+            });
 
             app.UseMultiTenancy();
 

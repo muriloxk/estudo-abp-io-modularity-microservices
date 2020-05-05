@@ -32,13 +32,13 @@ namespace BankingService
                 .Enrich.FromLogContext()
                 .WriteTo.Debug()
                 .WriteTo.Console()
-                .WriteTo.Elasticsearch(
-                    new ElasticsearchSinkOptions(new Uri(configuration["ElasticSearch:Url"]))
-                    {
-                        AutoRegisterTemplate = true,
-                        AutoRegisterTemplateVersion = AutoRegisterTemplateVersion.ESv6,
-                        IndexFormat = "bankingservice-log-{0:yyyy.MM}"
-                    })
+                //.WriteTo.Elasticsearch(
+                //    new ElasticsearchSinkOptions(new Uri(configuration["ElasticSearch:Url"]))
+                //    {
+                //        AutoRegisterTemplate = true,
+                //        AutoRegisterTemplateVersion = AutoRegisterTemplateVersion.ESv6,
+                //        IndexFormat = "bankingservice-log-{0:yyyy.MM}"
+                //    })
                 .CreateLogger();
 
             CreateHostBuilder(args).Build().Run();

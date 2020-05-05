@@ -66,6 +66,7 @@ namespace IdentityService
                         options.Authority = configuration["AuthServer:Authority"];
                         options.ApiName = configuration["AuthServer:ApiName"];
                         options.RequireHttpsMetadata = false;
+                        options.LegacyAudienceValidation = true;
                     })
             );
 

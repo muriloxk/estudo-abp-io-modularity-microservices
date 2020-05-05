@@ -49,6 +49,7 @@ namespace TenantService
                                 options.Authority = configuration["AuthServer:Authority"];
                                 options.ApiName = configuration["AuthServer:ApiName"];
                                 options.RequireHttpsMetadata = false;
+                                options.LegacyAudienceValidation = true;
                             });
 
             context.Services.AddSwaggerGen(options =>

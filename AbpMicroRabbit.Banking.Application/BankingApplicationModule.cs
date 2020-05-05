@@ -3,7 +3,6 @@ using AbpMicroRabbit.Banking.Domain;
 using Microsoft.Extensions.DependencyInjection;
 using Volo.Abp.AutoMapper;
 using Volo.Abp.Modularity;
-using Volo.Abp.Identity;
 using Volo.Abp.Caching;
 
 namespace AbpMicroRabbit.Banking.Application
@@ -12,7 +11,6 @@ namespace AbpMicroRabbit.Banking.Application
                typeof(BankingApplicationContractsModule),
                typeof(AbpAutoMapperModule),
                typeof(AbpCachingModule))]
- 
     public class BankingApplicationModule : AbpModule
     {
 

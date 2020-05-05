@@ -15,18 +15,19 @@ export class AuthInterceptorService implements HttpInterceptor {
         
         if(req.url.startsWith(Constants.uriWebGateway)) {
           this.authService.getAccessToken().then(token => {
-            const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+            const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`)
+                                             .set('__tenant', `de76993a-f5c5-dd94-9a26-39f48895efe5`);
             const authReq = req.clone({ headers });
             return next.handle(authReq).toPromise();
           })
         }
 
-        if(req.url.startsWith(Constants.stsAuthority)) {
-            const headers = new HttpHeaders().set('__tenant', `de76993a-f5c5-dd94-9a26-39f48895efe5`);
-            const authReq = req.clone({ headers });
-            console.log("__TENANT");
-            return next.handle(authReq);
-        }
+        // if(req.url.startsWith(Constants.uriWebGateway)) {
+
+        //     const authReq = req.clone({ headers });
+        //     console.log("__TENANT");
+        //     return next.handle(authReq);
+        // }
         
         return next.handle(req);
     }

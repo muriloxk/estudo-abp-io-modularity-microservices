@@ -2,4 +2,7 @@
 
 <button *ngIf="!isLoggedIn" (click)="login()">Login</button>
 <button *ngIf="isLoggedIn" (click)="logout()">Logout</button>
+
+<button *ngIf="isLoggedIn" (click)="getList()">Requisição GetList</button>
+<button *ngIf="isLoggedIn" (click)="postTransfer()">Requisição PostTransfer</button>
 <router-outlet></router-outlet>

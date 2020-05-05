@@ -44,13 +44,26 @@ namespace AuthenticationServer.EntityFramework
 
         private async Task CreateApiResourcesAsync()
         {
-            await CreateApiResourceAsync("BankingService", new[] { "role" });
-            await CreateApiResourceAsync("TranferLogService", new[] { "role" });
-            await CreateApiResourceAsync("IdentityService", new[] { "role" });
 
-            #region Cliente criado só por exemplo para ver um negócio 
-            const string commonSecret = "E5Xd4yMqjP5kjWFKrYgySBju6JVfCzMyFp7n2QmMrME=";
+            var commonApiUserClaims = new[]
+            {
+                "email",
+                "email_verified",
+                "name",
+                "phone_number",
+                "phone_number_verified",
+                "role"
+            };
 
+
+            await CreateApiResourceAsync("WebGateway", commonApiUserClaims);
+            await CreateApiResourceAsync("BankingService", commonApiUserClaims);
+            await CreateApiResourceAsync("TranferLogService", commonApiUserClaims);
+            await CreateApiResourceAsync("IdentityService", commonApiUserClaims);
+            await CreateApiResourceAsync("TenantService", commonApiUserClaims);
+
+            #region Cliente criado só por exemplo para ver um negócio
+            // Scopes padrão do open id
             var commonScopes = new[]
             {
                 "email",
@@ -61,14 +74,22 @@ namespace AuthenticationServer.EntityFramework
                 "address"
             };
 
+         
+
             await CreateClientAsync(
                    name: "spa-client",
-                   scopes: commonScopes.Union(new [] { "BankingService", "TranferLogService", "IdentityService" }),
+                   //Quando as ApiResources são criadas, é automaticamente criado scopos para ela com o mesmo nome dela.
+                   scopes: commonScopes.Union(new[] { "BankingService",
+                                                       "TranferLogService",
+                                                       "IdentityService",
+                                                       "WebGateway",
+                                                       "TenantService"}),
+
                    grantTypes: new[] { "authorization_code" },
                    secret: null,
                    redirectUri: "http://localhost:4200/signin-callback",
-                   postLogoutRedirectUri:  "http://localhost:4200/signout-callback");
-
+                   postLogoutRedirectUri: "http://localhost:4200/signout-callback");
+                   //permissions: new[] { "Banking.Account" });
            #endregion
         }
 
@@ -102,7 +123,7 @@ namespace AuthenticationServer.EntityFramework
                         AccessTokenLifetime = 31536000, //365 days
                         AuthorizationCodeLifetime = 300,
                         IdentityTokenLifetime = 300,
-                        RequireConsent = false
+                        RequireConsent = false // Usuário precisa ou não aceitar as permissões
                     },
                     autoSave: true
                 ); 
